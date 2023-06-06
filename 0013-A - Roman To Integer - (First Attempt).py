@@ -8,7 +8,7 @@ Space complexity: O(1)
 
 class Solution:
     def romanToInt(self, s: str) -> int:
-        mapping = OrderedDict(
+        mapping = dict(
             [
                 ("I", 1),
                 ("V", 5),
