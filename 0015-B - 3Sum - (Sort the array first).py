@@ -5,7 +5,6 @@ Time complexity: O(n2)
 Space complexity: From O(logn) to O(n)
 """
 
-
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         start = 0
