@@ -5,12 +5,13 @@ Time complexity: O(n2)
 Space complexity: From O(logn) to O(n)
 """
 
+
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         start = 0
         end = len(numbers) - 1
         result = []
-        while True and start < end:
+        while start < end:
             sum_ = numbers[start] + numbers[end]
             if sum_ > target:
                 end -= 1

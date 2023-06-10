@@ -10,7 +10,7 @@ class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         start = 0
         end = len(numbers) - 1
-        while True and start < end:
+        while start < end:
             sum_ = numbers[start] + numbers[end]
             if sum_ > target:
                 end -= 1

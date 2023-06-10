@@ -10,11 +10,11 @@ class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         mapping = {}
         result = []
-        for i in range(len(nums)):
-            complement = target - nums[i]
+        for index, number in enumerate(nums):
+            complement = target - number
             if complement in mapping:
-                result.append([nums[i], complement])
-            mapping[nums[i]] = i
+                result.append([number, complement])
+            mapping[number] = index
         return result
 
     def threeSum(self, nums: List[int]) -> List[List[int]]:

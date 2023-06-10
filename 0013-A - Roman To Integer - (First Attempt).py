@@ -1,5 +1,3 @@
-from collections import OrderedDict
-
 """
 Time complexity: O(1)
 Space complexity: O(1)
@@ -21,11 +19,15 @@ class Solution:
         )
         special = {"I": {"V", "X"}, "X": {"L", "C"}, "C": {"D", "M"}, "M": set()}
         sum_ = 0
-        for i in range(len(s)):
-            if s[i] in special and i < len(s) - 1 and s[i + 1] in special[s[i]]:
-                sum_ -= mapping[s[i]]
+        for index, letter in enumerate(s):
+            if (
+                letter in special
+                and index < len(s) - 1
+                and s[index + 1] in special[letter]
+            ):
+                sum_ -= mapping[letter]
             else:
-                sum_ += mapping[s[i]]
+                sum_ += mapping[letter]
         return sum_
 
 

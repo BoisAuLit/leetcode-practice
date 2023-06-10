@@ -14,11 +14,10 @@ class Solution:
         while True:
             x, remainder = divmod(x, 10)
             hp = hp * 10 + remainder
-            if hp > x or hp == 0:
+            if hp >= 0:
                 return False
-            if hp == x or hp == x // 10:
+            if hp in (x, x // 10):
                 return True
-            
 
 
 s = Solution()
