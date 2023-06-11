@@ -1,9 +1,8 @@
 from typing import List
-from typing import Union
 
 """
-Time complexity: O()
-Space complexity: O()
+Time complexity: O(n+m)
+Space complexity: O(1)
 """
 
 
