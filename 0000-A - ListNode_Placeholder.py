@@ -1,3 +1,4 @@
+from __future__ import annotations
 from typing import List
 
 # Definition for singly-linked list.
@@ -7,7 +8,7 @@ class ListNode:
         self.next = next_
 
     @staticmethod
-    def from_list(l: List[int]):
+    def from_list(l: List[int]) -> ListNode:
         head = ListNode()
         curr = head
         for number in l:
