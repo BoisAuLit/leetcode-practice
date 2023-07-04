@@ -2,7 +2,10 @@ from typing import List
 
 """
 Time complexity: O(n²)
-Space complexity: O(n²)
+Space complexity: O(1)
+
+While O(n²) space is used to store the output,
+the input and output generally do not count towards the space complexity.
 """
 
 
