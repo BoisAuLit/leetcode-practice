@@ -6,18 +6,18 @@ Space complexity: O(n)
 
 class Solution:
     def checkAlmostEquivalent(self, word1: str, word2: str) -> bool:
-        mapping_1 = {}
+        mapping = {}
         for character in word1:
-            if character in mapping_1:
-                mapping_1[character] += 1
+            if character in mapping:
+                mapping[character] += 1
             else:
-                mapping_1[character] = 1
+                mapping[character] = 1
         for character in word2:
-            if character in mapping_1:
-                mapping_1[character] -= 1
+            if character in mapping:
+                mapping[character] -= 1
             else:
-                mapping_1[character] = -1
-        return all(abs(i) <= 3 for i in mapping_1.values())
+                mapping[character] = -1
+        return all(abs(i) <= 3 for i in mapping.values())
 
 
 s = Solution()
