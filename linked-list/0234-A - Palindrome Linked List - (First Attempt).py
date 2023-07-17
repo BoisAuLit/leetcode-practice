@@ -15,11 +15,11 @@ class ListNode:
 
 class Solution:
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
-        l = []
+        list_ = []
         while head:
-            l.append(head.val)
+            list_.append(head.val)
             head = head.next
-        return l == l[::-1]
+        return list_ == list_[::-1]
 
 
 s = Solution()

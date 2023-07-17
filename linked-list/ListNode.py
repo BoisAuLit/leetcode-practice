@@ -8,10 +8,10 @@ class ListNode:
         self.next = next_
 
     @staticmethod
-    def from_list(l: List[int]) -> ListNode:
+    def from_list(list_: List[int]) -> ListNode:
         head = ListNode()
         curr = head
-        for number in l:
+        for number in list_:
             new_node = ListNode(number)
             curr.next = new_node
             curr = new_node
@@ -22,8 +22,8 @@ def print_list_node(ln: ListNode):
     if ln is None:
         print("Empty ListNode")
         return
-    l = []
+    list_ = []
     while ln is not None:
-        l.append(ln.val)
+        list_.append(ln.val)
         ln = ln.next
-    print("ListNode ->", l)
+    print("ListNode ->", list_)
