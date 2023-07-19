@@ -1,6 +1,8 @@
+from typing import List
+
 """
-Time complexity: O(1)
-Space complexity: O(1)
+Time complexity: O()
+Space complexity: O()
 """
 
 
