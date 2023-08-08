@@ -38,7 +38,7 @@ class MyHashMap:
     def remove(self, key: int) -> None:
         if not self.bucket_exists(key):
             return
-        bucket = self.array[self.get_hash(key)]
+        bucket = self.get_bucket(key)
         index = 0
         found_index = -1
         for entry in bucket:
@@ -73,6 +73,9 @@ hashmap.put(2, 1)
 print(hashmap.get(2)) # Expecting 1
 hashmap.remove(2)
 print(hashmap.get(2)) # Expecting -1
+
+d = deque()
+d.pop()
 
 """
 Runtime
