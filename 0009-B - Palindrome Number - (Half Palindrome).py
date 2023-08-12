@@ -8,16 +8,16 @@ class Solution:
     def isPalindrome(self, x: int) -> bool:
         if x < 0:
             return False
-        if x < 10:
-            return True
-        hp = 0
-        while True:
-            x, remainder = divmod(x, 10)
-            hp = hp * 10 + remainder
-            if hp >= 0:
-                return False
-            if hp in (x, x // 10):
-                return True
+
+        reversed_num = 0
+        temp = x
+
+        while temp != 0:
+            digit = temp % 10
+            reversed_num = reversed_num * 10 + digit
+            temp //= 10
+
+        return reversed_num == x
 
 
 s = Solution()

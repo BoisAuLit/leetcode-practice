@@ -6,20 +6,22 @@ Space complexity: O(n)
 
 class Solution:
     def isPalindrome(self, x: int) -> bool:
+        # 💥💥💥💥💥💥💥💥💥
+        # Don't forget to deal with negative numbers
         if x < 0:
             return False
-        digits = []
+        # 💥💥💥💥💥💥💥💥💥
+        array = []
         while True:
-            x, remainder = divmod(x, 10)
-            digits.append(remainder)
+            x, r = divmod(x, 10)
+            array.append(r)
             if x == 0:
                 break
-        i = 0
-        while i < len(digits) // 2:
-            if digits[i] != digits[-(i+1)]:
+        for i in range(len(array) // 2):
+            if array[i] != array[-(i + 1)]:
                 return False
-            i += 1
         return True
+
 
 s = Solution()
 input_ = -123
