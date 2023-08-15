@@ -19,7 +19,10 @@ class Solution:
                 start += 1
             else:
                 result.append([numbers[start], numbers[end]])
-                while start < len(numbers) - 1 and numbers[start] == numbers[start + 1]:
+                while (
+                    start < len(numbers) - 1
+                    and numbers[start] == numbers[start + 1]
+                ):
                     start += 1
                 while end > 0 and numbers[end] == numbers[end - 1]:
                     end -= 1

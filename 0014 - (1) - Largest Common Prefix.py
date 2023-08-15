@@ -6,6 +6,21 @@ Space complexity: O(1)
 """
 
 
+# Solution 1 --> Sort, then compare the first and the last 👍
+class Solution:
+    def longestCommonPrefix(self, v: List[str]) -> str:
+        ans = ""
+        v = sorted(v)
+        first = v[0]
+        last = v[-1]
+        for i in range(min(len(first), len(last))):
+            if first[i] != last[i]:
+                return ans
+            ans += first[i]
+        return ans
+
+
+# Solution 2 --> Vertical scan
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         index = 0
