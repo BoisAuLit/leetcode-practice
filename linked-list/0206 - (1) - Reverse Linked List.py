@@ -1,4 +1,3 @@
-from __future__ import annotations
 from typing import Optional
 from ListNode import ListNode, print_list_node
 
@@ -45,13 +44,3 @@ print_list_node(input_)
 
 result = s.reverseList(input_)
 print_list_node(result)
-
-"""
-Runtime
-- 49 ms
-- Beats 77.7%
-
-Memory
-- 17.8 MB
-- Beats 78.78%
-"""

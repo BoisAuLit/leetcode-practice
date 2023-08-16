@@ -41,13 +41,3 @@ l2 = ListNode.from_list([5, 6, 4])
 result = s.addTwoNumbers(l1, l2)
 
 print_list_node(result)
-
-"""
-Runtime
-- 62ms
-- Beats 90.23%
-
-Memory
-16.38mb
-- Beats 65.59%
-"""

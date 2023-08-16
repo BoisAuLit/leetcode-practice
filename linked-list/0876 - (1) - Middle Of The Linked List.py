@@ -32,13 +32,3 @@ input_ = ListNode(
 # )  # Expecting 4
 result = s.middleNode(input_)
 print(result.val)
-
-"""
-Runtime
-- 52 ms
-- Beats 23.39%
-
-Memory
-- 16.3 MB
-- Beats 70.81%
-"""

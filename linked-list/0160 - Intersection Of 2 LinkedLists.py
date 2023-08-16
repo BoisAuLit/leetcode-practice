@@ -47,13 +47,3 @@ headB = ListNode(3, tail)
 # print_list_node(headB)
 result = s.getIntersectionNode(headA, headB)
 print_list_node(result)
-
-"""
-Runtime
-- 132ms
-- Beats 79.02%
-
-Memory
-31.64mb
-- Beats 50.99%
-"""
