@@ -1,9 +1,3 @@
-"""
-Time complexity: O()
-Space complexity: O()
-"""
-
-
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         m = len(needle)

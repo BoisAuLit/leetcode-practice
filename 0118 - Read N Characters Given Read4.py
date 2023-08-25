@@ -1,5 +1,10 @@
 from typing import List
 
+
+def read4():
+    return None
+
+
 """
 The read4 API is already defined for you.
 
