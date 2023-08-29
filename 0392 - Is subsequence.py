@@ -31,7 +31,3 @@ t = "ahbgdc"
 
 result = solution.isSubsequence(s, t)
 print(result)
-
-"""
-
-"""
