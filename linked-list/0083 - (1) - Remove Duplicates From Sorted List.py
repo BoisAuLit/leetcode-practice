@@ -1,37 +1,10 @@
 from typing import List, Optional
+from ListNode import ListNode, print_list_node
 
 """
 Time complexity: O(n)
 Space complexity: O(1)
 """
-
-
-class ListNode:
-    def __init__(self, val=0, next_=None):
-        self.val = val
-        self.next = next_
-
-    @staticmethod
-    def from_list(l: List[int]):
-        head = ListNode()
-        curr = head
-        for number in l:
-            new_node = ListNode(number)
-            curr.next = new_node
-            curr = new_node
-        return head.next
-
-
-def print_list_node(ln: ListNode):
-    if ln is None:
-        print("Empty ListNode")
-        return
-    l = []
-    while ln is not None:
-        l.append(ln.val)
-        ln = ln.next
-    print("ListNode ->", l)
-
 
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:

@@ -1,20 +1,16 @@
 class Solution:
     def findTheLongestBalancedSubstring(self, s: str) -> int:
         i = 0
-        while i < len(s) and s[i] != "0":
-            i += 1
         result = 0
-        while True:
-            count_zero = count_one = 0
+        while i < len(s):
+            zeroes = ones = 0
             while i < len(s) and s[i] == "0":
-                count_zero += 1
+                zeroes += 1
                 i += 1
             while i < len(s) and s[i] == "1":
-                count_one += 1
+                ones += 1
                 i += 1
-            result = max(result, 2 * min(count_zero, count_one))
-            if i == len(s):
-                break
+            result = max(result, 2 * min(zeroes, ones))
         return result
 
 
