@@ -3,6 +3,10 @@ from typing import List
 """
 Time complexity: O(N²)
 Space complexity: O(1)
+
+根据木桶原理:  两根柱子所围成的面积取决于较低的柱子
+初始设定两个指针指向最左边和最右边的两个柱子
+每个循环都向更优解答靠近
 """
 
 
