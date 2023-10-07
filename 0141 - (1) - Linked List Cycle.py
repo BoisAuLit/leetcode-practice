@@ -21,13 +21,3 @@ class Solution:
             slow = slow.next
             fast = fast.next.next
         return False
-
-"""
-Runtime
-- 67ms
-- Beats 75.86%
-
-Memory
-20.35mb
-- Beats 75.47%
-"""
