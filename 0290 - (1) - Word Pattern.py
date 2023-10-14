@@ -1,7 +1,22 @@
-from collections import defaultdict
+"""
+Given a pattern and a string s, find if s follows the same pattern.
+Here follow means a full match,
+such that there is a [bijection] between a letter 
+in pattern and a non-empty word in s.
+
+Input: pattern = "abba", s = "dog cat cat dog"
+Output: true
+"""
 
 
 class Solution:
+    """
+    Time complexity: O(m+n)
+    --> m: length of s
+    --> n: length of pattern
+    Space complexity: O(n)
+    """
+
     def wordPattern(self, pattern: str, s: str) -> bool:
         words = s.split(" ")
         if len(pattern) != len(words):

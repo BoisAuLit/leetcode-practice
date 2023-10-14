@@ -1,4 +1,24 @@
+"""
+
+Given a string s, remove duplicate letters so that
+every letter appears once and only once.
+
+You must make sure your result is 
+the [smallest in lexicographical order]
+among all possible results.
+
+
+
+Solution: Let the duplicate small letters (abcd..)
+appear as early as possible.
+"""
+
+
 class Solution:
+    """
+    If the last added character can be removed to get a better result,
+    then remove it.
+    """
     def removeDuplicateLetters(self, s: str) -> int:
         last_occurrence = {letter: index for index, letter in enumerate(s)}
         result = []
