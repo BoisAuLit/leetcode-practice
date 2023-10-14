@@ -1,5 +1,8 @@
 from typing import List
 
+"""
+Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
+"""
 
 class Solution:
     def reverseArray(self, array: List[int], a: int, b: int) -> None:
