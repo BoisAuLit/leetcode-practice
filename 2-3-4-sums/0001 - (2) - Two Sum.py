@@ -1,7 +1,8 @@
 from typing import List
 
 """
-Given an array of integers nums and an integer target, return indices [A, B] such that array[A] + array[B] = target.
+Given an array of integers nums and an integer target,
+return indices [A, B] such that array[A] + array[B] = target.
 
 - There is exactly one solution.
 - One element cannot be used twice.

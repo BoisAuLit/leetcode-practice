@@ -3,7 +3,7 @@ from collections import defaultdict
 
 """
 Time complexity: O(NK)
-Space complexity: O(NK)
+Space complexity: O(N)
 """
 
 
