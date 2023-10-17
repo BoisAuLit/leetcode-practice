@@ -1,8 +1,19 @@
+from typing import List
+
 """
 Time complexity: O()
 Space complexity: O()
 """
 
+
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        left = 0
+        right = len(s) - 1
+        while left < right:
+            s[left], s[right] = s[right], s[left]
+            left += 1
+            right -= 1
 
 class Solution:
     def reverseString(self, s):
@@ -17,10 +28,10 @@ print(result)
 
 """
 Runtime
-- 218 ms
-- Beats 74.67%
+- 220 ms
+- Beats 66.65%
 
 Memory
-- 20.8 MB
+- 20.7 MB
 - Beats 55.12%
 """
