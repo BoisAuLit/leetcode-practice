@@ -8,38 +8,34 @@ Space complexity: O()
 
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
-        # Check all the rows
-        for i in range(9):
-            # check ith row
-            digits = set()
-            for j in range(9):
-                digit = board[i][j]
-                if digit in digits:
-                    return False
-                if digit.isdigit():
-                    digits.add(digit)
+        N = 9
 
-            # check ith column
-            digits = set()
-            for j in range(9):
-                digit = board[j][i]
-                if digit in digits:
-                    return False
-                if digit.isdigit():
-                    digits.add(digit)
+        rows = [set() for _ in range(N)]
+        cols = [set() for _ in range(N)]
+        boxes = [set() for _ in range(N)]
 
-            # check the 3x3 grids
-            row, column = divmod(i, 3)
-            digits = set()
-            rowStart = row * 3
-            columnStart = column * 3
-            for x in range(rowStart, rowStart + 3):
-                for y in range(columnStart, columnStart + 3):
-                    digit = board[x][y]
-                    if digit in digits:
-                        return False
-                    if digit.isdigit():
-                        digits.add(digit)
+        for r in range(N):
+            for c in range(N):
+                val = board[r][c]
+                if val == ".":
+                    continue
+
+                # Check the row
+                if val in rows[r]:
+                    return False
+                rows[r].add(val)
+
+                # Check the column
+                if val in cols[c]:
+                    return False
+                cols[c].add(val)
+
+                # Check the box
+                idx = (r // 3) * 3 + c // 3
+                if val in boxes[idx]:
+                    return False
+                boxes[idx].add(val)
+
         return True
 
 

@@ -1,8 +1,8 @@
 from typing import List
 
 """
-Time complexity: O(k²)
-Space complexity: O(k)
+Time complexity: O(numRows²)
+Space complexity: O(1)
 """
 
 

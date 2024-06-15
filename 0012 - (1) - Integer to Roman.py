@@ -27,6 +27,6 @@ class Solution:
 
 
 s = Solution()
-input_ = 10
+input_ = 1349
 result = s.intToRoman(input_)
 print(result)

@@ -39,16 +39,18 @@ class Solution:
 
 
 s = Solution()
-input_ = "123"
-input_ = "   123"
-input_ = "   +123"
-input_ = "   -123"
-input_ = "   -123###"
-input_ = "   -#123"
-input_ = "   -00000123"
-input_ = "   -" + "2" * 40
-input_ = "   +" + "2" * 40
-input_ = "   " + "2" * 40
-input_ = "   " + "2" * 40 + "#####"
+# input_ = "123"
+# input_ = "   123"
+# input_ = "   +123"
+# input_ = "   -123"
+# input_ = "   -123###"
+# input_ = "   -#123"
+# input_ = "   -00000123"
+# input_ = "   -" + "2" * 40
+# input_ = "   +" + "2" * 40
+# input_ = "   " + "2" * 40
+# input_ = "   " + "2" * 40 + "#####"
+# input_ = "2147483648"
+input_ = "-2147483648"
 result = s.myAtoi(input_)
 print(result)
