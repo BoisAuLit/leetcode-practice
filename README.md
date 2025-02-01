@@ -7,3 +7,11 @@
 
 ***
 
+Skip formatting:
+1. For a certain line
+# fmt: skip
+
+2. For a certain block
+
+# fmt: off
+# fmt: on

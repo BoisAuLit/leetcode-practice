@@ -1,31 +1,35 @@
 from typing import List
-from bisect import bisect_left
+from functools import lru_cache
+import math
 
 """
-Time complexity: O()
-Space complexity: O()
+Difficulty: Medium
+
+Files: "./assets/0300_craft.jpeg"
+
 """
+
 
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
-        sub = []
-        for num in nums:
-            i = bisect_left(sub, num)
+        length = len(nums)
 
-            # If num is greater than any element in sub
-            if i == len(sub):
-                sub.append(num)
-            
-            # Otherwise, replace the first element in sub greater than or equal to num
-            else:
-                sub[i] = num
-        
-        return len(sub)
+        @lru_cache(maxsize=None)
+        def dfs(p: int) -> int:
+            if p == length:
+                return 1
+            results = [0]
+            smallest_bigger_number = math.inf
+            for i in range(p + 1, length):
+                if nums[i] > nums[p] and nums[i] < smallest_bigger_number:
+                    smallest_bigger_number = nums[i]
+                    results.append(dfs(i))
+            return 1 + max(results)
+
+        return max(dfs(p) for p in range(length))
 
 
 s = Solution()
-input_ = [10,9,2,5,3,7,101,18] # 4
-# input_ = [0,1,0,3,2,3] # 4
-# input_ = [7,7,7,7,7,7,7] # 1
+input_ = [10, 9, 2, 5, 3, 7, 101, 18]
 result = s.lengthOfLIS(input_)
 print(result)
