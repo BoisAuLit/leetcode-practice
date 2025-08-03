@@ -13,7 +13,6 @@ class TreeNode:
         self.left = left
         self.right = right
 
-
 class Solution:
     def isSameTree(self, p, q):
         def check(p, q):
@@ -21,9 +20,7 @@ class Solution:
                 return True
             if not q or not p:
                 return False
-            if p.val != q.val:
-                return False
-            return True
+            return p.val == q.val
 
         deq = deque([(p, q)])
         while deq:
