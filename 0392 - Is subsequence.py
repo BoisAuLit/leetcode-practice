@@ -1,33 +1,31 @@
-class Solution:
+class Solution_Greedy_Divide_And_Conquer_1_Recursion:
     def isSubsequence(self, s: str, t: str) -> bool:
-        p1 = p2 = 0
-        while p1 < len(s):
-            while p2 < len(t) and t[p2] != s[p1]:
-                p2 += 1
-            if p2 >= len(t):
-                return False
-            if p1 == len(s) - 1:
+        LEFT_BOUND, RIGHT_BOUND = len(s), len(t)
+
+        def rec_isSubsequence(left_index, right_index):
+            # base cases
+            if left_index == LEFT_BOUND:
                 return True
-            p1 += 1
-            p2 += 1
-        return True
+            if right_index == RIGHT_BOUND:
+                return False
+            # consume both strings or just the target string
+            if s[left_index] == t[right_index]:
+                left_index += 1
+            right_index += 1
 
+            return rec_isSubsequence(left_index, right_index)
 
-solution = Solution()
+        return rec_isSubsequence(0, 0)
 
-# Expecting True
-# s = "abc"
-# t = "ahbgdc"
+class Solution_Greedy_Divide_And_Conquer_2_Iteration:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        LEFT_BOUND, RIGHT_BOUND = len(s), len(t)
 
-# Expecting False
-# s = "axc"
-# t = "ahbgdc"
+        p_left = p_right = 0
+        while p_left < LEFT_BOUND and p_right < RIGHT_BOUND:
+            # move both pointers or just the right pointer
+            if s[p_left] == t[p_right]:
+                p_left += 1
+            p_right += 1
 
-# Expecting False
-s = ""
-t = "ahbgdc"
-
-
-
-result = solution.isSubsequence(s, t)
-print(result)
+        return p_left == LEFT_BOUND
