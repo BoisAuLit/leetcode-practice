@@ -2,8 +2,8 @@ from typing import List
 import heapq
 
 """
-Time: O(E²log(E))
-Space: O(E²)
+Time: O(N²log(N))
+Space: O(N²)
 """
 
 

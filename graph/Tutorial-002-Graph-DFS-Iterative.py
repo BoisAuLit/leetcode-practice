@@ -1,14 +1,15 @@
 from typing import Dict, List
 
 class Solution:
-    def dfs_recursive(self, graph: Dict[str, List[str]], start: str, visited=None):
+    def dfs(self, graph: Dict[str, List[str]], start: str, visited=None):
         visited = set()
         stack = [start]
 
         while stack:
             node = stack.pop()
             if node not in visited:
-                visited.add(node)
+                # ! DFS Iterative always mark node as visited in the loop
+                visited.add(node) 
                 print(node, end=" ")  # or collect in a list
                 # Add neighbors in reverse to maintain left-to-right order
                 stack.extend(reversed(graph[node]))
@@ -23,4 +24,4 @@ graph = {
     'E': ['F'],
     'F': []
 }
-s.dfs_recursive(graph, 'A')
+s.dfs(graph, 'A')

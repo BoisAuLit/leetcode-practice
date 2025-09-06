@@ -1,5 +1,9 @@
 from collections import defaultdict, deque
 
+"""
+Time complexity: O(N + E·k)
+Space complexity: O(N + E·k)
+"""
 
 class Solution:
     def findCheapestPrice(self, n, flights, src, dst, k):

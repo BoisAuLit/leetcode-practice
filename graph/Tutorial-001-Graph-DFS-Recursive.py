@@ -1,15 +1,16 @@
 from typing import Dict, List
 
 class Solution:
-    def dfs_recursive(self, graph: Dict[str, List[str]], node: str, visited=None):
+    def dfs(self, graph: Dict[str, List[str]], node: str, visited=None):
         if visited is None:
             visited = set()
+        # ! DFS recursive always mark current node as visited in the beginning
         visited.add(node)
         print(node, end=" ")
 
         for neighbor in graph[node]:
             if neighbor not in visited:
-                self.dfs_recursive(graph, neighbor, visited)
+                self.dfs(graph, neighbor, visited)
         
 
 s = Solution()
@@ -21,4 +22,4 @@ graph = {
     'E': ['F'],
     'F': []
 }
-s.dfs_recursive(graph, 'A')
+s.dfs(graph, 'A')

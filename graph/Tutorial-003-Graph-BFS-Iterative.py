@@ -2,12 +2,13 @@ from typing import Dict, List
 from collections import deque
 
 class Solution:
-    def bfs_iterative(self, graph: Dict[str, List[str]], start: str):
+    def bfs(self, graph: Dict[str, List[str]], start: str):
         visited = set()
         queue = deque([start])
         while queue:
             node = queue.popleft()
             if node not in visited:
+                # ! BFS Iterative always mark node as visited in the loop
                 visited.add(node)
                 print(node, end= " ")
                 queue.extend(graph[node])
@@ -21,5 +22,5 @@ graph = {
     'E': ['F'],
     'F': []
 }
-result = s.bfs_iterative(graph, 'A')
+result = s.bfs(graph, 'A')
 
