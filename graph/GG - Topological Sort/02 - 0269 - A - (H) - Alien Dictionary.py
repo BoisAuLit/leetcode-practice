@@ -23,7 +23,8 @@ shorter word come fist! Because ⦰ < [any letter]
 
 class Solution:
     def alienOrder(self, words: List[str]) -> str:
-        if len(words) == 1:
+        n = len(words)
+        if n == 1:
             return "".join(set(words[0]))
 
         def get_dep(word1: str, word2: str) -> Tuple[str, str, bool]:
@@ -32,6 +33,7 @@ class Solution:
             i = 0
 
             while True:
+
                 # word1 and word2 share common prefix
                 # word2 is longer than word1
                 # From here
@@ -52,32 +54,32 @@ class Solution:
                 if word1[i] == word2[i]:
                     i += 1
                     continue
-                else:
-                    return word1[i], word2[i], False
+                return word1[i], word2[i], False
 
         all_letters = set()
         graph = defaultdict(set)
+
+        # ! This stores all the predecessors (prerequisites) count for a given node
         in_degree = defaultdict(int)
-        encountered_in_degrees = set()
-        for i in range(len(words) - 1):
-            curr_word = words[i]
-            next_word = words[i + 1]
-            all_letters.update(curr_word)
-            if i == len(words) - 2:
-                all_letters.update(next_word)
-            x, y, should_terminate = get_dep(curr_word, next_word)
-            if should_terminate:
+        edges = set()
+        for i in range(n - 1):
+            all_letters.update(words[i])
+            x, y, finish = get_dep(words[i], words[i + 1])
+            if finish:
                 return ""
             if x == -1:
                 continue
             graph[x].add(y)
-            if (x, y) not in encountered_in_degrees:
-                encountered_in_degrees.add((x, y))
+
+            # ! Here we want to make sure not to count twice in degrees
+            if (x, y) not in edges:
+                edges.add((x, y))
                 in_degree[y] += 1
+        all_letters.update(words[-1])
 
         # ! This is very important, for special case ['z', 'z']
         if len(all_letters) == 1:
-            return list(all_letters)[0]
+            return next(iter(all_letters))
 
         queue = deque()  # Letters without prerequisites
         for letter in all_letters:

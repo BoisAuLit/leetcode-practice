@@ -13,13 +13,13 @@ class Solution:
             graph[pre].append(course)
 
         queue = deque()
-        # Append courses with no prerequisites to the queue
+        # ! Append courses with no prerequisites to the queue
         for course, degree in enumerate(in_degree):
             if degree == 0:
                 queue.append(course)
 
-        index = 0 # Position to insert the next element in the order array (result)
-        order = [0] * numCourses # Array to store the topsorted elements
+        index = 0 # ! Position to insert the next element in the order array (result)
+        order = [0] * numCourses # ! Array to store the topsorted elements
         while queue:
             node = queue.popleft()
             order[index] = node
@@ -29,7 +29,7 @@ class Solution:
                 if in_degree[neigh] == 0:
                     queue.append(neigh)
         if index != numCourses:
-            return []  # It means containing a cycle
+            return []  # ! It means containing a cycle
         return order
 
 
