@@ -1,0 +1,323 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="1903" viewBox="0 0 1760 1903" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif">
+<title>11-graphs · 图论解题地图</title>
+<rect width="1760" height="1903" fill="#F4F6FA"/>
+<rect x="40" y="40" width="1680" height="108" rx="14" fill="#0F172A"/>
+<text x="68.0" y="82.0" font-size="26" fill="#FFFFFF" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">11-graphs · 图论解题地图</text>
+<text x="68.0" y="110.0" font-size="14" fill="#CBD5E1" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">看到题先问「它在问什么？」→ 找到类别（编号 = 文件夹）→ 看图型标签 → 套算法</text>
+<text x="68.0" y="132.0" font-size="12.5" fill="#94A3B8" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">标签：琥珀色 = 硬性前提（仅无向 / 仅无权 / 仅 DAG…）· 灰色 = 适用范围　｜　算法 → 题目反向索引：00 - GRAPH ALGORITHM INDEX.md</text>
+<text x="1696.0" y="82.0" font-size="12.5" fill="#64748B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="end">2026-08-23</text>
+<rect x="40.0" y="174.0" width="544.0" height="361.0" fill="#FFFFFF" stroke="#CBD5E1" rx="12"/>
+<rect x="40.0" y="186.0" width="6.0" height="337.0" fill="#2563EB" stroke="none" rx="3"/>
+<rect x="70.0" y="192.0" width="38.0" height="28.0" fill="#2563EB" stroke="none" rx="8"/>
+<text x="89.0" y="213.0" font-size="15" fill="#FFFFFF" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="middle">01</text>
+<text x="120.0" y="213.0" font-size="17.5" fill="#2563EB" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Reachability &amp; Traversal</text>
+<text x="70.0" y="248.0" font-size="21" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">能不能到？能到哪些点？</text>
+<rect x="70.0" y="262.0" width="105.9" height="22.0" fill="#E8EDF3" stroke="none" rx="11"/>
+<text x="79.0" y="277.5" font-size="12" fill="#475569" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">有向 · 无向 都可</text>
+<rect x="183.9" y="262.0" width="67.4" height="22.0" fill="#E8EDF3" stroke="none" rx="11"/>
+<text x="192.9" y="277.5" font-size="12" fill="#475569" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">权重无关</text>
+<rect x="70.0" y="305.5" width="53.8" height="26.0" fill="#2563EB" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="80.0" y="324.0" font-size="15.5" fill="#2563EB" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">DFS</text>
+<rect x="132.8" y="305.5" width="52.9" height="26.0" fill="#2563EB" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="142.8" y="324.0" font-size="15.5" fill="#2563EB" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">BFS</text>
+<text x="194.8" y="324.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">遍历整块；入队 / 入栈时立即标 seen</text>
+<text x="70.0" y="357.0" font-size="14.5" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">反复查询连通 →</text>
+<rect x="193.2" y="338.5" width="102.8" height="26.0" fill="#2563EB" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="203.2" y="357.0" font-size="15.5" fill="#2563EB" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Union-Find</text>
+<line x1="70.0" y1="372.0" x2="564.0" y2="372.0" stroke="#E2E8F0" stroke-width="1"/>
+<text x="70.0" y="397.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">1971</text>
+<text x="128.0" y="397.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Find if Path Exists — DFS / BFS / UF（6 解）</text>
+<text x="70.0" y="419.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0133</text>
+<text x="128.0" y="419.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Clone Graph — DFS / BFS + old→copy map</text>
+<text x="70.0" y="441.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0130</text>
+<text x="128.0" y="441.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Surrounded Regions — 从边界 O 反向 BFS</text>
+<text x="70.0" y="463.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0417</text>
+<text x="128.0" y="463.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Pacific Atlantic — 两海洋反向 BFS，取交集</text>
+<rect x="608.0" y="174.0" width="544.0" height="361.0" fill="#FFFFFF" stroke="#CBD5E1" rx="12"/>
+<rect x="608.0" y="186.0" width="6.0" height="337.0" fill="#0891B2" stroke="none" rx="3"/>
+<rect x="638.0" y="192.0" width="38.0" height="28.0" fill="#0891B2" stroke="none" rx="8"/>
+<text x="657.0" y="213.0" font-size="15" fill="#FFFFFF" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="middle">02</text>
+<text x="688.0" y="213.0" font-size="17.5" fill="#0891B2" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Connected Components</text>
+<text x="638.0" y="248.0" font-size="21" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">图里有几块？每块多大？</text>
+<rect x="638.0" y="262.0" width="77.7" height="22.0" fill="#E8EDF3" stroke="none" rx="11"/>
+<text x="647.0" y="277.5" font-size="12" fill="#475569" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">无向 / 网格</text>
+<rect x="723.7" y="262.0" width="67.4" height="22.0" fill="#E8EDF3" stroke="none" rx="11"/>
+<text x="732.7" y="277.5" font-size="12" fill="#475569" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">权重无关</text>
+<rect x="638.0" y="305.5" width="53.8" height="26.0" fill="#0891B2" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="648.0" y="324.0" font-size="15.5" fill="#0891B2" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">DFS</text>
+<rect x="700.8" y="305.5" width="52.9" height="26.0" fill="#0891B2" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="710.8" y="324.0" font-size="15.5" fill="#0891B2" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">BFS</text>
+<text x="762.8" y="324.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">遇到 unseen ⇒ 块数 +1，标完整块</text>
+<rect x="638.0" y="338.5" width="102.8" height="26.0" fill="#0891B2" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="648.0" y="357.0" font-size="15.5" fill="#0891B2" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Union-Find</text>
+<text x="749.8" y="357.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">count = n − 成功 union 次数</text>
+<line x1="638.0" y1="372.0" x2="1132.0" y2="372.0" stroke="#E2E8F0" stroke-width="1"/>
+<text x="638.0" y="397.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0200</text>
+<text x="696.0" y="397.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Number of Islands — grid flood fill ×3</text>
+<text x="638.0" y="419.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0695</text>
+<text x="696.0" y="419.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Max Area of Island — flood fill + 计数</text>
+<text x="638.0" y="441.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0547</text>
+<text x="696.0" y="441.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Number of Provinces — Union-Find</text>
+<text x="638.0" y="463.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0323</text>
+<text x="696.0" y="463.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Connected Components — UF / DFS / BFS</text>
+<text x="638.0" y="482.0" font-size="12.5" fill="#64748B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">有向图的「分块」是强连通分量 SCC（Tarjan，未收录）</text>
+<rect x="1176.0" y="174.0" width="544.0" height="361.0" fill="#FFFFFF" stroke="#CBD5E1" rx="12"/>
+<rect x="1176.0" y="186.0" width="6.0" height="337.0" fill="#DB2777" stroke="none" rx="3"/>
+<rect x="1206.0" y="192.0" width="38.0" height="28.0" fill="#DB2777" stroke="none" rx="8"/>
+<text x="1225.0" y="213.0" font-size="15" fill="#FFFFFF" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="middle">03</text>
+<text x="1256.0" y="213.0" font-size="17.5" fill="#DB2777" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Cycle Detection</text>
+<text x="1206.0" y="248.0" font-size="21" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">有没有环？</text>
+<rect x="1206.0" y="262.0" width="137.4" height="22.0" fill="#FEF3C7" stroke="none" rx="11"/>
+<text x="1215.0" y="277.5" font-size="12" fill="#92400E" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">无向 / 有向 方法不同</text>
+<rect x="1351.4" y="262.0" width="67.4" height="22.0" fill="#E8EDF3" stroke="none" rx="11"/>
+<text x="1360.4" y="277.5" font-size="12" fill="#475569" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">权重无关</text>
+<text x="1206.0" y="320.0" font-size="12.5" fill="#64748B" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start" letter-spacing="0.5">无向 · Undirected</text>
+<rect x="1206.0" y="334.5" width="102.8" height="26.0" fill="#DB2777" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="1216.0" y="353.0" font-size="15.5" fill="#DB2777" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Union-Find</text>
+<text x="1317.8" y="353.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">union 时已同根 ⇒ 环</text>
+<rect x="1206.0" y="367.5" width="100.9" height="26.0" fill="#DB2777" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="1216.0" y="386.0" font-size="15.5" fill="#DB2777" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">DFS / BFS</text>
+<text x="1315.9" y="386.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">带 parent；遇 visited 非 parent ⇒ 环</text>
+<text x="1206.0" y="408.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0261</text>
+<text x="1264.0" y="408.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Graph Valid Tree — n−1 条边 + 连通 ⇔ 树</text>
+<text x="1206.0" y="430.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0684</text>
+<text x="1264.0" y="430.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Redundant Connection — 逐边连通性 / 剥叶子</text>
+<text x="1206.0" y="459.0" font-size="12.5" fill="#64748B" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start" letter-spacing="0.5">有向 · Directed</text>
+<rect x="1206.0" y="473.5" width="110.3" height="26.0" fill="#DB2777" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="1216.0" y="492.0" font-size="15.5" fill="#DB2777" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">DFS 3-state</text>
+<text x="1325.3" y="492.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">VISITING ⇒ 环</text>
+<rect x="1428.3" y="473.5" width="59.5" height="26.0" fill="#DB2777" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="1438.3" y="492.0" font-size="15.5" fill="#DB2777" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Kahn</text>
+<text x="1496.8" y="492.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">处理数 &lt; n ⇒ 环</text>
+<text x="1206.0" y="514.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0207</text>
+<text x="1264.0" y="514.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Course Schedule — DFS 3-state / Kahn</text>
+<rect x="40.0" y="559.0" width="544.0" height="355.0" fill="#FFFFFF" stroke="#CBD5E1" rx="12"/>
+<rect x="40.0" y="571.0" width="6.0" height="331.0" fill="#7C3AED" stroke="none" rx="3"/>
+<rect x="70.0" y="577.0" width="38.0" height="28.0" fill="#7C3AED" stroke="none" rx="8"/>
+<text x="89.0" y="598.0" font-size="15" fill="#FFFFFF" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="middle">04</text>
+<text x="120.0" y="598.0" font-size="17.5" fill="#7C3AED" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Dependency &amp; Topological Sort</text>
+<text x="70.0" y="633.0" font-size="21" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">有依赖，求先后顺序？</text>
+<rect x="70.0" y="647.0" width="89.3" height="22.0" fill="#FEF3C7" stroke="none" rx="11"/>
+<text x="79.0" y="662.5" font-size="12" fill="#92400E" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">仅有向 DAG</text>
+<rect x="167.3" y="647.0" width="67.4" height="22.0" fill="#E8EDF3" stroke="none" rx="11"/>
+<text x="176.3" y="662.5" font-size="12" fill="#475569" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">权重无关</text>
+<rect x="70.0" y="690.5" width="59.5" height="26.0" fill="#7C3AED" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="80.0" y="709.0" font-size="15.5" fill="#7C3AED" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Kahn</text>
+<text x="138.5" y="709.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">入度 0 入队；分层 = 最少轮数</text>
+<rect x="70.0" y="723.5" width="92.4" height="26.0" fill="#7C3AED" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="80.0" y="742.0" font-size="15.5" fill="#7C3AED" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">DFS 后序</text>
+<text x="171.4" y="742.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">reverse 后即拓扑序；有环 ⇒ 无解</text>
+<line x1="70.0" y1="757.0" x2="564.0" y2="757.0" stroke="#E2E8F0" stroke-width="1"/>
+<text x="70.0" y="782.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0210</text>
+<text x="128.0" y="782.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Course Schedule II — DFS 后序 / Kahn</text>
+<text x="70.0" y="804.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0269</text>
+<text x="128.0" y="804.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Alien Dictionary — 相邻词首个不同字母建边</text>
+<text x="70.0" y="826.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">1136</text>
+<text x="128.0" y="826.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Parallel Courses — Kahn 分层 = 学期数</text>
+<text x="70.0" y="848.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0310</text>
+<text x="128.0" y="848.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Min Height Trees — 剥叶子到树心（无向树）</text>
+<rect x="608.0" y="559.0" width="544.0" height="355.0" fill="#FFFFFF" stroke="#CBD5E1" rx="12"/>
+<rect x="608.0" y="571.0" width="6.0" height="331.0" fill="#0D9488" stroke="none" rx="3"/>
+<rect x="638.0" y="577.0" width="38.0" height="28.0" fill="#0D9488" stroke="none" rx="8"/>
+<text x="657.0" y="598.0" font-size="15" fill="#FFFFFF" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="middle">05</text>
+<text x="688.0" y="598.0" font-size="17.5" fill="#0D9488" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Unweighted Shortest Path</text>
+<text x="638.0" y="633.0" font-size="21" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">最少走几步？</text>
+<rect x="638.0" y="647.0" width="149.0" height="22.0" fill="#FEF3C7" stroke="none" rx="11"/>
+<text x="647.0" y="662.5" font-size="12" fill="#92400E" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">仅无权（边权全相同）</text>
+<rect x="795.0" y="647.0" width="105.9" height="22.0" fill="#E8EDF3" stroke="none" rx="11"/>
+<text x="804.0" y="662.5" font-size="12" fill="#475569" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">有向 · 无向 都可</text>
+<rect x="638.0" y="690.5" width="52.9" height="26.0" fill="#0D9488" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="648.0" y="709.0" font-size="15.5" fill="#0D9488" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">BFS</text>
+<text x="699.9" y="709.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">第一次出队即最短；❌ 别用 DFS</text>
+<line x1="638.0" y1="724.0" x2="1132.0" y2="724.0" stroke="#E2E8F0" stroke-width="1"/>
+<text x="638.0" y="749.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">1091</text>
+<text x="696.0" y="749.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Shortest Path in Binary Matrix — 8 方向 BFS</text>
+<text x="638.0" y="771.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0127</text>
+<text x="696.0" y="771.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Word Ladder — 单词 = 节点，改一字母 = 边</text>
+<text x="638.0" y="793.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">3552</text>
+<text x="696.0" y="793.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Grid Teleportation — 传送门 0 成本，分层</text>
+<text x="638.0" y="812.0" font-size="12.5" fill="#64748B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">带权 → 06；权重只有 0/1 → 0-1 BFS（deque）</text>
+<rect x="1176.0" y="559.0" width="544.0" height="355.0" fill="#FFFFFF" stroke="#CBD5E1" rx="12"/>
+<rect x="1176.0" y="571.0" width="6.0" height="331.0" fill="#EA580C" stroke="none" rx="3"/>
+<rect x="1206.0" y="577.0" width="38.0" height="28.0" fill="#EA580C" stroke="none" rx="8"/>
+<text x="1225.0" y="598.0" font-size="15" fill="#FFFFFF" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="middle">06</text>
+<text x="1256.0" y="598.0" font-size="17.5" fill="#EA580C" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Weighted Shortest Path</text>
+<text x="1206.0" y="633.0" font-size="21" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">带权图，最便宜怎么走？</text>
+<rect x="1206.0" y="647.0" width="44.2" height="22.0" fill="#FEF3C7" stroke="none" rx="11"/>
+<text x="1215.0" y="662.5" font-size="12" fill="#92400E" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">带权</text>
+<rect x="1258.2" y="647.0" width="105.9" height="22.0" fill="#E8EDF3" stroke="none" rx="11"/>
+<text x="1267.2" y="662.5" font-size="12" fill="#475569" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">有向 · 无向 都可</text>
+<text x="1206.0" y="709.0" font-size="14.5" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">权重全 ≥ 0 →</text>
+<rect x="1308.6" y="690.5" width="76.4" height="26.0" fill="#EA580C" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="1318.6" y="709.0" font-size="15.5" fill="#EA580C" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Dijkstra</text>
+<text x="1394.0" y="709.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">第一次 pop 即最终距离</text>
+<text x="1206.0" y="731.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0743</text>
+<text x="1264.0" y="731.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Network Delay Time — 纯种 Dijkstra</text>
+<text x="1206.0" y="764.0" font-size="14.5" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">有负权 →</text>
+<rect x="1281.7" y="745.5" width="121.6" height="26.0" fill="#EA580C" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="1291.7" y="764.0" font-size="15.5" fill="#EA580C" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Bellman-Ford</text>
+<rect x="1412.3" y="745.5" width="64.2" height="26.0" fill="#EA580C" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="1422.3" y="764.0" font-size="15.5" fill="#EA580C" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">SPFA</text>
+<text x="1206.0" y="783.0" font-size="12.5" fill="#64748B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">无向负边一来一回 = 负环 ⇒ 负权本质是有向图问题</text>
+<text x="1206.0" y="816.0" font-size="14.5" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">≤ k 条边 →</text>
+<rect x="1291.9" y="797.5" width="175.6" height="26.0" fill="#EA580C" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="1301.9" y="816.0" font-size="15.5" fill="#EA580C" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Bellman-Ford k+1 轮</text>
+<text x="1476.5" y="816.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">用上一轮 copy</text>
+<text x="1206.0" y="838.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0787</text>
+<text x="1264.0" y="838.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Cheapest Flights Within K Stops — 7 解</text>
+<text x="1206.0" y="871.0" font-size="14.5" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">最小化最大边 →</text>
+<rect x="1329.2" y="852.5" width="127.7" height="26.0" fill="#EA580C" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="1339.2" y="871.0" font-size="15.5" fill="#EA580C" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Dijkstra + max</text>
+<text x="1206.0" y="893.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">1631</text>
+<text x="1264.0" y="893.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Path With Minimum Effort</text>
+<rect x="40.0" y="938.0" width="544.0" height="304.0" fill="#FFFFFF" stroke="#CBD5E1" rx="12"/>
+<rect x="40.0" y="950.0" width="6.0" height="280.0" fill="#16A34A" stroke="none" rx="3"/>
+<rect x="70.0" y="956.0" width="38.0" height="28.0" fill="#16A34A" stroke="none" rx="8"/>
+<text x="89.0" y="977.0" font-size="15" fill="#FFFFFF" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="middle">07</text>
+<text x="120.0" y="977.0" font-size="17.5" fill="#16A34A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Minimum Spanning Tree</text>
+<text x="70.0" y="1012.0" font-size="21" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">最便宜地把所有点连起来？</text>
+<rect x="70.0" y="1026.0" width="57.3" height="22.0" fill="#FEF3C7" stroke="none" rx="11"/>
+<text x="79.0" y="1041.5" font-size="12" fill="#92400E" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">仅无向</text>
+<rect x="135.3" y="1026.0" width="44.2" height="22.0" fill="#FEF3C7" stroke="none" rx="11"/>
+<text x="144.3" y="1041.5" font-size="12" fill="#92400E" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">带权</text>
+<rect x="70.0" y="1069.5" width="76.4" height="26.0" fill="#16A34A" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="80.0" y="1088.0" font-size="15.5" fill="#16A34A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Kruskal</text>
+<text x="155.4" y="1088.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">排序边 + UF；稀疏图 / 边列表</text>
+<rect x="70.0" y="1102.5" width="54.8" height="26.0" fill="#16A34A" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="80.0" y="1121.0" font-size="15.5" fill="#16A34A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Prim</text>
+<text x="133.8" y="1121.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">heap 长树；稠密图 / 完全图</text>
+<line x1="70.0" y1="1136.0" x2="564.0" y2="1136.0" stroke="#E2E8F0" stroke-width="1"/>
+<text x="70.0" y="1161.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">1584</text>
+<text x="128.0" y="1161.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Min Cost to Connect All Points — Kruskal 🐢 / Prim 🚀</text>
+<text x="70.0" y="1183.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">1168</text>
+<text x="128.0" y="1183.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Optimize Water Distribution — 虚拟节点（待重做）</text>
+<text x="70.0" y="1202.0" font-size="12.5" fill="#64748B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Union-Find 是 Kruskal 的零件，不是另一种 MST 算法</text>
+<text x="70.0" y="1221.0" font-size="12.5" fill="#64748B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">有向图版本 = Arborescence（Chu-Liu / Edmonds，未收录）</text>
+<rect x="608.0" y="938.0" width="544.0" height="304.0" fill="#FFFFFF" stroke="#CBD5E1" rx="12"/>
+<rect x="608.0" y="950.0" width="6.0" height="280.0" fill="#4F46E5" stroke="none" rx="3"/>
+<rect x="638.0" y="956.0" width="38.0" height="28.0" fill="#4F46E5" stroke="none" rx="8"/>
+<text x="657.0" y="977.0" font-size="15" fill="#FFFFFF" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="middle">08</text>
+<text x="688.0" y="977.0" font-size="17.5" fill="#4F46E5" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Union-Find</text>
+<text x="638.0" y="1012.0" font-size="21" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">动态连通性？（边只加不删）</text>
+<rect x="638.0" y="1026.0" width="57.3" height="22.0" fill="#FEF3C7" stroke="none" rx="11"/>
+<text x="647.0" y="1041.5" font-size="12" fill="#92400E" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">仅无向</text>
+<rect x="703.3" y="1026.0" width="67.4" height="22.0" fill="#E8EDF3" stroke="none" rx="11"/>
+<text x="712.3" y="1041.5" font-size="12" fill="#475569" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">权重无关</text>
+<rect x="638.0" y="1069.5" width="102.8" height="26.0" fill="#4F46E5" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="648.0" y="1088.0" font-size="15.5" fill="#4F46E5" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Union-Find</text>
+<text x="749.8" y="1088.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">路径压缩 + union by rank ⇒ O(α(n)) ≈ O(1)</text>
+<line x1="638.0" y1="1103.0" x2="1132.0" y2="1103.0" stroke="#E2E8F0" stroke-width="1"/>
+<text x="638.0" y="1128.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">模板</text>
+<text x="696.0" y="1128.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">00 - UnionFind Template.py</text>
+<text x="638.0" y="1150.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">1101</text>
+<text x="696.0" y="1150.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Earliest Moment Friends — 按时间 union 到 count = 1</text>
+<text x="638.0" y="1172.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">1202</text>
+<text x="696.0" y="1172.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Smallest String With Swaps — 按根分组 + 组内排序</text>
+<text x="638.0" y="1191.0" font-size="12.5" fill="#64748B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">其它 UF 题存在各自类型里 → Union-Find Applications.md</text>
+<rect x="1176.0" y="938.0" width="544.0" height="304.0" fill="#FFFFFF" stroke="#CBD5E1" rx="12"/>
+<rect x="1176.0" y="950.0" width="6.0" height="280.0" fill="#CA8A04" stroke="none" rx="3"/>
+<rect x="1206.0" y="956.0" width="38.0" height="28.0" fill="#CA8A04" stroke="none" rx="8"/>
+<text x="1225.0" y="977.0" font-size="15" fill="#FFFFFF" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="middle">09</text>
+<text x="1256.0" y="977.0" font-size="17.5" fill="#CA8A04" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Eulerian Path</text>
+<text x="1206.0" y="1012.0" font-size="21" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">每条边恰好走一次？</text>
+<rect x="1206.0" y="1026.0" width="130.6" height="22.0" fill="#E8EDF3" stroke="none" rx="11"/>
+<text x="1215.0" y="1041.5" font-size="12" fill="#475569" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">有向 · 无向 条件不同</text>
+<rect x="1344.6" y="1026.0" width="67.4" height="22.0" fill="#E8EDF3" stroke="none" rx="11"/>
+<text x="1353.6" y="1041.5" font-size="12" fill="#475569" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">权重无关</text>
+<rect x="1206.0" y="1069.5" width="97.1" height="26.0" fill="#CA8A04" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="1216.0" y="1088.0" font-size="15.5" fill="#CA8A04" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Hierholzer</text>
+<text x="1312.1" y="1088.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">走到死路 → post-order append → 最后 reverse</text>
+<text x="1206.0" y="1107.0" font-size="12.5" fill="#64748B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">存在条件 — 无向：奇度点 0 或 2 个；有向：起点 out−in=1，终点 in−out=1，其余相等</text>
+<line x1="1206.0" y1="1122.0" x2="1700.0" y2="1122.0" stroke="#E2E8F0" stroke-width="1"/>
+<text x="1206.0" y="1147.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0332</text>
+<text x="1264.0" y="1147.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Reconstruct Itinerary — 递归 / 迭代（reverse 排序 pop 最小）</text>
+<text x="1206.0" y="1166.0" font-size="12.5" fill="#64748B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">「每个点恰好一次」是 Hamiltonian，NP-hard，不在这里</text>
+<rect x="40.0" y="1266.0" width="544.0" height="354.0" fill="#FFFFFF" stroke="#CBD5E1" rx="12"/>
+<rect x="40.0" y="1278.0" width="6.0" height="330.0" fill="#9333EA" stroke="none" rx="3"/>
+<rect x="70.0" y="1284.0" width="38.0" height="28.0" fill="#9333EA" stroke="none" rx="8"/>
+<text x="89.0" y="1305.0" font-size="15" fill="#FFFFFF" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="middle">10</text>
+<text x="120.0" y="1305.0" font-size="17.5" fill="#9333EA" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Enumerating &amp; Validating Paths</text>
+<text x="70.0" y="1340.0" font-size="21" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">返回 / 验证所有路径？</text>
+<rect x="70.0" y="1354.0" width="101.1" height="22.0" fill="#E8EDF3" stroke="none" rx="11"/>
+<text x="79.0" y="1369.5" font-size="12" fill="#475569" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">有向 DAG 为主</text>
+<rect x="179.1" y="1354.0" width="67.4" height="22.0" fill="#E8EDF3" stroke="none" rx="11"/>
+<text x="188.1" y="1369.5" font-size="12" fill="#475569" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">权重无关</text>
+<text x="70.0" y="1416.0" font-size="14.5" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">枚举全部 →</text>
+<rect x="161.6" y="1397.5" width="170.0" height="26.0" fill="#9333EA" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="171.6" y="1416.0" font-size="15.5" fill="#9333EA" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">DFS + Backtracking</text>
+<text x="340.6" y="1416.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">append → 递归 → pop</text>
+<text x="70.0" y="1449.0" font-size="14.5" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">验证全部 →</text>
+<rect x="161.6" y="1430.5" width="110.3" height="26.0" fill="#9333EA" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="171.6" y="1449.0" font-size="15.5" fill="#9333EA" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">DFS 3-state</text>
+<text x="280.8" y="1449.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">环 ⇒ False</text>
+<line x1="70.0" y1="1464.0" x2="564.0" y2="1464.0" stroke="#E2E8F0" stroke-width="1"/>
+<text x="70.0" y="1489.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0797</text>
+<text x="128.0" y="1489.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">All Paths Source→Target — 回溯 🚀 / 记忆化 / BFS</text>
+<text x="70.0" y="1511.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">1059</text>
+<text x="128.0" y="1511.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">All Paths Lead to Destination — 叶子必须是 t</text>
+<text x="70.0" y="1530.0" font-size="12.5" fill="#64748B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">路径数是指数级 O(2ᴺ·N)，别指望更快</text>
+<rect x="608.0" y="1266.0" width="544.0" height="354.0" fill="#FFFFFF" stroke="#CBD5E1" rx="12"/>
+<rect x="608.0" y="1278.0" width="6.0" height="330.0" fill="#0284C7" stroke="none" rx="3"/>
+<rect x="638.0" y="1284.0" width="38.0" height="28.0" fill="#0284C7" stroke="none" rx="8"/>
+<text x="657.0" y="1305.0" font-size="15" fill="#FFFFFF" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="middle">11</text>
+<text x="688.0" y="1305.0" font-size="17.5" fill="#0284C7" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Multi-Source &amp; Level BFS</text>
+<text x="638.0" y="1340.0" font-size="21" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">多点同时扩散？逐层计数？</text>
+<rect x="638.0" y="1354.0" width="57.3" height="22.0" fill="#FEF3C7" stroke="none" rx="11"/>
+<text x="647.0" y="1369.5" font-size="12" fill="#92400E" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">仅无权</text>
+<rect x="703.3" y="1354.0" width="100.4" height="22.0" fill="#E8EDF3" stroke="none" rx="11"/>
+<text x="712.3" y="1369.5" font-size="12" fill="#475569" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">网格 / 树 / 无向</text>
+<rect x="638.0" y="1397.5" width="91.5" height="26.0" fill="#0284C7" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="648.0" y="1416.0" font-size="15.5" fill="#0284C7" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">多源 BFS</text>
+<text x="738.5" y="1416.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">所有源一起入队（dist = 0）</text>
+<rect x="638.0" y="1430.5" width="91.5" height="26.0" fill="#0284C7" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="648.0" y="1449.0" font-size="15.5" fill="#0284C7" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">分层 BFS</text>
+<text x="738.5" y="1449.0" font-size="13.5" fill="#334155" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">for _ in range(len(queue))；层数 = 时间 / 距离</text>
+<line x1="638.0" y1="1464.0" x2="1132.0" y2="1464.0" stroke="#E2E8F0" stroke-width="1"/>
+<text x="638.0" y="1489.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0994</text>
+<text x="696.0" y="1489.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Rotting Oranges — 多源 + 分层计时</text>
+<text x="638.0" y="1511.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0286</text>
+<text x="696.0" y="1511.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Walls and Gates — 所有 gate 一起入队</text>
+<text x="638.0" y="1533.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0934</text>
+<text x="696.0" y="1533.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Shortest Bridge — flood fill 岛 A → 多源 BFS</text>
+<text x="638.0" y="1555.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0317</text>
+<text x="696.0" y="1555.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Distance from All Buildings — 每栋楼一次 BFS</text>
+<text x="638.0" y="1577.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0429</text>
+<text x="696.0" y="1577.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">N-ary Level Order — 分层遍历</text>
+<text x="638.0" y="1599.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0116</text>
+<text x="696.0" y="1599.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Next Right Pointers — 分层 / O(1) 用上层 next</text>
+<rect x="1176.0" y="1266.0" width="544.0" height="354.0" fill="#FFFFFF" stroke="#CBD5E1" rx="12"/>
+<rect x="1176.0" y="1278.0" width="6.0" height="330.0" fill="#65A30D" stroke="none" rx="3"/>
+<rect x="1206.0" y="1284.0" width="38.0" height="28.0" fill="#65A30D" stroke="none" rx="8"/>
+<text x="1225.0" y="1305.0" font-size="15" fill="#FFFFFF" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="middle">12</text>
+<text x="1256.0" y="1305.0" font-size="17.5" fill="#65A30D" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Special Graph Modeling</text>
+<text x="1206.0" y="1340.0" font-size="21" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">题目不像图？先建模</text>
+<rect x="1206.0" y="1354.0" width="105.2" height="22.0" fill="#E8EDF3" stroke="none" rx="11"/>
+<text x="1215.0" y="1369.5" font-size="12" fill="#475569" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">建模后套 01–11</text>
+<text x="1206.0" y="1416.0" font-size="14.5" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">先找「节点」和「边」，再套对应类别的模板</text>
+<line x1="1206.0" y1="1431.0" x2="1700.0" y2="1431.0" stroke="#E2E8F0" stroke-width="1"/>
+<text x="1206.0" y="1456.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0399</text>
+<text x="1264.0" y="1456.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Evaluate Division — a/b=k ⇒ 带权边，DFS 累乘</text>
+<text x="1206.0" y="1478.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0339</text>
+<text x="1264.0" y="1478.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Nested List Weight Sum — DFS 带 depth</text>
+<text x="1206.0" y="1500.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0364</text>
+<text x="1264.0" y="1500.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Nested List Weight Sum II — 两遍分层 BFS</text>
+<rect x="40.0" y="1644.0" width="544.0" height="219.0" fill="#FFFFFF" stroke="#CBD5E1" rx="12"/>
+<rect x="40.0" y="1656.0" width="6.0" height="195.0" fill="#64748B" stroke="none" rx="3"/>
+<rect x="70.0" y="1662.0" width="38.0" height="28.0" fill="#64748B" stroke="none" rx="8"/>
+<text x="89.0" y="1683.0" font-size="15" fill="#FFFFFF" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="middle">99</text>
+<text x="120.0" y="1683.0" font-size="17.5" fill="#64748B" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Misc</text>
+<text x="70.0" y="1718.0" font-size="21" fill="#0F172A" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">杂项（核心不是图算法）</text>
+<rect x="70.0" y="1739.5" width="75.5" height="26.0" fill="#64748B" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="80.0" y="1758.0" font-size="15.5" fill="#64748B" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Greedy</text>
+<rect x="154.5" y="1739.5" width="87.7" height="26.0" fill="#64748B" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="164.5" y="1758.0" font-size="15.5" fill="#64748B" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">度数统计</text>
+<rect x="251.2" y="1739.5" width="53.8" height="26.0" fill="#64748B" fill-opacity="0.13" stroke="none" rx="8"/>
+<text x="261.2" y="1758.0" font-size="15.5" fill="#64748B" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">递归</text>
+<line x1="70.0" y1="1773.0" x2="564.0" y2="1773.0" stroke="#E2E8F0" stroke-width="1"/>
+<text x="70.0" y="1798.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0277</text>
+<text x="128.0" y="1798.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Find the Celebrity — 候选淘汰，O(n) 次询问</text>
+<text x="70.0" y="1820.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0997</text>
+<text x="128.0" y="1820.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Find the Town Judge — 入度 n−1 且出度 0</text>
+<text x="70.0" y="1842.0" font-size="13.5" fill="#475569" font-weight="bold" font-family="'SF Mono', Menlo, Consolas, monospace" text-anchor="start">0761</text>
+<text x="128.0" y="1842.0" font-size="14" fill="#1E293B" font-weight="normal" font-family="'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', sans-serif" text-anchor="start">Special Binary String — 1/0 当括号递归分解</text>
+</svg>

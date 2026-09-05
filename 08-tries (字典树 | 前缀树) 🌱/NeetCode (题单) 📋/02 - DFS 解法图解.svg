@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="1400" viewBox="0 0 980 1400" font-family="'Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <style>
+      .title    { font-size: 26px; font-weight: 700; fill: #f8fafc; }
+      .h        { font-size: 20px; font-weight: 700; fill: #1e293b; }
+      .sub      { font-size: 14px; fill: #64748b; }
+      .mono     { font-family: 'Menlo','Consolas',monospace; }
+      .code     { font-family: 'Menlo','Consolas',monospace; font-size: 15px; fill: #e2e8f0; }
+      .node     { font-size: 15px; font-weight: 700; fill: #0f172a; }
+      .cardh    { font-size: 15px; font-weight: 700; }
+      .cardt    { font-size: 13px; fill: #334155; }
+      .step     { font-family: 'Menlo','Consolas',monospace; font-size: 14px; fill: #1e293b; }
+    </style>
+  </defs>
+
+  <!-- background -->
+  <rect width="980" height="1400" fill="#fdfdfb"/>
+
+  <!-- header -->
+  <rect x="0" y="0" width="980" height="72" fill="#0f172a"/>
+  <text x="30" y="46" class="title">WordDictionary.search — 递归 DFS 图解</text>
+
+  <!-- ============ Section 1: Trie ============ -->
+  <text x="30" y="112" class="h">① Trie 长什么样（嵌套字典）</text>
+  <text x="30" y="136" class="sub">addWord 把单词拆成一层层 dict，末尾用 "#" 标记完整单词结尾 ·  这里加入了  bad / dad / mad</text>
+
+  <!-- edges -->
+  <g stroke="#94a3b8" stroke-width="2">
+    <line x1="490" y1="185" x2="300" y2="250"/>
+    <line x1="490" y1="185" x2="490" y2="250"/>
+    <line x1="490" y1="185" x2="680" y2="250"/>
+    <line x1="300" y1="250" x2="300" y2="315"/>
+    <line x1="490" y1="250" x2="490" y2="315"/>
+    <line x1="680" y1="250" x2="680" y2="315"/>
+    <line x1="300" y1="315" x2="300" y2="380"/>
+    <line x1="490" y1="315" x2="490" y2="380"/>
+    <line x1="680" y1="315" x2="680" y2="380"/>
+    <line x1="300" y1="380" x2="300" y2="440"/>
+    <line x1="490" y1="380" x2="490" y2="440"/>
+    <line x1="680" y1="380" x2="680" y2="440"/>
+  </g>
+
+  <!-- root -->
+  <circle cx="490" cy="185" r="22" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+  <text x="490" y="190" text-anchor="middle" class="node">root</text>
+
+  <!-- level 1: b d m -->
+  <g>
+    <circle cx="300" cy="250" r="20" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="300" y="256" text-anchor="middle" class="node">b</text>
+    <circle cx="490" cy="250" r="20" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="490" y="256" text-anchor="middle" class="node">d</text>
+    <circle cx="680" cy="250" r="20" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="680" y="256" text-anchor="middle" class="node">m</text>
+  </g>
+  <!-- level 2: a a a -->
+  <g>
+    <circle cx="300" cy="315" r="20" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="300" y="321" text-anchor="middle" class="node">a</text>
+    <circle cx="490" cy="315" r="20" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="490" y="321" text-anchor="middle" class="node">a</text>
+    <circle cx="680" cy="315" r="20" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="680" y="321" text-anchor="middle" class="node">a</text>
+  </g>
+  <!-- level 3: d d d -->
+  <g>
+    <circle cx="300" cy="380" r="20" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="300" y="386" text-anchor="middle" class="node">d</text>
+    <circle cx="490" cy="380" r="20" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="490" y="386" text-anchor="middle" class="node">d</text>
+    <circle cx="680" cy="380" r="20" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <text x="680" y="386" text-anchor="middle" class="node">d</text>
+  </g>
+  <!-- terminals: # -->
+  <g>
+    <rect x="262" y="428" width="76" height="28" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="300" y="447" text-anchor="middle" class="node mono">#:bad</text>
+    <rect x="452" y="428" width="76" height="28" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="490" y="447" text-anchor="middle" class="node mono">#:dad</text>
+    <rect x="642" y="428" width="76" height="28" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <text x="680" y="447" text-anchor="middle" class="node mono">#:mad</text>
+  </g>
+  <text x="770" y="315" class="sub" font-style="italic">每个字符是一层 dict 的 key，</text>
+  <text x="770" y="335" class="sub" font-style="italic">value 是下一层 dict；</text>
+  <text x="770" y="365" class="sub" font-style="italic">"#" 表示：从 root 走到这里，</text>
+  <text x="770" y="385" class="sub" font-style="italic">正好拼出一个完整单词。</text>
+
+  <!-- ============ Section 2: dfs three cases ============ -->
+  <text x="30" y="512" class="h">② dfs(node, i) 的三种情况</text>
+  <text x="30" y="536" class="sub mono">dfs 永远回答同一个问题:  "从 node 出发，能否匹配掉 word[i:] 这一段?"</text>
+
+  <!-- code block -->
+  <rect x="30" y="552" width="920" height="150" rx="8" fill="#0f172a"/>
+  <text x="50" y="582" class="code">def dfs(node, i):</text>
+  <text x="70" y="606" class="code"><tspan fill="#4ade80">if i == len(word):</tspan>            <tspan fill="#94a3b8"># ① 字符用完 → 是不是完整单词</tspan></text>
+  <text x="90" y="630" class="code">return <tspan fill="#fbbf24">"#"</tspan> in node</text>
+  <text x="70" y="654" class="code">ch = word[i]</text>
+  <text x="70" y="678" class="code"><tspan fill="#c084fc">if ch == ".":</tspan>                 <tspan fill="#94a3b8"># ② 通配 → 所有非#孩子试一遍</tspan></text>
+  <text x="90" y="700" class="code">return any(dfs(child, i+1) for k, child in node.items() if k != <tspan fill="#fbbf24">"#"</tspan>)</text>
+
+  <!-- card 1 -->
+  <rect x="30" y="726" width="296" height="150" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  <text x="48" y="754" class="cardh" fill="#15803d">① i == len(word)  走完了</text>
+  <text x="48" y="782" class="cardt">字符全部匹配完，看当前节点</text>
+  <text x="48" y="802" class="cardt">有没有 "#":</text>
+  <text x="48" y="828" class="cardt mono">· 有  → 完整单词  ✔ True</text>
+  <text x="48" y="850" class="cardt mono">· 没有 → 只是前缀 ✘ False</text>
+
+  <!-- card 2 -->
+  <rect x="342" y="726" width="296" height="150" rx="10" fill="#faf5ff" stroke="#7c3aed" stroke-width="2"/>
+  <text x="360" y="754" class="cardh" fill="#6d28d9">② ch == "."  通配符</text>
+  <text x="360" y="782" class="cardt">对所有子节点（跳过 "#"）各</text>
+  <text x="360" y="802" class="cardt">递归一次，i 前进一位;</text>
+  <text x="360" y="828" class="cardt mono">any(...) → 任一分支成功</text>
+  <text x="360" y="850" class="cardt mono">即整体 True</text>
+
+  <!-- card 3 -->
+  <rect x="654" y="726" width="296" height="150" rx="10" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="672" y="754" class="cardh" fill="#1d4ed8">③ 普通字符  只有一条路</text>
+  <text x="672" y="782" class="cardt mono">ch in node ?</text>
+  <text x="672" y="808" class="cardt mono">· 在  → dfs(node[ch], i+1)</text>
+  <text x="672" y="830" class="cardt mono">· 不在 → False（短路）</text>
+
+  <!-- ============ Section 3: trace ============ -->
+  <text x="30" y="928" class="h">③ 走一遍  search("<tspan class="mono" fill="#7c3aed">.ad</tspan>")  →  <tspan fill="#16a34a">True</tspan></text>
+
+  <rect x="30" y="948" width="920" height="300" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <text x="50" y="984" class="step"><tspan fill="#7c3aed" font-weight="bold">dfs(root, 0)</tspan>   ch = '.'  →  情况②：对 root 的孩子 b/d/m 各试一遍，any 成功即可</text>
+
+  <text x="90" y="1022" class="step"><tspan fill="#2563eb" font-weight="bold">├─ 试 'b' 分支:  dfs(node_b, 1)</tspan>   ch = 'a'  →  情况③：'a' in node_b? 是</text>
+  <text x="130" y="1054" class="step"><tspan fill="#2563eb" font-weight="bold">└─ dfs(node_ba, 2)</tspan>   ch = 'd'  →  情况③：'d' in node_ba? 是</text>
+  <text x="170" y="1086" class="step"><tspan fill="#2563eb" font-weight="bold">└─ dfs(node_bad, 3)</tspan>   i == len(3)  →  情况①："#" in node_bad?</text>
+  <text x="210" y="1118" class="step"><tspan fill="#16a34a" font-weight="bold">→ 是！ node_bad = {"#":"bad"}   ✔ 返回 True</tspan></text>
+
+  <text x="90" y="1156" class="step" fill="#64748b">第一条分支就成功 → any 短路，其余 d/m 分支不用再试</text>
+  <line x1="50" y1="1176" x2="930" y2="1176" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="50" y="1208" class="step">对比失败例:  search("<tspan class="mono" fill="#7c3aed">ba</tspan>")  →  dfs 到 node_ba 时 i==len(2)，但 node_ba 没有 "#"（只是前缀）</text>
+  <text x="50" y="1234" class="step"><tspan fill="#dc2626" font-weight="bold">→ 返回 False</tspan>  ✔ 正确：ba 不是完整单词。这一步正是"长度必须相等"的隐含保证。</text>
+
+  <!-- ============ mnemonic ============ -->
+  <rect x="30" y="1280" width="920" height="88" rx="10" fill="#0f172a"/>
+  <text x="50" y="1316" font-size="16" font-weight="700" fill="#fbbf24">口诀</text>
+  <text x="50" y="1348" font-size="20" font-weight="700" fill="#f8fafc" class="">到头看 #，遇点试所有孩子，普通字符在就往下走。</text>
+</svg>
