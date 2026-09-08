@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 相同任务间隔 n 的最短总时间 → 大根堆按剩余次数 + 冷却队列；或公式 (max−1)(n+1)+cnt
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from collections import Counter, deque
 import heapq

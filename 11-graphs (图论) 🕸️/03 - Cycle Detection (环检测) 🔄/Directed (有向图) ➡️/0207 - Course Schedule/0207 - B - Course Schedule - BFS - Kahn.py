@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 有向图无环判定 → Kahn 剥入度 0，剥完节点数 < n 即有环
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from collections import defaultdict, deque
 

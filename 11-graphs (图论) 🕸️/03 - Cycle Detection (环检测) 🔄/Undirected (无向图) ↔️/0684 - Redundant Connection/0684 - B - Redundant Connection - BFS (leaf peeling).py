@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 找成环边 → 反复剥度为 1 的叶子，留在环上的最后一条输入边即答案
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from collections import defaultdict, deque
 from typing import List
 

@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 插入并合并 → 三段：左侧不重叠原样、重叠合并、右侧原样
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from bisect import bisect_left, bisect_right
 from typing import List
 

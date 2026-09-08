@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 关注者最近 10 条推文 → 每用户推文列表 + 堆做 k 路合并（全局时间戳）
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from collections import defaultdict
 import heapq
 

@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 定长窗口最大值 → 单调递减双端队列，队首最大，过期出队
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 import heapq
 from collections import deque

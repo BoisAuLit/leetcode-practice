@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 最长递增子序列 → O(n²) dp[i] = max(dp[j]) + 1；或 patience sorting + bisect O(n log n)
+📅 首次: 2025-08-03 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from bisect import bisect_left
 from typing import List
 

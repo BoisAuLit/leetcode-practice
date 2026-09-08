@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 不能抢相邻的最大值 → dp[i] = max(dp[i−1], dp[i−2] + nums[i])
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from functools import lru_cache
 

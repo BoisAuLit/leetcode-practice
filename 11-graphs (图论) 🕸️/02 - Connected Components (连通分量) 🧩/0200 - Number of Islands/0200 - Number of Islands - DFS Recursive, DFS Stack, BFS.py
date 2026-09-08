@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 连通块计数 → 遍历每格，遇 1 则 DFS/BFS 淹没整块，计数 +1
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from collections import deque
 

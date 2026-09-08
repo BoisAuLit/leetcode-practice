@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 含 * 的括号合法性 → 维护未匹配左括号区间 [lo, hi]，hi < 0 失败，lo 钳 0
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 class Solution:
     def checkValidString(self, s: str) -> bool:
         lo, hi = 0, 0

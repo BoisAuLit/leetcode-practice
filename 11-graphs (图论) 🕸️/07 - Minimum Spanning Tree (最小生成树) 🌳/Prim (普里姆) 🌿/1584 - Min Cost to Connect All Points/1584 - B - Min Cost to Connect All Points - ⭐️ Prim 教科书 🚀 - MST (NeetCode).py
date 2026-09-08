@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: MST 另一解 → Prim：从种子滚雪球，堆选最便宜跨界边，visited 懒删除
+📅 首次: 2025-02-28 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 import heapq
 

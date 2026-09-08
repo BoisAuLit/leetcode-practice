@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 能否切成字典词 → Trie 加速枚举以 j 开头的词
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from functools import lru_cache
 

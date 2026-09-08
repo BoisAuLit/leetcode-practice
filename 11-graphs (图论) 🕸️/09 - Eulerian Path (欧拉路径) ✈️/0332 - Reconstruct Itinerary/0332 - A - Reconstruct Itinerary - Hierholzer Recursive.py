@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 用完所有票的字典序最小行程 → 欧拉路径 Hierholzer：后序 append 再反转
+📅 首次: 2025-09-06 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from collections import defaultdict
 

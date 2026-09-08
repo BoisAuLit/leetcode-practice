@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 克隆图 → 哈希 原→新 + DFS/BFS，先建节点再连边
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import Optional
 from collections import deque
 

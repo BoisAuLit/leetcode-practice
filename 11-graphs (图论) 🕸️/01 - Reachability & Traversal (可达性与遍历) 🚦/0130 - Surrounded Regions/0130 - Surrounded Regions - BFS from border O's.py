@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 被包围的 O 翻转 → 反向思维：从边界 O 出发 BFS/DFS 标记"不翻"，其余全翻
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from collections import deque
 from pprint import pprint

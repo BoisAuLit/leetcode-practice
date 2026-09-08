@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 能否切成字典词 → dp[i] = any(dp[j] and s[j:i] in dict)
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from functools import lru_cache
 

@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 最多 k 站最便宜航班 → Bellman-Ford 带队列版
+📅 首次: 2025-09-06 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 ## Bellman Ford
 from typing import List
 from collections import deque, defaultdict

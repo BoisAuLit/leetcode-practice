@@ -1,0 +1,167 @@
+# 全仓库"信号→模式"索引（一行一题）。格式：相对路径 ||| 信号→模式
+# 由 add_headers_once.py 读取写入各文件顶部的复习头；之后也可当作"十秒识别题型"的总表来翻。
+
+# ── 01 数组 | 哈希表 ──────────────────────────────────────────────
+01-arrays-hashing (数组 | 哈希表) 🔢/NeetCode (题单) 📋/01 - Group Anagrams.py ||| 按"内容等价"分组 → 规范化成哈希键（排序串 / 26 位计数元组）当字典 key
+01-arrays-hashing (数组 | 哈希表) 🔢/NeetCode (题单) 📋/02 - Top K Frequent Elements.py ||| 前 K 个高频 → 计数 + 大小为 K 的小根堆；或按频率装桶 O(n)
+01-arrays-hashing (数组 | 哈希表) 🔢/NeetCode (题单) 📋/03 - Encode & Decode.py ||| 字符串列表编成一个串且可无歧义还原 → 长度前缀 + 分隔符（len#str）
+01-arrays-hashing (数组 | 哈希表) 🔢/NeetCode (题单) 📋/04 - Products of Array Except Self.py ||| 每个位置排除自己的乘积、禁用除法 → 前缀积 × 后缀积（两趟）
+01-arrays-hashing (数组 | 哈希表) 🔢/NeetCode (题单) 📋/05 - Valid Sudoku.py ||| 行/列/3×3 宫无重复 → 三组哈希集合一次遍历，宫索引 (r//3, c//3)
+01-arrays-hashing (数组 | 哈希表) 🔢/NeetCode (题单) 📋/06 - Longest Consequtive sequence.py ||| 无序数组最长连续整数段 O(n) → 哈希集合，只从"段起点"（x-1 不在集合）向右数
+
+# ── 02 双指针 ─────────────────────────────────────────────────────
+02-two-pointers (双指针) 👉/NeetCode (题单) 📋/01 - Valid Palindrome.py ||| 回文判定忽略非字母数字 → 首尾相向双指针 + isalnum 跳过
+02-two-pointers (双指针) 👉/NeetCode (题单) 📋/02 - Two Sum II Input Array Sorted.py ||| 有序数组两数之和 → 首尾相向双指针：和大移右、和小移左
+02-two-pointers (双指针) 👉/NeetCode (题单) 📋/03 - 3Sum.py ||| 三数之和去重 → 排序 + 固定一个 + 相向双指针，跳过重复值
+02-two-pointers (双指针) 👉/NeetCode (题单) 📋/04 - Container with Most Water.py ||| 两线围最大面积 → 相向双指针，移动较短的一侧（短板决定高度）
+02-two-pointers (双指针) 👉/NeetCode (题单) 📋/05 - Trapping Rain Water.py ||| 接雨水 → 相向双指针维护 leftMax/rightMax，较矮侧结算；或单调栈
+
+# ── 03 滑动窗口 ───────────────────────────────────────────────────
+03-sliding-window (滑动窗口) 🪟/NeetCode (题单) 📋/01 - Best Time Buy Sell Stock.py ||| 一次买卖最大利润 → 一趟维护历史最低价，当前价 − 最低价取 max
+03-sliding-window (滑动窗口) 🪟/NeetCode (题单) 📋/02 - Longest Str Without Rep Ch.py ||| 最长无重复子串 → 变长滑窗 + 集合/last-index，右扩左收
+03-sliding-window (滑动窗口) 🪟/NeetCode (题单) 📋/03 - Permutation in String.py ||| s2 是否含 s1 的排列 → 定长滑窗 + 26 计数数组比对
+03-sliding-window (滑动窗口) 🪟/NeetCode (题单) 📋/04 - Min Window Sub.py ||| 覆盖 t 所有字符的最短窗口 → 变长滑窗 need/have 计数，满足即收缩
+03-sliding-window (滑动窗口) 🪟/NeetCode (题单) 📋/05 - Sliding Window Max.py ||| 定长窗口最大值 → 单调递减双端队列，队首最大，过期出队
+
+# ── 04 栈 ─────────────────────────────────────────────────────────
+04-stack-queue (栈 | 队列) 🥞/002-stack (栈) 🥞/NeetCode (题单) 📋/01 - Min Stack.py ||| O(1) getMin → 双栈：主栈 + 同步的"当前最小"栈
+04-stack-queue (栈 | 队列) 🥞/002-stack (栈) 🥞/NeetCode (题单) 📋/02 - Eval Reverse Polish Notation.py ||| 后缀表达式求值 → 栈：数字压栈，运算符弹两个算完压回
+04-stack-queue (栈 | 队列) 🥞/002-stack (栈) 🥞/NeetCode (题单) 📋/03 - Daily Temperatures.py ||| 下一个更大元素的距离 → 单调递减栈，遇更大者弹出结算
+04-stack-queue (栈 | 队列) 🥞/002-stack (栈) 🥞/NeetCode (题单) 📋/04 - Car Fleet/04 - Car Fleet.py ||| 车队合并数 → 按起点降序，算到达时间，后车更快则并入前车（单调栈）
+04-stack-queue (栈 | 队列) 🥞/002-stack (栈) 🥞/NeetCode (题单) 📋/05 - Largest Rect in Histogram/05 - Largest Rect In Histogram.py ||| 直方图最大矩形 → 单调递增栈，弹出时以弹出高度结算宽度
+
+# ── 05 二分查找 ───────────────────────────────────────────────────
+05-binary-search (二分查找) 🔍/NeetCode (题单) 📋/01 - Koko Eeating Banana.py ||| 满足时限的最小速度 → 答案二分（可行性单调）
+05-binary-search (二分查找) 🔍/NeetCode (题单) 📋/02 - Find Min In Rotated Sort Array.py ||| 旋转有序数组最小值 → 二分，比较 mid 与 right 判断落在哪段
+05-binary-search (二分查找) 🔍/NeetCode (题单) 📋/03 - Search in Rotated Sorted Array.py ||| 旋转有序数组查目标 → 二分，先判 mid 在哪个有序段再收缩
+05-binary-search (二分查找) 🔍/NeetCode (题单) 📋/04 - Time Based Key-Value Store.py ||| 按时间戳取 ≤t 的最新值 → 每 key 时间有序列表，bisect_right − 1
+05-binary-search (二分查找) 🔍/NeetCode (题单) 📋/05 - Median of 2 Sorted Array.py ||| 两有序数组中位数 O(log) → 对较短数组二分切分点，左半最大 ≤ 右半最小
+
+# ── 06 链表 ───────────────────────────────────────────────────────
+06-linked-list (链表) 🔗/NeetCode (题单) 📋/01 - Reverse Linked List.py ||| 反转链表 → prev/curr 迭代翻转 next；或递归
+06-linked-list (链表) 🔗/NeetCode (题单) 📋/02 - Merge Two Sorted Linked Lists.py ||| 合并两有序链表 → dummy 头 + 双指针逐个接较小者
+06-linked-list (链表) 🔗/NeetCode (题单) 📋/03 - Linked List Cycle Detection.py ||| 链表是否有环 → Floyd 快慢指针相遇
+06-linked-list (链表) 🔗/NeetCode (题单) 📋/04 - Reorder Linked List.py ||| L0→Ln→L1→Ln-1 → 快慢找中点 + 反转后半 + 交替合并
+06-linked-list (链表) 🔗/NeetCode (题单) 📋/05 - Remove Nth Node From End.py ||| 删倒数第 n 个 → 双指针先走 n 步再同步，dummy 处理删头
+06-linked-list (链表) 🔗/NeetCode (题单) 📋/06 - Copy Linked List with Rand Pointer.py ||| 带随机指针的深拷贝 → 哈希 旧→新 两趟；或交织节点法 O(1) 空间
+06-linked-list (链表) 🔗/NeetCode (题单) 📋/07 - Add Two Numbers.py ||| 逆序链表加法 → 逐位相加带进位，dummy 头，末尾处理剩余进位
+06-linked-list (链表) 🔗/NeetCode (题单) 📋/08 - Find Dup Number - Floyd Algo.py ||| 数组当链表（i→nums[i]）找重复 → Floyd 找环入口
+06-linked-list (链表) 🔗/NeetCode (题单) 📋/09 - LRU Cache.py ||| O(1) get/put 淘汰最久未用 → 哈希 + 双向链表（或 OrderedDict）
+06-linked-list (链表) 🔗/NeetCode (题单) 📋/10 - Merge K Sorted Linked List.py ||| 合并 k 个有序链表 → 小根堆放 (val, idx, node)；或分治两两合并
+06-linked-list (链表) 🔗/NeetCode (题单) 📋/11 - Reverse Nodes in K-Group.py ||| 每 k 个一组反转 → 先数够 k 个再反转该段并接回前驱，不足 k 保持
+
+# ── 07 树 ─────────────────────────────────────────────────────────
+07-trees (树) 🌲/NeetCode (题单) 📋/01  - Inverse Binary Tree - BFS+DFS 教科书.py ||| 镜像翻转 → 递归交换左右子树；或 BFS 逐层交换
+07-trees (树) 🌲/NeetCode (题单) 📋/02 - Max Depth Binary Tree - BFS+DFS 教科书.py ||| 最大深度 → 后序递归 1 + max(左, 右)；或 BFS 数层
+07-trees (树) 🌲/NeetCode (题单) 📋/03 - Diameter of Binary Tree - DFS 教科书.py ||| 直径 = 某节点左深 + 右深的最大值 → 后序递归返回深度，沿途更新全局最大
+07-trees (树) 🌲/NeetCode (题单) 📋/04 - Balanced Binary Tree - DFS 教科书.py ||| 平衡判定 → 后序递归返回高度，不平衡返回 −1 短路
+07-trees (树) 🌲/NeetCode (题单) 📋/05 - Same Binary Tree - BFS+DFS 教科书*.py ||| 两树相同 → 同步递归比较结构与值
+07-trees (树) 🌲/NeetCode (题单) 📋/06 - Subtree of Another Tree.py ||| s 是否含 t 为子树 → 对 s 每个节点做 sameTree 检查
+07-trees (树) 🌲/NeetCode (题单) 📋/07 - Lowest Comman Ancestor in BST.py ||| BST 最近公共祖先 → 利用有序性：都小往左、都大往右、分叉即答案
+07-trees (树) 🌲/NeetCode (题单) 📋/08 - BST Level Order Traversal.py ||| 层序遍历 → BFS 队列，按当前队列长度切层
+07-trees (树) 🌲/NeetCode (题单) 📋/09 - Binary Tree Right Side View.py ||| 右视图 → BFS 每层最后一个；或 DFS 先右后左按深度首次记录
+07-trees (树) 🌲/NeetCode (题单) 📋/10 - Count Good Nodes in BT.py ||| 路径上无更大祖先的节点数 → DFS 携带路径最大值
+07-trees (树) 🌲/NeetCode (题单) 📋/11 - Valid BST.py ||| BST 判定 → DFS 携带 (low, high) 开区间；或中序遍历严格递增
+07-trees (树) 🌲/NeetCode (题单) 📋/12 - Kth Smallest.py ||| BST 第 k 小 → 中序遍历第 k 个（迭代栈可提前停）
+07-trees (树) 🌲/NeetCode (题单) 📋/13 - Construct BST from Preorder & Inorder (LC-105).py ||| 前序 + 中序建树 → 前序首元为根，中序切左右，哈希定位 O(1)
+07-trees (树) 🌲/NeetCode (题单) 📋/14 - Binary Tree Max Path Sum.py ||| 任意路径最大和 → 后序返回"单边最大贡献"（负则取 0），沿途更新 左+右+根
+07-trees (树) 🌲/NeetCode (题单) 📋/15 - Serialize & Deserialize BT (LC-297).py ||| 树 ↔ 字符串 → 前序 + 空标记 N，反序列化用迭代器递归重建
+
+# ── 08 字典树 ─────────────────────────────────────────────────────
+08-tries (字典树 | 前缀树) 🌱/NeetCode (题单) 📋/01 - Implement Trie (Prefix Tree).py ||| 前缀树 insert/search/startsWith → 节点 children 字典 + end 标记
+08-tries (字典树 | 前缀树) 🌱/NeetCode (题单) 📋/02 - Desgin Add & Search Word Data Structure.py ||| 带通配符 "." 的搜索 → Trie + 遇 "." 对所有子节点分支递归
+08-tries (字典树 | 前缀树) 🌱/NeetCode (题单) 📋/03 - Word Search II.py ||| 网格找多个单词 → 词表建 Trie + 网格 DFS 沿 Trie 走，命中即收并剪枝
+
+# ── 09 堆 ─────────────────────────────────────────────────────────
+09-heap (堆) ⛰️/NeetCode (题单) 📋/01 - Kth Largest Element in a Stream.py ||| 流中第 k 大 → 大小为 k 的小根堆，堆顶即答案
+09-heap (堆) ⛰️/NeetCode (题单) 📋/02 - Last Stone Weight.py ||| 反复取两最大相碰 → 大根堆（取负）模拟
+09-heap (堆) ⛰️/NeetCode (题单) 📋/03 - K Closest Points to Origin.py ||| 前 k 近的点 → 大小为 k 的大根堆按距离淘汰；或快速选择
+09-heap (堆) ⛰️/NeetCode (题单) 📋/04 - Kth Largest Eleme.py ||| 数组第 k 大 → 小根堆 size k；或 quickselect 平均 O(n)
+09-heap (堆) ⛰️/NeetCode (题单) 📋/05 - Task Scheduler.py ||| 相同任务间隔 n 的最短总时间 → 大根堆按剩余次数 + 冷却队列；或公式 (max−1)(n+1)+cnt
+09-heap (堆) ⛰️/NeetCode (题单) 📋/06 - Desgin Twitter.py ||| 关注者最近 10 条推文 → 每用户推文列表 + 堆做 k 路合并（全局时间戳）
+09-heap (堆) ⛰️/NeetCode (题单) 📋/07 - Find Median From Data Stream.py ||| 动态中位数 → 大根堆（小半）+ 小根堆（大半），保持大小平衡
+
+# ── 10 回溯 ───────────────────────────────────────────────────────
+10-backtracking (回溯) 🔙/NeetCode (题单) 📋/01 - Subsets.py ||| 所有子集 → 回溯每个元素选/不选；或逐个加入扩展
+10-backtracking (回溯) 🔙/NeetCode (题单) 📋/02 - Combination Sum.py ||| 可重复选凑 target 的组合 → 回溯，起点 i 不前进以避免重复组合
+10-backtracking (回溯) 🔙/NeetCode (题单) 📋/03 - Combination Sum II.py ||| 每数限用一次且有重复值 → 排序 + 回溯，同层跳过相同值
+10-backtracking (回溯) 🔙/NeetCode (题单) 📋/04 - Permutations.py ||| 全排列 → 回溯 + used 标记；或交换法
+10-backtracking (回溯) 🔙/NeetCode (题单) 📋/05 - Subsets II.py ||| 有重复值的子集 → 排序 + 同层跳过相同值
+10-backtracking (回溯) 🔙/NeetCode (题单) 📋/06 - Generate Parentheses.py ||| n 对合法括号 → 回溯：左数 < n 可加左，右数 < 左数可加右
+10-backtracking (回溯) 🔙/NeetCode (题单) 📋/07 - Word Search.py ||| 网格找单词 → DFS 回溯，原地标记访问再恢复
+10-backtracking (回溯) 🔙/NeetCode (题单) 📋/08 - Palindrome Partitioning.py ||| 切成回文子串的所有方案 → 回溯枚举切点，前缀是回文才递归
+10-backtracking (回溯) 🔙/NeetCode (题单) 📋/09 - Letter Comb Phone.py ||| 按键字母组合 → 回溯逐位展开映射
+10-backtracking (回溯) 🔙/NeetCode (题单) 📋/10 - N-Queens.py ||| N 皇后 → 逐行放置，用列 / 两条对角线集合判冲突
+
+# ── 11 图论（NeetCode 近期题） ─────────────────────────────────────
+11-graphs (图论) 🕸️/01 - Reachability & Traversal (可达性与遍历) 🚦/0130 - Surrounded Regions/0130 - Surrounded Regions - BFS from border O's.py ||| 被包围的 O 翻转 → 反向思维：从边界 O 出发 BFS/DFS 标记"不翻"，其余全翻
+11-graphs (图论) 🕸️/01 - Reachability & Traversal (可达性与遍历) 🚦/0133 - Clone Graph/0133 - Clone Graph - DFS & BFS (5 versions).py ||| 克隆图 → 哈希 原→新 + DFS/BFS，先建节点再连边
+11-graphs (图论) 🕸️/01 - Reachability & Traversal (可达性与遍历) 🚦/0417 - Pacific Atlantic Water Flow/0417 - Pacific Atlantic Water Flow - reverse BFS from both oceans.py ||| 水能流到两洋的格子 → 反向从两个海洋边界各 BFS/DFS 一遍，取交集
+11-graphs (图论) 🕸️/02 - Connected Components (连通分量) 🧩/0200 - Number of Islands/0200 - Number of Islands - DFS Recursive, DFS Stack, BFS.py ||| 连通块计数 → 遍历每格，遇 1 则 DFS/BFS 淹没整块，计数 +1
+11-graphs (图论) 🕸️/02 - Connected Components (连通分量) 🧩/0323 - Number of Connected Components/0323 - B - Number of Connected Components - DFS.py ||| 无向图连通分量数 → 从每个未访问点 DFS 一次，计数
+11-graphs (图论) 🕸️/02 - Connected Components (连通分量) 🧩/0323 - Number of Connected Components/0323 - C - Number of Connected Components - BFS.py ||| 无向图连通分量数 → BFS 版
+11-graphs (图论) 🕸️/02 - Connected Components (连通分量) 🧩/0695 - Max Area of Island/0695 - Max Area of Island - DFS Recursive, DFS Stack, BFS.py ||| 最大连通块面积 → DFS/BFS 返回面积取 max
+11-graphs (图论) 🕸️/03 - Cycle Detection (环检测) 🔄/Directed (有向图) ➡️/0207 - Course Schedule/0207 - A - Course Schedule - DFS 3-state cycle detection.py ||| 课程能否修完 = 有向图无环 → DFS 三色标记（VISITING 再遇即环）
+11-graphs (图论) 🕸️/03 - Cycle Detection (环检测) 🔄/Directed (有向图) ➡️/0207 - Course Schedule/0207 - B - Course Schedule - BFS - Kahn.py ||| 有向图无环判定 → Kahn 剥入度 0，剥完节点数 < n 即有环
+11-graphs (图论) 🕸️/03 - Cycle Detection (环检测) 🔄/Undirected (无向图) ↔️/0261 - Graph Valid Tree/0261 - B - Graph Valid Tree - DFS (parent tracking).py ||| 边集是否构成树 → 边数 = n−1 且连通；DFS 带 parent 判环
+11-graphs (图论) 🕸️/03 - Cycle Detection (环检测) 🔄/Undirected (无向图) ↔️/0261 - Graph Valid Tree/0261 - C - Graph Valid Tree - BFS (parent tracking).py ||| 边集是否构成树 → BFS 带 parent 版
+11-graphs (图论) 🕸️/03 - Cycle Detection (环检测) 🔄/Undirected (无向图) ↔️/0684 - Redundant Connection/0684 - A - Redundant Connection - DFS (connectivity before adding edge).py ||| 找使无向图成环的那条边 → 逐条加边，加前先判两端是否已连通（DFS / 并查集）
+11-graphs (图论) 🕸️/03 - Cycle Detection (环检测) 🔄/Undirected (无向图) ↔️/0684 - Redundant Connection/0684 - B - Redundant Connection - BFS (leaf peeling).py ||| 找成环边 → 反复剥度为 1 的叶子，留在环上的最后一条输入边即答案
+11-graphs (图论) 🕸️/04 - Dependency & Topological Sort (依赖关系与拓扑排序) 📊/0210 - Course Schedule II/0210 - A - Course Schedule II - DFS TopSort (reversed post-order) - 教科书 📚.py ||| 课程顺序 → DFS 后序反转 = 拓扑序；三色判环
+11-graphs (图论) 🕸️/04 - Dependency & Topological Sort (依赖关系与拓扑排序) 📊/0210 - Course Schedule II/0210 - B - Course Schedule II - BFS - Kahn - 教科书 📚.py ||| 课程顺序 → Kahn BFS 拓扑排序
+11-graphs (图论) 🕸️/05 - Unweighted Shortest Path (无权最短路径) 🛣️/0127 - Word Ladder/0127 - Word Ladder - BFS on implicit word graph.py ||| 单词最少变换步数 → 隐式图 BFS，通配模式 *ord 建邻接
+11-graphs (图论) 🕸️/06 - Weighted Shortest Path (带权最短路径) 🛤️/01 - Non-negative Edges - Dijkstra (非负权边 | 迪杰斯特拉) 🚏/0743 - Network Delay Time/0743 - A - Network Delay Time - 纯种 Dijkstra ✅.py ||| 信号传遍所有节点的时间 → Dijkstra 单源最短路，答案取 dist 最大值
+11-graphs (图论) 🕸️/06 - Weighted Shortest Path (带权最短路径) 🛤️/01 - Non-negative Edges - Dijkstra (非负权边 | 迪杰斯特拉) 🚏/0743 - Network Delay Time/04-Neetcode-Advanced - Swim in Rising Water.py ||| 水位上涨能否抵达 → 瓶颈路径：Dijkstra 把 + 换成 max；或二分答案 + BFS
+11-graphs (图论) 🕸️/06 - Weighted Shortest Path (带权最短路径) 🛤️/03 - Edge Count Constraint (边数限制 | 最多 k 条边) 🔢/0787 - Cheapest Flights Within K Stops/0787 - A - Cheapest Flights - BFS 🚀🚀🚀⭐️⭐️⭐️.py ||| 最多 k 站的最便宜航班 → 按边数分层：k+1 轮松弛（Bellman-Ford，用上一轮快照）
+11-graphs (图论) 🕸️/06 - Weighted Shortest Path (带权最短路径) 🛤️/03 - Edge Count Constraint (边数限制 | 最多 k 条边) 🔢/0787 - Cheapest Flights Within K Stops/0787 - C - Cheapest Flights - Bellman Ford with Queue 🚀🚀🚀.py ||| 最多 k 站最便宜航班 → Bellman-Ford 带队列版
+11-graphs (图论) 🕸️/07 - Minimum Spanning Tree (最小生成树) 🌳/Kruskal (克鲁斯卡尔 | 基于并查集) 🔗/1584 - Min Cost to Connect All Points/1584 - B - Min Cost to Connect All Points - ⭐️ Kruskal 教科书 🐢 - MST (NeetCode).py ||| 连通所有点最小总边权 → MST；Kruskal：边按权排序 + 并查集判环，取 n−1 条
+11-graphs (图论) 🕸️/07 - Minimum Spanning Tree (最小生成树) 🌳/Prim (普里姆) 🌿/1584 - Min Cost to Connect All Points/1584 - B - Min Cost to Connect All Points - ⭐️ Prim 教科书 🚀 - MST (NeetCode).py ||| MST 另一解 → Prim：从种子滚雪球，堆选最便宜跨界边，visited 懒删除
+11-graphs (图论) 🕸️/09 - Eulerian Path (欧拉路径) ✈️/0332 - Reconstruct Itinerary/0332 - A - Reconstruct Itinerary - Hierholzer Recursive.py ||| 用完所有票的字典序最小行程 → 欧拉路径 Hierholzer：后序 append 再反转
+11-graphs (图论) 🕸️/11 - Multi-Source & Level BFS (多源与分层 BFS) 🌊/0286 - Walls and Gates (Islands and Treasure)/0286 - Islands and Treasure (Walls and Gates) - multi-source BFS.py ||| 每格到最近门的距离 → 多源 BFS，所有门同时入队
+11-graphs (图论) 🕸️/11 - Multi-Source & Level BFS (多源与分层 BFS) 🌊/0994 - Rotting Oranges/0994 - Rotting Oranges (Rotting Fruit) - multi-source layered BFS.py ||| 腐烂扩散的最短时间 → 多源分层 BFS，层数即分钟
+
+# ── 12 动态规划 ───────────────────────────────────────────────────
+12-dynamic-programming (动态规划) 🧠/NeetCode-1D (一维 DP 题单) 1️⃣/01 - Climbing Stairs - (1D-DP).py ||| 每次 1 或 2 步的方法数 → f(n) = f(n−1) + f(n−2)，斐波那契滚动
+12-dynamic-programming (动态规划) 🧠/NeetCode-1D (一维 DP 题单) 1️⃣/02 - Min Cost Climbing Stairs - (1D-DP).py ||| 到顶最小花费 → dp[i] = cost[i] + min(dp[i−1], dp[i−2])
+12-dynamic-programming (动态规划) 🧠/NeetCode-1D (一维 DP 题单) 1️⃣/03 - House Robber - (1D-DP).py ||| 不能抢相邻的最大值 → dp[i] = max(dp[i−1], dp[i−2] + nums[i])
+12-dynamic-programming (动态规划) 🧠/NeetCode-1D (一维 DP 题单) 1️⃣/04 - House Robber II - (1D-DP).py ||| 环形版 → 拆成两次线性：去头 / 去尾，取 max
+12-dynamic-programming (动态规划) 🧠/NeetCode-1D (一维 DP 题单) 1️⃣/05 - Longest Palindromic Substring.py ||| 最长回文子串 → 中心扩展（奇偶两种中心）；或区间 DP
+12-dynamic-programming (动态规划) 🧠/NeetCode-1D (一维 DP 题单) 1️⃣/06 - Palindromic Substrings.py ||| 回文子串计数 → 每个中心扩展计数（奇偶）
+12-dynamic-programming (动态规划) 🧠/NeetCode-1D (一维 DP 题单) 1️⃣/07 - Decode Ways.py ||| 数字串解码方法数 → dp[i] = (单位合法) dp[i−1] + (双位 10..26) dp[i−2]，"0" 特殊
+12-dynamic-programming (动态规划) 🧠/NeetCode-1D (一维 DP 题单) 1️⃣/08 - Coin Change - (Complete Knapsack).py ||| 最少硬币数 → 完全背包 min 版：dp[a] = min(dp[a−c]) + 1，inf 表不可达
+12-dynamic-programming (动态规划) 🧠/NeetCode-1D (一维 DP 题单) 1️⃣/09 - Max Product Subarray - (Kadane Algorithm).py ||| 最大乘积子数组 → Kadane 变体同时维护 curMax / curMin（负数翻转）
+12-dynamic-programming (动态规划) 🧠/NeetCode-1D (一维 DP 题单) 1️⃣/10 - Word Break - DP.py ||| 能否切成字典词 → dp[i] = any(dp[j] and s[j:i] in dict)
+12-dynamic-programming (动态规划) 🧠/NeetCode-1D (一维 DP 题单) 1️⃣/10 - Word Break - Trie.py ||| 能否切成字典词 → Trie 加速枚举以 j 开头的词
+12-dynamic-programming (动态规划) 🧠/NeetCode-1D (一维 DP 题单) 1️⃣/11 - Longest Increasing Subsequence - LIS.py ||| 最长递增子序列 → O(n²) dp[i] = max(dp[j]) + 1；或 patience sorting + bisect O(n log n)
+12-dynamic-programming (动态规划) 🧠/NeetCode-1D (一维 DP 题单) 1️⃣/12 - Longest Decreeasing Subsequece.py ||| LIS 的镜像 → 取反或反向比较
+12-dynamic-programming (动态规划) 🧠/NeetCode-1D (一维 DP 题单) 1️⃣/13 - Partition Equal Subset Sum.py ||| 能否分成和相等两半 → 0/1 背包可行性，目标 S/2，一维倒序
+12-dynamic-programming (动态规划) 🧠/NeetCode-2D (二维 DP 题单) 2️⃣/01 - Unique Paths.py ||| 只能右/下的路径数 → dp[i][j] = dp[i−1][j] + dp[i][j−1]，可压一维
+12-dynamic-programming (动态规划) 🧠/NeetCode-2D (二维 DP 题单) 2️⃣/03 - Best Time Buy Sell Stock Cooldown.py ||| 含冷却的多次买卖 → 状态机 hold / sold / free，买入只能从 free 来
+12-dynamic-programming (动态规划) 🧠/DAG Longest Path (DAG 最长路径)/NC-07 - Longest Increasing Path in Matrix.py ||| 矩阵最长递增路径 → 严格递增保证 DAG，记忆化 DFS；迭代版按值降序填表
+12-dynamic-programming (动态规划) 🧠/Kadane (卡登算法 | 最大子数组和) 📈/003 - 0918 - Max Sum Circular Array.py ||| 环形最大子数组和 → max(普通 Kadane, total − 最小子数组和)，全负特判
+12-dynamic-programming (动态规划) 🧠/Knapsack (背包) 🎒/0|1 Knapsack (0|1 背包) 🎒/NC-05 - LC-0494 - Target Sum.py ||| 加减号凑 target 的方案数 → 转子集和 P = (S+target)/2，0/1 背包计数
+12-dynamic-programming (动态规划) 🧠/Knapsack (背包) 🎒/Unbounded Knapsack (完全背包) 🎒/LC-0322 - Coin Change I.py ||| 最少硬币数 → 完全背包 min 版；递归 dp(i, remain) 选（i 不动）/ 跳
+12-dynamic-programming (动态规划) 🧠/Knapsack (背包) 🎒/Unbounded Knapsack (完全背包) 🎒/NC-04 - LC-0518 - Coin Change II.py ||| 凑 amount 的组合数 → 完全背包计数，状态带 i 避免数成排列
+12-dynamic-programming (动态规划) 🧠/two-sequence DP - LCS (双序列 DP - LCS) 🔀/NC-02 - Longest Common Subsequence.py ||| 两串最长公共子序列 → 双序列 DP：尾字符相同左上 + 1，不同 max(上, 左)
+12-dynamic-programming (动态规划) 🧠/two-sequence DP - LCS (双序列 DP - LCS) 🔀/NC-06 - Interleaving String.py ||| s3 是否为 s1/s2 交错 → 双序列 DP (i, j)，s3 下标 = i+j，下一字符由谁供给
+12-dynamic-programming (动态规划) 🧠/two-sequence DP - LCS (双序列 DP - LCS) 🔀/NC-08 - Distinct Subsequences.py ||| s 的子序列等于 t 的个数 → 双序列 DP：相等 take + skip，不等 skip；j == n → 1
+
+# ── 13 贪心 ───────────────────────────────────────────────────────
+13-greedy (贪心) 🤑/NeetCode (题单) 📋/01 - Jump Game.py ||| 能否跳到末尾 → 贪心维护可达最远位置
+13-greedy (贪心) 🤑/NeetCode (题单) 📋/02 - Jump Game II.py ||| 最少跳数 → 分层 BFS 思想：当前层边界耗尽时跳数 +1，新边界 = 层内最远
+13-greedy (贪心) 🤑/NeetCode (题单) 📋/03 - Gas Station.py ||| 环路可完成的起点 → total ≥ 0 必有解；tank 变负则起点跳到失败点下一站
+13-greedy (贪心) 🤑/NeetCode (题单) 📋/05 - Hands of Straights.py ||| 分成 k 张连续的顺子 → 计数 + 从最小牌批量扣除 k 张连续
+13-greedy (贪心) 🤑/NeetCode (题单) 📋/06 - Merge Triplets to From Target.py ||| max 合并能否凑出 target → 过滤任一位超标的 triplet，剩余检查三位各能命中
+13-greedy (贪心) 🤑/NeetCode (题单) 📋/07 - Partition Labels.py ||| 字母不跨段的最多分段 → 记每字母最后出现位置，扫到当前段最远边界即切
+13-greedy (贪心) 🤑/NeetCode (题单) 📋/08 - Valid Parenthesis String.py ||| 含 * 的括号合法性 → 维护未匹配左括号区间 [lo, hi]，hi < 0 失败，lo 钳 0
+
+# ── 14 区间 ───────────────────────────────────────────────────────
+14-intervals (区间) 📏/NeetCode (题单) 📋/01 - Insert Interval.py ||| 插入并合并 → 三段：左侧不重叠原样、重叠合并、右侧原样
+14-intervals (区间) 📏/NeetCode (题单) 📋/02 - Merge Interval.py ||| 合并重叠区间 → 按起点排序，与结果末尾比较合并
+14-intervals (区间) 📏/NeetCode (题单) 📋/03 - Non-overlapping Intervals - Greedy.py ||| 最少删除使不重叠 → 按结束时间排序，贪心保留最早结束
+14-intervals (区间) 📏/NeetCode (题单) 📋/04 - Meeting Rooms.py ||| 能否全部参加 → 按起点排序，相邻检查重叠
+14-intervals (区间) 📏/NeetCode (题单) 📋/05 - Meeting Rooms II.py ||| 最少会议室 → 起点/终点分别排序双指针；或小根堆存结束时间
+14-intervals (区间) 📏/NeetCode (题单) 📋/06 - Min Interval to Include Each Query.py ||| 每个查询点覆盖它的最短区间 → 查询排序 + 区间按起点排序 + 小根堆 (长度, 终点) 懒删除
+12-dynamic-programming (动态规划) 🧠/two-sequence DP - LCS (双序列 DP - LCS) 🔀/NC-09 - Edit Distance.py ||| 把 word1 改成 word2 的最少操作数（插/删/换）→ 双序列 DP：三操作 = 前线两指针的三种走法
+12-dynamic-programming (动态规划) 🧠/Interval DP (区间 DP) ⏰/NC-10 - Burst Balloons.py ||| 消除元素且得分依赖左右邻居 → 区间 DP：枚举"最后被扎的" k，让它当墙劈开区间
+12-dynamic-programming (动态规划) 🧠/two-sequence DP - LCS (双序列 DP - LCS) 🔀/NC-11 - RegExp Match.py ||| 带 . 和 * 的模式匹配 → 双序列 DP：星号 = 前线二选一（不吃跳 j+2 / 吃一个 i+1 且 j 原地踏步）

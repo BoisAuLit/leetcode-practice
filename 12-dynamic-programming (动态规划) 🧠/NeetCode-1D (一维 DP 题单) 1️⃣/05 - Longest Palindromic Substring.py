@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 最长回文子串 → 中心扩展（奇偶两种中心）；或区间 DP
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         n = len(s)

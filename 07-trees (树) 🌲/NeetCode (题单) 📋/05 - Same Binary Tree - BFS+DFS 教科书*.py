@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 两树相同 → 同步递归比较结构与值
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import Optional
 from collections import deque
 

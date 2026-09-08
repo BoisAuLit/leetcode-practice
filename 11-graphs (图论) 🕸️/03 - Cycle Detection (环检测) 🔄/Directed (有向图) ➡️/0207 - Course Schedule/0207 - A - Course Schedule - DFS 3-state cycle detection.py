@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 课程能否修完 = 有向图无环 → DFS 三色标记（VISITING 再遇即环）
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from collections import defaultdict
 

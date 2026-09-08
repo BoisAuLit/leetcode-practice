@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 每个位置排除自己的乘积、禁用除法 → 前缀积 × 后缀积（两趟）
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from collections import defaultdict
 

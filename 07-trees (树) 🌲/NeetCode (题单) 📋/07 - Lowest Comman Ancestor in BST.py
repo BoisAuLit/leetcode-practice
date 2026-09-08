@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: BST 最近公共祖先 → 利用有序性：都小往左、都大往右、分叉即答案
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 # # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):

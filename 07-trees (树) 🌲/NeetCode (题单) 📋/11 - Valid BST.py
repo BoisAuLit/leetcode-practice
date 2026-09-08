@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: BST 判定 → DFS 携带 (low, high) 开区间；或中序遍历严格递增
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 
 from typing import Optional
 from collections import deque

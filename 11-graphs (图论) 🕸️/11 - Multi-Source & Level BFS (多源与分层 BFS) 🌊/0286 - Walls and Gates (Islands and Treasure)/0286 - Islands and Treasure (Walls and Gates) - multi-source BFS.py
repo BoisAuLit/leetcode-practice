@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 每格到最近门的距离 → 多源 BFS，所有门同时入队
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from collections import deque
 

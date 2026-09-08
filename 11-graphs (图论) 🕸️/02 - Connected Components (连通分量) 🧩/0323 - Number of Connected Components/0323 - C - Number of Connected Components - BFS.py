@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 无向图连通分量数 → BFS 版
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from collections import deque, defaultdict
 

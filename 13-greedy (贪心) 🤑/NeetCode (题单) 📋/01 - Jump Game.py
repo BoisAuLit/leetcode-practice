@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 能否跳到末尾 → 贪心维护可达最远位置
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from functools import lru_cache
 

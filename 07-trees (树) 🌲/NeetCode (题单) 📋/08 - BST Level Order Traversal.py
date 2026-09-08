@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 层序遍历 → BFS 队列，按当前队列长度切层
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List, Optional
 
 from collections import deque

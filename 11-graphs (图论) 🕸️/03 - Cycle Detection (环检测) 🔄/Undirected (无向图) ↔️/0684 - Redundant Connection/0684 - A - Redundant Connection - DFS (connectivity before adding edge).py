@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 找使无向图成环的那条边 → 逐条加边，加前先判两端是否已连通（DFS / 并查集）
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from collections import defaultdict
 from typing import List
 

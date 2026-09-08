@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 回文子串计数 → 每个中心扩展计数（奇偶）
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 class Solution:
     def countSubstrings(self, s: str) -> int:
         n = len(s)

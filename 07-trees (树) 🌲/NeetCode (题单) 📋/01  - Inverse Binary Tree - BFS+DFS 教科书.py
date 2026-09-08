@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 镜像翻转 → 递归交换左右子树；或 BFS 逐层交换
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import Optional
 from collections import deque
 

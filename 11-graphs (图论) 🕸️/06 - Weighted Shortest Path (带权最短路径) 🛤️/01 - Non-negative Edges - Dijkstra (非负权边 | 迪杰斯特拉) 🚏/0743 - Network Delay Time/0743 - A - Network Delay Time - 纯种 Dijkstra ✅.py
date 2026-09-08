@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 信号传遍所有节点的时间 → Dijkstra 单源最短路，答案取 dist 最大值
+📅 首次: 2025-09-06 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from collections import defaultdict
 import heapq

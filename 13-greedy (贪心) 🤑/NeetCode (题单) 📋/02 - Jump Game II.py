@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 最少跳数 → 分层 BFS 思想：当前层边界耗尽时跳数 +1，新边界 = 层内最远
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from functools import lru_cache
 

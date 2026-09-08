@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 按时间戳取 ≤t 的最新值 → 每 key 时间有序列表，bisect_right − 1
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from collections import defaultdict
 
 class TimeMap:

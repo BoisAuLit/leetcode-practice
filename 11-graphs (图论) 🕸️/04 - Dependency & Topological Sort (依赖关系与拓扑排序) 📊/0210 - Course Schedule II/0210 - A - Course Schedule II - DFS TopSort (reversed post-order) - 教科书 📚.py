@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 课程顺序 → DFS 后序反转 = 拓扑序；三色判环
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from collections import defaultdict
 from typing import List
 

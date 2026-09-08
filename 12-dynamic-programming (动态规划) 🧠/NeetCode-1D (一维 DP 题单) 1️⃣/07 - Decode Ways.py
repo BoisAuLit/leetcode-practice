@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 数字串解码方法数 → dp[i] = (单位合法) dp[i−1] + (双位 10..26) dp[i−2]，"0" 特殊
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 class Solution:
     def numDecodings(self, s: str) -> int:
         n = len(s)

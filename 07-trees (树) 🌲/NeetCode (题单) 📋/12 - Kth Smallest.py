@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: BST 第 k 小 → 中序遍历第 k 个（迭代栈可提前停）
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import Optional
 from TreeNode import TreeNode
 

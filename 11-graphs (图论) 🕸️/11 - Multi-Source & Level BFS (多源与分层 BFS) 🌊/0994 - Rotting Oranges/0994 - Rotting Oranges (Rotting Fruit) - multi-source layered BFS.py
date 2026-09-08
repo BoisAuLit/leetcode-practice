@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 腐烂扩散的最短时间 → 多源分层 BFS，层数即分钟
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from collections import deque
 
 from typing import List

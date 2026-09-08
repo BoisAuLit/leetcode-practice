@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 删倒数第 n 个 → 双指针先走 n 步再同步，dummy 处理删头
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from collections import deque
 from typing import Optional
 

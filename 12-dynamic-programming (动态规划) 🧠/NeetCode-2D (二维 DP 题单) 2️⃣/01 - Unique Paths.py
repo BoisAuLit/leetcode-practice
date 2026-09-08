@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 只能右/下的路径数 → dp[i][j] = dp[i−1][j] + dp[i][j−1]，可压一维
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
         dp = [[0] * n for _ in range(m)]

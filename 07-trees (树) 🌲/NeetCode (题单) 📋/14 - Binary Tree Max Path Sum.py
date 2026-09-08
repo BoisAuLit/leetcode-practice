@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 任意路径最大和 → 后序返回"单边最大贡献"（负则取 0），沿途更新 左+右+根
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from TreeNode import TreeNode
 
 from typing import Optional

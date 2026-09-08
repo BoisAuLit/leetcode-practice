@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 网格找多个单词 → 词表建 Trie + 网格 DFS 沿 Trie 走，命中即收并剪枝
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 class Solution:
     def findWords(self, board, words):
         trie = {}

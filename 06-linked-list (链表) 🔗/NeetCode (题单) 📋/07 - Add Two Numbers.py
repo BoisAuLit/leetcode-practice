@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 逆序链表加法 → 逐位相加带进位，dummy 头，末尾处理剩余进位
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import Optional
 
 # Definition for singly-linked list.

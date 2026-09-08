@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 水位上涨能否抵达 → 瓶颈路径：Dijkstra 把 + 换成 max；或二分答案 + BFS
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 import heapq
 

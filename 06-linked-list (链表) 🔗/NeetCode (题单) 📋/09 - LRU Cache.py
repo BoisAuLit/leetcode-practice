@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: O(1) get/put 淘汰最久未用 → 哈希 + 双向链表（或 OrderedDict）
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 class Node:
     def __init__(self, key, val):
         self.key, self.val = key, val

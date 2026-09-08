@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 合并 k 个有序链表 → 小根堆放 (val, idx, node)；或分治两两合并
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List, Optional
 import heapq
 

@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: L0→Ln→L1→Ln-1 → 快慢找中点 + 反转后半 + 交替合并
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from collections import deque
 from typing import Optional
 

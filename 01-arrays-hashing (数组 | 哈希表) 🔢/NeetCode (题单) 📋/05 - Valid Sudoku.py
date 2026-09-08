@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 行/列/3×3 宫无重复 → 三组哈希集合一次遍历，宫索引 (r//3, c//3)
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from collections import defaultdict
 

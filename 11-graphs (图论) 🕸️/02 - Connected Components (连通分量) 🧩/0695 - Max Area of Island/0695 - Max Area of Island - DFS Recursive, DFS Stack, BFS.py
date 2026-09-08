@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 最大连通块面积 → DFS/BFS 返回面积取 max
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from collections import deque
 

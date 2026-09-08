@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 最长无重复子串 → 变长滑窗 + 集合/last-index，右扩左收
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
         count = {}

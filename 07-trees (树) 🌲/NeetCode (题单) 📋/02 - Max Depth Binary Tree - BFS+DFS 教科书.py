@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 最大深度 → 后序递归 1 + max(左, 右)；或 BFS 数层
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import Optional
 from collections import deque
 

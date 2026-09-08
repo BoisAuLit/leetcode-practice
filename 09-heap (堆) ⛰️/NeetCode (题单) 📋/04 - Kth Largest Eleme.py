@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 数组第 k 大 → 小根堆 size k；或 quickselect 平均 O(n)
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 import heapq
 

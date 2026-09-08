@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 前缀树 insert/search/startsWith → 节点 children 字典 + end 标记
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 class PrefixTree:
 
     def __init__(self):

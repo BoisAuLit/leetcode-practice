@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 右视图 → BFS 每层最后一个；或 DFS 先右后左按深度首次记录
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List, Optional
 from collections import deque
 

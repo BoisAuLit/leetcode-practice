@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 带随机指针的深拷贝 → 哈希 旧→新 两趟；或交织节点法 O(1) 空间
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import Optional
 from collections import defaultdict
 

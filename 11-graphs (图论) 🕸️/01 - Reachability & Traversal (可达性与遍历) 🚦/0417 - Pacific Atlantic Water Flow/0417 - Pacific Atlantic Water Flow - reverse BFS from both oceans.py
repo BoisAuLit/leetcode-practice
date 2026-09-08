@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 水能流到两洋的格子 → 反向从两个海洋边界各 BFS/DFS 一遍，取交集
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from collections import deque
 

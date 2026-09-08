@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 课程顺序 → Kahn BFS 拓扑排序
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from collections import defaultdict, deque
 from typing import List
 

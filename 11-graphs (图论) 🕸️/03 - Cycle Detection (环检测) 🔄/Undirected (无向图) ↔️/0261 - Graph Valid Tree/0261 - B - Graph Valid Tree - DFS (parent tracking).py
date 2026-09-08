@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 边集是否构成树 → 边数 = n−1 且连通；DFS 带 parent 判环
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from collections import defaultdict
 

@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 单词最少变换步数 → 隐式图 BFS，通配模式 *ord 建邻接
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from collections import deque
 import string

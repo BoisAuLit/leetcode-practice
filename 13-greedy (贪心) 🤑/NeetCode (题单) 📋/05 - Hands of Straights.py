@@ -1,3 +1,8 @@
+"""
+📌 信号→模式: 分成 k 张连续的顺子 → 计数 + 从最小牌批量扣除 k 张连续
+📅 首次: 2026-09-04 | 卡点: （待补） | 守卫: （待补）
+🔁 复习: 未排期
+"""
 from typing import List
 from collections import Counter
 
