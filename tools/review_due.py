@@ -2,64 +2,50 @@
 """
 review_due.py — 间隔复习调度器（只依赖标准库）
 
-它读写的是每个解答文件顶部的"复习头"（模块 docstring）：
+数据源：每个题目文件夹里的 metadata.json（唯一真相）。
+    <大类>/<子分类>/LC-0155 - Min Stack/
+        solution.py  problem.pdf  metadata.json  [assets/]
 
-    \"\"\"
-    📌 信号→模式: 两个序列各一个指针 → 双序列 DP（LCS 家族）
-    📅 首次: 2026-09-04 | 卡点: M1 边界层右列漏 break | 守卫: ("ba","c","cbx")->False
-    🔁 复习: 2026-09-05 🟡 | 2026-09-08 🟢 | 下次: 2026-09-15
-    \"\"\"
+metadata.json 里和复习有关的字段：
+    info.signal / info.mode      信号 → 模式（十秒识别的训练目标）
+    info.guard                   守卫反例：输入 -> 期望（必须是真实踩过的坑）
+    info.sticking_point          首次做题的卡点
+    info.first_date              首次做题日期
+    practice: [ {date, sticking_point, result: 🟢|🟡|🔴}, ... ]   每次复习追加一条
 
-复习行只有三种形态：
-    🔁 复习: 未排期
-    🔁 复习: <历史...> | 下次: YYYY-MM-DD
-    🔁 复习: <历史...> | 毕业 ✅
+"下次复习日期" 和 "是否毕业" 不落盘，每次从 practice[] 现算：
+    间隔阶梯 1 → 3 → 7 → 14 → 30 天；🟢 升一级，🟡 不变，🔴 重置为 1 天；
+    处在 30 天这一级又拿到 🟢 即毕业。
 
-用法（在仓库任意位置执行）：
-    python3 tools/review_due.py today [-n 3]
-        列出今日到期的复习；不足 n 题时，从"未排期"里跨分类轮转补足，并把补进来的标为今日到期。
-    python3 tools/review_due.py done <文件路径或唯一子串> <g|y|r>
-        记录今天的复习结果：g=🟢 闭卷流畅  y=🟡 有印象但慢  r=🔴 卡壳/想不出
-    python3 tools/review_due.py stats
+用法：
+    python3 tools/review_due.py today [-n 3]          今日到期清单；不足 n 题时从"未排期"里跨分类补足
+    python3 tools/review_due.py shuffle [-n 3]        同 today，并把选中的题以软链接放进 Today/（先清空）
+    python3 tools/review_due.py done <子串> <g|y|r> [--note "卡点"]   记录今天的复习结果
+    python3 tools/review_due.py stats                 总量、到期/排期/未排期/毕业、按大类进度、最近🔴
     python3 tools/review_due.py list [due|unscheduled|scheduled|graduated|all]
-    python3 tools/review_due.py init <文件路径> "<信号→模式一句话>"
-        给一个还没有复习头的新文件加头（首次=今天，卡点/守卫留待补，未排期）。
-
-节奏：🟢 → 间隔升级 1→3→7→14→30 天；🟡 → 间隔不变；🔴 → 重置为 1 天；
-      在 30 天间隔之后再得一个 🟢 → 毕业（连续 5 个 🟢）。
+    python3 tools/review_due.py init <子串> "<信号→模式>" [--guard "..."] [--sticking "..."]
+                                                      给一道题写入信号→模式（入库时通常已写好）
+<子串> 匹配题目文件夹的相对路径（不区分大小写），匹配到多个时会列出候选。
 """
-
 from __future__ import annotations
-
-import re
-import sys
+import json, os, re, sys
 from dataclasses import dataclass, field
-from datetime import date, datetime, timedelta
+from datetime import date, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+TODAY_DIR = ROOT / "Today"
 INTERVALS = [1, 3, 7, 14, 30]
-HEADER_SCAN_LINES = 15
-EXCLUDE_PARTS = {"__pycache__", "tools", ".git", ".vscode"}
-
-SIG_RE = re.compile(r"📌\s*信号→模式:\s*(.*)")
-FIRST_RE = re.compile(r"📅\s*首次:\s*(\S*)\s*\|\s*卡点:\s*(.*?)\s*\|\s*守卫:\s*(.*)")
-REVIEW_RE = re.compile(r"🔁\s*复习:\s*(.*)")
-DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 STATUS_MAP = {"g": "🟢", "y": "🟡", "r": "🔴", "🟢": "🟢", "🟡": "🟡", "🔴": "🔴"}
+EXCLUDE_PARTS = {"__pycache__", "tools", ".git", ".vscode", "New", "Today"}
+PROBLEM_DIR_RE = re.compile(r"^(LC-\d{4}|NC) - ")
 
 
+# ---------------------------------------------------------------- model
 @dataclass
-class Header:
+class Problem:
     path: Path
-    signal: str = ""
-    first: str = ""
-    blocker: str = ""
-    guard: str = ""
-    history: list[tuple[str, str]] = field(default_factory=list)  # [(date, status)]
-    next_date: date | None = None
-    graduated: bool = False
-    review_line_no: int = -1
+    meta: dict
 
     @property
     def rel(self) -> str:
@@ -70,14 +56,29 @@ class Header:
         return self.path.relative_to(ROOT).parts[0]
 
     @property
-    def unscheduled(self) -> bool:
-        return self.next_date is None and not self.graduated
+    def id(self) -> str:
+        return self.meta.get("id", self.path.name)
 
-    def is_due(self, today: date) -> bool:
-        return self.next_date is not None and self.next_date <= today and not self.graduated
+    @property
+    def title(self) -> str:
+        return self.meta.get("title") or self.path.name
+
+    @property
+    def practice(self) -> list[dict]:
+        return self.meta.setdefault("practice", [])
+
+    @property
+    def history(self) -> list[tuple[date, str]]:
+        out = []
+        for p in self.practice:
+            try:
+                out.append((date.fromisoformat(p["date"]), p["result"]))
+            except (KeyError, ValueError):
+                continue
+        return sorted(out)
 
     def level(self) -> tuple[int, bool]:
-        """根据历史推算下一次间隔等级，以及是否已达毕业条件。"""
+        """根据历史推算当前间隔等级，以及是否已达毕业条件。"""
         level, graduated = 0, False
         for _, st in self.history:
             if st == "🟢":
@@ -88,228 +89,276 @@ class Header:
                 level = 0
         return level, graduated
 
-    def review_line(self) -> str:
-        parts = [f"{d} {s}" for d, s in self.history]
-        if self.graduated:
-            parts.append("毕业 ✅")
-        elif self.next_date is not None:
-            parts.append(f"下次: {self.next_date.isoformat()}")
-        else:
-            return "🔁 复习: 未排期"
-        return "🔁 复习: " + " | ".join(parts)
+    @property
+    def graduated(self) -> bool:
+        return self.level()[1]
+
+    @property
+    def next_date(self) -> date | None:
+        h = self.history
+        if not h or self.graduated:
+            return None
+        last = h[-1][0]
+        lvl, _ = self.level()
+        from datetime import timedelta
+        return last + timedelta(days=INTERVALS[lvl])
+
+    @property
+    def unscheduled(self) -> bool:
+        return not self.history
+
+    def is_due(self, today: date) -> bool:
+        nd = self.next_date
+        return nd is not None and nd <= today
+
+    @property
+    def first_date(self) -> date | None:
+        fd = (self.meta.get("info") or {}).get("first_date")
+        try:
+            return date.fromisoformat(fd) if fd else None
+        except ValueError:
+            return None
+
+    @property
+    def signal_line(self) -> str:
+        info = self.meta.get("info") or {}
+        sig, mode = info.get("signal"), info.get("mode")
+        if sig and mode:
+            return f"{sig} → {mode}"
+        return sig or mode or "（信号→模式 待补）"
+
+    def save(self) -> None:
+        with open(self.path / "metadata.json", "w", encoding="utf-8") as f:
+            json.dump(self.meta, f, ensure_ascii=False, indent=2)
+            f.write("\n")
 
 
-def iter_py_files() -> list[Path]:
+def load_all() -> list[Problem]:
     out = []
-    for p in ROOT.rglob("*.py"):
-        parts = p.relative_to(ROOT).parts
-        if any(part in EXCLUDE_PARTS or part.startswith("$$") for part in parts):
-            continue
-        out.append(p)
-    return sorted(out)
+    for dp, dns, fns in os.walk(ROOT):
+        dns[:] = [d for d in dns if d not in EXCLUDE_PARTS and not d.startswith("$$") and not d.startswith(".")]
+        if "metadata.json" in fns and PROBLEM_DIR_RE.match(os.path.basename(dp)):
+            try:
+                meta = json.load(open(os.path.join(dp, "metadata.json"), encoding="utf-8"))
+            except Exception as e:
+                print(f"⚠️  跳过损坏的 metadata: {os.path.relpath(dp, ROOT)} ({e})", file=sys.stderr)
+                continue
+            out.append(Problem(Path(dp), meta))
+    return sorted(out, key=lambda p: p.rel)
 
 
-def parse_header(path: Path) -> Header | None:
-    try:
-        with open(path, encoding="utf-8") as f:
-            head = [next(f) for _ in range(HEADER_SCAN_LINES)]
-    except StopIteration:
-        with open(path, encoding="utf-8") as f:
-            head = f.readlines()
-    except (UnicodeDecodeError, OSError):
-        return None
-
-    h = Header(path=path)
-    found = False
-    for i, line in enumerate(head):
-        if m := SIG_RE.search(line):
-            h.signal, found = m.group(1).strip(), True
-        elif m := FIRST_RE.search(line):
-            h.first, h.blocker, h.guard = m.group(1), m.group(2).strip(), m.group(3).strip()
-        elif m := REVIEW_RE.search(line):
-            h.review_line_no = i
-            for tok in (t.strip() for t in m.group(1).split("|")):
-                if not tok or tok == "未排期":
-                    continue
-                if tok.startswith("下次:"):
-                    h.next_date = date.fromisoformat(tok.split(":", 1)[1].strip())
-                elif tok.startswith("毕业"):
-                    h.graduated = True
-                else:
-                    d, _, st = tok.partition(" ")
-                    if DATE_RE.match(d) and st.strip() in STATUS_MAP:
-                        h.history.append((d, STATUS_MAP[st.strip()]))
-    return h if found and h.review_line_no >= 0 else None
-
-
-def load_all() -> list[Header]:
-    return [h for p in iter_py_files() if (h := parse_header(p))]
-
-
-def write_review_line(h: Header) -> None:
-    with open(h.path, encoding="utf-8") as f:
-        lines = f.read().splitlines(keepends=True)
-    old = lines[h.review_line_no]
-    eol = "\n" if old.endswith("\n") else ""
-    lines[h.review_line_no] = h.review_line() + eol
-    with open(h.path, "w", encoding="utf-8") as f:
-        f.write("".join(lines))
-
-
-def resolve(target: str, headers: list[Header]) -> Header:
+def resolve(target: str, problems: list[Problem]) -> Problem:
     p = Path(target)
-    cands = [h for h in headers if h.path == p.resolve()] if p.exists() else []
-    if not cands:
-        needle = target.lower()
-        cands = [h for h in headers if needle in h.rel.lower()]
-    if len(cands) == 1:
-        return cands[0]
-    if not cands:
-        sys.exit(f"找不到带复习头的文件：{target}")
-    sys.exit("匹配到多个文件，请更精确：\n  " + "\n  ".join(h.rel for h in cands))
+    if p.exists():
+        rp = p.resolve()
+        hits = [x for x in problems if x.path == rp or rp.is_relative_to(x.path)]
+        if len(hits) == 1:
+            return hits[0]
+    needle = target.lower()
+    hits = [x for x in problems if needle in x.rel.lower()]
+    if len(hits) == 1:
+        return hits[0]
+    if not hits:
+        sys.exit(f"找不到题目：{target}")
+    sys.exit("匹配到多个题目，请给更长的子串：\n  " + "\n  ".join(x.rel for x in hits[:20]))
+
+
+# ---------------------------------------------------------------- selection
+def pick_today(problems: list[Problem], n: int, today: date) -> tuple[list[Problem], list[Problem]]:
+    """返回 (到期题按逾期天数降序, 从未排期里补足的题)。
+    补足规则 = 交错练习：按大类轮转，每个大类内部先取首次日期最早的（放得最久的）。"""
+    due = [p for p in problems if p.is_due(today)]
+    due.sort(key=lambda p: (p.next_date, p.rel))
+    fill: list[Problem] = []
+    if len(due) < n:
+        pool = [p for p in problems if p.unscheduled]
+        by_cat: dict[str, list[Problem]] = {}
+        for p in pool:
+            by_cat.setdefault(p.category, []).append(p)
+        for cat in by_cat:
+            by_cat[cat].sort(key=lambda p: (p.first_date or date.max, p.rel))
+        # 从"已排期/毕业最少"的大类开始轮转，让冷门大类也能被叫到
+        progress = {c: sum(1 for p in problems if p.category == c and not p.unscheduled) for c in by_cat}
+        order = sorted(by_cat, key=lambda c: (progress[c], c))
+        i = 0
+        while len(due) + len(fill) < n and any(by_cat.values()):
+            cat = order[i % len(order)]
+            if by_cat[cat]:
+                fill.append(by_cat[cat].pop(0))
+            i += 1
+    return due, fill
+
+
+def print_selection(due: list[Problem], fill: list[Problem], today: date, n: int) -> None:
+    print(f"📅 {today.isoformat()}  到期复习 {len(due)} 题" + (f"，从未排期补足 {len(fill)} 题" if fill else ""))
+    k = 0
+    for p in due:
+        k += 1
+        over = (today - p.next_date).days
+        tag = f"逾期 {over} 天" if over > 0 else "今天到期"
+        print(f"  {k:2d}. [{tag}] {p.id}  {p.title}   ({p.category})")
+        print(f"      信号→模式: {p.signal_line}")
+    for p in fill:
+        k += 1
+        print(f"  {k:2d}. [首次进入循环] {p.id}  {p.title}   ({p.category})")
+        print(f"      信号→模式: {p.signal_line}")
+    if not due and not fill:
+        print("  （没有到期的题，也没有未排期的题）")
 
 
 # ---------------------------------------------------------------- commands
 def cmd_today(n: int) -> None:
+    problems = load_all()
     today = date.today()
-    headers = load_all()
-    due = sorted((h for h in headers if h.is_due(today)), key=lambda h: (h.next_date, h.rel))
-
-    print(f"📅 {today.isoformat()}  到期复习 {len(due)} 题")
-    for h in due:
-        overdue = (today - h.next_date).days
-        tag = f"（逾期 {overdue} 天）" if overdue > 0 else ""
-        print(f"  • {h.rel}{tag}\n      {h.signal}")
-
-    need = n - len(due)
-    if need > 0:
-        pool = [h for h in headers if h.unscheduled]
-        by_cat: dict[str, list[Header]] = {}
-        for h in sorted(pool, key=lambda h: (h.first or "9999", h.rel)):
-            by_cat.setdefault(h.category, []).append(h)
-        picked: list[Header] = []
-        cats = sorted(by_cat)
-        while len(picked) < need and any(by_cat.values()):
-            for c in cats:  # 跨分类轮转 = 交错练习
-                if by_cat[c] and len(picked) < need:
-                    picked.append(by_cat[c].pop(0))
-        if picked:
-            print(f"\n🆕 新纳入 {len(picked)} 题（未排期 → 今日到期）")
-            for h in picked:
-                h.next_date = today
-                write_review_line(h)
-                print(f"  • {h.rel}\n      {h.signal}")
-    left = sum(1 for h in headers if h.unscheduled)  # 刚纳入的已带 next_date，自动不再计入
-    print(f"\n未排期剩余 {left} 题 ｜ 完成一题后执行: python3 tools/review_due.py done <子串> <g|y|r>")
+    due, fill = pick_today(problems, n, today)
+    print_selection(due, fill, today, n)
+    left = sum(1 for p in problems if p.unscheduled) - len(fill)
+    print(f"\n未排期剩余 {left} 题 ｜ 完成一题后执行: python3 tools/review_due.py done <子串> <g|y|r> [--note \"卡点\"]")
+    print("把今天的题放进 Today/ 文件夹: python3 tools/review_due.py shuffle" + (f" -n {n}" if n != 3 else ""))
 
 
-def cmd_done(target: str, status: str) -> None:
-    st = STATUS_MAP.get(status)
+def cmd_shuffle(n: int) -> None:
+    problems = load_all()
+    today = date.today()
+    due, fill = pick_today(problems, n, today)
+    TODAY_DIR.mkdir(exist_ok=True)
+    kept = []
+    for entry in sorted(TODAY_DIR.iterdir()):
+        if entry.is_symlink():
+            entry.unlink()
+        elif entry.name != ".DS_Store":
+            kept.append(entry.name)          # 只清软链接，绝不删真实文件
+    if kept:
+        print(f"⚠️  Today/ 里有非软链接的文件，未动: {kept}")
+    chosen = due + fill
+    for i, p in enumerate(chosen, start=1):
+        link = TODAY_DIR / f"{i:02d} - {p.path.name}"
+        link.symlink_to(os.path.relpath(p.path, TODAY_DIR), target_is_directory=True)
+    print_selection(due, fill, today, n)
+    print(f"\n✅ Today/ 已更新：{len(chosen)} 个软链接 → 各题的文件夹")
+
+
+def cmd_done(target: str, status: str, note: str | None) -> None:
+    st = STATUS_MAP.get(status.lower() if status.isascii() else status)
     if not st:
-        sys.exit("状态请用 g / y / r（或 🟢 🟡 🔴）")
-    headers = load_all()
-    h = resolve(target, headers)
-    if h.graduated:
-        sys.exit(f"{h.rel} 已毕业，无需再记。")
-    today = date.today()
-    h.history.append((today.isoformat(), st))
-    level, graduated = h.level()
-    if graduated:
-        h.graduated, h.next_date = True, None
-        write_review_line(h)
-        print(f"🎓 毕业！{h.rel}")
-        return
-    h.next_date = today + timedelta(days=INTERVALS[level])
-    write_review_line(h)
-    print(f"{st} 已记录 → {h.rel}\n   下次复习: {h.next_date.isoformat()}（{INTERVALS[level]} 天后）")
+        sys.exit("状态只能是 g / y / r（或 🟢 🟡 🔴）")
+    problems = load_all()
+    p = resolve(target, problems)
+    if p.graduated:
+        sys.exit(f"这题已经毕业了：{p.rel}")
+    p.practice.append({"date": date.today().isoformat(), "sticking_point": note or "", "result": st})
+    p.save()
+    lvl, grad = p.level()
+    if grad:
+        print(f"{st} 已记录 → {p.rel}\n   🎓 毕业！不再叫号（档案永远留在 metadata.json 里）")
+    else:
+        print(f"{st} 已记录 → {p.rel}\n   下次复习: {p.next_date.isoformat()}（{INTERVALS[lvl]} 天后）")
 
 
 def cmd_stats() -> None:
+    problems = load_all()
     today = date.today()
-    all_py = iter_py_files()
-    headers = load_all()
-    due = [h for h in headers if h.is_due(today)]
-    uns = [h for h in headers if h.unscheduled]
-    grad = [h for h in headers if h.graduated]
-    sched = [h for h in headers if h.next_date is not None and not h.is_due(today)]
-    print(f"文件总数 {len(all_py)} ｜ 有复习头 {len(headers)} ｜ 无头 {len(all_py) - len(headers)}")
-    print(f"到期 {len(due)} ｜ 已排期未到 {len(sched)} ｜ 未排期 {len(uns)} ｜ 已毕业 {len(grad)}")
-    print("\n按分类：")
-    cats: dict[str, dict[str, int]] = {}
-    for h in headers:
-        c = cats.setdefault(h.category, {"总": 0, "到期": 0, "未排期": 0, "毕业": 0, "🔴": 0})
-        c["总"] += 1
-        c["到期"] += h.is_due(today)
-        c["未排期"] += h.unscheduled
-        c["毕业"] += h.graduated
-        c["🔴"] += bool(h.history) and h.history[-1][1] == "🔴"
-    for cat in sorted(cats):
-        c = cats[cat]
-        print(f"  {cat}: 总 {c['总']} ｜ 到期 {c['到期']} ｜ 未排期 {c['未排期']} ｜ 毕业 {c['毕业']} ｜ 最近🔴 {c['🔴']}")
-    done_today = sum(1 for h in headers for d, _ in h.history if d == today.isoformat())
+    due = [p for p in problems if p.is_due(today)]
+    sched = [p for p in problems if p.next_date and not p.is_due(today)]
+    unsch = [p for p in problems if p.unscheduled]
+    grad = [p for p in problems if p.graduated]
+    print(f"题目总数 {len(problems)} ｜ 到期 {len(due)} ｜ 已排期未到 {len(sched)} ｜ 未排期 {len(unsch)} ｜ 毕业 {len(grad)}")
+    print("\n按大类：      总数  到期  排期  未排期  毕业")
+    cats = sorted({p.category for p in problems})
+    for c in cats:
+        ps = [p for p in problems if p.category == c]
+        d = sum(1 for p in ps if p.is_due(today)); s = sum(1 for p in ps if p.next_date and not p.is_due(today))
+        u = sum(1 for p in ps if p.unscheduled); g = sum(1 for p in ps if p.graduated)
+        print(f"  {c[:34]:34s} {len(ps):4d}  {d:4d}  {s:4d}  {u:6d}  {g:4d}")
+    reds = sorted(((h[0], p) for p in problems for h in p.history if h[1] == "🔴"), key=lambda x: x[0], reverse=True)[:8]
+    if reds:
+        print("\n最近的 🔴：")
+        for d, p in reds:
+            print(f"  {d}  {p.id}  {p.title}")
+    done_today = sum(1 for p in problems for h in p.history if h[0] == today)
     print(f"\n今日已完成复习 {done_today} 题")
 
 
 def cmd_list(which: str) -> None:
+    problems = load_all()
     today = date.today()
-    headers = load_all()
     sel = {
-        "due": [h for h in headers if h.is_due(today)],
-        "unscheduled": [h for h in headers if h.unscheduled],
-        "scheduled": sorted((h for h in headers if h.next_date and not h.is_due(today)), key=lambda h: h.next_date),
-        "graduated": [h for h in headers if h.graduated],
-        "all": headers,
+        "due": lambda p: p.is_due(today),
+        "unscheduled": lambda p: p.unscheduled,
+        "scheduled": lambda p: p.next_date is not None and not p.is_due(today),
+        "graduated": lambda p: p.graduated,
+        "all": lambda p: True,
     }.get(which)
-    if sel is None:
-        sys.exit("list 参数: due | unscheduled | scheduled | graduated | all")
-    for h in sel:
-        nxt = "毕业" if h.graduated else (h.next_date.isoformat() if h.next_date else "未排期")
-        print(f"{nxt}  {h.rel}")
-    print(f"共 {len(sel)} 题")
+    if not sel:
+        sys.exit("list 后面只能是 due | unscheduled | scheduled | graduated | all")
+    rows = [p for p in problems if sel(p)]
+    for p in rows:
+        if p.graduated:
+            state = "毕业 ✅"
+        elif p.next_date:
+            state = f"下次 {p.next_date.isoformat()}"
+        else:
+            state = "未排期"
+        hist = " ".join(h[1] for h in p.history) or "-"
+        print(f"{state:14s} {hist:8s} {p.rel}")
+    print(f"\n共 {len(rows)} 题")
 
 
-def cmd_init(target: str, signal: str) -> None:
-    p = Path(target).resolve()
-    if not p.exists():
-        sys.exit(f"文件不存在：{target}")
-    if parse_header(p):
-        sys.exit("该文件已有复习头。")
-    header = (
-        '"""\n'
-        f"📌 信号→模式: {signal}\n"
-        f"📅 首次: {date.today().isoformat()} | 卡点: （待补） | 守卫: （待补）\n"
-        "🔁 复习: 未排期\n"
-        '"""\n'
-    )
-    content = p.read_text(encoding="utf-8")
-    p.write_text(header + content, encoding="utf-8")
-    print(f"已加头：{p.relative_to(ROOT)}")
+def cmd_init(target: str, signal: str, guard: str | None, sticking: str | None) -> None:
+    problems = load_all()
+    p = resolve(target, problems)
+    info = p.meta.setdefault("info", {})
+    if "→" in signal:
+        a, b = signal.split("→", 1)
+        info["signal"], info["mode"] = a.strip(), b.strip()
+    else:
+        info["signal"] = signal.strip()
+    if guard is not None:
+        info["guard"] = guard
+    if sticking is not None:
+        info["sticking_point"] = sticking
+    info.setdefault("first_date", date.today().isoformat())
+    p.save()
+    print(f"✅ 已写入 {p.rel}/metadata.json\n   信号→模式: {p.signal_line}")
+
+
+# ---------------------------------------------------------------- main
+def _flag(argv: list[str], name: str) -> str | None:
+    if name in argv:
+        i = argv.index(name)
+        if i + 1 < len(argv):
+            v = argv[i + 1]
+            del argv[i:i + 2]
+            return v
+        sys.exit(f"{name} 后面需要一个值")
+    return None
 
 
 def main(argv: list[str]) -> None:
-    if not argv or argv[0] in {"-h", "--help", "help"}:
-        print(__doc__)
-        return
-    cmd, args = argv[0], argv[1:]
+    if not argv or argv[0] in ("-h", "--help"):
+        print(__doc__.strip()); return
+    cmd, rest = argv[0], argv[1:]
+    n = int(_flag(rest, "-n") or 3)
     if cmd == "today":
-        n = 3
-        if len(args) >= 2 and args[0] == "-n":
-            n = int(args[1])
         cmd_today(n)
+    elif cmd == "shuffle":
+        cmd_shuffle(n)
     elif cmd == "done":
-        if len(args) != 2:
-            sys.exit("用法: done <文件路径或唯一子串> <g|y|r>")
-        cmd_done(args[0], args[1])
+        note = _flag(rest, "--note")
+        if len(rest) != 2:
+            sys.exit('用法: done <子串> <g|y|r> [--note "卡点"]')
+        cmd_done(rest[0], rest[1], note)
     elif cmd == "stats":
         cmd_stats()
     elif cmd == "list":
-        cmd_list(args[0] if args else "due")
+        cmd_list(rest[0] if rest else "due")
     elif cmd == "init":
-        if len(args) != 2:
-            sys.exit('用法: init <文件路径> "<信号→模式>"')
-        cmd_init(args[0], args[1])
+        guard, sticking = _flag(rest, "--guard"), _flag(rest, "--sticking")
+        if len(rest) != 2:
+            sys.exit('用法: init <子串> "<信号→模式>" [--guard "..."] [--sticking "..."]')
+        cmd_init(rest[0], rest[1], guard, sticking)
     else:
-        sys.exit(f"未知命令 {cmd}；执行 --help 查看用法")
+        sys.exit(f"未知命令: {cmd}\n\n{__doc__.strip()}")
 
 
 if __name__ == "__main__":
