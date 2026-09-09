@@ -1,0 +1,17 @@
+{
+  "id": "NC-valid-sudoku",
+  "title": "Valid Sudoku",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/valid-sudoku/",
+    "neetcode": "https://neetcode.io/problems/valid-sudoku/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "行/列/3×3 宫无重复",
+    "mode": "三组哈希集合一次遍历，宫索引 (r//3, c//3)",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

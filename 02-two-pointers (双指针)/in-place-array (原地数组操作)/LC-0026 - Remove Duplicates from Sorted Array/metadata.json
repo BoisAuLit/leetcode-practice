@@ -1,0 +1,17 @@
+{
+  "id": "LC-0026",
+  "title": "Remove Duplicates from Sorted Array",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-08-21"
+  },
+  "practice": []
+}

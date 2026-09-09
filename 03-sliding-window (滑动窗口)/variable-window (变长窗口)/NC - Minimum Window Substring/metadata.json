@@ -1,0 +1,17 @@
+{
+  "id": "NC-minimum-window-with-characters",
+  "title": "Minimum Window Substring",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-window-substring/",
+    "neetcode": "https://neetcode.io/problems/minimum-window-with-characters/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "覆盖 t 所有字符的最短窗口",
+    "mode": "变长滑窗 need/have 计数，满足即收缩",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

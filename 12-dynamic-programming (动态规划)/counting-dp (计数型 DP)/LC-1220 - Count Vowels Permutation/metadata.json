@@ -1,0 +1,17 @@
+{
+  "id": "LC-1220",
+  "title": "Count Vowels Permutation",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/count-vowels-permutation/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-08-09"
+  },
+  "practice": []
+}

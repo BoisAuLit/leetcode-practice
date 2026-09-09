@@ -1,0 +1,17 @@
+{
+  "id": "LC-0239",
+  "title": "Sliding Window Maximum",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/sliding-window-maximum/",
+    "neetcode": "https://neetcode.io/problems/sliding-window-maximum/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-10-27"
+  },
+  "practice": []
+}

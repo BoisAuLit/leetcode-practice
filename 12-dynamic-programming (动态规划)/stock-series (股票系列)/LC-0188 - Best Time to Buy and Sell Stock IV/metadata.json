@@ -1,0 +1,17 @@
+{
+  "id": "LC-0188",
+  "title": "Best Time to Buy and Sell Stock IV",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-07-29"
+  },
+  "practice": []
+}

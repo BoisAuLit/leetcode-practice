@@ -1,0 +1,17 @@
+{
+  "id": "NC-design-twitter-feed",
+  "title": "Design Twitter",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/design-twitter/",
+    "neetcode": "https://neetcode.io/problems/design-twitter-feed/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "关注者最近 10 条推文",
+    "mode": "每用户推文列表 + 堆做 k 路合并（全局时间戳）",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

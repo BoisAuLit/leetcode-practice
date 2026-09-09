@@ -1,0 +1,17 @@
+{
+  "id": "LC-1838",
+  "title": "Frequency of the Most Frequent Element",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/frequency-of-the-most-frequent-element/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-10-29"
+  },
+  "practice": []
+}

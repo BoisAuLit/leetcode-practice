@@ -1,0 +1,17 @@
+{
+  "id": "LC-1717",
+  "title": "Maximum Score From Removing Substrings",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-score-from-removing-substrings/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-07-11"
+  },
+  "practice": []
+}

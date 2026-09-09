@@ -1,0 +1,17 @@
+{
+  "id": "LC-0328",
+  "title": "Odd Even Linked List",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/odd-even-linked-list/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-09-13"
+  },
+  "practice": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "NC-reverse-a-linked-list",
+  "title": "Reverse Linked List",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/reverse-linked-list/",
+    "neetcode": "https://neetcode.io/problems/reverse-a-linked-list/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "反转链表",
+    "mode": "prev/curr 迭代翻转 next；或递归",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

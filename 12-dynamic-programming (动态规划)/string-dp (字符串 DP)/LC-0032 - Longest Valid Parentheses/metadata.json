@@ -1,0 +1,17 @@
+{
+  "id": "LC-0032",
+  "title": "Longest Valid Parentheses",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/longest-valid-parentheses/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-12-08"
+  },
+  "practice": []
+}

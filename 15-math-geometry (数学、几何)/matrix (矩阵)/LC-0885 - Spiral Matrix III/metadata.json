@@ -1,0 +1,17 @@
+{
+  "id": "LC-0885",
+  "title": "Spiral Matrix III",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/spiral-matrix-iii/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-09-12"
+  },
+  "practice": []
+}

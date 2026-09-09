@@ -1,0 +1,17 @@
+{
+  "id": "NC-partition-equal-subset-sum",
+  "title": "Partition Equal Subset Sum",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/partition-equal-subset-sum/",
+    "neetcode": "https://neetcode.io/problems/partition-equal-subset-sum/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "能否分成和相等两半",
+    "mode": "0/1 背包可行性，目标 S/2，一维倒序",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

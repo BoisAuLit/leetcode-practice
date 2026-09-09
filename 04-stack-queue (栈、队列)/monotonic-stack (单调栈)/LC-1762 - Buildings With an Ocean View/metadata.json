@@ -1,0 +1,17 @@
+{
+  "id": "LC-1762",
+  "title": "Buildings With an Ocean View",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/buildings-with-an-ocean-view/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2024-06-15"
+  },
+  "practice": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "LC-0035",
+  "title": "Search Insert Position",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/search-insert-position/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-06-13"
+  },
+  "practice": []
+}

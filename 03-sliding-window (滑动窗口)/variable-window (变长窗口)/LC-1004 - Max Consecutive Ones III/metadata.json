@@ -1,0 +1,17 @@
+{
+  "id": "LC-1004",
+  "title": "Max Consecutive Ones III",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/max-consecutive-ones-iii/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-11-03"
+  },
+  "practice": []
+}

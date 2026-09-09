@@ -1,0 +1,17 @@
+{
+  "id": "LC-0404",
+  "title": "Sum of Left Leaves",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/sum-of-left-leaves/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-08-28"
+  },
+  "practice": []
+}

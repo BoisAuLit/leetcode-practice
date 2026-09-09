@@ -1,0 +1,17 @@
+{
+  "id": "LC-1207",
+  "title": "Unique Number of Occurrences",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/unique-number-of-occurrences/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-06-25"
+  },
+  "practice": []
+}

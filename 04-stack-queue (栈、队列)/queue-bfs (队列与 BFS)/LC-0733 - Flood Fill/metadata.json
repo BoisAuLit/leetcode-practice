@@ -1,0 +1,17 @@
+{
+  "id": "LC-0733",
+  "title": "Flood Fill",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/flood-fill/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-02-06"
+  },
+  "practice": []
+}

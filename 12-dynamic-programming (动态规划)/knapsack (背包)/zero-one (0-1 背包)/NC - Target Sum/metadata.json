@@ -1,0 +1,17 @@
+{
+  "id": "NC-target-sum",
+  "title": "Target Sum",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/target-sum/",
+    "neetcode": "https://neetcode.io/problems/target-sum/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "加减号凑 target 的方案数",
+    "mode": "转子集和 P = (S+target)/2，0/1 背包计数",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-02"
+  },
+  "practice": []
+}

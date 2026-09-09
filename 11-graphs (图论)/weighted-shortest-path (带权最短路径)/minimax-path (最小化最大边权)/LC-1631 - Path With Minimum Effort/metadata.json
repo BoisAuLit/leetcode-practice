@@ -1,0 +1,17 @@
+{
+  "id": "LC-1631",
+  "title": "Path With Minimum Effort",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/path-with-minimum-effort/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-09-04"
+  },
+  "practice": []
+}

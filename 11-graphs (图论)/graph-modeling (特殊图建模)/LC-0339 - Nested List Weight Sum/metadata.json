@@ -1,0 +1,17 @@
+{
+  "id": "LC-0339",
+  "title": "Nested List Weight Sum",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/nested-list-weight-sum/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2024-02-13"
+  },
+  "practice": []
+}

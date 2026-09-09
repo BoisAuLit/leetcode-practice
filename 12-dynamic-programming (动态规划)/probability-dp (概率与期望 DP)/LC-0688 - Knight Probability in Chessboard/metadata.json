@@ -1,0 +1,17 @@
+{
+  "id": "LC-0688",
+  "title": "Knight Probability in Chessboard",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/knight-probability-in-chessboard/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-01-24"
+  },
+  "practice": []
+}

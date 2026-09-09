@@ -1,0 +1,17 @@
+{
+  "id": "LC-0224",
+  "title": "Basic Calculator",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/basic-calculator/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

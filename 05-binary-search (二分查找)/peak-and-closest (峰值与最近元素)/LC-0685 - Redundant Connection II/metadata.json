@@ -1,0 +1,17 @@
+{
+  "id": "LC-0685",
+  "title": "Redundant Connection II",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/redundant-connection-ii/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-09-29"
+  },
+  "practice": []
+}

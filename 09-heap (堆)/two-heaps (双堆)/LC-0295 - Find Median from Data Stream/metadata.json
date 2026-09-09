@@ -1,0 +1,17 @@
+{
+  "id": "LC-0295",
+  "title": "Find Median from Data Stream",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-median-from-data-stream/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-08-17"
+  },
+  "practice": []
+}

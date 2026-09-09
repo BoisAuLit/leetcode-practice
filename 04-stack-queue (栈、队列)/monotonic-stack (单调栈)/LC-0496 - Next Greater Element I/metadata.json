@@ -1,0 +1,17 @@
+{
+  "id": "LC-0496",
+  "title": "Next Greater Element I",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/next-greater-element-i/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-08-12"
+  },
+  "practice": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "LC-1168",
+  "title": "Optimize Water Distribution in a Village",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/optimize-water-distribution-in-a-village/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-02-09"
+  },
+  "practice": []
+}

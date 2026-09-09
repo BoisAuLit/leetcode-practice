@@ -1,0 +1,17 @@
+{
+  "id": "LC-0155",
+  "title": "Min Stack",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/min-stack/",
+    "neetcode": "https://neetcode.io/problems/minimum-stack/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-02-06"
+  },
+  "practice": []
+}

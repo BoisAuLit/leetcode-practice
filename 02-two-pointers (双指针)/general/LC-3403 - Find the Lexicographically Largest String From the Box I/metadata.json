@@ -1,0 +1,17 @@
+{
+  "id": "LC-3403",
+  "title": "Find the Lexicographically Largest String From the Box I",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-11-17"
+  },
+  "practice": []
+}

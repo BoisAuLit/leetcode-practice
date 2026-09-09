@@ -1,0 +1,23 @@
+{
+  "id": "NC-count-subsequences",
+  "title": "Distinct Subsequences",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/distinct-subsequences/",
+    "neetcode": "https://neetcode.io/problems/count-subsequences/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "s 的子序列等于 t 的个数",
+    "mode": "双序列 DP：相等 take + skip，不等 skip；j == n → 1",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-05"
+  },
+  "practice": [
+    {
+      "date": "2026-09-05",
+      "sticking_point": "",
+      "result": "🟡"
+    }
+  ]
+}

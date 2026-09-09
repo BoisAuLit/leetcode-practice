@@ -1,0 +1,17 @@
+{
+  "id": "LC-0062",
+  "title": "Unique Paths",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/unique-paths/",
+    "neetcode": "https://neetcode.io/problems/count-paths/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-08-05"
+  },
+  "practice": []
+}

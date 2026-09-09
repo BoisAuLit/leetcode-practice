@@ -1,0 +1,17 @@
+{
+  "id": "LC-2419",
+  "title": "Longest Subarray With Maximum Bitwise AND",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-01-04"
+  },
+  "practice": []
+}

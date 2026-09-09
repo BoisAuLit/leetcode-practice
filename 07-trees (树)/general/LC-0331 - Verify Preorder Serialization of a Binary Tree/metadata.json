@@ -1,0 +1,17 @@
+{
+  "id": "LC-0331",
+  "title": "Verify Preorder Serialization of a Binary Tree",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-07-30"
+  },
+  "practice": []
+}

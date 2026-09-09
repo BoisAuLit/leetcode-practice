@@ -1,0 +1,17 @@
+{
+  "id": "NC-palindromic-substrings",
+  "title": "Palindromic Substrings",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/palindromic-substrings/",
+    "neetcode": "https://neetcode.io/problems/palindromic-substrings/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "回文子串计数",
+    "mode": "每个中心扩展计数（奇偶）",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

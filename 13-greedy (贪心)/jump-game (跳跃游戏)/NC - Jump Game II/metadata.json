@@ -1,0 +1,17 @@
+{
+  "id": "NC-jump-game-ii",
+  "title": "Jump Game II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/jump-game-ii/",
+    "neetcode": "https://neetcode.io/problems/jump-game-ii/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "最少跳数",
+    "mode": "分层 BFS 思想：当前层边界耗尽时跳数 +1，新边界 = 层内最远",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

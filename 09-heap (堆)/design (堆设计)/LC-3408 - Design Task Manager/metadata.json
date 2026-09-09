@@ -1,0 +1,17 @@
+{
+  "id": "LC-3408",
+  "title": "Design Task Manager",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/design-task-manager/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-01-04"
+  },
+  "practice": []
+}

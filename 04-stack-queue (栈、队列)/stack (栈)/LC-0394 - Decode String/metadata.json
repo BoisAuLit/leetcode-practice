@@ -1,0 +1,17 @@
+{
+  "id": "LC-0394",
+  "title": "Decode String",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/decode-string/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-02-06"
+  },
+  "practice": []
+}

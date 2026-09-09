@@ -1,0 +1,17 @@
+{
+  "id": "LC-0014",
+  "title": "Longest Common Prefix",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/longest-common-prefix/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-11-15"
+  },
+  "practice": []
+}

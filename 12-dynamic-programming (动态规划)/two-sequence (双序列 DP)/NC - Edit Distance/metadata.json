@@ -1,0 +1,17 @@
+{
+  "id": "NC-edit-distance",
+  "title": "Edit Distance",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/edit-distance/",
+    "neetcode": "https://neetcode.io/problems/edit-distance/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "把 word1 改成 word2 的最少操作数（插/删/换）",
+    "mode": "双序列 DP：三操作 = 前线两指针的三种走法",
+    "guard": "(\"\",\"abc\")->3, (\"abc\",\"\")->3, (\"horse\",\"ros\")->3",
+    "sticking_point": "8 种想象操作凭什么砍成 3 种（对偶等价 + 前线规范顺序）",
+    "first_date": "2026-09-06"
+  },
+  "practice": []
+}

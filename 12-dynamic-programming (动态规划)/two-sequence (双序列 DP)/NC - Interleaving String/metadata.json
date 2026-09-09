@@ -1,0 +1,17 @@
+{
+  "id": "NC-interleaving-string",
+  "title": "Interleaving String",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/interleaving-string/",
+    "neetcode": "https://neetcode.io/problems/interleaving-string/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "s3 是否为 s1/s2 交错",
+    "mode": "双序列 DP (i, j)，s3 下标 = i+j，下一字符由谁供给",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-05"
+  },
+  "practice": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "NC-string-encode-and-decode",
+  "title": "Encode and Decode Strings",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/encode-and-decode-strings/",
+    "neetcode": "https://neetcode.io/problems/string-encode-and-decode/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "字符串列表编成一个串且可无歧义还原",
+    "mode": "长度前缀 + 分隔符（len#str）",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

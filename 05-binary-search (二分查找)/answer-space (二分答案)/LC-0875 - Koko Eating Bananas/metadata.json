@@ -1,0 +1,17 @@
+{
+  "id": "LC-0875",
+  "title": "Koko Eating Bananas",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/koko-eating-bananas/",
+    "neetcode": "https://neetcode.io/problems/eating-bananas/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2024-02-27"
+  },
+  "practice": []
+}

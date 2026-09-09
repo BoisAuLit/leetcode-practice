@@ -1,0 +1,17 @@
+{
+  "id": "LC-0203",
+  "title": "Remove Linked List Elements",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/remove-linked-list-elements/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-09-13"
+  },
+  "practice": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "LC-0287",
+  "title": "Find the Duplicate Number",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-the-duplicate-number/",
+    "neetcode": "https://neetcode.io/problems/find-duplicate-integer/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-09-06"
+  },
+  "practice": []
+}

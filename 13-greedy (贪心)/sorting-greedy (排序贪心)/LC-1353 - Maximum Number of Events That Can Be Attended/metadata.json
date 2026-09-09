@@ -1,0 +1,17 @@
+{
+  "id": "LC-1353",
+  "title": "Maximum Number of Events That Can Be Attended",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-11-08"
+  },
+  "practice": []
+}

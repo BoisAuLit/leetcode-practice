@@ -1,0 +1,17 @@
+{
+  "id": "NC-merge-two-sorted-linked-lists",
+  "title": "Merge Two Sorted Linked Lists",
+  "difficulty": "E",
+  "link": {
+    "leetcode": null,
+    "neetcode": "https://neetcode.io/problems/merge-two-sorted-linked-lists/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "合并两有序链表",
+    "mode": "dummy 头 + 双指针逐个接较小者",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "LC-0498",
+  "title": "Diagonal Traverse",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/diagonal-traverse/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-06-18"
+  },
+  "practice": []
+}

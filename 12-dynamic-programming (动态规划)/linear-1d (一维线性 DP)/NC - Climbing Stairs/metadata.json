@@ -1,0 +1,17 @@
+{
+  "id": "NC-climbing-stairs",
+  "title": "Climbing Stairs",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/climbing-stairs/",
+    "neetcode": "https://neetcode.io/problems/climbing-stairs/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "每次 1 或 2 步的方法数",
+    "mode": "f(n) = f(n−1) + f(n−2)，斐波那契滚动",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

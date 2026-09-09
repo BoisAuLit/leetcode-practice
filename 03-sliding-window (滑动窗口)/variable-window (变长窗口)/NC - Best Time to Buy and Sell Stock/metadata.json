@@ -1,0 +1,17 @@
+{
+  "id": "NC-buy-and-sell-crypto",
+  "title": "Best Time to Buy and Sell Stock",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+    "neetcode": "https://neetcode.io/problems/buy-and-sell-crypto/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "一次买卖最大利润",
+    "mode": "一趟维护历史最低价，当前价 − 最低价取 max",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

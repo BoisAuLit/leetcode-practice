@@ -1,0 +1,17 @@
+{
+  "id": "LC-0108",
+  "title": "Convert Sorted Array to Binary Search Tree",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-06-22"
+  },
+  "practice": []
+}

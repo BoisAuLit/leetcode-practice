@@ -1,0 +1,17 @@
+{
+  "id": "LC-0016",
+  "title": "3Sum Closest",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/3sum-closest/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-10-11"
+  },
+  "practice": []
+}

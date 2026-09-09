@@ -1,0 +1,17 @@
+{
+  "id": "NC-insert-new-interval",
+  "title": "Insert Interval",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/insert-interval/",
+    "neetcode": "https://neetcode.io/problems/insert-new-interval/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "插入并合并",
+    "mode": "三段：左侧不重叠原样、重叠合并、右侧原样",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

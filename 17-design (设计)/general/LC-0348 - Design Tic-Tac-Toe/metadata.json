@@ -1,0 +1,17 @@
+{
+  "id": "LC-0348",
+  "title": "Design Tic-Tac-Toe",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/design-tic-tac-toe/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-01-28"
+  },
+  "practice": []
+}

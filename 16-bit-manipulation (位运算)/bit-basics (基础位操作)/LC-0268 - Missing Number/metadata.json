@@ -1,0 +1,17 @@
+{
+  "id": "LC-0268",
+  "title": "Missing Number",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/missing-number/",
+    "neetcode": "https://neetcode.io/problems/missing-number/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-08-06"
+  },
+  "practice": []
+}

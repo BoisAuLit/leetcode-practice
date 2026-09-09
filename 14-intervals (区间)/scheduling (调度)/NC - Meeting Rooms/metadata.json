@@ -1,0 +1,17 @@
+{
+  "id": "NC-meeting-schedule",
+  "title": "Meeting Rooms",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/meeting-rooms/",
+    "neetcode": "https://neetcode.io/problems/meeting-schedule/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "能否全部参加",
+    "mode": "按起点排序，相邻检查重叠",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

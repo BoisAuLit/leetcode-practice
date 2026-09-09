@@ -1,0 +1,17 @@
+{
+  "id": "LC-0349",
+  "title": "Intersection of Two Arrays",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/intersection-of-two-arrays/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-07-17"
+  },
+  "practice": []
+}

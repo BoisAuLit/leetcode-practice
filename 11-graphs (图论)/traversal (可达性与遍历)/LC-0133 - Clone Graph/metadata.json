@@ -1,0 +1,17 @@
+{
+  "id": "LC-0133",
+  "title": "Clone Graph",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/clone-graph/",
+    "neetcode": "https://neetcode.io/problems/clone-graph/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "克隆图",
+    "mode": "哈希 原→新 + DFS/BFS，先建节点再连边",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

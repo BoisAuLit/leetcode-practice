@@ -1,0 +1,17 @@
+{
+  "id": "NC-merge-triplets-to-form-target",
+  "title": "Merge Triplets to Form Target",
+  "difficulty": "M",
+  "link": {
+    "leetcode": null,
+    "neetcode": "https://neetcode.io/problems/merge-triplets-to-form-target/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "max 合并能否凑出 target",
+    "mode": "过滤任一位超标的 triplet，剩余检查三位各能命中",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

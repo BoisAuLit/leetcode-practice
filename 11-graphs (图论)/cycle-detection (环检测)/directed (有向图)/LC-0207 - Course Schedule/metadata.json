@@ -1,0 +1,17 @@
+{
+  "id": "LC-0207",
+  "title": "Course Schedule",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/course-schedule/",
+    "neetcode": "https://neetcode.io/problems/course-schedule/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "课程能否修完 = 有向图无环",
+    "mode": "DFS 三色标记（VISITING 再遇即环）",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

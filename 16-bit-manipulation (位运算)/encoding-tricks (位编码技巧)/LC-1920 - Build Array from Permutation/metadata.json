@@ -1,0 +1,17 @@
+{
+  "id": "LC-1920",
+  "title": "Build Array from Permutation",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/build-array-from-permutation/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-07-19"
+  },
+  "practice": []
+}

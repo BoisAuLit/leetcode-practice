@@ -1,0 +1,17 @@
+{
+  "id": "LC-0138",
+  "title": "Copy List with Random Pointer",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/copy-list-with-random-pointer/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-09-18"
+  },
+  "practice": []
+}

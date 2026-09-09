@@ -1,0 +1,17 @@
+{
+  "id": "LC-0023",
+  "title": "Merge k Sorted Lists",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/merge-k-sorted-lists/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-10-16"
+  },
+  "practice": []
+}

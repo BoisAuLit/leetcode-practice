@@ -1,0 +1,17 @@
+{
+  "id": "NC-decode-ways",
+  "title": "Decode Ways",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/decode-ways/",
+    "neetcode": "https://neetcode.io/problems/decode-ways/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "数字串解码方法数",
+    "mode": "dp[i] = (单位合法) dp[i−1] + (双位 10..26) dp[i−2]，\"0\" 特殊",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

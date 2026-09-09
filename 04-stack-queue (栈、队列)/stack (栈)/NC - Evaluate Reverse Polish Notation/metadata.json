@@ -1,0 +1,17 @@
+{
+  "id": "NC-evaluate-reverse-polish-notation",
+  "title": "Evaluate Reverse Polish Notation",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+    "neetcode": "https://neetcode.io/problems/evaluate-reverse-polish-notation/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "后缀表达式求值",
+    "mode": "栈：数字压栈，运算符弹两个算完压回",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

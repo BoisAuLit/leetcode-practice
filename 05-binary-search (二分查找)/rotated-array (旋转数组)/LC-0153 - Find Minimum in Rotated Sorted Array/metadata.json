@@ -1,0 +1,17 @@
+{
+  "id": "LC-0153",
+  "title": "Find Minimum in Rotated Sorted Array",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+    "neetcode": "https://neetcode.io/problems/find-minimum-in-rotated-sorted-array/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-09-27"
+  },
+  "practice": []
+}

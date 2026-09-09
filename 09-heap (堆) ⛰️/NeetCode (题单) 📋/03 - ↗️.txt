@@ -1,1 +1,0 @@
-https://neetcode.io/problems/k-closest-points-to-origin/question?list=neetcode150

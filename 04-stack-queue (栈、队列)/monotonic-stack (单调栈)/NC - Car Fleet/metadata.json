@@ -1,0 +1,17 @@
+{
+  "id": "NC-car-fleet",
+  "title": "Car Fleet",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/car-fleet/",
+    "neetcode": "https://neetcode.io/problems/car-fleet/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "车队合并数",
+    "mode": "按起点降序，算到达时间，后车更快则并入前车（单调栈）",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

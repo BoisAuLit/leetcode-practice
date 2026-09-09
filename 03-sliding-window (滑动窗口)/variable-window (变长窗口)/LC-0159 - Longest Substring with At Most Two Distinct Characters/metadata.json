@@ -1,0 +1,17 @@
+{
+  "id": "LC-0159",
+  "title": "Longest Substring with At Most Two Distinct Characters",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-10-28"
+  },
+  "practice": []
+}

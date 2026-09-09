@@ -1,0 +1,17 @@
+{
+  "id": "NC-non-overlapping-intervals",
+  "title": "Non-overlapping Intervals",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/non-overlapping-intervals/",
+    "neetcode": "https://neetcode.io/problems/non-overlapping-intervals/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "最少删除使不重叠",
+    "mode": "按结束时间排序，贪心保留最早结束",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

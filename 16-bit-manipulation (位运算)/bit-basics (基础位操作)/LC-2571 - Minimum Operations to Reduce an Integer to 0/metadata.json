@@ -1,0 +1,17 @@
+{
+  "id": "LC-2571",
+  "title": "Minimum Operations to Reduce an Integer to 0",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-11-22"
+  },
+  "practice": []
+}

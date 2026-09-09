@@ -1,0 +1,17 @@
+{
+  "id": "NC-eating-bananas",
+  "title": "Koko Eating Bananas",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/koko-eating-bananas/",
+    "neetcode": "https://neetcode.io/problems/eating-bananas/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "满足时限的最小速度",
+    "mode": "答案二分（可行性单调）",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

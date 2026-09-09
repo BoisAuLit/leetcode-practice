@@ -1,0 +1,17 @@
+{
+  "id": "NC-kth-largest-integer-in-a-stream",
+  "title": "Kth Largest Element in a Stream",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
+    "neetcode": "https://neetcode.io/problems/kth-largest-integer-in-a-stream/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "流中第 k 大",
+    "mode": "大小为 k 的小根堆，堆顶即答案",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-08-18"
+  },
+  "practice": []
+}

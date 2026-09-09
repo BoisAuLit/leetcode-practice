@@ -1,0 +1,17 @@
+{
+  "id": "LC-0317",
+  "title": "Shortest Distance from All Buildings",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/shortest-distance-from-all-buildings/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-11-27"
+  },
+  "practice": []
+}

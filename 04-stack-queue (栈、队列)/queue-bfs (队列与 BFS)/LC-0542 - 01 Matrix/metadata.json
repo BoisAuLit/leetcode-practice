@@ -1,0 +1,17 @@
+{
+  "id": "LC-0542",
+  "title": "01 Matrix",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/01-matrix/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-02-06"
+  },
+  "practice": []
+}

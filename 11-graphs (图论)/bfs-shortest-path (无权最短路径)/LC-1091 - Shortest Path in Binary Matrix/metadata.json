@@ -1,0 +1,17 @@
+{
+  "id": "LC-1091",
+  "title": "Shortest Path in Binary Matrix",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/shortest-path-in-binary-matrix/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-08-24"
+  },
+  "practice": []
+}

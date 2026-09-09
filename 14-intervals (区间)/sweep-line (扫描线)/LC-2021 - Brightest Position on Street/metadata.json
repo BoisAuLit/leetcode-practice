@@ -1,0 +1,17 @@
+{
+  "id": "LC-2021",
+  "title": "Brightest Position on Street",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/brightest-position-on-street/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-12-10"
+  },
+  "practice": []
+}

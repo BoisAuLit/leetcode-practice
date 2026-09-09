@@ -1,0 +1,17 @@
+{
+  "id": "LC-2817",
+  "title": "Minimum Absolute Difference Between Elements With Constraint",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-absolute-difference-between-elements-with-constraint/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-01-07"
+  },
+  "practice": []
+}

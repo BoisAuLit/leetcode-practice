@@ -1,0 +1,17 @@
+{
+  "id": "LC-0322",
+  "title": "Coin Change",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/coin-change/",
+    "neetcode": "https://neetcode.io/problems/coin-change/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "最少硬币数",
+    "mode": "完全背包 min 版；递归 dp(i, remain) 选（i 不动）/ 跳",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

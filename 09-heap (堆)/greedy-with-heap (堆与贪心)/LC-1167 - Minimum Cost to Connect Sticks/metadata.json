@@ -1,0 +1,17 @@
+{
+  "id": "LC-1167",
+  "title": "Minimum Cost to Connect Sticks",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-cost-to-connect-sticks/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-08-17"
+  },
+  "practice": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "LC-0210",
+  "title": "Course Schedule II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/course-schedule-ii/",
+    "neetcode": "https://neetcode.io/problems/course-schedule-ii/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "课程顺序",
+    "mode": "DFS 后序反转 = 拓扑序；三色判环",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

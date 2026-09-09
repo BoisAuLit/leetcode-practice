@@ -1,0 +1,17 @@
+{
+  "id": "LC-0442",
+  "title": "Find All Duplicates in an Array",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-all-duplicates-in-an-array/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-09-05"
+  },
+  "practice": []
+}

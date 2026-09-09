@@ -1,0 +1,17 @@
+{
+  "id": "LC-3494",
+  "title": "Find the Minimum Amount of Time to Brew Potions",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-the-minimum-amount-of-time-to-brew-potions/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-02-01"
+  },
+  "practice": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "NC-kth-largest-element-in-an-array",
+  "title": "Kth Largest Element in an Array",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+    "neetcode": "https://neetcode.io/problems/kth-largest-element-in-an-array/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "数组第 k 大",
+    "mode": "小根堆 size k；或 quickselect 平均 O(n)",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "NC-regular-expression-matching",
+  "title": "Regular Expression Matching",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/regular-expression-matching/",
+    "neetcode": "https://neetcode.io/problems/regular-expression-matching/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "带 . 和 * 的模式匹配",
+    "mode": "双序列 DP：星号 = 前线二选一（不吃跳 j+2 / 吃一个 i+1 且 j 原地踏步）",
+    "guard": "(\"a\",\"abc\")->False, (\"aab\",\"c*a*b\")->True",
+    "sticking_point": "M1 第三次复发——普通字符分支漏 i<m 守卫，j==n-1 特判只挡住一条边（M9 影子）",
+    "first_date": "2026-09-06"
+  },
+  "practice": []
+}

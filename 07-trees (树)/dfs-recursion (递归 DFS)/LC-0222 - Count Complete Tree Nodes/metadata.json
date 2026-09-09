@@ -1,0 +1,17 @@
+{
+  "id": "LC-0222",
+  "title": "Count Complete Tree Nodes",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/count-complete-tree-nodes/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-08-19"
+  },
+  "practice": []
+}

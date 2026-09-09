@@ -1,0 +1,17 @@
+{
+  "id": "LC-0278",
+  "title": "First Bad Version",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/first-bad-version/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-06-30"
+  },
+  "practice": []
+}

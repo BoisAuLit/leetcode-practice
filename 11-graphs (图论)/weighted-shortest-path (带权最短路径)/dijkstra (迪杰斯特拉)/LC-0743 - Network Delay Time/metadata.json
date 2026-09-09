@@ -1,0 +1,17 @@
+{
+  "id": "LC-0743",
+  "title": "Network Delay Time",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/network-delay-time/",
+    "neetcode": "https://neetcode.io/problems/network-delay-time/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "信号传遍所有节点的时间",
+    "mode": "Dijkstra 单源最短路，答案取 dist 最大值",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-09-06"
+  },
+  "practice": []
+}

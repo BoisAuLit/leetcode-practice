@@ -1,0 +1,17 @@
+{
+  "id": "LC-0332",
+  "title": "Reconstruct Itinerary",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/reconstruct-itinerary/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": "用完所有票的字典序最小行程",
+    "mode": "欧拉路径 Hierholzer：后序 append 再反转",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-09-06"
+  },
+  "practice": []
+}

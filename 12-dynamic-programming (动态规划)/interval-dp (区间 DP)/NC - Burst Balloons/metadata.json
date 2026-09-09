@@ -1,0 +1,17 @@
+{
+  "id": "NC-burst-balloons",
+  "title": "Burst Balloons",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/burst-balloons/",
+    "neetcode": "https://neetcode.io/problems/burst-balloons/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "消除元素且得分依赖左右邻居",
+    "mode": "区间 DP：枚举\"最后被扎的\" k，让它当墙劈开区间",
+    "guard": "[5]->5, [3,1,5,8]->167, [4,2,3,7]->143",
+    "sticking_point": "正着想会粘邻居、子问题耦合；必须倒过来问\"谁最后死\"",
+    "first_date": "2026-09-06"
+  },
+  "practice": []
+}

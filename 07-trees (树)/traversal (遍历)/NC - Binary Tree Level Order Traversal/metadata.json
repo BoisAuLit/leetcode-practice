@@ -1,0 +1,17 @@
+{
+  "id": "NC-level-order-traversal-of-binary-tree",
+  "title": "Binary Tree Level Order Traversal",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+    "neetcode": "https://neetcode.io/problems/level-order-traversal-of-binary-tree/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "层序遍历",
+    "mode": "BFS 队列，按当前队列长度切层",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

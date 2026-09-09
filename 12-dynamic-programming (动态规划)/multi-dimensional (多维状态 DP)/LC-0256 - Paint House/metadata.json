@@ -1,0 +1,17 @@
+{
+  "id": "LC-0256",
+  "title": "Paint House",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/paint-house/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-08-07"
+  },
+  "practice": []
+}

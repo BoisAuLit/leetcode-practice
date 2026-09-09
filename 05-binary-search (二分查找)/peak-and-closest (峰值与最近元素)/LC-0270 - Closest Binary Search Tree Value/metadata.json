@@ -1,0 +1,17 @@
+{
+  "id": "LC-0270",
+  "title": "Closest Binary Search Tree Value",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/closest-binary-search-tree-value/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-10-02"
+  },
+  "practice": []
+}

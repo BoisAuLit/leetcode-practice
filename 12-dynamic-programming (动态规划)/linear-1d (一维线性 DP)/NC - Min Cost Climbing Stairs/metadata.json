@@ -1,0 +1,17 @@
+{
+  "id": "NC-min-cost-climbing-stairs",
+  "title": "Min Cost Climbing Stairs",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/min-cost-climbing-stairs/",
+    "neetcode": "https://neetcode.io/problems/min-cost-climbing-stairs/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "到顶最小花费",
+    "mode": "dp[i] = cost[i] + min(dp[i−1], dp[i−2])",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

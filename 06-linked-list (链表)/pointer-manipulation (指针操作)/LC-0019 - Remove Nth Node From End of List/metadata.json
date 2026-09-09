@@ -1,0 +1,17 @@
+{
+  "id": "LC-0019",
+  "title": "Remove Nth Node From End of List",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+    "neetcode": "https://neetcode.io/problems/remove-node-from-end-of-linked-list/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-09-12"
+  },
+  "practice": []
+}

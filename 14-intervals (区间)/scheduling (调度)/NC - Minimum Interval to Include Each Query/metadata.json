@@ -1,0 +1,17 @@
+{
+  "id": "NC-minimum-interval-including-query",
+  "title": "Minimum Interval to Include Each Query",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-interval-to-include-each-query/",
+    "neetcode": "https://neetcode.io/problems/minimum-interval-including-query/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "每个查询点覆盖它的最短区间",
+    "mode": "查询排序 + 区间按起点排序 + 小根堆 (长度, 终点) 懒删除",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

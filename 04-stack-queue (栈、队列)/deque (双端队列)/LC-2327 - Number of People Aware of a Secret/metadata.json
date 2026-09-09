@@ -1,0 +1,17 @@
+{
+  "id": "LC-2327",
+  "title": "Number of People Aware of a Secret",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/number-of-people-aware-of-a-secret/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-07-11"
+  },
+  "practice": []
+}

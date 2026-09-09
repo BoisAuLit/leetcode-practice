@@ -1,0 +1,17 @@
+{
+  "id": "NC-permutations",
+  "title": "Permutations",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/permutations/",
+    "neetcode": "https://neetcode.io/problems/permutations/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "全排列",
+    "mode": "回溯 + used 标记；或交换法",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

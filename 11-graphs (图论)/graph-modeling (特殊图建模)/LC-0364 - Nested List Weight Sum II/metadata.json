@@ -1,0 +1,17 @@
+{
+  "id": "LC-0364",
+  "title": "Nested List Weight Sum II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/nested-list-weight-sum-ii/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-12-08"
+  },
+  "practice": []
+}

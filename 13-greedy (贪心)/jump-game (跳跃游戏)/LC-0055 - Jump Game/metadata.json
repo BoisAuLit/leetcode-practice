@@ -1,0 +1,17 @@
+{
+  "id": "LC-0055",
+  "title": "Jump Game",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/jump-game/",
+    "neetcode": "https://neetcode.io/problems/jump-game/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-01-20"
+  },
+  "practice": []
+}

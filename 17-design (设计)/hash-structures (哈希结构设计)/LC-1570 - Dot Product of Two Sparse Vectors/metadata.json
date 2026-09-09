@@ -1,0 +1,17 @@
+{
+  "id": "LC-1570",
+  "title": "Dot Product of Two Sparse Vectors",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/dot-product-of-two-sparse-vectors/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2024-02-20"
+  },
+  "practice": []
+}

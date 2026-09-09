@@ -1,0 +1,17 @@
+{
+  "id": "LC-1249",
+  "title": "Minimum Remove to Make Valid Parentheses",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2024-06-15"
+  },
+  "practice": []
+}

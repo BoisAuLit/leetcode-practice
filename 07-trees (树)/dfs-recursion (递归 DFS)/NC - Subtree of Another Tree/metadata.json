@@ -1,0 +1,17 @@
+{
+  "id": "NC-subtree-of-a-binary-tree",
+  "title": "Subtree of Another Tree",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/subtree-of-another-tree/",
+    "neetcode": "https://neetcode.io/problems/subtree-of-a-binary-tree/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "s 是否含 t 为子树",
+    "mode": "对 s 每个节点做 sameTree 检查",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

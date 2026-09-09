@@ -1,0 +1,17 @@
+{
+  "id": "LC-0242",
+  "title": "Valid Anagram",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/valid-anagram/",
+    "neetcode": "https://neetcode.io/problems/is-anagram/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-07-05"
+  },
+  "practice": []
+}

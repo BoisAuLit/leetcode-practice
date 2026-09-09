@@ -1,0 +1,17 @@
+{
+  "id": "NC-partition-labels",
+  "title": "Partition Labels",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/partition-labels/",
+    "neetcode": "https://neetcode.io/problems/partition-labels/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "字母不跨段的最多分段",
+    "mode": "记每字母最后出现位置，扫到当前段最远边界即切",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

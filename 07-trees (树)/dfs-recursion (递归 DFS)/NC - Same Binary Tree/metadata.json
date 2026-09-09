@@ -1,0 +1,17 @@
+{
+  "id": "NC-same-binary-tree",
+  "title": "Same Binary Tree",
+  "difficulty": "E",
+  "link": {
+    "leetcode": null,
+    "neetcode": "https://neetcode.io/problems/same-binary-tree/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "两树相同",
+    "mode": "同步递归比较结构与值",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

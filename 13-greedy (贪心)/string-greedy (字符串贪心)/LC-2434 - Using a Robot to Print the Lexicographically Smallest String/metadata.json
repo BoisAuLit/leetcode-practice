@@ -1,0 +1,17 @@
+{
+  "id": "LC-2434",
+  "title": "Using a Robot to Print the Lexicographically Smallest String",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-11-23"
+  },
+  "practice": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "LC-1567",
+  "title": "Maximum Length of Subarray With Positive Product",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-01-27"
+  },
+  "practice": []
+}

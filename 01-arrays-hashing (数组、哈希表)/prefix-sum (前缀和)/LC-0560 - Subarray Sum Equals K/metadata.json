@@ -1,0 +1,17 @@
+{
+  "id": "LC-0560",
+  "title": "Subarray Sum Equals K",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/subarray-sum-equals-k/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-10-05"
+  },
+  "practice": []
+}

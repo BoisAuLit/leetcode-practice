@@ -1,0 +1,17 @@
+{
+  "id": "NC-combinations-of-a-phone-number",
+  "title": "Letter Combinations of a Phone Number",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+    "neetcode": "https://neetcode.io/problems/combinations-of-a-phone-number/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "按键字母组合",
+    "mode": "回溯逐位展开映射",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "LC-0486",
+  "title": "Predict the Winner",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/predict-the-winner/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-09-16"
+  },
+  "practice": []
+}

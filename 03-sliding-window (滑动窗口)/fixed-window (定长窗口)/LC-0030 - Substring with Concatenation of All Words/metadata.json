@@ -1,0 +1,17 @@
+{
+  "id": "LC-0030",
+  "title": "Substring with Concatenation of All Words",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-10-19"
+  },
+  "practice": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "NC-add-two-numbers",
+  "title": "Add Two Numbers",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/add-two-numbers/",
+    "neetcode": "https://neetcode.io/problems/add-two-numbers/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "逆序链表加法",
+    "mode": "逐位相加带进位，dummy 头，末尾处理剩余进位",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

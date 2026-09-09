@@ -1,0 +1,17 @@
+{
+  "id": "LC-0052",
+  "title": "N-Queens II",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/n-queens-ii/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-09-27"
+  },
+  "practice": []
+}

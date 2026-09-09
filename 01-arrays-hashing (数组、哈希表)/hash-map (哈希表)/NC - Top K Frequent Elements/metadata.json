@@ -1,0 +1,17 @@
+{
+  "id": "NC-top-k-elements-in-list",
+  "title": "Top K Frequent Elements",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/top-k-frequent-elements/",
+    "neetcode": "https://neetcode.io/problems/top-k-elements-in-list/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "前 K 个高频",
+    "mode": "计数 + 大小为 K 的小根堆；或按频率装桶 O(n)",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

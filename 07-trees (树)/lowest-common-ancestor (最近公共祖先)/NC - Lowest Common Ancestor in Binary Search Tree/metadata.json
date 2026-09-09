@@ -1,0 +1,17 @@
+{
+  "id": "NC-lowest-common-ancestor-in-binary-search-tree",
+  "title": "Lowest Common Ancestor in Binary Search Tree",
+  "difficulty": "M",
+  "link": {
+    "leetcode": null,
+    "neetcode": "https://neetcode.io/problems/lowest-common-ancestor-in-binary-search-tree/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "BST 最近公共祖先",
+    "mode": "利用有序性：都小往左、都大往右、分叉即答案",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

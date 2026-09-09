@@ -1,0 +1,17 @@
+{
+  "id": "LC-0219",
+  "title": "Contains Duplicate II",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/contains-duplicate-ii/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-08-11"
+  },
+  "practice": []
+}

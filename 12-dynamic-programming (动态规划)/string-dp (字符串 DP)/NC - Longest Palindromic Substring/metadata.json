@@ -1,0 +1,17 @@
+{
+  "id": "NC-longest-palindromic-substring",
+  "title": "Longest Palindromic Substring",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/longest-palindromic-substring/",
+    "neetcode": "https://neetcode.io/problems/longest-palindromic-substring/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "最长回文子串",
+    "mode": "中心扩展（奇偶两种中心）；或区间 DP",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

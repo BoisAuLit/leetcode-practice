@@ -1,0 +1,17 @@
+{
+  "id": "NC-generate-parentheses",
+  "title": "Generate Parentheses",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/generate-parentheses/",
+    "neetcode": "https://neetcode.io/problems/generate-parentheses/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "n 对合法括号",
+    "mode": "回溯：左数 < n 可加左，右数 < 左数可加右",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

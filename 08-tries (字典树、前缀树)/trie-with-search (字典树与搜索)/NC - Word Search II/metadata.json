@@ -1,0 +1,17 @@
+{
+  "id": "NC-search-for-word-ii",
+  "title": "Word Search II",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/word-search-ii/",
+    "neetcode": "https://neetcode.io/problems/search-for-word-ii/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "网格找多个单词",
+    "mode": "词表建 Trie + 网格 DFS 沿 Trie 走，命中即收并剪枝",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

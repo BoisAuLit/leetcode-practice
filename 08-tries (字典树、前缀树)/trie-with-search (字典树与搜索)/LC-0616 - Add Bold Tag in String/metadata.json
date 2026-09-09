@@ -1,0 +1,17 @@
+{
+  "id": "LC-0616",
+  "title": "Add Bold Tag in String",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/add-bold-tag-in-string/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-12-25"
+  },
+  "practice": []
+}

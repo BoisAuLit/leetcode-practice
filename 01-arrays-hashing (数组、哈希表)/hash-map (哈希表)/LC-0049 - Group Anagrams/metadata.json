@@ -1,0 +1,17 @@
+{
+  "id": "LC-0049",
+  "title": "Group Anagrams",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/group-anagrams/",
+    "neetcode": "https://neetcode.io/problems/anagram-groups/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-10-01"
+  },
+  "practice": []
+}

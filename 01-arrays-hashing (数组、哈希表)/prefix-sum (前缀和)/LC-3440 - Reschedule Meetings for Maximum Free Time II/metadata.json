@@ -1,0 +1,17 @@
+{
+  "id": "LC-3440",
+  "title": "Reschedule Meetings for Maximum Free Time II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-ii/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-12-29"
+  },
+  "practice": []
+}

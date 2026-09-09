@@ -1,0 +1,17 @@
+{
+  "id": "NC-find-median-in-a-data-stream",
+  "title": "Find Median From Data Stream",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-median-from-data-stream/",
+    "neetcode": "https://neetcode.io/problems/find-median-in-a-data-stream/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "动态中位数",
+    "mode": "大根堆（小半）+ 小根堆（大半），保持大小平衡",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

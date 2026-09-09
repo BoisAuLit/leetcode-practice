@@ -1,0 +1,17 @@
+{
+  "id": "LC-0003",
+  "title": "Longest Substring Without Repeating Characters",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    "neetcode": "https://neetcode.io/problems/longest-substring-without-duplicates/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-11-17"
+  },
+  "practice": []
+}

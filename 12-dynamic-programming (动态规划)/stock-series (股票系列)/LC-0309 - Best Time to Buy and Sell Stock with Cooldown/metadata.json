@@ -1,0 +1,17 @@
+{
+  "id": "LC-0309",
+  "title": "Best Time to Buy and Sell Stock with Cooldown",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/",
+    "neetcode": "https://neetcode.io/problems/buy-and-sell-crypto-with-cooldown/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-08-02"
+  },
+  "practice": []
+}

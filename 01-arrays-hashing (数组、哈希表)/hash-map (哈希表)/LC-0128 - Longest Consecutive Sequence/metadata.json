@@ -1,0 +1,17 @@
+{
+  "id": "LC-0128",
+  "title": "Longest Consecutive Sequence",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/longest-consecutive-sequence/",
+    "neetcode": "https://neetcode.io/problems/longest-consecutive-sequence/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-10-09"
+  },
+  "practice": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "LC-1802",
+  "title": "Maximum Value at a Given Index in a Bounded Array",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-10-17"
+  },
+  "practice": []
+}

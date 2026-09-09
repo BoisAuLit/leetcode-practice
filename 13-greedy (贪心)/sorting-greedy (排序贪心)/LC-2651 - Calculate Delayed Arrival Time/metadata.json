@@ -1,0 +1,17 @@
+{
+  "id": "LC-2651",
+  "title": "Calculate Delayed Arrival Time",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/rearranging-fruits/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-12-04"
+  },
+  "practice": []
+}

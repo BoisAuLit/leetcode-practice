@@ -1,0 +1,17 @@
+{
+  "id": "NC-count-paths",
+  "title": "Unique Paths",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/unique-paths/",
+    "neetcode": "https://neetcode.io/problems/count-paths/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "只能右/下的路径数",
+    "mode": "dp[i][j] = dp[i−1][j] + dp[i][j−1]，可压一维",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

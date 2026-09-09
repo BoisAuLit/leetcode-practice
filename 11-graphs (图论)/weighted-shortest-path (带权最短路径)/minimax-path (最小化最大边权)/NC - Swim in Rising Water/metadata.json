@@ -1,0 +1,17 @@
+{
+  "id": "NC-swim-in-rising-water",
+  "title": "Swim in Rising Water",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/swim-in-rising-water/",
+    "neetcode": "https://neetcode.io/problems/swim-in-rising-water/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "水位上涨能否抵达",
+    "mode": "瓶颈路径：Dijkstra 把 + 换成 max；或二分答案 + BFS",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

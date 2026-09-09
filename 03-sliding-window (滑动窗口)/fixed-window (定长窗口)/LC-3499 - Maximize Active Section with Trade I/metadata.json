@@ -1,0 +1,17 @@
+{
+  "id": "LC-3499",
+  "title": "Maximize Active Section with Trade I",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximize-active-section-with-trade-i/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-11-04"
+  },
+  "practice": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "LC-3234",
+  "title": "Count the Number of Substrings With Dominant Ones",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-12-28"
+  },
+  "practice": []
+}

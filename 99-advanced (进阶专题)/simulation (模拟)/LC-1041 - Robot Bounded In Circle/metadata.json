@@ -1,0 +1,17 @@
+{
+  "id": "LC-1041",
+  "title": "Robot Bounded In Circle",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/robot-bounded-in-circle/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2024-02-24"
+  },
+  "practice": []
+}

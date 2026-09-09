@@ -1,0 +1,17 @@
+{
+  "id": "LC-0383",
+  "title": "Ransom Note",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/ransom-note/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-08-11"
+  },
+  "practice": []
+}

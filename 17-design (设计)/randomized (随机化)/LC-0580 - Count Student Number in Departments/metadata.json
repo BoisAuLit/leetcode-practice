@@ -1,0 +1,17 @@
+{
+  "id": "LC-0580",
+  "title": "Count Student Number in Departments",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/count-student-number-in-departments/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2024-02-19"
+  },
+  "practice": []
+}

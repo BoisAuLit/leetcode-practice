@@ -1,0 +1,17 @@
+{
+  "id": "LC-0125",
+  "title": "Valid Palindrome",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/valid-palindrome/",
+    "neetcode": "https://neetcode.io/problems/is-palindrome/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-07-08"
+  },
+  "practice": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "LC-0718",
+  "title": "Maximum Length of Repeated Subarray",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-length-of-repeated-subarray/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-08-10"
+  },
+  "practice": []
+}

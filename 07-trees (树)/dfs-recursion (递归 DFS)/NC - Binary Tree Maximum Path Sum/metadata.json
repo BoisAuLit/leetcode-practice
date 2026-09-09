@@ -1,0 +1,17 @@
+{
+  "id": "NC-binary-tree-maximum-path-sum",
+  "title": "Binary Tree Maximum Path Sum",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/binary-tree-maximum-path-sum/",
+    "neetcode": "https://neetcode.io/problems/binary-tree-maximum-path-sum/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "任意路径最大和",
+    "mode": "后序返回\"单边最大贡献\"（负则取 0），沿途更新 左+右+根",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "LC-0310",
+  "title": "Minimum Height Trees",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-height-trees/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-09-07"
+  },
+  "practice": []
+}

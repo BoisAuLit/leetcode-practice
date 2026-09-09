@@ -1,0 +1,17 @@
+{
+  "id": "LC-0362",
+  "title": "Design Hit Counter",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/design-hit-counter/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2024-03-02"
+  },
+  "practice": []
+}

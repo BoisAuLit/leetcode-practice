@@ -1,0 +1,17 @@
+{
+  "id": "NC-median-of-two-sorted-arrays",
+  "title": "Median of Two Sorted Arrays",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+    "neetcode": "https://neetcode.io/problems/median-of-two-sorted-arrays/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "两有序数组中位数 O(log)",
+    "mode": "对较短数组二分切分点，左半最大 ≤ 右半最小",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

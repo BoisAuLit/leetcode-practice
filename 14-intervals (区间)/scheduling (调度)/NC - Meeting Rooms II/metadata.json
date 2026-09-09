@@ -1,0 +1,17 @@
+{
+  "id": "NC-meeting-schedule-ii",
+  "title": "Meeting Rooms II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/meeting-rooms-ii/",
+    "neetcode": "https://neetcode.io/problems/meeting-schedule-ii/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "最少会议室",
+    "mode": "起点/终点分别排序双指针；或小根堆存结束时间",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}

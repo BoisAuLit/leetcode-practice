@@ -1,0 +1,17 @@
+{
+  "id": "LC-1584",
+  "title": "Min Cost to Connect All Points",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/min-cost-to-connect-all-points/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": "连通所有点最小总边权",
+    "mode": "MST；Kruskal：边按权排序 + 并查集判环，取 n−1 条",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-02-28"
+  },
+  "practice": []
+}

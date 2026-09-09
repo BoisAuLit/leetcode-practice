@@ -1,0 +1,17 @@
+{
+  "id": "LC-0066",
+  "title": "Plus One",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/plus-one/",
+    "neetcode": "https://neetcode.io/problems/plus-one/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2023-06-13"
+  },
+  "practice": []
+}

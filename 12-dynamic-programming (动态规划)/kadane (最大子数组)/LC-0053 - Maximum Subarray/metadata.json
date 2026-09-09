@@ -1,0 +1,17 @@
+{
+  "id": "LC-0053",
+  "title": "Maximum Subarray",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-subarray/",
+    "neetcode": "https://neetcode.io/problems/maximum-subarray/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-11-09"
+  },
+  "practice": []
+}

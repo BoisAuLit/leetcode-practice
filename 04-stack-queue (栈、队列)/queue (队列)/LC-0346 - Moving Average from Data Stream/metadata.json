@@ -1,0 +1,17 @@
+{
+  "id": "LC-0346",
+  "title": "Moving Average from Data Stream",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/moving-average-from-data-stream/",
+    "neetcode": null
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-02-06"
+  },
+  "practice": []
+}

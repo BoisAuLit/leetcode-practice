@@ -1,0 +1,17 @@
+{
+  "id": "LC-0139",
+  "title": "Word Break",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/word-break/",
+    "neetcode": "https://neetcode.io/problems/word-break/question?list=neetcode150"
+  },
+  "info": {
+    "signal": null,
+    "mode": null,
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2025-07-27"
+  },
+  "practice": []
+}

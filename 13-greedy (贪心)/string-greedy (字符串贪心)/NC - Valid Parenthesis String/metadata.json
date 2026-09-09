@@ -1,0 +1,17 @@
+{
+  "id": "NC-valid-parenthesis-string",
+  "title": "Valid Parenthesis String",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/valid-parenthesis-string/",
+    "neetcode": "https://neetcode.io/problems/valid-parenthesis-string/question?list=neetcode150"
+  },
+  "info": {
+    "signal": "含 * 的括号合法性",
+    "mode": "维护未匹配左括号区间 [lo, hi]，hi < 0 失败，lo 钳 0",
+    "guard": null,
+    "sticking_point": null,
+    "first_date": "2026-09-04"
+  },
+  "practice": []
+}
