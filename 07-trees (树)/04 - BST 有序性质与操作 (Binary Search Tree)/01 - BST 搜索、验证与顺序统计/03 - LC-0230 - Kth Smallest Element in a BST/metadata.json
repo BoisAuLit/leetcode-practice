@@ -1,0 +1,10 @@
+{
+  "id": "LC-0230",
+  "path": "07-trees (树)/04 - BST 有序性质与操作 (Binary Search Tree)/01 - BST 搜索、验证与顺序统计/03 - LC-0230 - Kth Smallest Element in a BST",
+  "difficulty": "M",
+  "link": {
+    "leetcode": null,
+    "neetcode": "https://neetcode.io/problems/kth-smallest-integer-in-bst/question?list=neetcode150"
+  },
+  "practice": []
+}

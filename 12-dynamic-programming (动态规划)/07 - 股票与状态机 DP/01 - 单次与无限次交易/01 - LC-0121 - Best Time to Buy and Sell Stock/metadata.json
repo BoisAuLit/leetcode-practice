@@ -1,0 +1,10 @@
+{
+  "id": "LC-0121",
+  "path": "12-dynamic-programming (动态规划)/07 - 股票与状态机 DP/01 - 单次与无限次交易/01 - LC-0121 - Best Time to Buy and Sell Stock",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+    "neetcode": "https://neetcode.io/problems/buy-and-sell-crypto/question?list=neetcode150"
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0005",
+  "path": "02-two-pointers (双指针)/04 - 回文与字符串双指针 (Palindrome)/02 - 中心扩展 (Expand Around Center)/01 - LC-0005 - Longest Palindromic Substring",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/longest-palindromic-substring/",
+    "neetcode": "https://neetcode.io/problems/longest-palindromic-substring/question?list=neetcode150"
+  },
+  "practice": []
+}

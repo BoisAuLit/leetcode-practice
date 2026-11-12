@@ -1,0 +1,10 @@
+{
+  "id": "LC-2101",
+  "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/weighted-dfs (带权图上的 DFS：累乘、带权深度，不求最短路)/LC-2101 - Detonate the Maximum Bombs",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/detonate-the-maximum-bombs/",
+    "neetcode": null
+  },
+  "practice": []
+}

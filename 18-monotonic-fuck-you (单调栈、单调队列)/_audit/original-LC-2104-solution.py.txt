@@ -1,0 +1,7 @@
+# 迁移前 LC-2104 - Sum of Subarray Ranges/solution.py 的全部原始内容（只有一个空占位，没有函数体，
+# 本身无法运行）。重构时在此基础上补全了两种解法，原始签名保留在 Solution_2 之外没有删除任何实现。
+from typing import List
+
+class Solution:
+    def subArrayRanges(self, nums: List[int]) -> int:
+        

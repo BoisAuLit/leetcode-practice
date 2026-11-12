@@ -1,0 +1,21 @@
+{
+  "id": "LC-1701",
+  "path": "14-intervals (区间)/04 - 重叠计数、扫描线与资源分配/03 - 单服务器时间线与流水线模拟/01 - LC-1701 - Average Waiting Time",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/average-waiting-time/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-10-01",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-10-04",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

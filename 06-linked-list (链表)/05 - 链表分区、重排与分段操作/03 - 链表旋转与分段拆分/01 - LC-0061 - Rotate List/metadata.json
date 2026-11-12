@@ -1,0 +1,10 @@
+{
+  "id": "LC-0061",
+  "path": "06-linked-list (链表)/05 - 链表分区、重排与分段操作/03 - 链表旋转与分段拆分/01 - LC-0061 - Rotate List",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/rotate-list/",
+    "neetcode": null
+  },
+  "practice": []
+}

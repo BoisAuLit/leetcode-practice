@@ -1,0 +1,10 @@
+{
+  "id": "LC-1584",
+  "path": "11-graphs (图论)/06-mst (阶段 5 · 最小生成树与 Kruskal 过程)/第 1 层: 伪装成别的故事的 MST(建模题)/LC-1584 - Min Cost to Connect All Points - 纯粹的 MST - 稠密图 - ★ 签名题",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/min-cost-to-connect-all-points/",
+    "neetcode": null
+  },
+  "practice": []
+}

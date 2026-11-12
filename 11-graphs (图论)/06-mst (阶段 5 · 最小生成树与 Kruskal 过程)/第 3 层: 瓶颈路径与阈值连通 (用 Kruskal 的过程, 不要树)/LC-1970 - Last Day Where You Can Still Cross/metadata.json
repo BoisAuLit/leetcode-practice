@@ -1,0 +1,10 @@
+{
+  "id": "LC-1970",
+  "path": "11-graphs (图论)/06-mst (阶段 5 · 最小生成树与 Kruskal 过程)/第 3 层: 瓶颈路径与阈值连通 (用 Kruskal 的过程, 不要树)/LC-1970 - Last Day Where You Can Still Cross",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/last-day-where-you-can-still-cross/",
+    "neetcode": null
+  },
+  "practice": []
+}

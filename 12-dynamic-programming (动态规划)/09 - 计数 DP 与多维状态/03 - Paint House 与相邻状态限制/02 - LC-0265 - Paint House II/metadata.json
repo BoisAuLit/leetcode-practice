@@ -1,0 +1,10 @@
+{
+  "id": "LC-0265",
+  "path": "12-dynamic-programming (动态规划)/09 - 计数 DP 与多维状态/03 - Paint House 与相邻状态限制/02 - LC-0265 - Paint House II",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/paint-house-ii/",
+    "neetcode": null
+  },
+  "practice": []
+}

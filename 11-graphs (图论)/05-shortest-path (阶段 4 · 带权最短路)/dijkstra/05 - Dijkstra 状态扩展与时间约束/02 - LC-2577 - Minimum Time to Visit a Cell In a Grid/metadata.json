@@ -1,0 +1,10 @@
+{
+  "id": "LC-2577",
+  "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra/05 - Dijkstra 状态扩展与时间约束/02 - LC-2577 - Minimum Time to Visit a Cell In a Grid",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-time-to-visit-a-cell-in-a-grid/",
+    "neetcode": null
+  },
+  "practice": []
+}

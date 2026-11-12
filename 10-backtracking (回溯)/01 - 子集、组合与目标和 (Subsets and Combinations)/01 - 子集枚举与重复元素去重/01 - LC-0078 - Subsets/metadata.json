@@ -1,0 +1,10 @@
+{
+  "id": "LC-0078",
+  "path": "10-backtracking (回溯)/01 - 子集、组合与目标和 (Subsets and Combinations)/01 - 子集枚举与重复元素去重/01 - LC-0078 - Subsets",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/subsets/",
+    "neetcode": "https://neetcode.io/problems/subsets/question?list=neetcode150"
+  },
+  "practice": []
+}

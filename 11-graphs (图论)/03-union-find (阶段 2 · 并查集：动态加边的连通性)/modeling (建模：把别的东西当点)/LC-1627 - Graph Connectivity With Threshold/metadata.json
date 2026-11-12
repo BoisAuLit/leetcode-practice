@@ -1,0 +1,10 @@
+{
+  "id": "LC-1627",
+  "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/modeling (建模：把别的东西当点)/LC-1627 - Graph Connectivity With Threshold",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/graph-connectivity-with-threshold/",
+    "neetcode": null
+  },
+  "practice": []
+}

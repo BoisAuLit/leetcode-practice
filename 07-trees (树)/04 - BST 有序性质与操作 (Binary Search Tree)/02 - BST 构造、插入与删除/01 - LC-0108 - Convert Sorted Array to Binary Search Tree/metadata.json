@@ -1,0 +1,10 @@
+{
+  "id": "LC-0108",
+  "path": "07-trees (树)/04 - BST 有序性质与操作 (Binary Search Tree)/02 - BST 构造、插入与删除/01 - LC-0108 - Convert Sorted Array to Binary Search Tree",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/",
+    "neetcode": null
+  },
+  "practice": []
+}

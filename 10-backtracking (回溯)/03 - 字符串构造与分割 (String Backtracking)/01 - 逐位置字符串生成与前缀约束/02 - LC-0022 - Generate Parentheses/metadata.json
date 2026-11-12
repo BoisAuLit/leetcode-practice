@@ -1,0 +1,16 @@
+{
+  "id": "LC-0022",
+  "path": "10-backtracking (回溯)/03 - 字符串构造与分割 (String Backtracking)/01 - 逐位置字符串生成与前缀约束/02 - LC-0022 - Generate Parentheses",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/generate-parentheses/",
+    "neetcode": "https://neetcode.io/problems/generate-parentheses/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-10-14",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0847",
+  "path": "11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/state-graph-bfs (状态图 BFS：一个状态就是一个点)/LC-0847 - Shortest Path Visiting All Nodes",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/shortest-path-visiting-all-nodes/",
+    "neetcode": null
+  },
+  "practice": []
+}

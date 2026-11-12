@@ -1,0 +1,10 @@
+{
+  "id": "LC-0973",
+  "path": "09-heap (堆)/01 - Heap 基础与 Top K/02 - Kth Largest 与固定大小 Heap/03 - LC-0973 - K Closest Points to Origin",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/k-closest-points-to-origin/",
+    "neetcode": "https://neetcode.io/problems/k-closest-points-to-origin/question?list=neetcode150"
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "NC-longest-consecutive-sequence",
+  "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/NC - Longest Consecutive Sequence",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/longest-consecutive-sequence/",
+    "neetcode": "https://neetcode.io/problems/longest-consecutive-sequence/question?list=neetcode150"
+  },
+  "practice": []
+}

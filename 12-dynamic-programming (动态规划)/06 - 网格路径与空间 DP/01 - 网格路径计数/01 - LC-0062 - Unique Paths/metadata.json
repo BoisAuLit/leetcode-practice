@@ -1,0 +1,10 @@
+{
+  "id": "LC-0062",
+  "path": "12-dynamic-programming (动态规划)/06 - 网格路径与空间 DP/01 - 网格路径计数/01 - LC-0062 - Unique Paths",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/unique-paths/",
+    "neetcode": "https://neetcode.io/problems/count-paths/question?list=neetcode150"
+  },
+  "practice": []
+}

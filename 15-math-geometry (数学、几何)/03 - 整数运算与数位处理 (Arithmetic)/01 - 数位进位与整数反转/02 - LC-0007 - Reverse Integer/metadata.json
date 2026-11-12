@@ -1,0 +1,10 @@
+{
+  "id": "LC-0007",
+  "path": "15-math-geometry (数学、几何)/03 - 整数运算与数位处理 (Arithmetic)/01 - 数位进位与整数反转/02 - LC-0007 - Reverse Integer",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/reverse-integer/",
+    "neetcode": "https://neetcode.io/problems/reverse-integer/question?list=neetcode150"
+  },
+  "practice": []
+}

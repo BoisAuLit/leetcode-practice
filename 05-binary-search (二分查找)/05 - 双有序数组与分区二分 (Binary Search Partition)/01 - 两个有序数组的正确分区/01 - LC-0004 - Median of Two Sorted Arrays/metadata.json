@@ -1,0 +1,10 @@
+{
+  "id": "LC-0004",
+  "path": "05-binary-search (二分查找)/05 - 双有序数组与分区二分 (Binary Search Partition)/01 - 两个有序数组的正确分区/01 - LC-0004 - Median of Two Sorted Arrays",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+    "neetcode": "https://neetcode.io/problems/median-of-two-sorted-arrays/question?list=neetcode150"
+  },
+  "practice": []
+}

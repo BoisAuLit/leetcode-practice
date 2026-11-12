@@ -1,0 +1,16 @@
+{
+  "id": "LC-3494",
+  "path": "14-intervals (区间)/04 - 重叠计数、扫描线与资源分配/03 - 单服务器时间线与流水线模拟/02 - LC-3494 - Find the Minimum Amount of Time to Brew Potions",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-the-minimum-amount-of-time-to-brew-potions/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-10-14",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

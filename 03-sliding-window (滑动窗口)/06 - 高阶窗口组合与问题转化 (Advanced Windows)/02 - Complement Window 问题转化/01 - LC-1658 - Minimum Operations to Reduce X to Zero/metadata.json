@@ -1,0 +1,10 @@
+{
+  "id": "LC-1658",
+  "path": "03-sliding-window (滑动窗口)/06 - 高阶窗口组合与问题转化 (Advanced Windows)/02 - Complement Window 问题转化/01 - LC-1658 - Minimum Operations to Reduce X to Zero",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-operations-to-reduce-x-to-zero/",
+    "neetcode": null
+  },
+  "practice": []
+}

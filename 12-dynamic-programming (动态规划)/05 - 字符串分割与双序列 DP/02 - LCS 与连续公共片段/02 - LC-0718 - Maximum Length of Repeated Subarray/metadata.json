@@ -1,0 +1,10 @@
+{
+  "id": "LC-0718",
+  "path": "12-dynamic-programming (动态规划)/05 - 字符串分割与双序列 DP/02 - LCS 与连续公共片段/02 - LC-0718 - Maximum Length of Repeated Subarray",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-length-of-repeated-subarray/",
+    "neetcode": null
+  },
+  "practice": []
+}

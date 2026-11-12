@@ -1,0 +1,10 @@
+{
+  "id": "LC-1008",
+  "path": "07-trees (树)/04 - BST 有序性质与操作 (Binary Search Tree)/02 - BST 构造、插入与删除/02 - LC-1008 - Construct Binary Search Tree from Preorder Traversal",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/",
+    "neetcode": null
+  },
+  "practice": []
+}

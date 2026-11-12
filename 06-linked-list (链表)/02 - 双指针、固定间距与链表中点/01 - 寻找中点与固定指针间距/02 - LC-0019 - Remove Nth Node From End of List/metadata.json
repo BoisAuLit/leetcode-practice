@@ -1,0 +1,10 @@
+{
+  "id": "LC-0019",
+  "path": "06-linked-list (链表)/02 - 双指针、固定间距与链表中点/01 - 寻找中点与固定指针间距/02 - LC-0019 - Remove Nth Node From End of List",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+    "neetcode": "https://neetcode.io/problems/remove-node-from-end-of-linked-list/question?list=neetcode150"
+  },
+  "practice": []
+}

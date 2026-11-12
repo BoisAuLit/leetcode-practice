@@ -1,0 +1,10 @@
+{
+  "id": "LC-0685",
+  "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/cycle-by-union (成环：union 返回 False)/LC-0685 - Redundant Connection II",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/redundant-connection-ii/",
+    "neetcode": null
+  },
+  "practice": []
+}

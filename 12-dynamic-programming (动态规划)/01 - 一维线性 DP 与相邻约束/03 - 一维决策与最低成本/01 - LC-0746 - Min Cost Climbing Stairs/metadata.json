@@ -1,0 +1,10 @@
+{
+  "id": "LC-0746",
+  "path": "12-dynamic-programming (动态规划)/01 - 一维线性 DP 与相邻约束/03 - 一维决策与最低成本/01 - LC-0746 - Min Cost Climbing Stairs",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/min-cost-climbing-stairs/",
+    "neetcode": "https://neetcode.io/problems/min-cost-climbing-stairs/question?list=neetcode150"
+  },
+  "practice": []
+}

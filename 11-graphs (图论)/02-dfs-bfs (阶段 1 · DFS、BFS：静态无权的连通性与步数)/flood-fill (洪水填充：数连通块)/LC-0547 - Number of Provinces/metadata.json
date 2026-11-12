@@ -1,0 +1,10 @@
+{
+  "id": "LC-0547",
+  "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/flood-fill (洪水填充：数连通块)/LC-0547 - Number of Provinces",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/number-of-provinces/",
+    "neetcode": null
+  },
+  "practice": []
+}

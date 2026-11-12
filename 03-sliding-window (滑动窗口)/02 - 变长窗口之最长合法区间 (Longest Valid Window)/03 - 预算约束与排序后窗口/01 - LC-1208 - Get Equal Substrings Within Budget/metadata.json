@@ -1,0 +1,10 @@
+{
+  "id": "LC-1208",
+  "path": "03-sliding-window (滑动窗口)/02 - 变长窗口之最长合法区间 (Longest Valid Window)/03 - 预算约束与排序后窗口/01 - LC-1208 - Get Equal Substrings Within Budget",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/get-equal-substrings-within-budget/",
+    "neetcode": null
+  },
+  "practice": []
+}

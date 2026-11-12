@@ -1,0 +1,16 @@
+{
+  "id": "LC-0199",
+  "path": "07-trees (树)/06 - BFS 层序遍历、视图与多叉树/01 - 标准层序与每层结果/03 - LC-0199 - Binary Tree Right Side View",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/binary-tree-right-side-view/",
+    "neetcode": "https://neetcode.io/problems/binary-tree-right-side-view/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-10-04",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

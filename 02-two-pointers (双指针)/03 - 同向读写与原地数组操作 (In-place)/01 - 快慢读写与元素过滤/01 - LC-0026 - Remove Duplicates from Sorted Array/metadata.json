@@ -1,0 +1,21 @@
+{
+  "id": "LC-0026",
+  "path": "02-two-pointers (双指针)/03 - 同向读写与原地数组操作 (In-place)/01 - 快慢读写与元素过滤/01 - LC-0026 - Remove Duplicates from Sorted Array",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-10-03",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-10-15",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

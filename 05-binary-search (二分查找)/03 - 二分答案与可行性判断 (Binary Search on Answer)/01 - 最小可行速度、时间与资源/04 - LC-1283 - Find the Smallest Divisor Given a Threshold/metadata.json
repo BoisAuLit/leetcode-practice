@@ -1,0 +1,10 @@
+{
+  "id": "LC-1283",
+  "path": "05-binary-search (二分查找)/03 - 二分答案与可行性判断 (Binary Search on Answer)/01 - 最小可行速度、时间与资源/04 - LC-1283 - Find the Smallest Divisor Given a Threshold",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/",
+    "neetcode": null
+  },
+  "practice": []
+}

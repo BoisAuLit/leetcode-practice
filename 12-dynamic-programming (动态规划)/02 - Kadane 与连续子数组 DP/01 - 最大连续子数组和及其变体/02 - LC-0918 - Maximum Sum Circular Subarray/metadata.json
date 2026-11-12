@@ -1,0 +1,10 @@
+{
+  "id": "LC-0918",
+  "path": "12-dynamic-programming (动态规划)/02 - Kadane 与连续子数组 DP/01 - 最大连续子数组和及其变体/02 - LC-0918 - Maximum Sum Circular Subarray",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-sum-circular-subarray/",
+    "neetcode": null
+  },
+  "practice": []
+}

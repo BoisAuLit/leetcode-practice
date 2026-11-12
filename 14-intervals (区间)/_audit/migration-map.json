@@ -1,0 +1,107 @@
+{
+  "topic": "14-intervals (区间)",
+  "executed": "2026-11-11",
+  "deletions": [],
+  "overwritten_files": [],
+  "moved": [
+    {
+      "from": "intervals (区间)/NC - Merge Intervals",
+      "to": "01 - 区间合并、插入与范围整理/01 - 标准区间合并与插入/01 - LC-0056 - Merge Intervals",
+      "note": "NC 原地升格为 LC-0056；asset-02 - Explanation.jpeg 保留"
+    },
+    {
+      "from": "intervals (区间)/NC - Insert Interval",
+      "to": "01 - 区间合并、插入与范围整理/01 - 标准区间合并与插入/02 - LC-0057 - Insert Interval",
+      "note": "NC 原地升格为 LC-0057；note.md + 3 条 practice 记录保留"
+    },
+    {
+      "from": "intervals (区间)/LC-0228 - Summary Ranges",
+      "to": "01 - 区间合并、插入与范围整理/03 - 连续整数区间与缺失范围/01 - LC-0228 - Summary Ranges",
+      "note": "原样迁移"
+    },
+    {
+      "from": "intervals (区间)/LC-0163 - Missing Ranges",
+      "to": "01 - 区间合并、插入与范围整理/03 - 连续整数区间与缺失范围/02 - LC-0163 - Missing Ranges",
+      "note": "原样迁移"
+    },
+    {
+      "from": "scheduling (调度)/NC - Meeting Rooms",
+      "to": "03 - 不重叠区间与贪心调度/01 - 冲突检测与最大兼容区间数量/01 - LC-0252 - Meeting Rooms",
+      "note": "NC 原地升格为 LC-0252；1 条 practice 记录保留"
+    },
+    {
+      "from": "scheduling (调度)/NC - Non-overlapping Intervals",
+      "to": "03 - 不重叠区间与贪心调度/01 - 冲突检测与最大兼容区间数量/02 - LC-0435 - Non-overlapping Intervals",
+      "note": "NC 原地升格为 LC-0435；asset-03 - Explanation.pdf 保留"
+    },
+    {
+      "from": "scheduling (调度)/NC - Meeting Rooms II",
+      "to": "04 - 重叠计数、扫描线与资源分配/01 - 最少会议室与最大并发数/01 - LC-0253 - Meeting Rooms II",
+      "note": "NC 原地升格为 LC-0253"
+    },
+    {
+      "from": "sweep-line (扫描线)/LC-2021 - Brightest Position on Street",
+      "to": "04 - 重叠计数、扫描线与资源分配/02 - 差分事件与容量约束/02 - LC-2021 - Brightest Position on Street",
+      "note": "原样迁移；explanation.md + note.md 保留"
+    },
+    {
+      "from": "scheduling (调度)/NC - Minimum Interval to Include Each Query",
+      "to": "05 - 离线区间查询与动态预订/01 - 最短覆盖区间的离线查询/01 - LC-1851 - Minimum Interval to Include Each Query",
+      "note": "NC 原地升格为 LC-1851；asset-06 - Explanation.pdf 保留"
+    }
+  ],
+  "created": [
+    {
+      "path": "01 - 区间合并、插入与范围整理/02 - 区间包含与冗余消除/01 - LC-1288 - Remove Covered Intervals",
+      "note": "第一轮新增"
+    },
+    {
+      "path": "01 - 区间合并、插入与范围整理/02 - 区间包含与冗余消除/02 - LC-1272 - Remove Interval",
+      "note": "第二轮新增（Premium，无 PDF）"
+    },
+    {
+      "path": "02 - 双指针区间交集与多路合并/01 - 两个有序区间序列求交集/02 - LC-1229 - Meeting Scheduler",
+      "note": "第二轮新增（Premium，无 PDF）"
+    },
+    {
+      "path": "02 - 双指针区间交集与多路合并/02 - 多人时间表与公共空闲区间/01 - LC-0759 - Employee Free Time",
+      "note": "第一轮新增（Premium，无 PDF）"
+    },
+    {
+      "path": "03 - 不重叠区间与贪心调度/02 - 最少覆盖点与区间射击/01 - LC-0452 - Minimum Number of Arrows to Burst Balloons",
+      "note": "第一轮新增"
+    },
+    {
+      "path": "04 - 重叠计数、扫描线与资源分配/01 - 最少会议室与最大并发数/02 - LC-2406 - Divide Intervals Into Minimum Number of Groups",
+      "note": "第二轮新增"
+    },
+    {
+      "path": "04 - 重叠计数、扫描线与资源分配/02 - 差分事件与容量约束/01 - LC-1094 - Car Pooling",
+      "note": "第一轮新增"
+    },
+    {
+      "path": "04 - 重叠计数、扫描线与资源分配/02 - 差分事件与容量约束/03 - LC-1109 - Corporate Flight Bookings",
+      "note": "第二轮新增"
+    },
+    {
+      "path": "05 - 离线区间查询与动态预订/02 - 在线插入与区间冲突检测/01 - LC-0729 - My Calendar I",
+      "note": "第一轮新增"
+    },
+    {
+      "path": "05 - 离线区间查询与动态预订/02 - 在线插入与区间冲突检测/02 - LC-0731 - My Calendar II",
+      "note": "候选题，LC-0729 的续篇"
+    }
+  ],
+  "cross_topic_index_only": [
+    {
+      "path": "02 - 双指针区间交集与多路合并/01 - 两个有序区间序列求交集/01 - LC-0986 - Interval List Intersections (学习索引 · 实体在 02-two-pointers)",
+      "entity": "02-two-pointers (双指针)/05 - 多序列同步扫描 (Two Sequences)/03 - 双序列归并与区间交集/02 - LC-0986 - Interval List Intersections",
+      "note": "只有 README.md，无 metadata.json ⟹ review_due.py 不会重复叫号"
+    }
+  ],
+  "emptied_and_removed_dirs": [
+    "intervals (区间)",
+    "scheduling (调度)",
+    "sweep-line (扫描线)"
+  ]
+}

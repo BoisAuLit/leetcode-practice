@@ -1,0 +1,10 @@
+{
+  "id": "LC-0279",
+  "path": "04-stack-queue (栈、队列)/06 - Queue 与 BFS (Breadth-First Search)/02 - State BFS 与无权最短路径/01 - LC-0279 - Perfect Squares",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/perfect-squares/",
+    "neetcode": null
+  },
+  "practice": []
+}

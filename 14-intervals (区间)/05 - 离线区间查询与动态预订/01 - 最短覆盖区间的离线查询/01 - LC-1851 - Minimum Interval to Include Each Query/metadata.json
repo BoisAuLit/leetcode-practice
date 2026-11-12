@@ -1,0 +1,10 @@
+{
+  "id": "LC-1851",
+  "path": "14-intervals (区间)/05 - 离线区间查询与动态预订/01 - 最短覆盖区间的离线查询/01 - LC-1851 - Minimum Interval to Include Each Query",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-interval-to-include-each-query/",
+    "neetcode": "https://neetcode.io/problems/minimum-interval-including-query/question?list=neetcode150"
+  },
+  "practice": []
+}

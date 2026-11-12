@@ -1,0 +1,10 @@
+{
+  "id": "LC-0778",
+  "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra/02 - Dijkstra 非加法路径代价变体/03 - LC-0778 - Swim in Rising Water",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/swim-in-rising-water/",
+    "neetcode": "https://neetcode.io/problems/swim-in-rising-water/question?list=neetcode150"
+  },
+  "practice": []
+}

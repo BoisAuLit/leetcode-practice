@@ -1,0 +1,10 @@
+{
+  "id": "LC-0215",
+  "path": "09-heap (堆)/01 - Heap 基础与 Top K/02 - Kth Largest 与固定大小 Heap/02 - LC-0215 - Kth Largest Element in an Array",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+    "neetcode": "https://neetcode.io/problems/kth-largest-element-in-an-array/question?list=neetcode150"
+  },
+  "practice": []
+}

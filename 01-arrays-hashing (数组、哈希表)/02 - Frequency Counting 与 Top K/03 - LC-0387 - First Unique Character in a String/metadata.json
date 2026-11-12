@@ -1,0 +1,10 @@
+{
+  "id": "LC-0387",
+  "path": "01-arrays-hashing (数组、哈希表)/02 - Frequency Counting 与 Top K/03 - LC-0387 - First Unique Character in a String",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/first-unique-character-in-a-string/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0074",
+  "path": "05-binary-search (二分查找)/01 - 基础查找与边界二分 (Basic and Boundary Search)/03 - 二维有序结构与未知边界/01 - LC-0074 - Search a 2D Matrix",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/search-a-2d-matrix/",
+    "neetcode": "https://neetcode.io/problems/search-2d-matrix/question?list=neetcode150"
+  },
+  "practice": []
+}

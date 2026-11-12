@@ -1,0 +1,10 @@
+{
+  "id": "LC-2438",
+  "path": "16-bit-manipulation (位运算)/04 - 二进制分解与原地编码/01 - Powers of Two 与范围乘积/01 - LC-2438 - Range Product Queries of Powers",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/range-product-queries-of-powers/",
+    "neetcode": null
+  },
+  "practice": []
+}

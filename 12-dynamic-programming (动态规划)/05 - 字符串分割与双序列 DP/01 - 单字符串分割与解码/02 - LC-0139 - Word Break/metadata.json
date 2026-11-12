@@ -1,0 +1,10 @@
+{
+  "id": "LC-0139",
+  "path": "12-dynamic-programming (动态规划)/05 - 字符串分割与双序列 DP/01 - 单字符串分割与解码/02 - LC-0139 - Word Break",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/word-break/",
+    "neetcode": "https://neetcode.io/problems/word-break/question?list=neetcode150"
+  },
+  "practice": []
+}

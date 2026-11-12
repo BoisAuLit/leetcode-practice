@@ -1,0 +1,31 @@
+{
+  "id": "LC-3291",
+  "path": "08-tries (字典树、前缀树)/04 - Trie + DP 与字符串划分/01 - Trie 加速字符串划分/01 - LC-3291 - Minimum Number of Valid Strings to Form Target I",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-09-26",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-30",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-10-03",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-10-10",
+      "sticking_point": "",
+      "result": "🟡"
+    }
+  ]
+}

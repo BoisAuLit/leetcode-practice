@@ -1,0 +1,10 @@
+{
+  "id": "LC-0491",
+  "path": "10-backtracking (回溯)/01 - 子集、组合与目标和 (Subsets and Combinations)/01 - 子集枚举与重复元素去重/03 - LC-0491 - Non-decreasing Subsequences",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/non-decreasing-subsequences/",
+    "neetcode": null
+  },
+  "practice": []
+}

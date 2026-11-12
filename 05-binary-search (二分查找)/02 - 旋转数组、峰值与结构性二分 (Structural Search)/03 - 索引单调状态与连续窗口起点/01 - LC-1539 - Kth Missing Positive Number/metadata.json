@@ -1,0 +1,31 @@
+{
+  "id": "LC-1539",
+  "path": "05-binary-search (二分查找)/02 - 旋转数组、峰值与结构性二分 (Structural Search)/03 - 索引单调状态与连续窗口起点/01 - LC-1539 - Kth Missing Positive Number",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/kth-missing-positive-number/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-09-27",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-30",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-10-01",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-10-04",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

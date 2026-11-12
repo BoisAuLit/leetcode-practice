@@ -1,0 +1,10 @@
+{
+  "id": "LC-1197",
+  "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/bfs-steps (BFS 层数 = 步数)/LC-1197 - Minimum Knight Moves",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-knight-moves/",
+    "neetcode": null
+  },
+  "practice": []
+}

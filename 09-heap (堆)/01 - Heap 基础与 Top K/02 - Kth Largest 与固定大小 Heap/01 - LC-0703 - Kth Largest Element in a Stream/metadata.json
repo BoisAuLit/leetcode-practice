@@ -1,0 +1,10 @@
+{
+  "id": "LC-0703",
+  "path": "09-heap (堆)/01 - Heap 基础与 Top K/02 - Kth Largest 与固定大小 Heap/01 - LC-0703 - Kth Largest Element in a Stream",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
+    "neetcode": "https://neetcode.io/problems/kth-largest-integer-in-a-stream/question?list=neetcode150"
+  },
+  "practice": []
+}

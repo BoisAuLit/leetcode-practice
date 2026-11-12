@@ -1,0 +1,10 @@
+{
+  "id": "LC-0103",
+  "path": "07-trees (树)/06 - BFS 层序遍历、视图与多叉树/01 - 标准层序与每层结果/02 - LC-0103 - Binary Tree Zigzag Level Order Traversal",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/",
+    "neetcode": null
+  },
+  "practice": []
+}

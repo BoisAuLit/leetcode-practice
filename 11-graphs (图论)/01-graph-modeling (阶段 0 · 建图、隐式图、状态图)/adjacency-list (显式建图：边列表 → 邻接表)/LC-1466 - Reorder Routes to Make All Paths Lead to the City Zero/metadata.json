@@ -1,0 +1,10 @@
+{
+  "id": "LC-1466",
+  "path": "11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/adjacency-list (显式建图：边列表 → 邻接表)/LC-1466 - Reorder Routes to Make All Paths Lead to the City Zero",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/reorder-routes-to-make-all-paths-lead-to-the-city-zero/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0105",
+  "path": "07-trees (树)/05 - 树构造、序列化与结构修改/01 - 根据遍历序列重建树/01 - LC-0105 - Construct Binary Tree from Preorder and Inorder Traversal",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/",
+    "neetcode": "https://neetcode.io/problems/binary-tree-from-preorder-and-inorder-traversal/question?list=neetcode150"
+  },
+  "practice": []
+}

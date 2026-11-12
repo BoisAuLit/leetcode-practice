@@ -4,41 +4,69 @@ review_due.py — 间隔复习调度器（只依赖标准库）
 
 数据源：每个题目文件夹里的 metadata.json（唯一真相）。
     <大类>/<子分类>/LC-0155 - Min Stack/
-        solution.py  problem.pdf  metadata.json  [assets/]
+        solution.py  problem.pdf  problem_dark.pdf  metadata.json  [note.md]  [asset-*]
 
 metadata.json 里和复习有关的字段：
-    info.signal / info.mode      信号 → 模式（十秒识别的训练目标）
-    info.guard                   守卫反例：输入 -> 期望（必须是真实踩过的坑）
-    info.sticking_point          首次做题的卡点
-    info.first_date              首次做题日期
+    path                         该题相对仓库根目录的路径（题目文件夹被挪动后 load_all 会自动修正）
     practice: [ {date, sticking_point, result: 🟢|🟡|🔴}, ... ]   每次复习追加一条
+题目标题、信号→模式都不进 metadata：全在文件夹名里（LC-0155 - Min Stack - <信号/备注>），复习时看文件夹名就够了。
 
 "下次复习日期" 和 "是否毕业" 不落盘，每次从 practice[] 现算：
     间隔阶梯 1 → 3 → 7 → 14 → 30 天；🟢 升一级，🟡 不变，🔴 重置为 1 天；
     处在 30 天这一级又拿到 🟢 即毕业。
 
+叫号规则（shuffle / today）：先凑一个 20 题的候选池，再从里面随机抽 k 题（k = -n，shuffle 默认 5）。
+    池 A（到期题，最多 10）：只收今天到期或逾期的题，按 逾期天数 + 上次🔴ｘ7 / 🟡ｘ3 取前 10，同分随机；
+    池 B（从未复习过）：按大类轮转随机抽，补足到 20；
+    没到期的题绝不出现（避免同一批题天天见）；抽完再随机打乱一次顺序，Today/ 里的编号不可预测。
+
 用法：
-    python3 tools/review_due.py today [-n 3]          今日到期清单；不足 n 题时从"未排期"里跨分类补足
-    python3 tools/review_due.py shuffle [-n 3]        同 today，并把选中的题以软链接放进 Today/（先清空）
-    python3 tools/review_due.py done <子串> <g|y|r> [--note "卡点"]   记录今天的复习结果
+    python3 tools/review_due.py today [-n 3]          今日清单（从 20 题候选池里随机抽 n 题）
+    python3 tools/review_due.py shuffle [-n 3] [--reset]
+                                                      同 today，并把选中的题以软链接放进 Today/（先清空），
+                                                      每题文件夹里生成闭卷重写用的 solution_retry.py；
+                                                      --reset 才会顺便把 LeetCode / NeetCode 网站上的旧代码重置（默认不去网站）
+    python3 tools/review_due.py reset [序号]          对 Today/ 里的题（或某一题）做网站代码重置（LeetCode / NeetCode）
+    python3 tools/review_due.py finish <序号|题目文件夹路径> [g|y|r] [--note "卡点"]
+                                                      数字 = Today/ 里的序号；路径 = 任意题目文件夹（必须存在且有 solution_retry.py，否则报错）。
+                                                      记结果（默认 g），Today/ 里有它的软链接就移除；
+                                                      如果这是 Today/ 里最后一题，自动再 shuffle AUTO_SHUFFLE_N 题；
+                                                      solution_retry.py 里带 # 注释的 class 先存进该题 note.md（### 📝 日期 - retry N），再删文件；
+                                                      --note 的评语也追加进 note.md（### 💬 日期 - finish 🟢）
+    python3 tools/review_due.py remove <序号|题目文件夹路径> [--dry-run]
+                                                      把一道题彻底从题库里剔除（给"这题对我没用"的情况）。
+                                                      数字 = Today/ 里的序号；路径 = 任意题目文件夹。
+                                                      题目文件夹整个移进 macOS 废纸篓（可恢复，不用 rm：PDF/图片被 gitignore，git 救不回来）；
+                                                      顺带清掉 Today/ 软链接、空掉的子分类文件夹、各 README 里引用它的表格行，最后刷新 progress.md。
+                                                      --dry-run 只看会动什么，不真删。
+    python3 tools/review_due.py done <子串> <g|y|r> [--note "卡点"]   按题目名记录今天的复习结果
     python3 tools/review_due.py stats                 总量、到期/排期/未排期/毕业、按大类进度、最近🔴
     python3 tools/review_due.py list [due|unscheduled|scheduled|graduated|all]
-    python3 tools/review_due.py init <子串> "<信号→模式>" [--guard "..."] [--sticking "..."]
-                                                      给一道题写入信号→模式（入库时通常已写好）
 <子串> 匹配题目文件夹的相对路径（不区分大小写），匹配到多个时会列出候选。
 """
 from __future__ import annotations
-import json, os, re, sys
+import json, os, random, re, shutil, subprocess, sys, urllib.parse
 from dataclasses import dataclass, field
 from datetime import date, datetime
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from make_retry import write_retry, RETRY_NAME  # noqa: E402
+
+NOTE_NAME = "note.md"        # 每题的笔记，和 solution.py 同级；finish 的评语 + solution_retry.py 里带注释的 class 都进这里
 
 ROOT = Path(__file__).resolve().parent.parent
 TODAY_DIR = ROOT / "Today"
 INTERVALS = [1, 3, 7, 14, 30]
 STATUS_MAP = {"g": "🟢", "y": "🟡", "r": "🔴", "🟢": "🟢", "🟡": "🟡", "🔴": "🔴"}
 EXCLUDE_PARTS = {"__pycache__", "tools", ".git", ".vscode", "New", "Today"}
-PROBLEM_DIR_RE = re.compile(r"^(LC-\d{4}|NC) - ")
+PROBLEM_DIR_RE = re.compile(r"^(?:\d{1,2} *- *)?(LC-\d{4}|NC) - ")   # 可选的数字优先级前缀，两种写法都认：01-LC-0876 - Title / 01 - LC-0743 - Title
+ETSY = Path("/Users/bohaoli/Desktop/tuto/tuto_etsy")                 # puppeteer 脚本所在项目（和抓 PDF 共用）
+RESET_SCRIPT = "VV-utils/11-reset-code.ts"                           # 清空 LeetCode / NeetCode 在线编辑器里的旧代码
+CANARY_URL = "http://127.0.0.1:9222/json/version"
+# 所有和单调栈 / 单调队列沾边的题一律归到这个大类（shuffle 和 intake 都会强制执行）
+MONO_CAT = "18-monotonic-fuck-you (单调栈、单调队列)"
+MONO_RE = re.compile(r"monotonic|单调(栈|队列|递增栈|递减栈|双端)", re.I)
 
 
 # ---------------------------------------------------------------- model
@@ -61,7 +89,8 @@ class Problem:
 
     @property
     def title(self) -> str:
-        return self.meta.get("title") or self.path.name
+        """文件夹名去掉 'LC-0155 - ' / 'NC - ' 前缀；挂在标题后面的信号/备注一起带着。"""
+        return PROBLEM_DIR_RE.sub("", self.path.name, count=1)
 
     @property
     def practice(self) -> list[dict]:
@@ -111,23 +140,8 @@ class Problem:
         nd = self.next_date
         return nd is not None and nd <= today
 
-    @property
-    def first_date(self) -> date | None:
-        fd = (self.meta.get("info") or {}).get("first_date")
-        try:
-            return date.fromisoformat(fd) if fd else None
-        except ValueError:
-            return None
-
-    @property
-    def signal_line(self) -> str:
-        info = self.meta.get("info") or {}
-        sig, mode = info.get("signal"), info.get("mode")
-        if sig and mode:
-            return f"{sig} → {mode}"
-        return sig or mode or "（信号→模式 待补）"
-
     def save(self) -> None:
+        self.meta["path"] = self.rel          # key 已存在时原地更新，不会跑到末尾去
         with open(self.path / "metadata.json", "w", encoding="utf-8") as f:
             json.dump(self.meta, f, ensure_ascii=False, indent=2)
             f.write("\n")
@@ -143,8 +157,29 @@ def load_all() -> list[Problem]:
             except Exception as e:
                 print(f"⚠️  跳过损坏的 metadata: {os.path.relpath(dp, ROOT)} ({e})", file=sys.stderr)
                 continue
-            out.append(Problem(Path(dp), meta))
+            prob = Problem(Path(dp), meta)
+            if meta.get("path") != prob.rel:   # 文件夹被挪过（手动移动 / 单调题强制归类）→ 自动修正
+                repair_path(prob)
+            out.append(prob)
     return sorted(out, key=lambda p: p.rel)
+
+
+def repair_path(p: Problem) -> None:
+    """把 metadata.json 里的 path 改成当前真实位置，位置保持在 id 之后。"""
+    old, new = p.meta.get("path"), p.rel
+    fixed = {}
+    for k, v in p.meta.items():
+        if k == "path":
+            continue
+        fixed[k] = v
+        if k == "id":
+            fixed["path"] = new
+    if "path" not in fixed:
+        fixed = {"path": new, **fixed}
+    p.meta.clear(); p.meta.update(fixed)
+    with open(p.path / "metadata.json", "w", encoding="utf-8") as f:
+        json.dump(p.meta, f, ensure_ascii=False, indent=2); f.write("\n")
+    print(f"🔧 path 已修正：{old!r} → {new!r}", file=sys.stderr)
 
 
 def resolve(target: str, problems: list[Problem]) -> Problem:
@@ -164,45 +199,68 @@ def resolve(target: str, problems: list[Problem]) -> Problem:
 
 
 # ---------------------------------------------------------------- selection
-def pick_today(problems: list[Problem], n: int, today: date) -> tuple[list[Problem], list[Problem]]:
-    """返回 (到期题按逾期天数降序, 从未排期里补足的题)。
-    补足规则 = 交错练习：按大类轮转，每个大类内部先取首次日期最早的（放得最久的）。"""
-    due = [p for p in problems if p.is_due(today)]
-    due.sort(key=lambda p: (p.next_date, p.rel))
-    fill: list[Problem] = []
-    if len(due) < n:
-        pool = [p for p in problems if p.unscheduled]
-        by_cat: dict[str, list[Problem]] = {}
-        for p in pool:
+RED_BONUS, YELLOW_BONUS = 7, 3     # 优先级分 = 逾期天数 + 上次结果加成；🔴 相当于多逾期 7 天
+
+
+def priority(p: Problem, today: date) -> float:
+    """到期题的优先级分：逾期越久越高，上次 🔴 再加 7 分、🟡 加 3 分。同分随机。"""
+    over = (today - p.next_date).days if p.next_date else 0
+    last = p.history[-1][1] if p.history else ""
+    return over + (RED_BONUS if last == "🔴" else YELLOW_BONUS if last == "🟡" else 0)
+
+
+POOL_DUE, POOL_NEW = 10, 10        # 候选池：到期题最多 10 + 从未复习过的 10 = 20 题，再从里面随机抽 k 题
+AUTO_SHUFFLE_N = 5                 # finish 掉 Today/ 里最后一题之后，自动再 shuffle 这么多题
+
+
+def pick_new(problems: list[Problem], k: int) -> list[Problem]:
+    """从未复习过的题里按大类轮转随机抽 k 题（从进入循环最少的大类开始，交错练习）。"""
+    by_cat: dict[str, list[Problem]] = {}
+    for p in problems:
+        if p.unscheduled:
             by_cat.setdefault(p.category, []).append(p)
-        for cat in by_cat:
-            by_cat[cat].sort(key=lambda p: (p.first_date or date.max, p.rel))
-        # 从"已排期/毕业最少"的大类开始轮转，让冷门大类也能被叫到
-        progress = {c: sum(1 for p in problems if p.category == c and not p.unscheduled) for c in by_cat}
-        order = sorted(by_cat, key=lambda c: (progress[c], c))
-        i = 0
-        while len(due) + len(fill) < n and any(by_cat.values()):
-            cat = order[i % len(order)]
-            if by_cat[cat]:
-                fill.append(by_cat[cat].pop(0))
-            i += 1
-    return due, fill
+    for cat in by_cat:
+        random.shuffle(by_cat[cat])
+    progress = {c: sum(1 for p in problems if p.category == c and not p.unscheduled) for c in by_cat}
+    order = list(by_cat); random.shuffle(order); order.sort(key=lambda c: progress[c])
+    out: list[Problem] = []
+    i = 0
+    while len(out) < k and any(by_cat.values()):
+        cat = order[i % len(order)]
+        if by_cat[cat]:
+            out.append(by_cat[cat].pop())
+        i += 1
+    return out
 
 
-def print_selection(due: list[Problem], fill: list[Problem], today: date, n: int) -> None:
-    print(f"📅 {today.isoformat()}  到期复习 {len(due)} 题" + (f"，从未排期补足 {len(fill)} 题" if fill else ""))
-    k = 0
-    for p in due:
-        k += 1
-        over = (today - p.next_date).days
-        tag = f"逾期 {over} 天" if over > 0 else "今天到期"
-        print(f"  {k:2d}. [{tag}] {p.id}  {p.title}   ({p.category})")
-        print(f"      信号→模式: {p.signal_line}")
-    for p in fill:
-        k += 1
-        print(f"  {k:2d}. [首次进入循环] {p.id}  {p.title}   ({p.category})")
-        print(f"      信号→模式: {p.signal_line}")
-    if not due and not fill:
+def pick_today(problems: list[Problem], n: int, today: date) -> tuple[list[Problem], list[Problem]]:
+    """候选池 = 池 A（今天到期/逾期的题，按优先级取前 POOL_DUE）+ 池 B（从未复习过的题，随机抽），合起来 20 题，
+    再从里面随机抽 n 题；返回 (抽中的到期题, 抽中的新题)。
+    池 A 不够 10 题时，缺口全部用新题补 —— 没到期的题绝不会出现，免得同一批题天天见。"""
+    due = [p for p in problems if p.is_due(today)]
+    random.shuffle(due)
+    due.sort(key=lambda p: priority(p, today), reverse=True)
+    pool_a = due[:POOL_DUE]
+    pool_b = pick_new(problems, POOL_DUE + POOL_NEW - len(pool_a))
+    chosen = random.sample(pool_a + pool_b, min(n, len(pool_a) + len(pool_b)))
+    return [p for p in chosen if not p.unscheduled], [p for p in chosen if p.unscheduled]
+
+
+def tag_of(p: Problem, today: date) -> str:
+    if p.unscheduled:
+        return "首次进入循环"
+    over = (today - p.next_date).days
+    last = p.history[-1][1]
+    t = f"逾期 {over} 天" if over > 0 else ("今天到期" if over == 0 else f"{-over} 天后到期")
+    return f"{t} · 上次{last}"
+
+
+def print_selection(chosen: list[Problem], today: date, n_due: int, n_fill: int, total_due: int) -> None:
+    print(f"📅 {today.isoformat()}  从 {POOL_DUE + POOL_NEW} 题候选池（到期 {min(total_due, POOL_DUE)} + 新题 {POOL_DUE + POOL_NEW - min(total_due, POOL_DUE)}）里随机抽了 {n_due + n_fill} 题："
+          f"到期 {n_due} 题 ＋ 首次进入循环 {n_fill} 题（今天到期共 {total_due} 题）")
+    for k, p in enumerate(chosen, start=1):
+        print(f"  {k:2d}. [{tag_of(p, today)}] {p.id}  {p.title}   ({p.category})")
+    if not chosen:
         print("  （没有到期的题，也没有未排期的题）")
 
 
@@ -211,39 +269,208 @@ def cmd_today(n: int) -> None:
     problems = load_all()
     today = date.today()
     due, fill = pick_today(problems, n, today)
-    print_selection(due, fill, today, n)
+    print_selection(due + fill, today, len(due), len(fill), sum(1 for p in problems if p.is_due(today)))
     left = sum(1 for p in problems if p.unscheduled) - len(fill)
-    print(f"\n未排期剩余 {left} 题 ｜ 完成一题后执行: python3 tools/review_due.py done <子串> <g|y|r> [--note \"卡点\"]")
-    print("把今天的题放进 Today/ 文件夹: python3 tools/review_due.py shuffle" + (f" -n {n}" if n != 3 else ""))
+    print(f"\n未排期剩余 {left} 题 ｜ 把今天的题放进 Today/: shuffle {n}   做完一题: finish <序号> [g|y|r] [\"笔记\"]")
 
 
-def cmd_shuffle(n: int) -> None:
+def _canary_running() -> bool:
+    import urllib.request
+    try:
+        urllib.request.urlopen(CANARY_URL, timeout=2).read(); return True
+    except Exception:  # noqa: BLE001
+        return False
+
+
+def reset_online(problems: list[Problem]) -> None:
+    """在 LeetCode / NeetCode 网站上把这些题的在线代码重置为默认模板（防剧透）。
+    通过 tuto_etsy 的 puppeteer 脚本操作 9222 端口上已登录的 Chrome Canary；Canary 没开就跳过并提醒。"""
+    import subprocess
+    urls = []
+    for p in problems:
+        link = p.meta.get("link") or {}
+        urls += [u for u in (link.get("leetcode"), link.get("neetcode")) if u]
+    if not urls:
+        return
+    if not _canary_running():
+        print(f"⚠️  Chrome Canary 没在 9222 端口运行，跳过网站代码重置（先 `canary`，再 `review reset`）")
+        return
+    print(f"🧹 正在重置 {len(urls)} 个网页上的旧代码（LeetCode / NeetCode）...", flush=True)
+    ok, fail = [], []
+    proc = subprocess.Popen(["npx", "tsx", RESET_SCRIPT, *urls], cwd=ETSY, stdout=subprocess.PIPE, stderr=subprocess.DEVNULL, text=True)
+    for line in proc.stdout:
+        line = line.strip()
+        if line.startswith("RESET_OK "):
+            ok.append(line[9:]); print(f"   ✓ {line[9:]}", flush=True)
+        elif line.startswith("RESET_FAIL "):
+            fail.append(line[11:]); print(f"   ✗ {line[11:]}", flush=True)
+    proc.wait()
+    print(f"   网站代码重置：成功 {len(ok)} / {len(urls)}" + (f"，失败 {len(fail)}（可 `review reset` 重试）" if fail else ""))
+
+
+def _today_links(idx: int | None = None) -> list[Path]:
+    if not TODAY_DIR.is_dir():
+        return []
+    links = sorted(e for e in TODAY_DIR.iterdir() if e.is_symlink())
+    if idx is not None:
+        links = [e for e in links if e.name.startswith(f"{idx:02d} - ")]
+    return links
+
+
+def cmd_reset(idx: int | None) -> None:
+    """对 Today/ 里的题（或指定序号那一题）重跑网站代码重置。"""
+    links = _today_links(idx)
+    if not links:
+        sys.exit("Today/ 里没有题" + (f"（序号 {idx}）" if idx else "") + "，先 shuffle")
     problems = load_all()
+    targets = [x for l in links for x in problems if x.path == l.resolve()]
+    reset_online(targets)
+
+
+def is_monotonic(p: Problem) -> bool:
+    """题目文件夹名 / solution.py / metadata.json / note.md 里只要提到 monotonic / 单调栈 / 单调队列就算。"""
+    if MONO_RE.search(p.path.name):
+        return True
+    for f in ("solution.py", "metadata.json", NOTE_NAME):
+        fp = p.path / f
+        try:
+            if fp.exists() and MONO_RE.search(fp.read_text(encoding="utf-8", errors="ignore")):
+                return True
+        except OSError:
+            pass
+    return False
+
+
+def enforce_monotonic(problems: list[Problem]) -> list[Problem]:
+    """把所有单调栈/单调队列题强制搬进 MONO_CAT/general（已经在 MONO_CAT 下的不动）。返回搬完后的题目列表。"""
+    import shutil
+    moved = 0
+    for p in problems:
+        if p.category == MONO_CAT or not is_monotonic(p):
+            continue
+        dest_dir = ROOT / MONO_CAT / "general"
+        dest_dir.mkdir(parents=True, exist_ok=True)
+        dest = dest_dir / p.path.name
+        if dest.exists():
+            print(f"⚠️  {p.rel} 应归入 {MONO_CAT}，但那里已有同名文件夹，未动：{dest.relative_to(ROOT)}")
+            continue
+        shutil.move(str(p.path), str(dest))
+        print(f"📦 单调题强制归类：{p.rel}  →  {dest.relative_to(ROOT)}")
+        moved += 1
+    return load_all() if moved else problems
+
+
+def cmd_shuffle(n: int, reset: bool = False) -> None:
     today = date.today()
-    due, fill = pick_today(problems, n, today)
     TODAY_DIR.mkdir(exist_ok=True)
-    kept = []
+    # ① 先清场：Today/ 里每个软链接指向的题，删掉它的 solution_retry.py，再删软链接。全部清完才开始选题。
+    kept, dropped = [], []
     for entry in sorted(TODAY_DIR.iterdir()):
         if entry.is_symlink():
+            _remove_retry(entry)
+            dropped.append(entry.name)
             entry.unlink()
         elif entry.name != ".DS_Store":
             kept.append(entry.name)          # 只清软链接，绝不删真实文件
     if kept:
         print(f"⚠️  Today/ 里有非软链接的文件，未动: {kept}")
+    if dropped:
+        print(f"♻️  清掉上一轮未 finish 的 {len(dropped)} 题: " + "、".join(d.split(" - ", 1)[-1] for d in dropped))
+    # ② 选题：优先级最高的 n 题（同分随机）；选之前先把散落各处的单调题归到 MONO_CAT
+    problems = enforce_monotonic(load_all())
+    due, fill = pick_today(problems, n, today)
+    # ③ 打乱顺序再编号，让 Today/ 里的顺序不可预测
     chosen = due + fill
+    random.shuffle(chosen)
     for i, p in enumerate(chosen, start=1):
         link = TODAY_DIR / f"{i:02d} - {p.path.name}"
         link.symlink_to(os.path.relpath(p.path, TODAY_DIR), target_is_directory=True)
-    print_selection(due, fill, today, n)
-    print(f"\n✅ Today/ 已更新：{len(chosen)} 个软链接 → 各题的文件夹")
+        try:
+            write_retry(p.path)
+        except (SyntaxError, FileNotFoundError) as e:
+            print(f"⚠️  {p.rel}: 生成 {RETRY_NAME} 失败（{e}），请手动闭卷重写")
+    print_selection(chosen, today, len(due), len(fill), sum(1 for p in problems if p.is_due(today)))
+    print(f"\n✅ Today/ 已更新：{len(chosen)} 个软链接（顺序已随机打乱）→ 各题的文件夹，每题里有 {RETRY_NAME}（方法体已清空，闭卷重写用）")
+    # ④ 可选：网站上的旧代码清空（--reset 才做，默认不做）
+    if reset and chosen:
+        reset_online(chosen)
+    print('   做完一题: finish <序号> [g|y|r] ["笔记"]')
 
 
-def cmd_done(target: str, status: str, note: str | None) -> None:
+# ---------------------------------------------------------------- note.md
+def _append_note(p: Problem, section: str) -> Path:
+    """往题目文件夹的 note.md 追加一段（文件不存在就建，带标题）。"""
+    nf = p.path / NOTE_NAME
+    if nf.exists():
+        cur = nf.read_text(encoding="utf-8")
+        sep = "" if cur.endswith("\n\n") else ("\n" if cur.endswith("\n") else "\n\n")
+        nf.write_text(cur + sep + section.rstrip("\n") + "\n", encoding="utf-8")
+    else:
+        nf.write_text(f"# {p.title} 笔记\n\n" + section.rstrip("\n") + "\n", encoding="utf-8")
+    return nf
+
+
+def commented_classes(src: str) -> str | None:
+    """取出源码里所有**带 # 注释**的顶层 class（含装饰器），原样拼接；一个都没有就返回 None。"""
+    import ast, io, tokenize
+    try:
+        tree = ast.parse(src)
+    except SyntaxError:
+        return None
+    lines = src.splitlines(keepends=True)
+    blocks = []
+    for node in tree.body:
+        if not isinstance(node, ast.ClassDef):
+            continue
+        start = min([node.lineno] + [d.lineno for d in node.decorator_list])
+        seg = "".join(lines[start - 1:node.end_lineno])
+        try:
+            has_comment = any(t.type == tokenize.COMMENT for t in tokenize.generate_tokens(io.StringIO(seg).readline))
+        except (tokenize.TokenError, IndentationError):
+            has_comment = "#" in seg
+        if has_comment:
+            blocks.append(seg.rstrip("\n"))
+    return "\n\n\n".join(blocks) if blocks else None
+
+
+def archive_retry(p: Problem, today: date) -> None:
+    """finish/done 删掉 solution_retry.py 之前：把里面带注释的 class 存进 note.md（"### 📝 日期 - retry N"）。"""
+    rf = p.path / RETRY_NAME
+    if not rf.exists():
+        return
+    code = commented_classes(rf.read_text(encoding="utf-8"))
+    if not code:
+        return
+    block = f"```python\n{code}\n```"
+    nf = p.path / NOTE_NAME
+    existing = nf.read_text(encoding="utf-8") if nf.exists() else ""
+    if block in existing:
+        print(f"   📝 {RETRY_NAME} 里的注释已经在 {NOTE_NAME} 里了，不重复记")
+        return
+    n = existing.count("- retry ") + 1
+    _append_note(p, f"### 📝 {today.isoformat()} - retry {n}\n\n{block}\n")
+    print(f"   📝 {RETRY_NAME} 里带注释的 class 已存进 {NOTE_NAME}（retry {n}）")
+
+
+def archive_comment(p: Problem, today: date, status: str, note: str) -> None:
+    _append_note(p, f"### 💬 {today.isoformat()} - finish {status}\n\n{note.strip()}\n")
+    print(f"   💬 评语已记进 {NOTE_NAME}")
+
+
+def _remove_retry(link_or_dir: Path) -> None:
+    try:
+        target = link_or_dir.resolve()
+        rf = target / RETRY_NAME
+        if target.is_dir() and rf.exists():
+            rf.unlink()
+    except OSError:
+        pass
+
+
+def _record(p: Problem, status: str, note: str | None) -> None:
     st = STATUS_MAP.get(status.lower() if status.isascii() else status)
     if not st:
         sys.exit("状态只能是 g / y / r（或 🟢 🟡 🔴）")
-    problems = load_all()
-    p = resolve(target, problems)
     if p.graduated:
         sys.exit(f"这题已经毕业了：{p.rel}")
     p.practice.append({"date": date.today().isoformat(), "sticking_point": note or "", "result": st})
@@ -253,6 +480,202 @@ def cmd_done(target: str, status: str, note: str | None) -> None:
         print(f"{st} 已记录 → {p.rel}\n   🎓 毕业！不再叫号（档案永远留在 metadata.json 里）")
     else:
         print(f"{st} 已记录 → {p.rel}\n   下次复习: {p.next_date.isoformat()}（{INTERVALS[lvl]} 天后）")
+    if note:
+        archive_comment(p, date.today(), st, note)
+    from progress import update_progress      # 记完结果刷新 progress.md（shuffle 不刷新）
+    update_progress()
+
+
+def cmd_finish(which: str, status: str, note: str | None) -> None:
+    """which 是数字 → Today/ 里的序号（老用法）；否则当作题目文件夹路径（绝对或相对当前目录）：
+    文件夹必须存在、里面必须有 solution_retry.py，否则报错；做的事和序号用法完全一样，
+    Today/ 里如果有指向它的软链接也一并移除。"""
+    all_links = [e for e in TODAY_DIR.iterdir() if e.is_symlink()] if TODAY_DIR.is_dir() else []
+    if which.isdigit():
+        prefix = f"{int(which):02d} - "
+        links = [e for e in all_links if e.name.startswith(prefix)]
+        if not links:
+            have = sorted(e.name for e in all_links)
+            sys.exit(f"Today/ 里没有序号 {int(which)} 的题。" + ("现有：\n  " + "\n  ".join(have) if have else "Today/ 是空的，先 shuffle。"))
+        link: Path | None = links[0]
+        target = link.resolve()
+    else:
+        target = Path(which).expanduser().resolve()
+        if not target.is_dir():
+            sys.exit(f"❌ 文件夹不存在：{which}")
+        if not (target / RETRY_NAME).exists():
+            sys.exit(f"❌ {target} 里没有 {RETRY_NAME}（这题没在做，或者已经 finish 过了）")
+        links = [e for e in all_links if e.resolve() == target]
+        link = links[0] if links else None
+    problems = load_all()
+    hits = [x for x in problems if x.path == target]
+    if not hits:
+        sys.exit(f"这个文件夹不是题目（没有 metadata.json 或不在题库里）：{target}")
+    archive_retry(hits[0], date.today())      # 先把 solution_retry.py 里的注释存进 note.md，再删它
+    _record(hits[0], status, note)
+    _remove_retry(target)
+    if link is not None:
+        link.unlink()
+    left = sorted(e.name for e in TODAY_DIR.iterdir() if e.is_symlink()) if TODAY_DIR.is_dir() else []
+    where = "已从 Today/ 移除" if link is not None else "（不在 Today/ 里）"
+    print(f"   {where}，{RETRY_NAME} 已删" + (f"；Today/ 还剩 {len(left)} 题" if left else "；Today/ 已清空 🎉"))
+    # 刚做完 Today/ 里的最后一题 → 自动再挑一批，省得手动 shuffle。
+    # 只在"这次 finish 确实从 Today/ 拿掉了一题"时触发；本来就空着（按路径 finish 队列外的题）不打扰。
+    if link is not None and not left:
+        print(f"\n🔀 今天这批做完了，自动 shuffle {AUTO_SHUFFLE_N} 题：")
+        cmd_shuffle(AUTO_SHUFFLE_N)
+
+
+LC_ID_RE = re.compile(r"LC-\d{4}")
+NC_REF_RE = re.compile(r"NC(?: - |%20-%20)")
+ROW_RE = re.compile(r"^\s*(?:\||[-*+] |\d+\. )")      # markdown 表格行 / 列表项：整行删掉是安全的
+
+
+def _to_trash(path: Path) -> str:
+    """把路径移进 macOS 废纸篓（可恢复）。不用 rm：题库的 PDF 和图片被 gitignore，git 救不回来。"""
+    if shutil.which("trash"):
+        r = subprocess.run(["trash", str(path)], capture_output=True, text=True)
+        if r.returncode == 0 and not path.exists():
+            return "废纸篓"
+        print(f"   ⚠️ trash 命令失败（{r.stderr.strip()[:80]}），改用手动搬运")
+    dest_dir = Path.home() / ".Trash" / f"leetcode-removed-{date.today().isoformat()}"
+    dest_dir.mkdir(parents=True, exist_ok=True)
+    dest, i = dest_dir / path.name, 2
+    while dest.exists():
+        dest = dest_dir / f"{path.name} ({i})"; i += 1
+    shutil.move(str(path), str(dest))
+    return str(dest)
+
+
+def find_md_refs(folder_name: str, skip_under: Path | None = None) -> list[tuple[Path, int, str, bool]]:
+    """在题库所有 .md 里找引用这个题目文件夹的行（README 的链接是百分号编码的，所以两种写法都要找）。
+    skip_under：题目文件夹自己里面的 .md（note.md 之类）不算，它们跟着文件夹一起进废纸篓。
+    返回 (md 文件, 行号, 行内容, 这一行是否只提到了这一道题)。"""
+    forms = {folder_name, urllib.parse.quote(folder_name)}
+    out = []
+    for md in sorted(ROOT.rglob("*.md")):
+        parts = md.relative_to(ROOT).parts
+        if any(x in EXCLUDE_PARTS or x.startswith(("$$", ".")) for x in parts):
+            continue
+        if skip_under is not None and md.is_relative_to(skip_under):
+            continue
+        try:
+            lines = md.read_text(encoding="utf-8").split("\n")
+        except (OSError, UnicodeDecodeError):
+            continue
+        for i, line in enumerate(lines, 1):
+            if not any(f in line for f in forms):
+                continue
+            markers = len(LC_ID_RE.findall(line)) + len(NC_REF_RE.findall(line))
+            mine = sum(line.count(f) for f in forms)
+            solo = markers <= mine and bool(ROW_RE.match(line))
+            out.append((md, i, line, solo))
+    return out
+
+
+def prune_empty_parents(start: Path, dry: bool, ignore: Path | None = None) -> list[Path]:
+    """题目删掉后，把因此空掉的子分类 / cluster 文件夹一起收走（大类文件夹保留）。
+    ignore：预演时题目文件夹还在，要当它已经没了，否则会漏报。"""
+    gone, d = [], start
+    while len(d.relative_to(ROOT).parts) >= 2:            # 只收 ROOT 下第二层及更深的，不碰大类
+        rest = [f for f in d.iterdir() if f.name != ".DS_Store" and f != ignore] if d.is_dir() else []
+        if rest:
+            break
+        gone.append(d)
+        if not dry:
+            for junk in d.glob(".DS_Store"):
+                junk.unlink()
+            d.rmdir()
+        d = d.parent
+    return gone
+
+
+def cmd_remove(which: str, dry: bool = False) -> None:
+    """把一道题彻底从题库里剔除。which 是数字 → Today/ 里的序号；否则当作题目文件夹路径。"""
+    all_links = [e for e in TODAY_DIR.iterdir() if e.is_symlink()] if TODAY_DIR.is_dir() else []
+    if which.isdigit():
+        prefix = f"{int(which):02d} - "
+        links = [e for e in all_links if e.name.startswith(prefix)]
+        if not links:
+            have = sorted(e.name for e in all_links)
+            sys.exit(f"Today/ 里没有序号 {int(which)} 的题。"
+                     + ("现有：\n  " + "\n  ".join(have) if have else "Today/ 是空的，先 shuffle。"))
+        link: Path | None = links[0]
+        target = link.resolve()
+    else:
+        target = Path(which).expanduser().resolve()
+        if not target.is_dir():
+            sys.exit(f"❌ 文件夹不存在：{which}")
+        links = [e for e in all_links if e.resolve() == target]
+        link = links[0] if links else None
+
+    # ---- 安全闸门：只允许删题库里的题目文件夹
+    if not target.is_relative_to(ROOT):
+        sys.exit(f"❌ 不在题库里，拒绝删除：{target}")
+    if len(target.relative_to(ROOT).parts) < 2:
+        sys.exit(f"❌ 这不是一道题（题目文件夹在 <大类>/<子分类>/ 下面），拒绝删除：{target.relative_to(ROOT)}")
+    if not PROBLEM_DIR_RE.match(target.name):
+        sys.exit(f"❌ 不是题目文件夹（名字要以 'LC-1234 - ' 或 'NC - ' 开头）：{target.name}")
+
+    files = sorted(f for f in target.rglob("*") if f.is_file() and f.name != ".DS_Store")
+    size = sum(f.stat().st_size for f in files)
+    head = "【--dry-run，什么都不会动】" if dry else ""
+    print(f"🗑  即将剔除{head}：{target.relative_to(ROOT)}")
+    human = f"{size / 1024 / 1024:.1f} MB" if size >= 1024 * 1024 else (f"{size / 1024:.0f} KB" if size >= 1024 else f"{size} 字节")
+    print(f"   {len(files)} 个文件，{human}")
+    for f in files:
+        print(f"      {f.relative_to(target)}")
+    if not (target / "metadata.json").exists():
+        print("   （这题没有 metadata.json，本来就不在复习队列里）")
+
+    refs = find_md_refs(target.name, skip_under=target)
+    solo = [r for r in refs if r[3]]
+    manual = [r for r in refs if not r[3]]
+    if refs:
+        print(f"   README 引用：{len(refs)} 处（{len(solo)} 处可自动清掉，{len(manual)} 处需要你自己看一眼）")
+
+    if dry:
+        for md, i, line, ok in refs:
+            print(f"      {'会删掉' if ok else '保留并提醒'} {md.relative_to(ROOT)}:{i}")
+        will_go = [str(d.relative_to(ROOT)) for d in prune_empty_parents(target.parent, True, ignore=target)]
+        print(f"   空掉的文件夹会一起收走：{will_go or '无'}")
+        print("\n[--dry-run] 没有任何改动")
+        return
+
+    # ---- 真删
+    where = _to_trash(target)
+    print(f"   ✅ 题目文件夹已移进{where if where == '废纸篓' else '废纸篓：' + where}（可在 Finder 里还原）")
+    if link is not None:
+        link.unlink(); print("   ✅ Today/ 里的软链接已移除")
+    for md, i, line, ok in sorted(solo, key=lambda r: (str(r[0]), -r[1])):   # 同一文件从后往前删，行号不乱
+        if not md.exists():
+            continue
+        lines = md.read_text(encoding="utf-8").split("\n")
+        del lines[i - 1]
+        md.write_text("\n".join(lines), encoding="utf-8")
+        print(f"   ✅ 已删掉引用行 {md.relative_to(ROOT)}:{i}")
+    for md, i, line, ok in manual:
+        print(f"   ⚠️ 这一行还提到别的题，没敢动，你自己看一眼：{md.relative_to(ROOT)}:{i}")
+    for d in prune_empty_parents(target.parent, False):
+        print(f"   ✅ 空掉的文件夹已收走：{d.relative_to(ROOT)}")
+
+    from progress import update_progress
+    update_progress()
+    print("   ✅ progress.md 已刷新")
+    left = sorted(e.name for e in TODAY_DIR.iterdir() if e.is_symlink()) if TODAY_DIR.is_dir() else []
+    if link is not None:
+        print(f"   Today/ 还剩 {len(left)} 题" if left else "   Today/ 已清空 🎉")
+    if link is not None and not left:
+        print(f"\n🔀 Today/ 空了，自动 shuffle {AUTO_SHUFFLE_N} 题：")
+        cmd_shuffle(AUTO_SHUFFLE_N)
+
+
+def cmd_done(target: str, status: str, note: str | None) -> None:
+    problems = load_all()
+    p = resolve(target, problems)
+    archive_retry(p, date.today())
+    _record(p, status, note)
+    _remove_retry(p.path)
 
 
 def cmd_stats() -> None:
@@ -304,24 +727,6 @@ def cmd_list(which: str) -> None:
     print(f"\n共 {len(rows)} 题")
 
 
-def cmd_init(target: str, signal: str, guard: str | None, sticking: str | None) -> None:
-    problems = load_all()
-    p = resolve(target, problems)
-    info = p.meta.setdefault("info", {})
-    if "→" in signal:
-        a, b = signal.split("→", 1)
-        info["signal"], info["mode"] = a.strip(), b.strip()
-    else:
-        info["signal"] = signal.strip()
-    if guard is not None:
-        info["guard"] = guard
-    if sticking is not None:
-        info["sticking_point"] = sticking
-    info.setdefault("first_date", date.today().isoformat())
-    p.save()
-    print(f"✅ 已写入 {p.rel}/metadata.json\n   信号→模式: {p.signal_line}")
-
-
 # ---------------------------------------------------------------- main
 def _flag(argv: list[str], name: str) -> str | None:
     if name in argv:
@@ -342,21 +747,29 @@ def main(argv: list[str]) -> None:
     if cmd == "today":
         cmd_today(n)
     elif cmd == "shuffle":
-        cmd_shuffle(n)
+        cmd_shuffle(n, reset="--reset" in rest)       # 默认不去网站重置代码；要重置就 --reset 或单独 `review reset`
+    elif cmd == "reset":
+        cmd_reset(int(rest[0]) if rest and rest[0].isdigit() else None)
     elif cmd == "done":
         note = _flag(rest, "--note")
         if len(rest) != 2:
             sys.exit('用法: done <子串> <g|y|r> [--note "卡点"]')
         cmd_done(rest[0], rest[1], note)
+    elif cmd == "finish":
+        note = _flag(rest, "--note")
+        if not rest or len(rest) > 2:
+            sys.exit('用法: finish <Today 里的序号 | 题目文件夹路径> [g|y|r] [--note "卡点"]')
+        cmd_finish(rest[0], rest[1] if len(rest) == 2 else "g", note)
+    elif cmd == "remove":
+        dry = "--dry-run" in rest
+        rest = [x for x in rest if x != "--dry-run"]
+        if len(rest) != 1:
+            sys.exit("用法: remove <Today 里的序号 | 题目文件夹路径> [--dry-run]")
+        cmd_remove(rest[0], dry)
     elif cmd == "stats":
         cmd_stats()
     elif cmd == "list":
         cmd_list(rest[0] if rest else "due")
-    elif cmd == "init":
-        guard, sticking = _flag(rest, "--guard"), _flag(rest, "--sticking")
-        if len(rest) != 2:
-            sys.exit('用法: init <子串> "<信号→模式>" [--guard "..."] [--sticking "..."]')
-        cmd_init(rest[0], rest[1], guard, sticking)
     else:
         sys.exit(f"未知命令: {cmd}\n\n{__doc__.strip()}")
 

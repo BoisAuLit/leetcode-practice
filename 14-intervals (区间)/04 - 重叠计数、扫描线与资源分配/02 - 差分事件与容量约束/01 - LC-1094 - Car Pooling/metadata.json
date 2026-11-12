@@ -1,0 +1,10 @@
+{
+  "id": "LC-1094",
+  "path": "14-intervals (区间)/04 - 重叠计数、扫描线与资源分配/02 - 差分事件与容量约束/01 - LC-1094 - Car Pooling",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/car-pooling/",
+    "neetcode": null
+  },
+  "practice": []
+}

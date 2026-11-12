@@ -1,0 +1,10 @@
+{
+  "id": "LC-1547",
+  "path": "12-dynamic-programming (动态规划)/08 - 区间 DP 与博弈/02 - 最后一步决策型区间 DP/02 - LC-1547 - Minimum Cost to Cut a Stick",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-cost-to-cut-a-stick/",
+    "neetcode": null
+  },
+  "practice": []
+}

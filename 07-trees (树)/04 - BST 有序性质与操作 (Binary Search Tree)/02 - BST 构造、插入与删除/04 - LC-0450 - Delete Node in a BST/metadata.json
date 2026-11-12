@@ -1,0 +1,10 @@
+{
+  "id": "LC-0450",
+  "path": "07-trees (树)/04 - BST 有序性质与操作 (Binary Search Tree)/02 - BST 构造、插入与删除/04 - LC-0450 - Delete Node in a BST",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/delete-node-in-a-bst/",
+    "neetcode": null
+  },
+  "practice": []
+}

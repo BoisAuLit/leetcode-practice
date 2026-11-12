@@ -1,0 +1,10 @@
+{
+  "id": "LC-0343",
+  "path": "12-dynamic-programming (动态规划)/01 - 一维线性 DP 与相邻约束/03 - 一维决策与最低成本/03 - LC-0343 - Integer Break",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/integer-break/",
+    "neetcode": null
+  },
+  "practice": []
+}

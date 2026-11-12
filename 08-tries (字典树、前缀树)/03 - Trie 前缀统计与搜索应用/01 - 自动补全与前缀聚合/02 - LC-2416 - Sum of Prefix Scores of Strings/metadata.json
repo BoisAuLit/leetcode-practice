@@ -1,0 +1,10 @@
+{
+  "id": "LC-2416",
+  "path": "08-tries (字典树、前缀树)/03 - Trie 前缀统计与搜索应用/01 - 自动补全与前缀聚合/02 - LC-2416 - Sum of Prefix Scores of Strings",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/sum-of-prefix-scores-of-strings/",
+    "neetcode": null
+  },
+  "practice": []
+}

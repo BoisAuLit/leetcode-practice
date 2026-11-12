@@ -1,0 +1,10 @@
+{
+  "id": "LC-0203",
+  "path": "06-linked-list (链表)/01 - 基础指针、Dummy Node 与反转/02 - Dummy Node 与链表删除/01 - LC-0203 - Remove Linked List Elements",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/remove-linked-list-elements/",
+    "neetcode": null
+  },
+  "practice": []
+}

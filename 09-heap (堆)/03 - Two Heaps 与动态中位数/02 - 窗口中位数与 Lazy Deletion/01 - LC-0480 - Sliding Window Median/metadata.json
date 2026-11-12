@@ -1,0 +1,10 @@
+{
+  "id": "LC-0480",
+  "path": "09-heap (堆)/03 - Two Heaps 与动态中位数/02 - 窗口中位数与 Lazy Deletion/01 - LC-0480 - Sliding Window Median",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/sliding-window-median/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0071",
+  "path": "04-stack-queue (栈、队列)/01 - 基础栈、括号与消除 (Stack Fundamentals)/02 - 栈模拟、消除与状态恢复/04 - LC-0071 - Simplify Path",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/simplify-path/",
+    "neetcode": null
+  },
+  "practice": []
+}

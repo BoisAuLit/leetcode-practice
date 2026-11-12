@@ -1,0 +1,31 @@
+{
+  "id": "LC-0115",
+  "path": "12-dynamic-programming (动态规划)/05 - 字符串分割与双序列 DP/03 - Distinct Subsequences 计数/01 - LC-0115 - Distinct Subsequences",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/distinct-subsequences/",
+    "neetcode": "https://neetcode.io/problems/count-subsequences/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-09-05",
+      "sticking_point": "",
+      "result": "🟡"
+    },
+    {
+      "date": "2026-09-15",
+      "sticking_point": "",
+      "result": "🟡"
+    },
+    {
+      "date": "2026-09-23",
+      "sticking_point": "",
+      "result": "🟢"
+    },
+    {
+      "date": "2026-10-04",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

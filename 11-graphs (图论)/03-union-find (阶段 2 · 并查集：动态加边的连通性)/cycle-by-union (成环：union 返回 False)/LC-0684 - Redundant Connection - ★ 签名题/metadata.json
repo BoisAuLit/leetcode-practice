@@ -1,0 +1,10 @@
+{
+  "id": "LC-0684",
+  "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/cycle-by-union (成环：union 返回 False)/LC-0684 - Redundant Connection - ★ 签名题",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/redundant-connection/",
+    "neetcode": "https://neetcode.io/problems/redundant-connection/question?list=neetcode150"
+  },
+  "practice": []
+}

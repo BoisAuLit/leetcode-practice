@@ -1,0 +1,10 @@
+{
+  "id": "LC-3434",
+  "path": "12-dynamic-programming (动态规划)/02 - Kadane 与连续子数组 DP/01 - 最大连续子数组和及其变体/03 - LC-3434 - Maximum Frequency After Subarray Operation",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-frequency-after-subarray-operation/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "NC-is-palindrome",
+  "path": "02-two-pointers (双指针)/palindrome (回文)/NC - Valid Palindrome",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/valid-palindrome/",
+    "neetcode": "https://neetcode.io/problems/is-palindrome/question?list=neetcode150"
+  },
+  "practice": []
+}

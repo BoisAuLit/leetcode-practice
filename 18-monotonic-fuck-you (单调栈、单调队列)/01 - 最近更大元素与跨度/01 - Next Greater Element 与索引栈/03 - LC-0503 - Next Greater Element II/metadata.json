@@ -1,0 +1,10 @@
+{
+  "id": "LC-0503",
+  "path": "18-monotonic-fuck-you (单调栈、单调队列)/01 - 最近更大元素与跨度/01 - Next Greater Element 与索引栈/03 - LC-0503 - Next Greater Element II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/next-greater-element-ii/",
+    "neetcode": null
+  },
+  "practice": []
+}

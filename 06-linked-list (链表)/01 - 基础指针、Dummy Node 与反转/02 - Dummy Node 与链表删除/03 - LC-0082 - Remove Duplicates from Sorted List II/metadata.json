@@ -1,0 +1,10 @@
+{
+  "id": "LC-0082",
+  "path": "06-linked-list (链表)/01 - 基础指针、Dummy Node 与反转/02 - Dummy Node 与链表删除/03 - LC-0082 - Remove Duplicates from Sorted List II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/",
+    "neetcode": null
+  },
+  "practice": []
+}

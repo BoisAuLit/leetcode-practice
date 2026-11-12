@@ -1,0 +1,10 @@
+{
+  "id": "LC-0986",
+  "path": "02-two-pointers (双指针)/05 - 多序列同步扫描 (Two Sequences)/03 - 双序列归并与区间交集/02 - LC-0986 - Interval List Intersections",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/interval-list-intersections/",
+    "neetcode": null
+  },
+  "practice": []
+}

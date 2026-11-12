@@ -1,0 +1,10 @@
+{
+  "id": "LC-1834",
+  "path": "09-heap (堆)/05 - Heap + Scheduling 任务调度/02 - 动态任务与事件优先级/01 - LC-1834 - Single-Threaded CPU",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/single-threaded-cpu/",
+    "neetcode": null
+  },
+  "practice": []
+}

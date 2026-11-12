@@ -1,0 +1,10 @@
+{
+  "id": "LC-1423",
+  "path": "03-sliding-window (滑动窗口)/01 - 定长窗口与频率匹配 (Fixed Window)/01 - 数值聚合与固定窗口优化/03 - LC-1423 - Maximum Points You Can Obtain from Cards",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/",
+    "neetcode": null
+  },
+  "practice": []
+}

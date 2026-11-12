@@ -1,0 +1,10 @@
+{
+  "id": "LC-0713",
+  "path": "03-sliding-window (滑动窗口)/04 - 子数组与子串计数 (Counting Windows)/01 - 正数乘积与批量计数/01 - LC-0713 - Subarray Product Less Than K",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/subarray-product-less-than-k/",
+    "neetcode": null
+  },
+  "practice": []
+}

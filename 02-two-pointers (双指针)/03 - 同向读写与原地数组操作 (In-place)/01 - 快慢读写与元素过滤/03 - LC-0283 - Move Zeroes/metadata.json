@@ -1,0 +1,10 @@
+{
+  "id": "LC-0283",
+  "path": "02-two-pointers (双指针)/03 - 同向读写与原地数组操作 (In-place)/01 - 快慢读写与元素过滤/03 - LC-0283 - Move Zeroes",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/move-zeroes/",
+    "neetcode": null
+  },
+  "practice": []
+}

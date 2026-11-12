@@ -1,0 +1,10 @@
+{
+  "id": "LC-0212",
+  "path": "08-tries (字典树、前缀树)/02 - Trie + DFS 与回溯搜索/02 - Grid Backtracking 与 Trie 剪枝/01 - LC-0212 - Word Search II",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/word-search-ii/",
+    "neetcode": "https://neetcode.io/problems/search-for-word-ii/question?list=neetcode150"
+  },
+  "practice": []
+}

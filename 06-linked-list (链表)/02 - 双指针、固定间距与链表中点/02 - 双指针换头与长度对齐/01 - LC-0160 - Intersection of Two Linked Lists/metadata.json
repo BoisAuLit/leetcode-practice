@@ -1,0 +1,10 @@
+{
+  "id": "LC-0160",
+  "path": "06-linked-list (链表)/02 - 双指针、固定间距与链表中点/02 - 双指针换头与长度对齐/01 - LC-0160 - Intersection of Two Linked Lists",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/intersection-of-two-linked-lists/",
+    "neetcode": null
+  },
+  "practice": []
+}

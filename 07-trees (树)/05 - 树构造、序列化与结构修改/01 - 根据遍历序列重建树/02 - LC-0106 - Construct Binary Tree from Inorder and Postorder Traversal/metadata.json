@@ -1,0 +1,10 @@
+{
+  "id": "LC-0106",
+  "path": "07-trees (树)/05 - 树构造、序列化与结构修改/01 - 根据遍历序列重建树/02 - LC-0106 - Construct Binary Tree from Inorder and Postorder Traversal",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/",
+    "neetcode": null
+  },
+  "practice": []
+}

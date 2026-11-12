@@ -1,0 +1,31 @@
+{
+  "id": "LC-0190",
+  "path": "16-bit-manipulation (位运算)/01 - 二进制基础、位计数与位反转/02 - 固定宽度位读取与反转/01 - LC-0190 - Reverse Bits",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/reverse-bits/",
+    "neetcode": "https://neetcode.io/problems/reverse-bits/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-09-09",
+      "sticking_point": "靠看答案：从 n 右边逐位取 bit，从左到右重构 result",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-14",
+      "sticking_point": "获取最后一位要使用 n & 1, 设定最后一位要使用 | bit",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-15",
+      "sticking_point": "",
+      "result": "🟢"
+    },
+    {
+      "date": "2026-09-29",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

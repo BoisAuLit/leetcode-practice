@@ -1,0 +1,36 @@
+{
+  "id": "LC-0050",
+  "path": "15-math-geometry (数学、几何)/03 - 整数运算与数位处理 (Arithmetic)/03 - Fast Exponentiation 平方快速幂/01 - LC-0050 - Pow(x, n)",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/powx-n/",
+    "neetcode": "https://neetcode.io/problems/pow-x-n/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-09-10",
+      "sticking_point": "折半：half = f(k//2)，奇数补一个 x；负指数最后取倒数；k//2, k%2 即 k>>1, k&1",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-15",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-21",
+      "sticking_point": "",
+      "result": "🟡"
+    },
+    {
+      "date": "2026-09-30",
+      "sticking_point": "",
+      "result": "🟡"
+    },
+    {
+      "date": "2026-10-30",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0150",
+  "path": "04-stack-queue (栈、队列)/03 - 表达式计算与嵌套解析 (Expression Parsing)/01 - 逆波兰表达式/01 - LC-0150 - Evaluate Reverse Polish Notation",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+    "neetcode": "https://neetcode.io/problems/evaluate-reverse-polish-notation/question?list=neetcode150"
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-1163",
+  "path": "02-two-pointers (双指针)/07 - 高阶字典序双指针 (Advanced Lexicographic)/01 - 最大后缀选择/01 - LC-1163 - Last Substring in Lexicographical Order",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/last-substring-in-lexicographical-order/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-1861",
+  "path": "15-math-geometry (数学、几何)/02 - 矩阵变换与状态模拟 (Matrix Transformation)/03 - 多轮矩阵消除与重力模拟/02 - LC-1861 - Rotating the Box",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/rotating-the-box/",
+    "neetcode": null
+  },
+  "practice": []
+}

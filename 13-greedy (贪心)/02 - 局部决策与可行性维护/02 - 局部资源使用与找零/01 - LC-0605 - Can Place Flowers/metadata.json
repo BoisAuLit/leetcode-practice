@@ -1,0 +1,16 @@
+{
+  "id": "LC-0605",
+  "path": "13-greedy (贪心)/02 - 局部决策与可行性维护/02 - 局部资源使用与找零/01 - LC-0605 - Can Place Flowers",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/can-place-flowers/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-11-06",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

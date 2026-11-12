@@ -1,0 +1,10 @@
+{
+  "id": "LC-2115",
+  "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/kahn (Kahn：按入度做 BFS)/LC-2115 - Find All Possible Recipes from Given Supplies",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/",
+    "neetcode": null
+  },
+  "practice": []
+}

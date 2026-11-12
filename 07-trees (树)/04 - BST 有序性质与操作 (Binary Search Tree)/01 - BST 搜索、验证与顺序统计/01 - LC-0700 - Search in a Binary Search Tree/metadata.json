@@ -1,0 +1,10 @@
+{
+  "id": "LC-0700",
+  "path": "07-trees (树)/04 - BST 有序性质与操作 (Binary Search Tree)/01 - BST 搜索、验证与顺序统计/01 - LC-0700 - Search in a Binary Search Tree",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/search-in-a-binary-search-tree/",
+    "neetcode": null
+  },
+  "practice": []
+}

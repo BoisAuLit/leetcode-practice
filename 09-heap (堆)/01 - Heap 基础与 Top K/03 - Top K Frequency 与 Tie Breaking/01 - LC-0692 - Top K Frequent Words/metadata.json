@@ -1,0 +1,10 @@
+{
+  "id": "LC-0692",
+  "path": "09-heap (堆)/01 - Heap 基础与 Top K/03 - Top K Frequency 与 Tie Breaking/01 - LC-0692 - Top K Frequent Words",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/top-k-frequent-words/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0079",
+  "path": "10-backtracking (回溯)/04 - 网格搜索与约束满足 (Constraint Search)/01 - 网格路径与访问状态/01 - LC-0079 - Word Search",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/word-search/",
+    "neetcode": "https://neetcode.io/problems/search-for-word/question?list=neetcode150"
+  },
+  "practice": []
+}

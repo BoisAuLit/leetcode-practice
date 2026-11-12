@@ -1,0 +1,10 @@
+{
+  "id": "LC-1202",
+  "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/grouping (分组：并查集分派后按组输出)/LC-1202 - Smallest String With Swaps",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/smallest-string-with-swaps/",
+    "neetcode": null
+  },
+  "practice": []
+}

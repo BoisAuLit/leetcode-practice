@@ -1,0 +1,10 @@
+{
+  "id": "LC-1029",
+  "path": "13-greedy (贪心)/03 - 排序贪心、频率与资源分配/03 - 排序差额与最小成本分配/01 - LC-1029 - Two City Scheduling",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/two-city-scheduling/",
+    "neetcode": null
+  },
+  "practice": []
+}

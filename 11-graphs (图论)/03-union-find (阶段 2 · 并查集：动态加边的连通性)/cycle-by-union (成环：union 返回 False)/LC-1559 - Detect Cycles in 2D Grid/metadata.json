@@ -1,0 +1,10 @@
+{
+  "id": "LC-1559",
+  "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/cycle-by-union (成环：union 返回 False)/LC-1559 - Detect Cycles in 2D Grid",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/detect-cycles-in-2d-grid/",
+    "neetcode": null
+  },
+  "practice": []
+}

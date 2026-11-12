@@ -1,0 +1,10 @@
+{
+  "id": "LC-0027",
+  "path": "02-two-pointers (双指针)/03 - 同向读写与原地数组操作 (In-place)/01 - 快慢读写与元素过滤/02 - LC-0027 - Remove Element",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/remove-element/",
+    "neetcode": null
+  },
+  "practice": []
+}

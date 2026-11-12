@@ -1,0 +1,16 @@
+{
+  "id": "LC-1337",
+  "path": "09-heap (堆)/07 - 跨专题与低优先级存档/01 - 简单排序或计数可替代的问题/01 - LC-1337 - The K Weakest Rows in a Matrix",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-10-13",
+      "sticking_point": "",
+      "result": "🟡"
+    }
+  ]
+}

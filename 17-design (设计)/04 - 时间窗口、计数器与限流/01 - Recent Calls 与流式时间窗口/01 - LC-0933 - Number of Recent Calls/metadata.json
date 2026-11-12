@@ -1,0 +1,26 @@
+{
+  "id": "LC-0933",
+  "path": "17-design (设计)/04 - 时间窗口、计数器与限流/01 - Recent Calls 与流式时间窗口/01 - LC-0933 - Number of Recent Calls",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/number-of-recent-calls/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-09-19",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-28",
+      "sticking_point": "",
+      "result": "🟢"
+    },
+    {
+      "date": "2026-11-09",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

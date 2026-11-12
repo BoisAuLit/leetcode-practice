@@ -1,0 +1,10 @@
+{
+  "id": "LC-2359",
+  "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/functional-graph (函数图：每个点只有一条出边)/LC-2359 - Find Closest Node to Given Two Nodes",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-closest-node-to-given-two-nodes/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-1519",
+  "path": "11-graphs (图论)/07-special-structures (阶段 6 · 特殊结构)/tree-problems (树上问题：直径、换根 DP)/LC-1519 - Number of Nodes in the Sub-Tree With the Same Label",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/number-of-nodes-in-the-sub-tree-with-the-same-label/",
+    "neetcode": null
+  },
+  "practice": []
+}

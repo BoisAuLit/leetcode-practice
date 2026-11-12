@@ -1,0 +1,10 @@
+{
+  "id": "LC-0724",
+  "path": "01-arrays-hashing (数组、哈希表)/03 - Prefix Sum 与 Prefix-Suffix/03 - LC-0724 - Find Pivot Index",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-pivot-index/",
+    "neetcode": null
+  },
+  "practice": []
+}

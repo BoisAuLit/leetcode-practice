@@ -1,0 +1,10 @@
+{
+  "id": "LC-0188",
+  "path": "12-dynamic-programming (动态规划)/07 - 股票与状态机 DP/03 - 交易次数限制/01 - LC-0188 - Best Time to Buy and Sell Stock IV",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/",
+    "neetcode": null
+  },
+  "practice": []
+}

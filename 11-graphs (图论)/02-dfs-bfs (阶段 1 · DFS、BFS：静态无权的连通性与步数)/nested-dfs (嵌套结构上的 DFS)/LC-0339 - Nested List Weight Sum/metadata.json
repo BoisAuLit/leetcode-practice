@@ -1,0 +1,10 @@
+{
+  "id": "LC-0339",
+  "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/nested-dfs (嵌套结构上的 DFS)/LC-0339 - Nested List Weight Sum",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/nested-list-weight-sum/",
+    "neetcode": null
+  },
+  "practice": []
+}

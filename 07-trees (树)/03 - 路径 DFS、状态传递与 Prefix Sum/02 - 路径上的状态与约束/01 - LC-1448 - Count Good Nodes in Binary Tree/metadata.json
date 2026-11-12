@@ -1,0 +1,10 @@
+{
+  "id": "LC-1448",
+  "path": "07-trees (树)/03 - 路径 DFS、状态传递与 Prefix Sum/02 - 路径上的状态与约束/01 - LC-1448 - Count Good Nodes in Binary Tree",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
+    "neetcode": "https://neetcode.io/problems/count-good-nodes-in-binary-tree/question?list=neetcode150"
+  },
+  "practice": []
+}

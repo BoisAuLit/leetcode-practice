@@ -1,0 +1,10 @@
+{
+  "id": "LC-0076",
+  "path": "03-sliding-window (滑动窗口)/03 - 变长窗口之最短满足条件 (Minimum Valid Window)/02 - 字符频率覆盖与最小窗口/01 - LC-0076 - Minimum Window Substring",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-window-substring/",
+    "neetcode": "https://neetcode.io/problems/minimum-window-with-characters/question?list=neetcode150"
+  },
+  "practice": []
+}

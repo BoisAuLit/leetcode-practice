@@ -1,0 +1,10 @@
+{
+  "id": "LC-0790",
+  "path": "12-dynamic-programming (动态规划)/09 - 计数 DP 与多维状态/01 - 线性计数与铺砖/01 - LC-0790 - Domino and Tromino Tiling",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/domino-and-tromino-tiling/",
+    "neetcode": null
+  },
+  "practice": []
+}

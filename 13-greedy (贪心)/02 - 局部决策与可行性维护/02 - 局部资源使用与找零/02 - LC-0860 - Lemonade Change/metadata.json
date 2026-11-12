@@ -1,0 +1,10 @@
+{
+  "id": "LC-0860",
+  "path": "13-greedy (贪心)/02 - 局部决策与可行性维护/02 - 局部资源使用与找零/02 - LC-0860 - Lemonade Change",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/lemonade-change/",
+    "neetcode": null
+  },
+  "practice": []
+}

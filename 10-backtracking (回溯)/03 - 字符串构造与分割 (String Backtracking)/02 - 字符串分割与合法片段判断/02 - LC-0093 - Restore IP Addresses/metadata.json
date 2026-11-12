@@ -1,0 +1,10 @@
+{
+  "id": "LC-0093",
+  "path": "10-backtracking (回溯)/03 - 字符串构造与分割 (String Backtracking)/02 - 字符串分割与合法片段判断/02 - LC-0093 - Restore IP Addresses",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/restore-ip-addresses/",
+    "neetcode": null
+  },
+  "practice": []
+}

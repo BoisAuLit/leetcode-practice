@@ -1,0 +1,10 @@
+{
+  "id": "LC-0875",
+  "path": "05-binary-search (二分查找)/03 - 二分答案与可行性判断 (Binary Search on Answer)/01 - 最小可行速度、时间与资源/01 - LC-0875 - Koko Eating Bananas",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/koko-eating-bananas/",
+    "neetcode": "https://neetcode.io/problems/eating-bananas/question?list=neetcode150"
+  },
+  "practice": []
+}

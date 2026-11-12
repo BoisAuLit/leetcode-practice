@@ -1,0 +1,10 @@
+{
+  "id": "LC-0374",
+  "path": "05-binary-search (二分查找)/01 - 基础查找与边界二分 (Basic and Boundary Search)/04 - 整数范围与单调数学谓词/03 - LC-0374 - Guess Number Higher or Lower",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/guess-number-higher-or-lower/",
+    "neetcode": null
+  },
+  "practice": []
+}

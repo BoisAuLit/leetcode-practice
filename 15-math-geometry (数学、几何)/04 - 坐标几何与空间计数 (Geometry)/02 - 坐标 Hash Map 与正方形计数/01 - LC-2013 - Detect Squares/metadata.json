@@ -1,0 +1,10 @@
+{
+  "id": "LC-2013",
+  "path": "15-math-geometry (数学、几何)/04 - 坐标几何与空间计数 (Geometry)/02 - 坐标 Hash Map 与正方形计数/01 - LC-2013 - Detect Squares",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/detect-squares/",
+    "neetcode": "https://neetcode.io/problems/count-squares/question?list=neetcode150"
+  },
+  "practice": []
+}

@@ -1,0 +1,181 @@
+{
+  "topic": "14-intervals (区间)",
+  "captured": "2026-11-11",
+  "note": "重构开始前对专题内全部普通文件记录的 SHA-256 清单。未发现符号链接。",
+  "file_count": 43,
+  "symlinks": [],
+  "files": [
+    {
+      "sha256": "425c0b08f3ca826f4a13a37ae42716fb36666555385b8d2ff42559d6259aa658",
+      "path": "instructions.md"
+    },
+    {
+      "sha256": "3483bdaa6f1e6868a3b2d84896fe07ab2eb85e441748d6f52922a759986b0be4",
+      "path": "merge-and-insert (合并与插入)/LC-0163 - Missing Ranges/metadata.json"
+    },
+    {
+      "sha256": "d5cee971f1541bad909e75e67915523b90fa61fb49f722bbcc70698268ec3748",
+      "path": "merge-and-insert (合并与插入)/LC-0163 - Missing Ranges/problem.pdf"
+    },
+    {
+      "sha256": "b730341d2d77469a2eb7dafd72f0a64d912a1f205cb85c9bfa343fefcc72c5a9",
+      "path": "merge-and-insert (合并与插入)/LC-0163 - Missing Ranges/problem_dark.pdf"
+    },
+    {
+      "sha256": "05cf501f7c1b60ba6dff44c7042566409ec9d2b67521490fa5b260766e6e1051",
+      "path": "merge-and-insert (合并与插入)/LC-0163 - Missing Ranges/solution.py"
+    },
+    {
+      "sha256": "42e03b8bae6a929932e1a90712cf9bc6f82178ed8cedf505f6dc72d071268baa",
+      "path": "merge-and-insert (合并与插入)/LC-0228 - Summary Ranges/metadata.json"
+    },
+    {
+      "sha256": "4db59cf6215714f27f15096dd890a9011fc81823549050360fa015ebebec9a76",
+      "path": "merge-and-insert (合并与插入)/LC-0228 - Summary Ranges/problem.pdf"
+    },
+    {
+      "sha256": "4dcdb08d75bc27e811f02cba076624838b3636f545976c4efb819189e91637b6",
+      "path": "merge-and-insert (合并与插入)/LC-0228 - Summary Ranges/problem_dark.pdf"
+    },
+    {
+      "sha256": "1e75a1882965d78efde9546588a184589da3b76016ecaffc4f8edaf3a0f728f4",
+      "path": "merge-and-insert (合并与插入)/LC-0228 - Summary Ranges/solution.py"
+    },
+    {
+      "sha256": "2bab456ee0c862b0b2cbbeb2761c63654787d0b1730ab65c0528406d49944059",
+      "path": "merge-and-insert (合并与插入)/NC - Insert Interval/metadata.json"
+    },
+    {
+      "sha256": "2299c11eaa56b440ac8284d1ce4185e570cc2784b5393c77522acdfa8f1d70a3",
+      "path": "merge-and-insert (合并与插入)/NC - Insert Interval/note.md"
+    },
+    {
+      "sha256": "ebb9146e197be67b45424da19954570816b7ccc4c1869d54050363e3d5951ccd",
+      "path": "merge-and-insert (合并与插入)/NC - Insert Interval/problem.pdf"
+    },
+    {
+      "sha256": "248684b0788e9b4f7c17ccf99114abf7541849fda7982f761e078e5a08ba28af",
+      "path": "merge-and-insert (合并与插入)/NC - Insert Interval/problem_dark.pdf"
+    },
+    {
+      "sha256": "ac19c8c592b566247e8ec99b25151e9ada056d7ee704038c920d276b25f8e6e2",
+      "path": "merge-and-insert (合并与插入)/NC - Insert Interval/solution.py"
+    },
+    {
+      "sha256": "f027b4c7e9b125da34db671c2c8e8e045d1b5022248e7f916be3323f66b0973a",
+      "path": "merge-and-insert (合并与插入)/NC - Merge Intervals/asset-02 - Explanation.jpeg"
+    },
+    {
+      "sha256": "08d5c641840f383dc3bdc8dcd63140042a56ba87a0e598de05944be1709be875",
+      "path": "merge-and-insert (合并与插入)/NC - Merge Intervals/metadata.json"
+    },
+    {
+      "sha256": "9d4d40e191208eb41657d754f7c4c5db6cceaf0e30d5a097f6cb6d4ffb4bd178",
+      "path": "merge-and-insert (合并与插入)/NC - Merge Intervals/problem.pdf"
+    },
+    {
+      "sha256": "1d467357f9feca6d6f1b12af390f895119570602ed342174acbe8b06ba9d2f92",
+      "path": "merge-and-insert (合并与插入)/NC - Merge Intervals/problem_dark.pdf"
+    },
+    {
+      "sha256": "c1e8fa81dfd165b9a62f8e5cdb03863608b512264589a85641870e5aaa16990d",
+      "path": "merge-and-insert (合并与插入)/NC - Merge Intervals/solution.py"
+    },
+    {
+      "sha256": "08ad3bd274a841118f75fb463c25c6d6102678becc0be6d30add422a3cd810d8",
+      "path": "scheduling (调度)/NC - Meeting Rooms II/metadata.json"
+    },
+    {
+      "sha256": "d19e1c600052c016d5fd89349e327692bb23ab11669ec4a5069eb373fc616e7c",
+      "path": "scheduling (调度)/NC - Meeting Rooms II/problem.pdf"
+    },
+    {
+      "sha256": "0acef7191321a24a4fc11ca3a80146180bd3e258dcfb76b3ca2809bda170f27e",
+      "path": "scheduling (调度)/NC - Meeting Rooms II/problem_dark.pdf"
+    },
+    {
+      "sha256": "55f9457f1e16266fa8bfd6cf7cdc83956d519348b02b45c70202a3fefcadc1cc",
+      "path": "scheduling (调度)/NC - Meeting Rooms II/solution.py"
+    },
+    {
+      "sha256": "29cef4c0e151e0c8597c831efbd407565cb4c1f245033c21ac50adba7459db31",
+      "path": "scheduling (调度)/NC - Meeting Rooms/metadata.json"
+    },
+    {
+      "sha256": "ed6aa17a7f6397d9cdd0913cb218d98d823bca4c43055b084783806aa54b60bf",
+      "path": "scheduling (调度)/NC - Meeting Rooms/problem.pdf"
+    },
+    {
+      "sha256": "a760d3e4ad7465cf6b96e3dd03ea0ec81334a5264e4fabac13c203f9d99a495d",
+      "path": "scheduling (调度)/NC - Meeting Rooms/problem_dark.pdf"
+    },
+    {
+      "sha256": "dd8a9519c8da9ac8308f52abdaedc0d02cc20e94418c5f91c496fa5ce4f284ea",
+      "path": "scheduling (调度)/NC - Meeting Rooms/solution.py"
+    },
+    {
+      "sha256": "5acd11f3b5b5911cd2256fadbf252d32928943a61b379155dd1dcc6c5737e0d1",
+      "path": "scheduling (调度)/NC - Minimum Interval to Include Each Query/asset-06 - Explanation.pdf"
+    },
+    {
+      "sha256": "ddd490b3f6417c57ec243729f4b5ef1fcf9bab7f211a614488ee2565d85d075c",
+      "path": "scheduling (调度)/NC - Minimum Interval to Include Each Query/metadata.json"
+    },
+    {
+      "sha256": "4e35977e07e32242373d2bd9a12bda769fd85b627c177f0cfd2bda7ead12aa5e",
+      "path": "scheduling (调度)/NC - Minimum Interval to Include Each Query/problem.pdf"
+    },
+    {
+      "sha256": "39baced02437cfd1d2b397c7253175e33e33779a78afef8472848e616b1e6aad",
+      "path": "scheduling (调度)/NC - Minimum Interval to Include Each Query/problem_dark.pdf"
+    },
+    {
+      "sha256": "50a6198eea8a14a88ddf6fe66465cc8954510cc85b8505f1cb7dda27ff27f01d",
+      "path": "scheduling (调度)/NC - Minimum Interval to Include Each Query/solution.py"
+    },
+    {
+      "sha256": "767dc194f1dc4de7faddfa9216fb4f3423ec6cb000980d57885e819691fd0c63",
+      "path": "scheduling (调度)/NC - Non-overlapping Intervals/asset-03 - Explanation.pdf"
+    },
+    {
+      "sha256": "e7d51d82754a5c651b467c0637f13efce1ae7b1ec8323a15c1a0843c9b2bd904",
+      "path": "scheduling (调度)/NC - Non-overlapping Intervals/metadata.json"
+    },
+    {
+      "sha256": "9980a6bff9914c961ad505c46d27c40768828b224b7d6200d8b0270862a7cd45",
+      "path": "scheduling (调度)/NC - Non-overlapping Intervals/problem.pdf"
+    },
+    {
+      "sha256": "539507c0b7ecc527d04e4682c83d5f2326b62ecd3c307cd89091c5bc299b8fb4",
+      "path": "scheduling (调度)/NC - Non-overlapping Intervals/problem_dark.pdf"
+    },
+    {
+      "sha256": "7fb550dda61496d73feb78fc54968e916602fec4e1a544290d0f9aa28e05b278",
+      "path": "scheduling (调度)/NC - Non-overlapping Intervals/solution.py"
+    },
+    {
+      "sha256": "daa8ae96e5d0d9811075d3d3e75dcef74b647fddbd93111bd15a2d341fc9293a",
+      "path": "sweep-line (扫描线)/LC-2021 - Brightest Position on Street/explanation.md"
+    },
+    {
+      "sha256": "6966fe3982ff7ea4bb35a10c3d085c96310b7d0f69fe391dcb582492d95c0a63",
+      "path": "sweep-line (扫描线)/LC-2021 - Brightest Position on Street/metadata.json"
+    },
+    {
+      "sha256": "5f7910b81ccb06b08e927121d63e3da39fa7261646bb9c54fb33f1965f615f77",
+      "path": "sweep-line (扫描线)/LC-2021 - Brightest Position on Street/note.md"
+    },
+    {
+      "sha256": "75ddec43b2591322ed3835f828882b382fe0ed45571252890527795adac75ea4",
+      "path": "sweep-line (扫描线)/LC-2021 - Brightest Position on Street/problem.pdf"
+    },
+    {
+      "sha256": "efd951af46a2b8850598e336a975a6a48c0ac85e52504584032ba57afc5f584c",
+      "path": "sweep-line (扫描线)/LC-2021 - Brightest Position on Street/problem_dark.pdf"
+    },
+    {
+      "sha256": "1834a39210886d3522dfd5ef67e101c3c0e41a6cf71699f6f634192b7fad553a",
+      "path": "sweep-line (扫描线)/LC-2021 - Brightest Position on Street/solution.py"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-1579",
+  "path": "11-graphs (图论)/06-mst (阶段 5 · 最小生成树与 Kruskal 过程)/第 2 层: 追问 MST 结构 (只能用 Kruskal 做)/LC-1579 - Remove Max Number of Edges to Keep Graph Fully Traversable",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0189",
+  "path": "02-two-pointers (双指针)/03 - 同向读写与原地数组操作 (In-place)/04 - 反转、旋转与排列/01 - LC-0189 - Rotate Array",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/rotate-array/",
+    "neetcode": null
+  },
+  "practice": []
+}

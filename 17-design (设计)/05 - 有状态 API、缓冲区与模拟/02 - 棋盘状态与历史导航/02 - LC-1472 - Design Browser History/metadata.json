@@ -1,0 +1,10 @@
+{
+  "id": "LC-1472",
+  "path": "17-design (设计)/05 - 有状态 API、缓冲区与模拟/02 - 棋盘状态与历史导航/02 - LC-1472 - Design Browser History",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/design-browser-history/",
+    "neetcode": null
+  },
+  "practice": []
+}

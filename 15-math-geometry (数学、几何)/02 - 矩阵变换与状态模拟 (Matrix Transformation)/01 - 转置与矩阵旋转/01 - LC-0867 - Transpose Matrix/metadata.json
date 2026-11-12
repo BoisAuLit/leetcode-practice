@@ -1,0 +1,10 @@
+{
+  "id": "LC-0867",
+  "path": "15-math-geometry (数学、几何)/02 - 矩阵变换与状态模拟 (Matrix Transformation)/01 - 转置与矩阵旋转/01 - LC-0867 - Transpose Matrix",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/transpose-matrix/",
+    "neetcode": null
+  },
+  "practice": []
+}

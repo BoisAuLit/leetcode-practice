@@ -1,0 +1,15 @@
+{
+  "id": "LC-0252",
+  "path": "14-intervals (区间)/03 - 不重叠区间与贪心调度/01 - 冲突检测与最大兼容区间数量/01 - LC-0252 - Meeting Rooms",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/meeting-rooms/"
+  },
+  "practice": [
+    {
+      "date": "2026-10-14",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

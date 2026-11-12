@@ -1,0 +1,10 @@
+{
+  "id": "LC-0015",
+  "path": "02-two-pointers (双指针)/02 - K-Sum 系列 (K-Sum)/01 - Three Sum 与变体/01 - LC-0015 - 3Sum",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/3sum/",
+    "neetcode": "https://neetcode.io/problems/three-integer-sum/question?list=neetcode150"
+  },
+  "practice": []
+}

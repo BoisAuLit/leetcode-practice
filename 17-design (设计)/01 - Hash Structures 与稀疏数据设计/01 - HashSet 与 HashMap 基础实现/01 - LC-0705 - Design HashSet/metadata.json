@@ -1,0 +1,10 @@
+{
+  "id": "LC-0705",
+  "path": "17-design (设计)/01 - Hash Structures 与稀疏数据设计/01 - HashSet 与 HashMap 基础实现/01 - LC-0705 - Design HashSet",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/design-hashset/",
+    "neetcode": null
+  },
+  "practice": []
+}

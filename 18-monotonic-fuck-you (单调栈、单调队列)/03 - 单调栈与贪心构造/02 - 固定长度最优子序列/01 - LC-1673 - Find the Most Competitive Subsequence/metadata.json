@@ -1,0 +1,10 @@
+{
+  "id": "LC-1673",
+  "path": "18-monotonic-fuck-you (单调栈、单调队列)/03 - 单调栈与贪心构造/02 - 固定长度最优子序列/01 - LC-1673 - Find the Most Competitive Subsequence",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-the-most-competitive-subsequence/",
+    "neetcode": null
+  },
+  "practice": []
+}

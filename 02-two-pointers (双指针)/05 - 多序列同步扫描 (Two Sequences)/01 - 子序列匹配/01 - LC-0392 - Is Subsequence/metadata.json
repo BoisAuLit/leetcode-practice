@@ -1,0 +1,10 @@
+{
+  "id": "LC-0392",
+  "path": "02-two-pointers (双指针)/05 - 多序列同步扫描 (Two Sequences)/01 - 子序列匹配/01 - LC-0392 - Is Subsequence",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/is-subsequence/",
+    "neetcode": null
+  },
+  "practice": []
+}

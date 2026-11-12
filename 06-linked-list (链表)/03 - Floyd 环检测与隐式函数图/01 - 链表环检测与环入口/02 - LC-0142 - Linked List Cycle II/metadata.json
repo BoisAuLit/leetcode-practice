@@ -1,0 +1,10 @@
+{
+  "id": "LC-0142",
+  "path": "06-linked-list (链表)/03 - Floyd 环检测与隐式函数图/01 - 链表环检测与环入口/02 - LC-0142 - Linked List Cycle II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/linked-list-cycle-ii/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0031",
+  "path": "02-two-pointers (双指针)/03 - 同向读写与原地数组操作 (In-place)/04 - 反转、旋转与排列/02 - LC-0031 - Next Permutation",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/next-permutation/",
+    "neetcode": null
+  },
+  "practice": []
+}

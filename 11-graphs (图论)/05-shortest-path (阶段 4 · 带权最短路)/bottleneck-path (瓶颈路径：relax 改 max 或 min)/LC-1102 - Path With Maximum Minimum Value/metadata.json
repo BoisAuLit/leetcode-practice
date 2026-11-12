@@ -1,0 +1,10 @@
+{
+  "id": "LC-1102",
+  "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/bottleneck-path (瓶颈路径：relax 改 max 或 min)/LC-1102 - Path With Maximum Minimum Value",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/path-with-maximum-minimum-value/",
+    "neetcode": null
+  },
+  "practice": []
+}

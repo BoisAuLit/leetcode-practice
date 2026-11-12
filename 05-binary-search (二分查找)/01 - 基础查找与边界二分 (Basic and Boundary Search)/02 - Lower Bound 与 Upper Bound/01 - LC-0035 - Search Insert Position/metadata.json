@@ -1,0 +1,10 @@
+{
+  "id": "LC-0035",
+  "path": "05-binary-search (二分查找)/01 - 基础查找与边界二分 (Basic and Boundary Search)/02 - Lower Bound 与 Upper Bound/01 - LC-0035 - Search Insert Position",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/search-insert-position/",
+    "neetcode": null
+  },
+  "practice": []
+}

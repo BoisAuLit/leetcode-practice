@@ -1,0 +1,10 @@
+{
+  "id": "LC-0330",
+  "path": "13-greedy (贪心)/01 - 跳跃、可达性与区间覆盖/01 - 最远可达位置与可行性/02 - LC-0330 - Patching Array",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/patching-array/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "NC-valid-sudoku",
+  "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/NC - Valid Sudoku",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/valid-sudoku/",
+    "neetcode": "https://neetcode.io/problems/valid-sudoku/question?list=neetcode150"
+  },
+  "practice": []
+}

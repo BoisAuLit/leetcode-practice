@@ -1,0 +1,10 @@
+{
+  "id": "LC-0680",
+  "path": "02-two-pointers (双指针)/04 - 回文与字符串双指针 (Palindrome)/01 - 回文验证与容错/02 - LC-0680 - Valid Palindrome II",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/valid-palindrome-ii/",
+    "neetcode": null
+  },
+  "practice": []
+}

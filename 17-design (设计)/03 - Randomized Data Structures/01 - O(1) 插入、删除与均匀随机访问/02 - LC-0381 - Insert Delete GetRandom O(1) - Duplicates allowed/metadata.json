@@ -1,0 +1,10 @@
+{
+  "id": "LC-0381",
+  "path": "17-design (设计)/03 - Randomized Data Structures/01 - O(1) 插入、删除与均匀随机访问/02 - LC-0381 - Insert Delete GetRandom O(1) - Duplicates allowed",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/insert-delete-getrandom-o1-duplicates-allowed/",
+    "neetcode": null
+  },
+  "practice": []
+}

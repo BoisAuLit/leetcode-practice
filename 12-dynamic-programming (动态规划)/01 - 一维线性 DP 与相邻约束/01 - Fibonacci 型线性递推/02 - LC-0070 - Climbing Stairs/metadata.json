@@ -1,0 +1,10 @@
+{
+  "id": "LC-0070",
+  "path": "12-dynamic-programming (动态规划)/01 - 一维线性 DP 与相邻约束/01 - Fibonacci 型线性递推/02 - LC-0070 - Climbing Stairs",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/climbing-stairs/",
+    "neetcode": "https://neetcode.io/problems/climbing-stairs/question?list=neetcode150"
+  },
+  "practice": []
+}

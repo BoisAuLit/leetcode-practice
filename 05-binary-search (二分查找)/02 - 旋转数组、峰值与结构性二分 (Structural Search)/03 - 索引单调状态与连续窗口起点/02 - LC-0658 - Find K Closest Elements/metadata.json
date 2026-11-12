@@ -1,0 +1,10 @@
+{
+  "id": "LC-0658",
+  "path": "05-binary-search (二分查找)/02 - 旋转数组、峰值与结构性二分 (Structural Search)/03 - 索引单调状态与连续窗口起点/02 - LC-0658 - Find K Closest Elements",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-k-closest-elements/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0935",
+  "path": "12-dynamic-programming (动态规划)/09 - 计数 DP 与多维状态/02 - 骰子与受限序列计数/03 - LC-0935 - Knight Dialer",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/knight-dialer/",
+    "neetcode": null
+  },
+  "practice": []
+}

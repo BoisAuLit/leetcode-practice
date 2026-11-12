@@ -1,0 +1,10 @@
+{
+  "id": "LC-0540",
+  "path": "05-binary-search (二分查找)/02 - 旋转数组、峰值与结构性二分 (Structural Search)/02 - Peak 与奇偶结构/02 - LC-0540 - Single Element in a Sorted Array",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/single-element-in-a-sorted-array/",
+    "neetcode": null
+  },
+  "practice": []
+}

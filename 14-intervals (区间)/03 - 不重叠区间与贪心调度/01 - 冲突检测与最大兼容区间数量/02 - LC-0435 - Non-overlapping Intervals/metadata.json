@@ -1,0 +1,10 @@
+{
+  "id": "LC-0435",
+  "path": "14-intervals (区间)/03 - 不重叠区间与贪心调度/01 - 冲突检测与最大兼容区间数量/02 - LC-0435 - Non-overlapping Intervals",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/non-overlapping-intervals/",
+    "neetcode": "https://neetcode.io/problems/non-overlapping-intervals/question?list=neetcode150"
+  },
+  "practice": []
+}

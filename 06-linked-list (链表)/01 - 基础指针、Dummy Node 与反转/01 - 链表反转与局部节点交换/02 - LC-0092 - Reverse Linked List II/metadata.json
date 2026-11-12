@@ -1,0 +1,10 @@
+{
+  "id": "LC-0092",
+  "path": "06-linked-list (链表)/01 - 基础指针、Dummy Node 与反转/01 - 链表反转与局部节点交换/02 - LC-0092 - Reverse Linked List II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/reverse-linked-list-ii/",
+    "neetcode": null
+  },
+  "practice": []
+}

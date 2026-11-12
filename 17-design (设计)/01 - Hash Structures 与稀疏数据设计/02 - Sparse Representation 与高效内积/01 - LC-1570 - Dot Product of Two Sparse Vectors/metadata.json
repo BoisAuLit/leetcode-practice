@@ -1,0 +1,10 @@
+{
+  "id": "LC-1570",
+  "path": "17-design (设计)/01 - Hash Structures 与稀疏数据设计/02 - Sparse Representation 与高效内积/01 - LC-1570 - Dot Product of Two Sparse Vectors",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/dot-product-of-two-sparse-vectors/",
+    "neetcode": null
+  },
+  "practice": []
+}

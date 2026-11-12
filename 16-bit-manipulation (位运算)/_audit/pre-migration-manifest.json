@@ -1,0 +1,301 @@
+{
+  "topic": "16-bit-manipulation (位运算)",
+  "captured": "2026-11-11",
+  "note": "重构开始前对专题内全部普通文件记录的 SHA-256 清单。未发现符号链接。",
+  "file_count": 73,
+  "symlinks": [],
+  "files": [
+    {
+      "sha256": "9cdfeee88b4cf1502cb50131dd98e284d8f509f295e93e5560dc475b4ddf5825",
+      "path": "bit-basics (基础位操作)/LC-0136 - Single Number/metadata.json"
+    },
+    {
+      "sha256": "713d1b7e55d3b0bf681ad01bb5c6afb387b583a2dc0a700d7ad0fd5b6a4df0fc",
+      "path": "bit-basics (基础位操作)/LC-0136 - Single Number/problem.pdf"
+    },
+    {
+      "sha256": "b8863e7ab359766f4305454d4f804e88a8d652df6251aa134f69a2707324aaea",
+      "path": "bit-basics (基础位操作)/LC-0136 - Single Number/problem_dark.pdf"
+    },
+    {
+      "sha256": "fff02bcfdd8ed270257641db5dfdbfd7f1257d0119414759e14901b43d64d965",
+      "path": "bit-basics (基础位操作)/LC-0136 - Single Number/solution.py"
+    },
+    {
+      "sha256": "d9687ea34cf3b7abf9574b0a3e8dcca242cb7f7fd941d6d0162e247b679948e9",
+      "path": "bit-basics (基础位操作)/LC-0190 - Reverse Bits/metadata.json"
+    },
+    {
+      "sha256": "4479479fa6ba91f1106441e19a2b8714609476649c1f20dd3d4a9bc68116ac7e",
+      "path": "bit-basics (基础位操作)/LC-0190 - Reverse Bits/note.md"
+    },
+    {
+      "sha256": "daa839048ece3cb4844e15be2fd39954f1495f54cae4da7d95fe07909241a003",
+      "path": "bit-basics (基础位操作)/LC-0190 - Reverse Bits/problem.pdf"
+    },
+    {
+      "sha256": "d2b958d3addd4a4b407a32889301d5cfa0cae01976e245be193c372534755095",
+      "path": "bit-basics (基础位操作)/LC-0190 - Reverse Bits/problem_dark.pdf"
+    },
+    {
+      "sha256": "c8b87e6d8648ee24958640e2c177dbc726a9cc9e0fe29fa29fda98357675a7a5",
+      "path": "bit-basics (基础位操作)/LC-0190 - Reverse Bits/solution.py"
+    },
+    {
+      "sha256": "b6eeb7787cd48a8a0f65429cdca4afd27882179a5a7b7b27f662eb764fd2e447",
+      "path": "bit-basics (基础位操作)/LC-0194 - Transpose File/metadata.json"
+    },
+    {
+      "sha256": "68824ee8419f689b13dac4aed0b2f15735baae3cc56eccdeaa17ba7be4d395f7",
+      "path": "bit-basics (基础位操作)/LC-0194 - Transpose File/problem.pdf"
+    },
+    {
+      "sha256": "9a90cb3e71bd72ecbb098740d7cd03728d207a8079e70d37ff6af70b03e142d4",
+      "path": "bit-basics (基础位操作)/LC-0194 - Transpose File/problem_dark.pdf"
+    },
+    {
+      "sha256": "d7b0f0d58480c222a9a67787d9d3b4efe7dbf8a9d027b785cfe29e5fe9ca45cc",
+      "path": "bit-basics (基础位操作)/LC-0194 - Transpose File/solution.py"
+    },
+    {
+      "sha256": "eb34e71b2ac269a029b12967a90872c7c6f8f5bac8597238aa6255c81838f5cd",
+      "path": "bit-basics (基础位操作)/LC-0231 - Power of Two/metadata.json"
+    },
+    {
+      "sha256": "630cc9abbfb7cf9fa89344e5a997d3f30e4a1d236ad54dded5f438a88d85314f",
+      "path": "bit-basics (基础位操作)/LC-0231 - Power of Two/problem.pdf"
+    },
+    {
+      "sha256": "95008fcf99c1e838b97e789e17c9761375b50f2d1d26066334789aa53c959b75",
+      "path": "bit-basics (基础位操作)/LC-0231 - Power of Two/problem_dark.pdf"
+    },
+    {
+      "sha256": "8de91488b80c08a06e232a812ef8f5ea339f61baefdbd86482dfc0c04f3f2ff2",
+      "path": "bit-basics (基础位操作)/LC-0231 - Power of Two/solution.py"
+    },
+    {
+      "sha256": "7f722287b4695570ba2615efe88c9b8d28551670ee40a1c6827dfc91608a4ed5",
+      "path": "bit-basics (基础位操作)/LC-0268 - Missing Number/metadata.json"
+    },
+    {
+      "sha256": "b8d2448430590422e9e1b7006a0eaa13ea18d47985662697e1f21ce4ee7a1e3e",
+      "path": "bit-basics (基础位操作)/LC-0268 - Missing Number/note.md"
+    },
+    {
+      "sha256": "5047def48fc6bad934db9c28233a9793cd8a3d9220811c8cd92b3b5653da6898",
+      "path": "bit-basics (基础位操作)/LC-0268 - Missing Number/problem.pdf"
+    },
+    {
+      "sha256": "27795d09f095433bea1b1f8b45ce3f4e8115c50f7d237c2558552f67a999c709",
+      "path": "bit-basics (基础位操作)/LC-0268 - Missing Number/problem_dark.pdf"
+    },
+    {
+      "sha256": "1f2c56956f3f0cb1272aba2f4b046302437a9fc587e4e3cfbf57c829d08ac711",
+      "path": "bit-basics (基础位操作)/LC-0268 - Missing Number/solution.py"
+    },
+    {
+      "sha256": "cc1881cebeac9000cb132524acd6f8f9f721792a30c3bc866a245d003b6571ba",
+      "path": "bit-basics (基础位操作)/LC-0338 - Counting Bits/metadata.json"
+    },
+    {
+      "sha256": "204224b6fbc4eee11dc10e901209d06600c6f8cfa6a372da73037b58743210ee",
+      "path": "bit-basics (基础位操作)/LC-0338 - Counting Bits/note.md"
+    },
+    {
+      "sha256": "a00c1fbe11dd8cbf8eefc1a28482e174624a295629b82729ed715c69ce1c0b1a",
+      "path": "bit-basics (基础位操作)/LC-0338 - Counting Bits/problem.pdf"
+    },
+    {
+      "sha256": "7267f460d7a26574f057ba2d5c560a66aad2d0f5c2cda00366aeeab953d5466e",
+      "path": "bit-basics (基础位操作)/LC-0338 - Counting Bits/problem_dark.pdf"
+    },
+    {
+      "sha256": "e20308d409dde69815acd57a7b94df0903429c5841212709d199d9bfc6ce9ee5",
+      "path": "bit-basics (基础位操作)/LC-0338 - Counting Bits/solution.py"
+    },
+    {
+      "sha256": "34d801e5ceca2160c9051b12ae3c155d1e51237f703063f1f85b333bee3e1e9b",
+      "path": "bit-basics (基础位操作)/LC-1356 - Sort Integers by The Number of 1 Bits/metadata.json"
+    },
+    {
+      "sha256": "a22577ef75500500f6fdb1c393a84705cf41c18a52ae9d272ea0cfc62de031a4",
+      "path": "bit-basics (基础位操作)/LC-1356 - Sort Integers by The Number of 1 Bits/problem.pdf"
+    },
+    {
+      "sha256": "4f11906cbf27bfe1f269984ef51e59bf3f36aaffca363ea6364f4a287d017fe7",
+      "path": "bit-basics (基础位操作)/LC-1356 - Sort Integers by The Number of 1 Bits/problem_dark.pdf"
+    },
+    {
+      "sha256": "f474b4d91b017e9f905e4c3a25da00b4422d8cc0821573a1cf898d06b354d054",
+      "path": "bit-basics (基础位操作)/LC-1356 - Sort Integers by The Number of 1 Bits/solution.py"
+    },
+    {
+      "sha256": "d36a6a9a78868520624c7ff3418a76ea5dd9c04a5c5e6e787c826c4fb508a2a4",
+      "path": "bit-basics (基础位操作)/LC-2571 - Minimum Operations to Reduce an Integer to 0/asset-008 - 2571 - A - Minimum Operations to Reduce an Integer to 0.pdf"
+    },
+    {
+      "sha256": "6ffb7f7d56ae6b703b539d31ff782e983ff1b2f9841e1ff5a1dae12fd35c5b2c",
+      "path": "bit-basics (基础位操作)/LC-2571 - Minimum Operations to Reduce an Integer to 0/asset-008 - 2571 - A - Minimum Operations to Reduce an Integer to 0.png"
+    },
+    {
+      "sha256": "5561ed959d78365bac465a80140abe89b370684b58a51c321467ec51afd9aeea",
+      "path": "bit-basics (基础位操作)/LC-2571 - Minimum Operations to Reduce an Integer to 0/metadata.json"
+    },
+    {
+      "sha256": "c3a77aaf9eaadcf6ee5af7d43c450f54f5944cc5375744db4e47a22893f7346f",
+      "path": "bit-basics (基础位操作)/LC-2571 - Minimum Operations to Reduce an Integer to 0/problem.pdf"
+    },
+    {
+      "sha256": "5667c3b94eb1540fb7dffc1a0ba8375b098ac827b60a0898bc788c32e9aa439e",
+      "path": "bit-basics (基础位操作)/LC-2571 - Minimum Operations to Reduce an Integer to 0/problem_dark.pdf"
+    },
+    {
+      "sha256": "85fd545d8ee2f4d1e5a0ee0fd3df26541854afd69cefa71fae2f5aa0c9c45b29",
+      "path": "bit-basics (基础位操作)/LC-2571 - Minimum Operations to Reduce an Integer to 0/solution.py"
+    },
+    {
+      "sha256": "5230a722ff1ca540a8aa4beda510421041b0ec4205d700d7cad789e9cbe2ebbe",
+      "path": "bit-basics (基础位操作)/NC - Number of 1 Bits/asset-n-and-n-minus-1.md"
+    },
+    {
+      "sha256": "d43cdd4d138a9b81c843bcc4b2ac34583c0c73186e298d8744835d5b8d05619e",
+      "path": "bit-basics (基础位操作)/NC - Number of 1 Bits/metadata.json"
+    },
+    {
+      "sha256": "5142b2b8c3c4c94d0ce9f0d826aed74dbff3b1c5b1d8427fa464a78b1eb7c521",
+      "path": "bit-basics (基础位操作)/NC - Number of 1 Bits/problem.pdf"
+    },
+    {
+      "sha256": "c624679e5178e236ec72144769c37c2308d5cea01f2b4f375ae6fca840fb77f8",
+      "path": "bit-basics (基础位操作)/NC - Number of 1 Bits/problem_dark.pdf"
+    },
+    {
+      "sha256": "b2cd5f0c5a77cb0fe9ad53d2d97a7262b7c78ef026b5450ce750fc04a6a9855b",
+      "path": "bit-basics (基础位操作)/NC - Number of 1 Bits/solution.py"
+    },
+    {
+      "sha256": "7ba67a6dbd37e0fa2ca073bfd178e3c418bcef1896cd85bff75ad93356627cd9",
+      "path": "bitwise-subarrays (子数组位运算)/LC-0898 - Bitwise ORs of Subarrays/asset-010 - 0898 - A - Bitwise ORs of Subarrays.pdf"
+    },
+    {
+      "sha256": "96253902b42addd3870133b3c326dde3044855965412be1480e386afcb83e023",
+      "path": "bitwise-subarrays (子数组位运算)/LC-0898 - Bitwise ORs of Subarrays/metadata.json"
+    },
+    {
+      "sha256": "b3ace9cd83e99e2de1ec64d274034e40240dfa708579b476d0e9dfae0fec86ce",
+      "path": "bitwise-subarrays (子数组位运算)/LC-0898 - Bitwise ORs of Subarrays/problem.pdf"
+    },
+    {
+      "sha256": "e138030cb8b1ff11c4df8d10375f78fa9ace4b420bdf542967df839c2307d53b",
+      "path": "bitwise-subarrays (子数组位运算)/LC-0898 - Bitwise ORs of Subarrays/problem_dark.pdf"
+    },
+    {
+      "sha256": "1680d9a68ae6e525158c209f7648ec091bd8a3b711acf69465a9231e6ba4d61f",
+      "path": "bitwise-subarrays (子数组位运算)/LC-0898 - Bitwise ORs of Subarrays/solution.py"
+    },
+    {
+      "sha256": "d9536eaf7ca996f5d2d1e20f2308f55c017e2f9fd8f649df1b238f86076ffe3f",
+      "path": "bitwise-subarrays (子数组位运算)/LC-2411 - Smallest Subarrays With Maximum Bitwise OR/asset-012 - 2411 - A - 1 - Smallest Subarray Max Bit Or.pdf"
+    },
+    {
+      "sha256": "ad847716f720b6f08f5e1a92fcae99d916078c9321bc600bb074ad2b1a3ad064",
+      "path": "bitwise-subarrays (子数组位运算)/LC-2411 - Smallest Subarrays With Maximum Bitwise OR/asset-012 - 2411 - A - 2 - Smallest Subarray Max Bit Or.pdf"
+    },
+    {
+      "sha256": "a648883389e8afb43d2589289b03d8cda5c93d48ba47a553e34fe6811d4929c3",
+      "path": "bitwise-subarrays (子数组位运算)/LC-2411 - Smallest Subarrays With Maximum Bitwise OR/metadata.json"
+    },
+    {
+      "sha256": "9c9fca1b880ec2db72610473886d0abed80e04a29826b5e3be832c8f9d33a387",
+      "path": "bitwise-subarrays (子数组位运算)/LC-2411 - Smallest Subarrays With Maximum Bitwise OR/problem.pdf"
+    },
+    {
+      "sha256": "bdab5cae79abcfa4c87ae0d686c38ba18dbad78a38b53851b6d27e3178f25327",
+      "path": "bitwise-subarrays (子数组位运算)/LC-2411 - Smallest Subarrays With Maximum Bitwise OR/problem_dark.pdf"
+    },
+    {
+      "sha256": "4c4cc96e445f9d493c5fa0dae1cdc9d338fdd2cd54276f1d5059ff109c515c71",
+      "path": "bitwise-subarrays (子数组位运算)/LC-2411 - Smallest Subarrays With Maximum Bitwise OR/solution.py"
+    },
+    {
+      "sha256": "a9bc0d6ef20b052f156af59809bc4747cef646f4c505ce390c0f457937b430f3",
+      "path": "bitwise-subarrays (子数组位运算)/LC-2419 - Longest Subarray With Maximum Bitwise AND/asset-011 - 2419 - A - Longest Subarr With Max AND.pdf"
+    },
+    {
+      "sha256": "e0dde22dbffbf793cfafeb0e871cb4d9b7bd8727b7aa32ed4ad293214e8314f6",
+      "path": "bitwise-subarrays (子数组位运算)/LC-2419 - Longest Subarray With Maximum Bitwise AND/metadata.json"
+    },
+    {
+      "sha256": "534b665cc98259741d95b700d10edaaa6d37f1023bf93825f9e93b709824bd1a",
+      "path": "bitwise-subarrays (子数组位运算)/LC-2419 - Longest Subarray With Maximum Bitwise AND/problem.pdf"
+    },
+    {
+      "sha256": "e48f6b69a0dcf60312161d69aaa673fefcc2b63b57058054ac1df91c1c11be7a",
+      "path": "bitwise-subarrays (子数组位运算)/LC-2419 - Longest Subarray With Maximum Bitwise AND/problem_dark.pdf"
+    },
+    {
+      "sha256": "5327e46d7e39f0668183a2737bd059bf55192154d5911fa779b1c59e02c98506",
+      "path": "bitwise-subarrays (子数组位运算)/LC-2419 - Longest Subarray With Maximum Bitwise AND/solution.py"
+    },
+    {
+      "sha256": "8bdabb9cf9470d257829c64881a165e91d20853338f56b2f9b3e80dd3af73ec6",
+      "path": "bitwise-subarrays (子数组位运算)/LC-2438 - Range Product Queries of Powers/asset-009 - 2438 - A - Range Product Queries of Powers.pdf"
+    },
+    {
+      "sha256": "ee8e0021c228c09a7656eaf792cbdc2d50b1c1b5084e34917f5ad1b09f0ee147",
+      "path": "bitwise-subarrays (子数组位运算)/LC-2438 - Range Product Queries of Powers/metadata.json"
+    },
+    {
+      "sha256": "9935590ecab718e063d738217862d84d4bfa4cb78d30b6eb234b36db334ded9d",
+      "path": "bitwise-subarrays (子数组位运算)/LC-2438 - Range Product Queries of Powers/problem.pdf"
+    },
+    {
+      "sha256": "fbdf7d6d9d1e950d0923625ffbe3d575baa7d8098be9347fefbf83adfe9f2e49",
+      "path": "bitwise-subarrays (子数组位运算)/LC-2438 - Range Product Queries of Powers/problem_dark.pdf"
+    },
+    {
+      "sha256": "d13e33dd764f6cdad9c57edbeee958cebb07d82d663262b574cf8e2d193bb9a6",
+      "path": "bitwise-subarrays (子数组位运算)/LC-2438 - Range Product Queries of Powers/solution.py"
+    },
+    {
+      "sha256": "67c9ee172613251b7ecad2305b2e7165b54a53c2620be5f77529743485996221",
+      "path": "encoding-tricks (位编码技巧)/LC-1470 - Shuffle the Array/metadata.json"
+    },
+    {
+      "sha256": "ddfa3dbfccb2a67418a30a8ddd3e81e80be88dd5aa3a4c08346585262de4e1b7",
+      "path": "encoding-tricks (位编码技巧)/LC-1470 - Shuffle the Array/problem.pdf"
+    },
+    {
+      "sha256": "b28d2fa15c3edee04d291c7309ae7b7b78e0e03747a793731d70265ea16ca233",
+      "path": "encoding-tricks (位编码技巧)/LC-1470 - Shuffle the Array/problem_dark.pdf"
+    },
+    {
+      "sha256": "4ae203c09bfedd5693d09d30c9dedfac65649b71c5d0d9799f7a6dd7b1a8dec0",
+      "path": "encoding-tricks (位编码技巧)/LC-1470 - Shuffle the Array/solution.py"
+    },
+    {
+      "sha256": "f1e6e42749bbab8a1ebdd774647b404595c3cd0698c52276641fc94c168a95c6",
+      "path": "encoding-tricks (位编码技巧)/LC-1920 - Build Array from Permutation/metadata.json"
+    },
+    {
+      "sha256": "f9e32bdae527d9f0cd271fe766d0b3f9996bcd82dcea0e0a1e63faed5beb9b99",
+      "path": "encoding-tricks (位编码技巧)/LC-1920 - Build Array from Permutation/problem.pdf"
+    },
+    {
+      "sha256": "e7ea12510d230ce02c92f70de0932703b2f8b0f7ae8677e04423916768cf6535",
+      "path": "encoding-tricks (位编码技巧)/LC-1920 - Build Array from Permutation/problem_dark.pdf"
+    },
+    {
+      "sha256": "c77cc486f8849213d9281f79d9266e96672ccf06c80181f97689d3c1628e6556",
+      "path": "encoding-tricks (位编码技巧)/LC-1920 - Build Array from Permutation/solution.py"
+    },
+    {
+      "sha256": "34252a073f95b46b103b66b752ae81661cd897c7176c783c8c637e25485cf07d",
+      "path": "instructions.md"
+    },
+    {
+      "sha256": "f4015fcdcee81e5f55b6f8e0a3850250d41796df1b9f28b98fa42bf3616b7329",
+      "path": "summary.jpg"
+    }
+  ]
+}

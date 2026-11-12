@@ -1,0 +1,10 @@
+{
+  "id": "LC-0402",
+  "path": "18-monotonic-fuck-you (单调栈、单调队列)/03 - 单调栈与贪心构造/01 - 字典序优化与安全删除/01 - LC-0402 - Remove K Digits",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/remove-k-digits/",
+    "neetcode": null
+  },
+  "practice": []
+}

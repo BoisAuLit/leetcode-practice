@@ -1,0 +1,10 @@
+{
+  "id": "LC-1334",
+  "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra/01 - Dijkstra 标准加法最短路/02 - LC-1334 - Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-the-city-with-the-smallest-number-of-neighbors-at-a-threshold-distance/",
+    "neetcode": null
+  },
+  "practice": []
+}

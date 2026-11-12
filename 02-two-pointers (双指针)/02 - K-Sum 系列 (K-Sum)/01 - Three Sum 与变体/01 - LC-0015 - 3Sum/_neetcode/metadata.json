@@ -1,0 +1,10 @@
+{
+  "id": "NC-three-integer-sum",
+  "path": "02-two-pointers (双指针)/k-sum (K 数之和)/three-sum (三数之和)/NC - 3Sum",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/3sum/",
+    "neetcode": "https://neetcode.io/problems/three-integer-sum/question?list=neetcode150"
+  },
+  "practice": []
+}

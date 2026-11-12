@@ -1,0 +1,10 @@
+{
+  "id": "LC-0117",
+  "path": "07-trees (树)/06 - BFS 层序遍历、视图与多叉树/04 - 同层 Next Pointer 连接/02 - LC-0117 - Populating Next Right Pointers in Each Node II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/",
+    "neetcode": null
+  },
+  "practice": []
+}

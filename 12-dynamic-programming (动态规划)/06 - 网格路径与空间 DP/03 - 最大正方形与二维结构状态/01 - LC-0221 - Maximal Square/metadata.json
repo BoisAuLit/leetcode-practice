@@ -1,0 +1,10 @@
+{
+  "id": "LC-0221",
+  "path": "12-dynamic-programming (动态规划)/06 - 网格路径与空间 DP/03 - 最大正方形与二维结构状态/01 - LC-0221 - Maximal Square",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximal-square/",
+    "neetcode": null
+  },
+  "practice": []
+}

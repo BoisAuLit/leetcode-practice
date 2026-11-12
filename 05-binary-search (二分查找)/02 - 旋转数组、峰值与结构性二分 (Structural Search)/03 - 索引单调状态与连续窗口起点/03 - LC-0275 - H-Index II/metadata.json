@@ -1,0 +1,10 @@
+{
+  "id": "LC-0275",
+  "path": "05-binary-search (二分查找)/02 - 旋转数组、峰值与结构性二分 (Structural Search)/03 - 索引单调状态与连续窗口起点/03 - LC-0275 - H-Index II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/h-index-ii/",
+    "neetcode": null
+  },
+  "practice": []
+}

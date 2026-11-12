@@ -1,0 +1,10 @@
+{
+  "id": "LC-0731",
+  "path": "14-intervals (区间)/05 - 离线区间查询与动态预订/02 - 在线插入与区间冲突检测/02 - LC-0731 - My Calendar II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/my-calendar-ii/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,6 +1,6 @@
 .vscode/
 __pycache__/
-assets/
+asset-*
 *.pdf
 *.jpg
 *.jpeg
@@ -12,3 +12,7 @@ assets/
 
 # 每日复习的软链接，由 tools/review_due.py shuffle 生成
 Today/
+
+# 闭卷重写用的临时文件，由 shuffle 生成、finish 删除
+solution_retry.py
+.env

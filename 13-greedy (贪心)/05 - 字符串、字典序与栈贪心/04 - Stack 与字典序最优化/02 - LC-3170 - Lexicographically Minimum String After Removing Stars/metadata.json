@@ -1,0 +1,10 @@
+{
+  "id": "LC-3170",
+  "path": "13-greedy (贪心)/05 - 字符串、字典序与栈贪心/04 - Stack 与字典序最优化/02 - LC-3170 - Lexicographically Minimum String After Removing Stars",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0217",
+  "path": "01-arrays-hashing (数组、哈希表)/01 - Hash Set 与 Hash Map 基础/02 - LC-0217 - Contains Duplicate",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/contains-duplicate/",
+    "neetcode": "https://neetcode.io/problems/duplicate-integer/question?list=neetcode150"
+  },
+  "practice": []
+}

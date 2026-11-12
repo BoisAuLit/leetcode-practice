@@ -1,0 +1,10 @@
+{
+  "id": "LC-1048",
+  "path": "12-dynamic-programming (动态规划)/04 - 子序列 DP/02 - 特殊状态与字符串链/02 - LC-1048 - Longest String Chain",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/longest-string-chain/",
+    "neetcode": null
+  },
+  "practice": []
+}

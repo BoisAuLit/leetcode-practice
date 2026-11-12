@@ -1,0 +1,10 @@
+{
+  "id": "LC-3291",
+  "path": "13-greedy (贪心)/jump-game (跳跃游戏)/Jump Game II - Cluster/LC-3291 - Min Number Valid Str Form Target I",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/",
+    "neetcode": null
+  },
+  "practice": []
+}

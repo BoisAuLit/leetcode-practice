@@ -1,0 +1,16 @@
+{
+  "id": "LC-0055",
+  "path": "13-greedy (贪心)/01 - 跳跃、可达性与区间覆盖/01 - 最远可达位置与可行性/01 - LC-0055 - Jump Game",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/jump-game/",
+    "neetcode": "https://neetcode.io/problems/jump-game/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-10-03",
+      "sticking_point": "",
+      "result": "🟡"
+    }
+  ]
+}

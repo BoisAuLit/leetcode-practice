@@ -1,0 +1,10 @@
+{
+  "id": "LC-1768",
+  "path": "02-two-pointers (双指针)/05 - 多序列同步扫描 (Two Sequences)/03 - 双序列归并与区间交集/01 - LC-1768 - Merge Strings Alternately",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/merge-strings-alternately/",
+    "neetcode": null
+  },
+  "practice": []
+}

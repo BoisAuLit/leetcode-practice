@@ -1,0 +1,10 @@
+{
+  "id": "LC-0743",
+  "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra/01 - Dijkstra 标准加法最短路/01 - LC-0743 - Network Delay Time - 教科书",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/network-delay-time/",
+    "neetcode": "https://neetcode.io/problems/network-delay-time/question?list=neetcode150"
+  },
+  "practice": []
+}

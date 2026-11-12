@@ -1,0 +1,10 @@
+{
+  "id": "LC-0312",
+  "path": "12-dynamic-programming (动态规划)/08 - 区间 DP 与博弈/02 - 最后一步决策型区间 DP/01 - LC-0312 - Burst Balloons",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/burst-balloons/",
+    "neetcode": "https://neetcode.io/problems/burst-balloons/question?list=neetcode150"
+  },
+  "practice": []
+}

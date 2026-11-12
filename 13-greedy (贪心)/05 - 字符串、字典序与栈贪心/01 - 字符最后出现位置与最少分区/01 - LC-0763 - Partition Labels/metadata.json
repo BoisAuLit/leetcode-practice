@@ -1,0 +1,10 @@
+{
+  "id": "LC-0763",
+  "path": "13-greedy (贪心)/05 - 字符串、字典序与栈贪心/01 - 字符最后出现位置与最少分区/01 - LC-0763 - Partition Labels",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/partition-labels/",
+    "neetcode": "https://neetcode.io/problems/partition-labels/question?list=neetcode150"
+  },
+  "practice": []
+}

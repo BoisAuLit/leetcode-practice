@@ -1,0 +1,10 @@
+{
+  "id": "LC-0509",
+  "path": "12-dynamic-programming (动态规划)/01 - 一维线性 DP 与相邻约束/01 - Fibonacci 型线性递推/01 - LC-0509 - Fibonacci Number",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/fibonacci-number/",
+    "neetcode": null
+  },
+  "practice": []
+}

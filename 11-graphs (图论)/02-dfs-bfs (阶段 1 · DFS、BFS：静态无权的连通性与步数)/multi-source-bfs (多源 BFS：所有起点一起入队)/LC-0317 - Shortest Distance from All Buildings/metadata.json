@@ -1,0 +1,10 @@
+{
+  "id": "LC-0317",
+  "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/multi-source-bfs (多源 BFS：所有起点一起入队)/LC-0317 - Shortest Distance from All Buildings",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/shortest-distance-from-all-buildings/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-1976",
+  "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra/03 - Dijkstra 最短路计数与结果组合/01 - LC-1976 - Number of Ways to Arrive at Destination",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/number-of-ways-to-arrive-at-destination/",
+    "neetcode": null
+  },
+  "practice": []
+}

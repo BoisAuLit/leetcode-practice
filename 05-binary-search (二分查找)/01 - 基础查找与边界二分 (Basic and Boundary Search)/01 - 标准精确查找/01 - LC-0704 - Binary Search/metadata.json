@@ -1,0 +1,10 @@
+{
+  "id": "LC-0704",
+  "path": "05-binary-search (二分查找)/01 - 基础查找与边界二分 (Basic and Boundary Search)/01 - 标准精确查找/01 - LC-0704 - Binary Search",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/binary-search/",
+    "neetcode": "https://neetcode.io/problems/binary-search/question?list=neetcode150"
+  },
+  "practice": []
+}

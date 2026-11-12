@@ -1,0 +1,16 @@
+{
+  "id": "NC-max-water-container",
+  "path": "02-two-pointers (双指针)/opposite-ends (对撞指针)/NC - Container With Most Water",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/container-with-most-water/",
+    "neetcode": "https://neetcode.io/problems/max-water-container/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-10-02",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

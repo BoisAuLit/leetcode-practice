@@ -1,0 +1,10 @@
+{
+  "id": "LC-1462",
+  "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/dag-dp (DAG 上的 DP：拓扑序 + 状态转移)/LC-1462 - Course Schedule IV",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/course-schedule-iv/",
+    "neetcode": null
+  },
+  "practice": []
+}

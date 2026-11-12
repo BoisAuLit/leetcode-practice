@@ -1,0 +1,16 @@
+{
+  "id": "LC-0697",
+  "path": "01-arrays-hashing (数组、哈希表)/02 - Frequency Counting 与 Top K/06 - LC-0697 - Degree of an Array",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/degree-of-an-array/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-11-02",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

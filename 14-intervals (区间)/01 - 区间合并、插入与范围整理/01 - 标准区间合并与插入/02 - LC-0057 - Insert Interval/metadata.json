@@ -1,0 +1,26 @@
+{
+  "id": "LC-0057",
+  "path": "14-intervals (区间)/01 - 区间合并、插入与范围整理/01 - 标准区间合并与插入/02 - LC-0057 - Insert Interval",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/insert-interval/",
+    "neetcode": "https://neetcode.io/problems/insert-new-interval/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-09-26",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-10-01",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-10-14",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

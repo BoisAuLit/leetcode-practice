@@ -1,0 +1,10 @@
+{
+  "id": "LC-0131",
+  "path": "10-backtracking (回溯)/03 - 字符串构造与分割 (String Backtracking)/02 - 字符串分割与合法片段判断/01 - LC-0131 - Palindrome Partitioning",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/palindrome-partitioning/",
+    "neetcode": "https://neetcode.io/problems/palindrome-partitioning/question?list=neetcode150"
+  },
+  "practice": []
+}

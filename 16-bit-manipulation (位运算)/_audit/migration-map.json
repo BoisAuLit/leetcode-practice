@@ -1,0 +1,123 @@
+{
+  "topic": "16-bit-manipulation (位运算)",
+  "executed": "2026-11-11",
+  "deletions": [],
+  "overwritten_files": [],
+  "modified_files": [],
+  "moved": [
+    {
+      "from": "bit-basics (基础位操作)/NC - Number of 1 Bits",
+      "to": "01 - 二进制基础、位计数与位反转/01 - Popcount 与最低有效置位/01 - LC-0191 - Number of 1 Bits",
+      "note": "NC 原地升格为 LC-0191；原始 solution.py / note / PDF 全部保留且未覆盖"
+    },
+    {
+      "from": "bit-basics (基础位操作)/LC-0231 - Power of Two",
+      "to": "01 - 二进制基础、位计数与位反转/01 - Popcount 与最低有效置位/02 - LC-0231 - Power of Two",
+      "note": "原样迁移"
+    },
+    {
+      "from": "bit-basics (基础位操作)/LC-0338 - Counting Bits",
+      "to": "01 - 二进制基础、位计数与位反转/01 - Popcount 与最低有效置位/03 - LC-0338 - Counting Bits",
+      "note": "原样迁移"
+    },
+    {
+      "from": "bit-basics (基础位操作)/LC-0190 - Reverse Bits",
+      "to": "01 - 二进制基础、位计数与位反转/02 - 固定宽度位读取与反转/01 - LC-0190 - Reverse Bits",
+      "note": "原样迁移"
+    },
+    {
+      "from": "bit-basics (基础位操作)/LC-0136 - Single Number",
+      "to": "02 - XOR 不变量与二进制算术/01 - XOR 抵消与缺失元素/01 - LC-0136 - Single Number",
+      "note": "原样迁移"
+    },
+    {
+      "from": "bit-basics (基础位操作)/LC-0268 - Missing Number",
+      "to": "02 - XOR 不变量与二进制算术/01 - XOR 抵消与缺失元素/02 - LC-0268 - Missing Number",
+      "note": "原样迁移"
+    },
+    {
+      "from": "bitwise-subarrays (子数组位运算)/LC-0898 - Bitwise ORs of Subarrays",
+      "to": "03 - Bitwise Subarray 与位聚合/01 - 子数组 OR 状态与按位贡献/01 - LC-0898 - Bitwise ORs of Subarrays",
+      "note": "原样迁移"
+    },
+    {
+      "from": "bitwise-subarrays (子数组位运算)/LC-2411 - Smallest Subarrays With Maximum Bitwise OR",
+      "to": "03 - Bitwise Subarray 与位聚合/01 - 子数组 OR 状态与按位贡献/02 - LC-2411 - Smallest Subarrays With Maximum Bitwise OR",
+      "note": "原样迁移（两份 PDF 均保留）"
+    },
+    {
+      "from": "bitwise-subarrays (子数组位运算)/LC-2419 - Longest Subarray With Maximum Bitwise AND",
+      "to": "03 - Bitwise Subarray 与位聚合/02 - 最大 Bitwise AND 与连续区间/01 - LC-2419 - Longest Subarray With Maximum Bitwise AND",
+      "note": "原样迁移"
+    },
+    {
+      "from": "bitwise-subarrays (子数组位运算)/LC-2438 - Range Product Queries of Powers",
+      "to": "04 - 二进制分解与原地编码/01 - Powers of Two 与范围乘积/01 - LC-2438 - Range Product Queries of Powers",
+      "note": "原样迁移"
+    },
+    {
+      "from": "encoding-tricks (位编码技巧)/LC-1470 - Shuffle the Array",
+      "to": "04 - 二进制分解与原地编码/02 - In-place 编码与旧状态保护/01 - LC-1470 - Shuffle the Array",
+      "note": "原样迁移"
+    },
+    {
+      "from": "encoding-tricks (位编码技巧)/LC-1920 - Build Array from Permutation",
+      "to": "04 - 二进制分解与原地编码/02 - In-place 编码与旧状态保护/02 - LC-1920 - Build Array from Permutation",
+      "note": "原样迁移"
+    },
+    {
+      "from": "bit-basics (基础位操作)/LC-1356 - Sort Integers by The Number of 1 Bits",
+      "to": "05 - 跨专题与低优先级存档/01 - Popcount + Sorting/01 - LC-1356 - Sort Integers by The Number of 1 Bits",
+      "note": "原样迁移"
+    },
+    {
+      "from": "bit-basics (基础位操作)/LC-2571 - Minimum Operations to Reduce an Integer to 0",
+      "to": "05 - 跨专题与低优先级存档/02 - 特殊二进制贪心与有符号幂分解/01 - LC-2571 - Minimum Operations to Reduce an Integer to 0",
+      "note": "原样迁移"
+    },
+    {
+      "from": "bit-basics (基础位操作)/LC-0194 - Transpose File",
+      "to": "05 - 跨专题与低优先级存档/03 - 非位运算题目与 Shell 文本处理/01 - LC-0194 - Transpose File",
+      "note": "原样迁移（非位运算题，归档）"
+    }
+  ],
+  "created": [
+    {
+      "path": "02 - XOR 不变量与二进制算术/02 - XOR 与 AND 形成二进制加法/01 - LC-0371 - Sum of Two Integers",
+      "note": "第一轮新增"
+    },
+    {
+      "path": "02 - XOR 不变量与二进制算术/03 - Range AND 与共同高位前缀/01 - LC-0201 - Bitwise AND of Numbers Range",
+      "note": "第一轮新增"
+    },
+    {
+      "path": "02 - XOR 不变量与二进制算术/01 - XOR 抵消与缺失元素/03 - LC-0260 - Single Number III",
+      "note": "第二轮新增"
+    },
+    {
+      "path": "04 - 二进制分解与原地编码/03 - Bitmask 表示集合/01 - LC-0318 - Maximum Product of Word Lengths",
+      "note": "第二轮新增"
+    }
+  ],
+  "cross_topic_index_only": [
+    {
+      "path": "05 - 跨专题与低优先级存档/04 - 跨专题索引/01 - LC-0421 - Maximum XOR of Two Numbers in an Array (学习索引 · 实体在 08-tries)",
+      "entity": "08-tries (字典树、前缀树)/05 - 进阶变体与跨专题存档/01 - Bitwise Trie 与最大 XOR/01 - LC-0421 - Maximum XOR of Two Numbers in an Array",
+      "note": "指令审核清单第 17 项点名要建的 Binary Trie 跨专题索引"
+    },
+    {
+      "path": "05 - 跨专题与低优先级存档/04 - 跨专题索引/02 - LC-0078 - Subsets (学习索引 · 实体在 10-backtracking)",
+      "entity": "10-backtracking (回溯)/01 - 子集、组合与目标和 (Subsets and Combinations)/01 - 子集枚举与重复元素去重/01 - LC-0078 - Subsets",
+      "note": "指令明确「已在 Backtracking 专题，不必重复生成」"
+    }
+  ],
+  "emptied_and_removed_dirs": [
+    "bit-basics (基础位操作)",
+    "bitwise-subarrays (子数组位运算)",
+    "encoding-tricks (位编码技巧)"
+  ],
+  "untouched": [
+    "instructions.md",
+    "summary.jpg"
+  ]
+}

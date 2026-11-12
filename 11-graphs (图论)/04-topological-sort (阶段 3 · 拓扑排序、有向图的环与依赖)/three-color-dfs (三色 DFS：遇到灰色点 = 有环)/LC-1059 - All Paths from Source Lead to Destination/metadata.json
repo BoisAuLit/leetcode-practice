@@ -1,0 +1,10 @@
+{
+  "id": "LC-1059",
+  "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/three-color-dfs (三色 DFS：遇到灰色点 = 有环)/LC-1059 - All Paths from Source Lead to Destination",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/all-paths-from-source-lead-to-destination/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0525",
+  "path": "01-arrays-hashing (数组、哈希表)/03 - Prefix Sum 与 Prefix-Suffix/04 - LC-0525 - Contiguous Array",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/contiguous-array/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-3403",
+  "path": "02-two-pointers (双指针)/07 - 高阶字典序双指针 (Advanced Lexicographic)/02 - 字典序最大子串与切分/01 - LC-3403 - Find the Lexicographically Largest String From the Box I",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/",
+    "neetcode": null
+  },
+  "practice": []
+}

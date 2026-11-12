@@ -1,0 +1,10 @@
+{
+  "id": "LC-0145",
+  "path": "07-trees (树)/01 - 二叉树基础遍历与递归 (Tree Fundamentals)/01 - DFS 三种基本遍历/03 - LC-0145 - Binary Tree Postorder Traversal",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/binary-tree-postorder-traversal/",
+    "neetcode": null
+  },
+  "practice": []
+}

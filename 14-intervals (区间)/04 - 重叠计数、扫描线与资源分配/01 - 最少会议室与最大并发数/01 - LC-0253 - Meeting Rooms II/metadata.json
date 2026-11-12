@@ -1,0 +1,10 @@
+{
+  "id": "LC-0253",
+  "path": "14-intervals (区间)/04 - 重叠计数、扫描线与资源分配/01 - 最少会议室与最大并发数/01 - LC-0253 - Meeting Rooms II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/meeting-rooms-ii/",
+    "neetcode": "https://neetcode.io/problems/meeting-schedule-ii/question?list=neetcode150"
+  },
+  "practice": []
+}

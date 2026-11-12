@@ -1,0 +1,10 @@
+{
+  "id": "LC-1335",
+  "path": "12-dynamic-programming (动态规划)/09 - 计数 DP 与多维状态/04 - 多维决策与任务划分/01 - LC-1335 - Minimum Difficulty of a Job Schedule",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/",
+    "neetcode": null
+  },
+  "practice": []
+}

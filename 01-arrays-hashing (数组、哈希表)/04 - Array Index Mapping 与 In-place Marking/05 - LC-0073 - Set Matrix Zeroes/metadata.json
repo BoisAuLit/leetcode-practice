@@ -1,0 +1,10 @@
+{
+  "id": "LC-0073",
+  "path": "01-arrays-hashing (数组、哈希表)/04 - Array Index Mapping 与 In-place Marking/05 - LC-0073 - Set Matrix Zeroes",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/set-matrix-zeroes/",
+    "neetcode": "https://neetcode.io/problems/set-zeroes-in-matrix/question?list=neetcode150"
+  },
+  "practice": []
+}

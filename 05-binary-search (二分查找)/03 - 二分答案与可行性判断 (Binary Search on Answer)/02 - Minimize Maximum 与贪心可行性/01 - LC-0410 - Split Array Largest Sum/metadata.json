@@ -1,0 +1,10 @@
+{
+  "id": "LC-0410",
+  "path": "05-binary-search (二分查找)/03 - 二分答案与可行性判断 (Binary Search on Answer)/02 - Minimize Maximum 与贪心可行性/01 - LC-0410 - Split Array Largest Sum",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/split-array-largest-sum/",
+    "neetcode": null
+  },
+  "practice": []
+}

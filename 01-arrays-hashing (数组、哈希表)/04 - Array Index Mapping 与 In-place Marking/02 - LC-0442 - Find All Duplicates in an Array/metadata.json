@@ -1,0 +1,10 @@
+{
+  "id": "LC-0442",
+  "path": "01-arrays-hashing (数组、哈希表)/04 - Array Index Mapping 与 In-place Marking/02 - LC-0442 - Find All Duplicates in an Array",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-all-duplicates-in-an-array/",
+    "neetcode": null
+  },
+  "practice": []
+}

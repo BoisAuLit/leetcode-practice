@@ -1,0 +1,10 @@
+{
+  "id": "LC-1899",
+  "path": "13-greedy (贪心)/02 - 局部决策与可行性维护/03 - 合法候选过滤与条件合并/01 - LC-1899 - Merge Triplets to Form Target Triplet",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/merge-triplets-to-form-target-triplet/",
+    "neetcode": "https://neetcode.io/problems/merge-triplets-to-form-target/question?list=neetcode150"
+  },
+  "practice": []
+}

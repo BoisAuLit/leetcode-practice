@@ -1,0 +1,10 @@
+{
+  "id": "LC-0901",
+  "path": "18-monotonic-fuck-you (单调栈、单调队列)/01 - 最近更大元素与跨度/02 - Previous Greater 与流式跨度/01 - LC-0901 - Online Stock Span",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/online-stock-span/",
+    "neetcode": null
+  },
+  "practice": []
+}

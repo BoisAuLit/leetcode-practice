@@ -1,0 +1,16 @@
+{
+  "id": "LC-0350",
+  "path": "01-arrays-hashing (数组、哈希表)/06 - 低优先级与跨专题题目/03 - LC-0350 - Intersection of Two Arrays II",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/intersection-of-two-arrays-ii/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-10-04",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

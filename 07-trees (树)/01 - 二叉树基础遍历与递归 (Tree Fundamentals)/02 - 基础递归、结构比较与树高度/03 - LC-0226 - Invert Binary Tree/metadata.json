@@ -1,0 +1,10 @@
+{
+  "id": "LC-0226",
+  "path": "07-trees (树)/01 - 二叉树基础遍历与递归 (Tree Fundamentals)/02 - 基础递归、结构比较与树高度/03 - LC-0226 - Invert Binary Tree",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/invert-binary-tree/",
+    "neetcode": "https://neetcode.io/problems/invert-a-binary-tree/question?list=neetcode150"
+  },
+  "practice": []
+}

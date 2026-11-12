@@ -1,0 +1,10 @@
+{
+  "id": "LC-2571",
+  "path": "16-bit-manipulation (位运算)/05 - 跨专题与低优先级存档/02 - 特殊二进制贪心与有符号幂分解/01 - LC-2571 - Minimum Operations to Reduce an Integer to 0",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-operations-to-reduce-an-integer-to-0/",
+    "neetcode": null
+  },
+  "practice": []
+}

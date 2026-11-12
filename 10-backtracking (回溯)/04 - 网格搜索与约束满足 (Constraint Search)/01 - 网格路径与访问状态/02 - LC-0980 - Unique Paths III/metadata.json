@@ -1,0 +1,10 @@
+{
+  "id": "LC-0980",
+  "path": "10-backtracking (回溯)/04 - 网格搜索与约束满足 (Constraint Search)/01 - 网格路径与访问状态/02 - LC-0980 - Unique Paths III",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/unique-paths-iii/",
+    "neetcode": null
+  },
+  "practice": []
+}

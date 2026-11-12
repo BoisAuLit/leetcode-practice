@@ -1,0 +1,10 @@
+{
+  "id": "LC-0114",
+  "path": "07-trees (树)/05 - 树构造、序列化与结构修改/03 - 原地展开与树指针重连/01 - LC-0114 - Flatten Binary Tree to Linked List",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/flatten-binary-tree-to-linked-list/",
+    "neetcode": null
+  },
+  "practice": []
+}

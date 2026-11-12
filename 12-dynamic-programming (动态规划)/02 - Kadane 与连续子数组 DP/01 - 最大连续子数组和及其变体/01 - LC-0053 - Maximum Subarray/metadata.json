@@ -1,0 +1,10 @@
+{
+  "id": "LC-0053",
+  "path": "12-dynamic-programming (动态规划)/02 - Kadane 与连续子数组 DP/01 - 最大连续子数组和及其变体/01 - LC-0053 - Maximum Subarray",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-subarray/",
+    "neetcode": "https://neetcode.io/problems/maximum-subarray/question?list=neetcode150"
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0044",
+  "path": "12-dynamic-programming (动态规划)/05 - 字符串分割与双序列 DP/04 - Edit Distance 与通配符匹配/03 - LC-0044 - Wildcard Matching",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/wildcard-matching/",
+    "neetcode": null
+  },
+  "practice": []
+}

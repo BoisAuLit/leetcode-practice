@@ -1,0 +1,10 @@
+{
+  "id": "LC-0331",
+  "path": "07-trees (树)/05 - 树构造、序列化与结构修改/02 - 序列化、反序列化与有效性验证/02 - LC-0331 - Verify Preorder Serialization of a Binary Tree",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree/",
+    "neetcode": null
+  },
+  "practice": []
+}

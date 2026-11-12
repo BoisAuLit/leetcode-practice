@@ -1,0 +1,10 @@
+{
+  "id": "LC-0309",
+  "path": "12-dynamic-programming (动态规划)/07 - 股票与状态机 DP/02 - 冷却期与交易费用/01 - LC-0309 - Best Time to Buy and Sell Stock with Cooldown",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/",
+    "neetcode": "https://neetcode.io/problems/buy-and-sell-crypto-with-cooldown/question?list=neetcode150"
+  },
+  "practice": []
+}

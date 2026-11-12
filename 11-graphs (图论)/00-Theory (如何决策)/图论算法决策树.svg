@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1074" width="1240" height="1074" role="img" aria-label="图论算法选择决策树:从题目在问什么出发,经过附加条件,落到具体算法与复杂度" style="color:#1f2937;font-family:'Helvetica Neue', Arial, 'PingFang SC', 'Noto Sans CJK SC', 'Microsoft YaHei', sans-serif;font-size:13px">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<rect x="0" y="0" width="1240" height="1074" fill="#ffffff"/>
+<text x="620.0" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="currentColor">图论算法选择决策树</text>
+<text x="620.0" y="52" text-anchor="middle" font-size="12" fill="#6b7280">先问“题目在问什么”,再看附加条件,落到算法;括号里是时间复杂度</text>
+<rect x="30" y="545.5" width="150" height="44" rx="22" fill="#f3f4f6" stroke="currentColor" stroke-width="1.5"/>
+<text x="105.0" y="572.5" text-anchor="middle" fill="currentColor" font-weight="700">题目在问什么?</text>
+<path d="M180,567.5 H210.0 V182.0 H240" fill="none" stroke="currentColor" stroke-width="1.3"/>
+<rect x="240" y="162.0" width="250" height="40" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="365.0" y="187.0" text-anchor="middle" fill="currentColor" font-weight="700">能不能到 / 有几块 / 怎么分组</text>
+<path d="M490,182.0 H525.0 V94.0 H560" fill="none" stroke="#2563eb" stroke-width="1.3"/>
+<rect x="560" y="78.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="99.0" text-anchor="middle" fill="currentColor" font-size="12.5">图是静态的</text>
+<path d="M820,94.0 H888" fill="none" stroke="#2563eb" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="78.0" width="320" height="32" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="902" y="99.0" fill="currentColor" font-weight="600">DFS / BFS</text>
+<text x="1198" y="99.0" text-anchor="end" fill="#4b5563" font-size="11.5">O(V+E)</text>
+<path d="M490,182.0 H525.0 V138.0 H560" fill="none" stroke="#2563eb" stroke-width="1.3"/>
+<rect x="560" y="122.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="143.0" text-anchor="middle" fill="currentColor" font-size="12.5">边不断加入、反复询问</text>
+<path d="M820,138.0 H888" fill="none" stroke="#2563eb" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="122.0" width="320" height="32" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="902" y="143.0" fill="currentColor" font-weight="600">并查集 Union-Find</text>
+<text x="1198" y="143.0" text-anchor="end" fill="#4b5563" font-size="11.5">每次 ≈ O(1)</text>
+<path d="M490,182.0 H525.0 V182.0 H560" fill="none" stroke="#2563eb" stroke-width="1.3"/>
+<rect x="560" y="166.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="187.0" text-anchor="middle" fill="currentColor" font-size="12.5">无向图有没有环</text>
+<path d="M820,182.0 H888" fill="none" stroke="#2563eb" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="166.0" width="320" height="32" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="902" y="187.0" fill="currentColor" font-weight="600">并查集(union 返回 False)</text>
+<text x="1198" y="187.0" text-anchor="end" fill="#4b5563" font-size="11.5">O(E·α)</text>
+<path d="M490,182.0 H525.0 V226.0 H560" fill="none" stroke="#2563eb" stroke-width="1.3"/>
+<rect x="560" y="210.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="231.0" text-anchor="middle" fill="currentColor" font-size="12.5">删哪条边会让图断开</text>
+<path d="M820,226.0 H888" fill="none" stroke="#2563eb" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="210.0" width="320" height="32" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="902" y="231.0" fill="currentColor" font-weight="600">Tarjan 求桥</text>
+<text x="1198" y="231.0" text-anchor="end" fill="#4b5563" font-size="11.5">O(V+E)</text>
+<path d="M490,182.0 H525.0 V270.0 H560" fill="none" stroke="#2563eb" stroke-width="1.3"/>
+<rect x="560" y="254.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="275.0" text-anchor="middle" fill="currentColor" font-size="12.5">能否分两组、组内互不相邻</text>
+<path d="M820,270.0 H888" fill="none" stroke="#2563eb" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="254.0" width="320" height="32" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="902" y="275.0" fill="currentColor" font-weight="600">二分图染色</text>
+<text x="1198" y="275.0" text-anchor="end" fill="#4b5563" font-size="11.5">O(V+E)</text>
+<path d="M180,567.5 H210.0 V472.0 H240" fill="none" stroke="currentColor" stroke-width="1.3"/>
+<rect x="240" y="452.0" width="250" height="40" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="365.0" y="477.0" text-anchor="middle" fill="currentColor" font-weight="700">A 到 B 最少步数 / 最小代价</text>
+<path d="M490,472.0 H525.0 V340.0 H560" fill="none" stroke="#16a34a" stroke-width="1.3"/>
+<rect x="560" y="324.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="345.0" text-anchor="middle" fill="currentColor" font-size="12.5">边权全相同(无权)</text>
+<path d="M820,340.0 H888" fill="none" stroke="#16a34a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="324.0" width="320" height="32" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="902" y="345.0" fill="currentColor" font-weight="600">BFS</text>
+<text x="1198" y="345.0" text-anchor="end" fill="#4b5563" font-size="11.5">O(V+E)</text>
+<path d="M490,472.0 H525.0 V384.0 H560" fill="none" stroke="#16a34a" stroke-width="1.3"/>
+<rect x="560" y="368.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="389.0" text-anchor="middle" fill="currentColor" font-size="12.5">边权只有 0 和 1</text>
+<path d="M820,384.0 H888" fill="none" stroke="#16a34a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="368.0" width="320" height="32" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="902" y="389.0" fill="currentColor" font-weight="600">0-1 BFS(双端队列)</text>
+<text x="1198" y="389.0" text-anchor="end" fill="#4b5563" font-size="11.5">O(V+E)</text>
+<path d="M490,472.0 H525.0 V428.0 H560" fill="none" stroke="#16a34a" stroke-width="1.3"/>
+<rect x="560" y="412.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="433.0" text-anchor="middle" fill="currentColor" font-size="12.5">边权非负、任意</text>
+<path d="M820,428.0 H888" fill="none" stroke="#16a34a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="412.0" width="320" height="32" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="902" y="433.0" fill="currentColor" font-weight="600">Dijkstra(堆)</text>
+<text x="1198" y="433.0" text-anchor="end" fill="#4b5563" font-size="11.5">O((V+E) log V)</text>
+<path d="M490,472.0 H525.0 V472.0 H560" fill="none" stroke="#16a34a" stroke-width="1.3"/>
+<rect x="560" y="456.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="477.0" text-anchor="middle" fill="currentColor" font-size="12.5">路径上最大边最小 / 最小边最大</text>
+<path d="M820,472.0 H888" fill="none" stroke="#16a34a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="456.0" width="320" height="32" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="902" y="477.0" fill="currentColor" font-weight="600">Dijkstra 改 relax,或 MST</text>
+<text x="1198" y="477.0" text-anchor="end" fill="#4b5563" font-size="11.5">同上</text>
+<path d="M490,472.0 H525.0 V516.0 H560" fill="none" stroke="#16a34a" stroke-width="1.3"/>
+<rect x="560" y="500.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="521.0" text-anchor="middle" fill="currentColor" font-size="12.5">有负权边</text>
+<path d="M820,516.0 H888" fill="none" stroke="#16a34a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="500.0" width="320" height="32" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="902" y="521.0" fill="currentColor" font-weight="600">Bellman-Ford</text>
+<text x="1198" y="521.0" text-anchor="end" fill="#4b5563" font-size="11.5">O(V·E)</text>
+<path d="M490,472.0 H525.0 V560.0 H560" fill="none" stroke="#16a34a" stroke-width="1.3"/>
+<rect x="560" y="544.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="565.0" text-anchor="middle" fill="currentColor" font-size="12.5">最多经过 k 条边</text>
+<path d="M820,560.0 H888" fill="none" stroke="#16a34a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="544.0" width="320" height="32" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="902" y="565.0" fill="currentColor" font-weight="600">Bellman-Ford 跑 k 轮(用快照)</text>
+<text x="1198" y="565.0" text-anchor="end" fill="#4b5563" font-size="11.5">O(k·E)</text>
+<path d="M490,472.0 H525.0 V604.0 H560" fill="none" stroke="#16a34a" stroke-width="1.3"/>
+<rect x="560" y="588.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="609.0" text-anchor="middle" fill="currentColor" font-size="12.5">所有点对之间、V ≤ 400</text>
+<path d="M820,604.0 H888" fill="none" stroke="#16a34a" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="588.0" width="320" height="32" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+<text x="902" y="609.0" fill="currentColor" font-weight="600">Floyd-Warshall</text>
+<text x="1198" y="609.0" text-anchor="end" fill="#4b5563" font-size="11.5">O(V³)</text>
+<path d="M180,567.5 H210.0 V718.0 H240" fill="none" stroke="currentColor" stroke-width="1.3"/>
+<rect x="240" y="698.0" width="250" height="40" rx="8" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/>
+<text x="365.0" y="723.0" text-anchor="middle" fill="currentColor" font-weight="700">把所有点连通、总代价最少</text>
+<path d="M490,718.0 H525.0 V674.0 H560" fill="none" stroke="#ea580c" stroke-width="1.3"/>
+<rect x="560" y="658.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="679.0" text-anchor="middle" fill="currentColor" font-size="12.5">给的是边列表 / 稀疏图</text>
+<path d="M820,674.0 H888" fill="none" stroke="#ea580c" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="658.0" width="320" height="32" rx="6" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/>
+<text x="902" y="679.0" fill="currentColor" font-weight="600">Kruskal(排序 + 并查集)</text>
+<text x="1198" y="679.0" text-anchor="end" fill="#4b5563" font-size="11.5">O(E log E)</text>
+<path d="M490,718.0 H525.0 V718.0 H560" fill="none" stroke="#ea580c" stroke-width="1.3"/>
+<rect x="560" y="702.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="723.0" text-anchor="middle" fill="currentColor" font-size="12.5">给的是坐标点 / 稠密图</text>
+<path d="M820,718.0 H888" fill="none" stroke="#ea580c" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="702.0" width="320" height="32" rx="6" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/>
+<text x="902" y="723.0" fill="currentColor" font-weight="600">Prim 数组版</text>
+<text x="1198" y="723.0" text-anchor="end" fill="#4b5563" font-size="11.5">O(V²)</text>
+<path d="M490,718.0 H525.0 V762.0 H560" fill="none" stroke="#ea580c" stroke-width="1.3"/>
+<rect x="560" y="746.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="767.0" text-anchor="middle" fill="currentColor" font-size="12.5">每个点可以自建(有独立代价)</text>
+<path d="M820,762.0 H888" fill="none" stroke="#ea580c" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="746.0" width="320" height="32" rx="6" fill="#ffedd5" stroke="#ea580c" stroke-width="1.5"/>
+<text x="902" y="767.0" fill="currentColor" font-weight="600">虚拟源点 + MST</text>
+<text x="1198" y="767.0" text-anchor="end" fill="#4b5563" font-size="11.5">同上</text>
+<path d="M180,567.5 H210.0 V898.0 H240" fill="none" stroke="currentColor" stroke-width="1.3"/>
+<rect x="240" y="878.0" width="250" height="40" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="365.0" y="903.0" text-anchor="middle" fill="currentColor" font-weight="700">有向图的顺序 / 依赖 / 环</text>
+<path d="M490,898.0 H525.0 V832.0 H560" fill="none" stroke="#7c3aed" stroke-width="1.3"/>
+<rect x="560" y="816.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="837.0" text-anchor="middle" fill="currentColor" font-size="12.5">先后顺序、能否全部完成</text>
+<path d="M820,832.0 H888" fill="none" stroke="#7c3aed" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="816.0" width="320" height="32" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="902" y="837.0" fill="currentColor" font-weight="600">拓扑排序 Kahn</text>
+<text x="1198" y="837.0" text-anchor="end" fill="#4b5563" font-size="11.5">O(V+E)</text>
+<path d="M490,898.0 H525.0 V876.0 H560" fill="none" stroke="#7c3aed" stroke-width="1.3"/>
+<rect x="560" y="860.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="881.0" text-anchor="middle" fill="currentColor" font-size="12.5">有向图有没有环</text>
+<path d="M820,876.0 H888" fill="none" stroke="#7c3aed" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="860.0" width="320" height="32" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="902" y="881.0" fill="currentColor" font-weight="600">三色 DFS 或拓扑排序</text>
+<text x="1198" y="881.0" text-anchor="end" fill="#4b5563" font-size="11.5">O(V+E)</text>
+<path d="M490,898.0 H525.0 V920.0 H560" fill="none" stroke="#7c3aed" stroke-width="1.3"/>
+<rect x="560" y="904.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="925.0" text-anchor="middle" fill="currentColor" font-size="12.5">DAG 上最长路 / 路径计数</text>
+<path d="M820,920.0 H888" fill="none" stroke="#7c3aed" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="904.0" width="320" height="32" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="902" y="925.0" fill="currentColor" font-weight="600">拓扑排序 + DP</text>
+<text x="1198" y="925.0" text-anchor="end" fill="#4b5563" font-size="11.5">O(V+E)</text>
+<path d="M490,898.0 H525.0 V964.0 H560" fill="none" stroke="#7c3aed" stroke-width="1.3"/>
+<rect x="560" y="948.0" width="260" height="32" rx="16" fill="#f9fafb" stroke="#d1d5db" stroke-width="1"/>
+<text x="690.0" y="969.0" text-anchor="middle" fill="currentColor" font-size="12.5">一笔画完所有边</text>
+<path d="M820,964.0 H888" fill="none" stroke="#7c3aed" stroke-width="1.3" marker-end="url(#arrow)"/>
+<rect x="890" y="948.0" width="320" height="32" rx="6" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="902" y="969.0" fill="currentColor" font-weight="600">Hierholzer 欧拉路径</text>
+<text x="1198" y="969.0" text-anchor="end" fill="#4b5563" font-size="11.5">O(E)</text>
+<text x="30" y="1058" fill="#6b7280" font-size="11.5">记忆线:BFS → 0-1 BFS → Dijkstra → Bellman-Ford → Floyd 只差“松弛的顺序”;Dijkstra 与 Prim 只差 relax 写 d+w 还是 w;静态连通用 DFS,动态加边用并查集。</text>
+</svg>

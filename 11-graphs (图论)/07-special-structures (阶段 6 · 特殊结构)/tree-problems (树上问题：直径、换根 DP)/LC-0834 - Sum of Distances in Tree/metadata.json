@@ -1,0 +1,10 @@
+{
+  "id": "LC-0834",
+  "path": "11-graphs (图论)/07-special-structures (阶段 6 · 特殊结构)/tree-problems (树上问题：直径、换根 DP)/LC-0834 - Sum of Distances in Tree",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/sum-of-distances-in-tree/",
+    "neetcode": null
+  },
+  "practice": []
+}

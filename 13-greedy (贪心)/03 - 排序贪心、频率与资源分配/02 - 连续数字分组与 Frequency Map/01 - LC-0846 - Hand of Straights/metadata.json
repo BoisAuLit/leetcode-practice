@@ -1,0 +1,10 @@
+{
+  "id": "LC-0846",
+  "path": "13-greedy (贪心)/03 - 排序贪心、频率与资源分配/02 - 连续数字分组与 Frequency Map/01 - LC-0846 - Hand of Straights",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/hand-of-straights/",
+    "neetcode": "https://neetcode.io/problems/hand-of-straights/question?list=neetcode150"
+  },
+  "practice": []
+}

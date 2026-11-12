@@ -1,0 +1,10 @@
+{
+  "id": "LC-0362",
+  "path": "17-design (设计)/04 - 时间窗口、计数器与限流/01 - Recent Calls 与流式时间窗口/02 - LC-0362 - Design Hit Counter",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/design-hit-counter/",
+    "neetcode": null
+  },
+  "practice": []
+}

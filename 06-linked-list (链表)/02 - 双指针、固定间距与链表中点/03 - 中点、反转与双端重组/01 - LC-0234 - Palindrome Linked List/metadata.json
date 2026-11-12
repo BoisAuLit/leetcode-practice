@@ -1,0 +1,10 @@
+{
+  "id": "LC-0234",
+  "path": "06-linked-list (链表)/02 - 双指针、固定间距与链表中点/03 - 中点、反转与双端重组/01 - LC-0234 - Palindrome Linked List",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/palindrome-linked-list/",
+    "neetcode": null
+  },
+  "practice": []
+}

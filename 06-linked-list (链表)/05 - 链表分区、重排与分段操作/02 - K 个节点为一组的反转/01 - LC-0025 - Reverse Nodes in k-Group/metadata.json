@@ -1,0 +1,10 @@
+{
+  "id": "LC-0025",
+  "path": "06-linked-list (链表)/05 - 链表分区、重排与分段操作/02 - K 个节点为一组的反转/01 - LC-0025 - Reverse Nodes in k-Group",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/reverse-nodes-in-k-group/",
+    "neetcode": null
+  },
+  "practice": []
+}

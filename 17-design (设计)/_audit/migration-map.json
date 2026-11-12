@@ -1,0 +1,116 @@
+{
+  "topic": "17-design (设计)",
+  "executed": "2026-11-11",
+  "deletions": [],
+  "overwritten_files": [],
+  "modified_files": [],
+  "moved": [
+    {
+      "from": "hash-structures (哈希结构设计)/LC-0705 - Design HashSet",
+      "to": "01 - Hash Structures 与稀疏数据设计/01 - HashSet 与 HashMap 基础实现/01 - LC-0705 - Design HashSet",
+      "note": "原样迁移"
+    },
+    {
+      "from": "hash-structures (哈希结构设计)/LC-0706 - Design HashMap",
+      "to": "01 - Hash Structures 与稀疏数据设计/01 - HashSet 与 HashMap 基础实现/02 - LC-0706 - Design HashMap",
+      "note": "原样迁移"
+    },
+    {
+      "from": "hash-structures (哈希结构设计)/LC-1570 - Dot Product of Two Sparse Vectors",
+      "to": "01 - Hash Structures 与稀疏数据设计/02 - Sparse Representation 与高效内积/01 - LC-1570 - Dot Product of Two Sparse Vectors",
+      "note": "原样迁移"
+    },
+    {
+      "from": "cache (缓存)/LC-0146 - LRU Cache",
+      "to": "02 - Cache 与 O(1) 淘汰策略/01 - LRU Cache/01 - LC-0146 - LRU Cache",
+      "note": "原样迁移"
+    },
+    {
+      "from": "rate-and-counter (计数与限流)/LC-0933 - Number of Recent Calls",
+      "to": "04 - 时间窗口、计数器与限流/01 - Recent Calls 与流式时间窗口/01 - LC-0933 - Number of Recent Calls",
+      "note": "原样迁移"
+    },
+    {
+      "from": "rate-and-counter (计数与限流)/LC-0362 - Design Hit Counter",
+      "to": "04 - 时间窗口、计数器与限流/01 - Recent Calls 与流式时间窗口/02 - LC-0362 - Design Hit Counter",
+      "note": "原样迁移"
+    },
+    {
+      "from": "rate-and-counter (计数与限流)/LC-0359 - Logger Rate Limiter",
+      "to": "04 - 时间窗口、计数器与限流/02 - 消息去重与时间限流/01 - LC-0359 - Logger Rate Limiter",
+      "note": "原样迁移"
+    },
+    {
+      "from": "general/LC-0157 - Read N Characters Given Read4",
+      "to": "05 - 有状态 API、缓冲区与模拟/01 - Buffered Reader 与跨调用状态/01 - LC-0157 - Read N Characters Given Read4",
+      "note": "原样迁移"
+    },
+    {
+      "from": "general/LC-0348 - Design Tic-Tac-Toe",
+      "to": "05 - 有状态 API、缓冲区与模拟/02 - 棋盘状态与历史导航/01 - LC-0348 - Design Tic-Tac-Toe",
+      "note": "原样迁移"
+    },
+    {
+      "from": "randomized (随机化)/LC-0580 - Count Student Number in Departments",
+      "to": "06 - SQL 与非设计题目存档/01 - SQL Aggregation 与 Database Query/01 - LC-0580 - Count Student Number in Departments",
+      "note": "原样迁移"
+    }
+  ],
+  "created": [
+    {
+      "path": "02 - Cache 与 O(1) 淘汰策略/02 - LFU Cache 与频率桶/01 - LC-0460 - LFU Cache",
+      "note": "第一轮新增"
+    },
+    {
+      "path": "05 - 有状态 API、缓冲区与模拟/01 - Buffered Reader 与跨调用状态/02 - LC-0158 - Read N Characters Given read4 II - Call Multiple Times",
+      "note": "第一轮新增（Premium，无 PDF）"
+    },
+    {
+      "path": "05 - 有状态 API、缓冲区与模拟/02 - 棋盘状态与历史导航/02 - LC-1472 - Design Browser History",
+      "note": "第一轮新增"
+    },
+    {
+      "path": "05 - 有状态 API、缓冲区与模拟/03 - 多对象状态与增量平均值/01 - LC-1396 - Design Underground System",
+      "note": "第一轮新增"
+    },
+    {
+      "path": "03 - Randomized Data Structures/01 - O(1) 插入、删除与均匀随机访问/02 - LC-0381 - Insert Delete GetRandom O(1) - Duplicates allowed",
+      "note": "第二轮新增"
+    },
+    {
+      "path": "04 - 时间窗口、计数器与限流/02 - 消息去重与时间限流/02 - LC-1797 - Design Authentication Manager",
+      "note": "第二轮新增"
+    },
+    {
+      "path": "05 - 有状态 API、缓冲区与模拟/04 - 版本快照与历史访问/01 - LC-1146 - Snapshot Array",
+      "note": "第二轮新增"
+    }
+  ],
+  "cross_topic_index_only": [
+    {
+      "path": "03 - Randomized Data Structures/01 - O(1) 插入、删除与均匀随机访问/01 - LC-0380 - Insert Delete GetRandom O(1) (学习索引 · 实体在 01-arrays-hashing)",
+      "entity": "01-arrays-hashing (数组、哈希表)/01 - Hash Set 与 Hash Map 基础/08 - LC-0380 - Insert Delete GetRandom O(1)",
+      "note": "第一轮建议新增，但仓库已有完整实体 ⟹ 按指令改为跨专题索引"
+    }
+  ],
+  "cross_topic_referenced_in_readme_only": [
+    "LC-0155 → 04-stack-queue",
+    "LC-0622 → 04-stack-queue",
+    "LC-0981 → 05-binary-search",
+    "LC-0208 → 08-tries",
+    "LC-0295 → 09-heap",
+    "LC-0355 → 09-heap",
+    "LC-3408 → 09-heap",
+    "LC-0729 → 14-intervals"
+  ],
+  "emptied_and_removed_dirs": [
+    "hash-structures (哈希结构设计)",
+    "cache (缓存)",
+    "rate-and-counter (计数与限流)",
+    "general",
+    "randomized (随机化)"
+  ],
+  "untouched": [
+    "instructions.md"
+  ]
+}

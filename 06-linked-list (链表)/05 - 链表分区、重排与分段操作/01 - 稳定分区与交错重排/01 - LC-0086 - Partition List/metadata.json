@@ -1,0 +1,10 @@
+{
+  "id": "LC-0086",
+  "path": "06-linked-list (链表)/05 - 链表分区、重排与分段操作/01 - 稳定分区与交错重排/01 - LC-0086 - Partition List",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/partition-list/",
+    "neetcode": null
+  },
+  "practice": []
+}

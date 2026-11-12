@@ -1,0 +1,10 @@
+{
+  "id": "LC-0543",
+  "path": "07-trees (树)/02 - 后序信息汇总与 Tree DP (Bottom-up DFS)/01 - 高度、平衡与子树统计/02 - LC-0543 - Diameter of Binary Tree",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/diameter-of-binary-tree/",
+    "neetcode": "https://neetcode.io/problems/binary-tree-diameter/question?list=neetcode150"
+  },
+  "practice": []
+}

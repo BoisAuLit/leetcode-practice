@@ -1,0 +1,10 @@
+{
+  "id": "LC-0977",
+  "path": "02-two-pointers (双指针)/01 - 对撞指针与贪心 (Opposite Ends)/02 - 有序计数与双端构造/01 - LC-0977 - Squares of a Sorted Array",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/squares-of-a-sorted-array/",
+    "neetcode": null
+  },
+  "practice": []
+}

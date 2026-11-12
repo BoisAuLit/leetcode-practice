@@ -1,0 +1,21 @@
+{
+  "id": "LC-0021",
+  "path": "06-linked-list (链表)/04 - 链表归并与排序/01 - 两条有序链表归并/01 - LC-0021 - Merge Two Sorted Lists",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/merge-two-sorted-lists/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-09-22",
+      "sticking_point": "",
+      "result": "🟢"
+    },
+    {
+      "date": "2026-09-30",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

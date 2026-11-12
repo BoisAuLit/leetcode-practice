@@ -1,0 +1,10 @@
+{
+  "id": "LC-0740",
+  "path": "12-dynamic-programming (动态规划)/01 - 一维线性 DP 与相邻约束/02 - 相邻位置不能同时选择/03 - LC-0740 - Delete and Earn",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/delete-and-earn/",
+    "neetcode": null
+  },
+  "practice": []
+}

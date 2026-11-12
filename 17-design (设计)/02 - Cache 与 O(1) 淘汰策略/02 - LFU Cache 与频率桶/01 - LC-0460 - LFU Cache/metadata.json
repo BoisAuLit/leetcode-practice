@@ -1,0 +1,10 @@
+{
+  "id": "LC-0460",
+  "path": "17-design (设计)/02 - Cache 与 O(1) 淘汰策略/02 - LFU Cache 与频率桶/01 - LC-0460 - LFU Cache",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/lfu-cache/",
+    "neetcode": null
+  },
+  "practice": []
+}

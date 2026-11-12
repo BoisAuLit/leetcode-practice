@@ -1,0 +1,21 @@
+{
+  "id": "LC-0706",
+  "path": "17-design (设计)/01 - Hash Structures 与稀疏数据设计/01 - HashSet 与 HashMap 基础实现/02 - LC-0706 - Design HashMap",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/design-hashmap/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-10-04",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-10-13",
+      "sticking_point": "red",
+      "result": "🟢"
+    }
+  ]
+}

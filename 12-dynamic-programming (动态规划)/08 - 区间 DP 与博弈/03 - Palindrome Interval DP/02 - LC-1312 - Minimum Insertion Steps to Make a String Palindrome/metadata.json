@@ -1,0 +1,10 @@
+{
+  "id": "LC-1312",
+  "path": "12-dynamic-programming (动态规划)/08 - 区间 DP 与博弈/03 - Palindrome Interval DP/02 - LC-1312 - Minimum Insertion Steps to Make a String Palindrome",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/",
+    "neetcode": null
+  },
+  "practice": []
+}

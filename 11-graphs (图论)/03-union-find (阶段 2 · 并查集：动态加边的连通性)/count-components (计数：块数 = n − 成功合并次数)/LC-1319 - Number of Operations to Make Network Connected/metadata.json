@@ -1,0 +1,10 @@
+{
+  "id": "LC-1319",
+  "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/count-components (计数：块数 = n − 成功合并次数)/LC-1319 - Number of Operations to Make Network Connected",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/number-of-operations-to-make-network-connected/",
+    "neetcode": null
+  },
+  "practice": []
+}

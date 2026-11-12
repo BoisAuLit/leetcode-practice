@@ -1,0 +1,21 @@
+{
+  "id": "LC-0355",
+  "path": "09-heap (堆)/06 - Heap + Hash Map 数据结构设计/01 - 社交信息流与多路合并/01 - LC-0355 - Design Twitter",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/design-twitter/",
+    "neetcode": "https://neetcode.io/problems/design-twitter-feed/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-09-28",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-10-02",
+      "sticking_point": "",
+      "result": "🟡"
+    }
+  ]
+}

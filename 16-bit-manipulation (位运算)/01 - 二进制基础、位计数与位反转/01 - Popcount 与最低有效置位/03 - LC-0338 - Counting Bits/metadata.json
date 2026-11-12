@@ -1,0 +1,36 @@
+{
+  "id": "LC-0338",
+  "path": "16-bit-manipulation (位运算)/01 - 二进制基础、位计数与位反转/01 - Popcount 与最低有效置位/03 - LC-0338 - Counting Bits",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/counting-bits/",
+    "neetcode": "https://neetcode.io/problems/counting-bits/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-09-09",
+      "sticking_point": "推不出来，靠死记 dp[i] = dp[i >> 1] + (i & 1)",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-15",
+      "sticking_point": "毫无技术可言, 就是 dp[i] = dp[i >> 1] + (i & 1) 死记硬背, 只有这个方法可以记住, 多写十遍就终身难忘了",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-22",
+      "sticking_point": "",
+      "result": "🟢"
+    },
+    {
+      "date": "2026-09-26",
+      "sticking_point": "",
+      "result": "🟡"
+    },
+    {
+      "date": "2026-09-30",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

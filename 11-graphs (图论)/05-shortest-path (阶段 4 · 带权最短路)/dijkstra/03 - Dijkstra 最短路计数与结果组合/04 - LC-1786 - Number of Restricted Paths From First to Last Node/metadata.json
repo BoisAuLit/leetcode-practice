@@ -1,0 +1,10 @@
+{
+  "id": "LC-1786",
+  "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra/03 - Dijkstra 最短路计数与结果组合/04 - LC-1786 - Number of Restricted Paths From First to Last Node",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/number-of-restricted-paths-from-first-to-last-node/",
+    "neetcode": null
+  },
+  "practice": []
+}

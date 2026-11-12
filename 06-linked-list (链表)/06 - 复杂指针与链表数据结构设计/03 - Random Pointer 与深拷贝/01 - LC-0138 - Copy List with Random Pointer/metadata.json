@@ -1,0 +1,10 @@
+{
+  "id": "LC-0138",
+  "path": "06-linked-list (链表)/06 - 复杂指针与链表数据结构设计/03 - Random Pointer 与深拷贝/01 - LC-0138 - Copy List with Random Pointer",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/copy-list-with-random-pointer/",
+    "neetcode": null
+  },
+  "practice": []
+}

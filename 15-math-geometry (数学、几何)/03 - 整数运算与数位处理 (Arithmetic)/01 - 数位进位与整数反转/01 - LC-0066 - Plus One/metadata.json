@@ -1,0 +1,26 @@
+{
+  "id": "LC-0066",
+  "path": "15-math-geometry (数学、几何)/03 - 整数运算与数位处理 (Arithmetic)/01 - 数位进位与整数反转/01 - LC-0066 - Plus One",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/plus-one/",
+    "neetcode": "https://neetcode.io/problems/plus-one/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-09-10",
+      "sticking_point": "一开始将 carry 设定成 1 是非常正确的决定",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-15",
+      "sticking_point": "",
+      "result": "🟢"
+    },
+    {
+      "date": "2026-09-24",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

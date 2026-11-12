@@ -1,0 +1,10 @@
+{
+  "id": "LC-0158",
+  "path": "17-design (设计)/05 - 有状态 API、缓冲区与模拟/01 - Buffered Reader 与跨调用状态/02 - LC-0158 - Read N Characters Given read4 II - Call Multiple Times",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/read-n-characters-given-read4-ii-call-multiple-times/",
+    "neetcode": null
+  },
+  "practice": []
+}

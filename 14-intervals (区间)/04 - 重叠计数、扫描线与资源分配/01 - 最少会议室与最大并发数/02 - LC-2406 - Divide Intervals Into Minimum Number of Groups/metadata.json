@@ -1,0 +1,10 @@
+{
+  "id": "LC-2406",
+  "path": "14-intervals (区间)/04 - 重叠计数、扫描线与资源分配/01 - 最少会议室与最大并发数/02 - LC-2406 - Divide Intervals Into Minimum Number of Groups",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/divide-intervals-into-minimum-number-of-groups/",
+    "neetcode": null
+  },
+  "practice": []
+}

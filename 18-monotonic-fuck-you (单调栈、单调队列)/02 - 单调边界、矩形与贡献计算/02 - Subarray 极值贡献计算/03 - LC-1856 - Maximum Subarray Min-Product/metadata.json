@@ -1,0 +1,10 @@
+{
+  "id": "LC-1856",
+  "path": "18-monotonic-fuck-you (单调栈、单调队列)/02 - 单调边界、矩形与贡献计算/02 - Subarray 极值贡献计算/03 - LC-1856 - Maximum Subarray Min-Product",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-subarray-min-product/",
+    "neetcode": null
+  },
+  "practice": []
+}

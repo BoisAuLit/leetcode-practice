@@ -1,0 +1,10 @@
+{
+  "id": "LC-1155",
+  "path": "12-dynamic-programming (动态规划)/09 - 计数 DP 与多维状态/02 - 骰子与受限序列计数/01 - LC-1155 - Number of Dice Rolls With Target Sum",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/",
+    "neetcode": null
+  },
+  "practice": []
+}

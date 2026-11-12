@@ -1,0 +1,10 @@
+{
+  "id": "LC-0051",
+  "path": "10-backtracking (回溯)/04 - 网格搜索与约束满足 (Constraint Search)/02 - N-Queens 与棋盘冲突检查/01 - LC-0051 - N-Queens",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/n-queens/",
+    "neetcode": "https://neetcode.io/problems/n-queens/question?list=neetcode150"
+  },
+  "practice": []
+}

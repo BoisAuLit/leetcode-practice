@@ -1,0 +1,10 @@
+{
+  "id": "LC-0567",
+  "path": "03-sliding-window (滑动窗口)/01 - 定长窗口与频率匹配 (Fixed Window)/02 - 固定窗口字符频率匹配/01 - LC-0567 - Permutation in String",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/permutation-in-string/",
+    "neetcode": "https://neetcode.io/problems/permutation-string/question?list=neetcode150"
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0992",
+  "path": "03-sliding-window (滑动窗口)/04 - 子数组与子串计数 (Counting Windows)/02 - Exactly K 与 At Most K/02 - LC-0992 - Subarrays with K Different Integers",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/subarrays-with-k-different-integers/",
+    "neetcode": null
+  },
+  "practice": []
+}

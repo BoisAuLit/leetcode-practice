@@ -1,0 +1,10 @@
+{
+  "id": "LC-1288",
+  "path": "14-intervals (区间)/01 - 区间合并、插入与范围整理/02 - 区间包含与冗余消除/01 - LC-1288 - Remove Covered Intervals",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/remove-covered-intervals/",
+    "neetcode": null
+  },
+  "practice": []
+}

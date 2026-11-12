@@ -1,0 +1,10 @@
+{
+  "id": "LC-1245",
+  "path": "11-graphs (图论)/07-special-structures (阶段 6 · 特殊结构)/tree-problems (树上问题：直径、换根 DP)/LC-1245 - Tree Diameter",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/tree-diameter/",
+    "neetcode": null
+  },
+  "practice": []
+}

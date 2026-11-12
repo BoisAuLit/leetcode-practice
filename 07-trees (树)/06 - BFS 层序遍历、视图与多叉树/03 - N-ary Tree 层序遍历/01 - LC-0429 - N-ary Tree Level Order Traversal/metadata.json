@@ -1,0 +1,10 @@
+{
+  "id": "LC-0429",
+  "path": "07-trees (树)/06 - BFS 层序遍历、视图与多叉树/03 - N-ary Tree 层序遍历/01 - LC-0429 - N-ary Tree Level Order Traversal",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/n-ary-tree-level-order-traversal/",
+    "neetcode": null
+  },
+  "practice": []
+}

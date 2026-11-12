@@ -1,0 +1,10 @@
+{
+  "id": "LC-0032",
+  "path": "12-dynamic-programming (动态规划)/05 - 字符串分割与双序列 DP/05 - 跨专题字符串 DP/02 - LC-0032 - Longest Valid Parentheses",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/longest-valid-parentheses/",
+    "neetcode": null
+  },
+  "practice": []
+}

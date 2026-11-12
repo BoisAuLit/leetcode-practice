@@ -1,0 +1,10 @@
+{
+  "id": "LC-0368",
+  "path": "12-dynamic-programming (动态规划)/04 - 子序列 DP/02 - 特殊状态与字符串链/01 - LC-0368 - Largest Divisible Subset",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/largest-divisible-subset/",
+    "neetcode": null
+  },
+  "practice": []
+}

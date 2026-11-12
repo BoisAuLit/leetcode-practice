@@ -1,0 +1,10 @@
+{
+  "id": "LC-1268",
+  "path": "08-tries (字典树、前缀树)/03 - Trie 前缀统计与搜索应用/01 - 自动补全与前缀聚合/01 - LC-1268 - Search Suggestions System",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/search-suggestions-system/",
+    "neetcode": null
+  },
+  "practice": []
+}

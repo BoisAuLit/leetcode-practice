@@ -1,0 +1,10 @@
+{
+  "id": "LC-0611",
+  "path": "02-two-pointers (双指针)/01 - 对撞指针与贪心 (Opposite Ends)/02 - 有序计数与双端构造/02 - LC-0611 - Valid Triangle Number",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/valid-triangle-number/",
+    "neetcode": null
+  },
+  "practice": []
+}

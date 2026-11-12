@@ -1,0 +1,10 @@
+{
+  "id": "LC-1920",
+  "path": "16-bit-manipulation (位运算)/04 - 二进制分解与原地编码/02 - In-place 编码与旧状态保护/02 - LC-1920 - Build Array from Permutation",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/build-array-from-permutation/",
+    "neetcode": null
+  },
+  "practice": []
+}

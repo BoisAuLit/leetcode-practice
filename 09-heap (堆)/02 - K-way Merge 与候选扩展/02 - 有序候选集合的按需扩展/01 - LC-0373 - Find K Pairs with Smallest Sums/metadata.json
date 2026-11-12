@@ -1,0 +1,10 @@
+{
+  "id": "LC-0373",
+  "path": "09-heap (堆)/02 - K-way Merge 与候选扩展/02 - 有序候选集合的按需扩展/01 - LC-0373 - Find K Pairs with Smallest Sums",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-k-pairs-with-smallest-sums/",
+    "neetcode": null
+  },
+  "practice": []
+}

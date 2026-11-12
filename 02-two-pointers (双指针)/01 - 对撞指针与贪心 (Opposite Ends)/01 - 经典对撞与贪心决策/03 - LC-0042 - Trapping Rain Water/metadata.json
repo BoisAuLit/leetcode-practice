@@ -1,0 +1,16 @@
+{
+  "id": "LC-0042",
+  "path": "02-two-pointers (双指针)/01 - 对撞指针与贪心 (Opposite Ends)/01 - 经典对撞与贪心决策/03 - LC-0042 - Trapping Rain Water",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/trapping-rain-water/",
+    "neetcode": "https://neetcode.io/problems/trapping-rain-water/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-11-03",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-2598",
+  "path": "13-greedy (贪心)/03 - 排序贪心、频率与资源分配/04 - 频率、余数与 MEX/01 - LC-2598 - Smallest Missing Non-negative Integer After Operations",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/smallest-missing-non-negative-integer-after-operations/",
+    "neetcode": null
+  },
+  "practice": []
+}

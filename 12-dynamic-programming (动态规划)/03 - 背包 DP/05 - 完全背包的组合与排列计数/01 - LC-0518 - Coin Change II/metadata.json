@@ -1,0 +1,10 @@
+{
+  "id": "LC-0518",
+  "path": "12-dynamic-programming (动态规划)/03 - 背包 DP/05 - 完全背包的组合与排列计数/01 - LC-0518 - Coin Change II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/coin-change-ii/",
+    "neetcode": "https://neetcode.io/problems/coin-change-ii/question?list=neetcode150"
+  },
+  "practice": []
+}

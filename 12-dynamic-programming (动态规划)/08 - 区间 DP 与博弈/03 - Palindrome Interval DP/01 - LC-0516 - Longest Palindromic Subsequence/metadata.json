@@ -1,0 +1,10 @@
+{
+  "id": "LC-0516",
+  "path": "12-dynamic-programming (动态规划)/08 - 区间 DP 与博弈/03 - Palindrome Interval DP/01 - LC-0516 - Longest Palindromic Subsequence",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/longest-palindromic-subsequence/",
+    "neetcode": null
+  },
+  "practice": []
+}

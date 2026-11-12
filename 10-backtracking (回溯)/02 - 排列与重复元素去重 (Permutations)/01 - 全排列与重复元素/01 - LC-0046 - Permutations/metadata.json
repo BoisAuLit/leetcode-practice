@@ -1,0 +1,10 @@
+{
+  "id": "LC-0046",
+  "path": "10-backtracking (回溯)/02 - 排列与重复元素去重 (Permutations)/01 - 全排列与重复元素/01 - LC-0046 - Permutations",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/permutations/",
+    "neetcode": "https://neetcode.io/problems/permutations/question?list=neetcode150"
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "NC-minimum-window-with-characters",
+  "path": "03-sliding-window (滑动窗口)/variable-window (变长窗口)/NC - Minimum Window Substring",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-window-substring/",
+    "neetcode": "https://neetcode.io/problems/minimum-window-with-characters/question?list=neetcode150"
+  },
+  "practice": []
+}

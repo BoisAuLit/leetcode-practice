@@ -1,0 +1,10 @@
+{
+  "id": "LC-0135",
+  "path": "13-greedy (贪心)/02 - 局部决策与可行性维护/04 - 双向局部约束与最小分配/01 - LC-0135 - Candy",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/candy/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "LC-0084",
+  "path": "18-monotonic-fuck-you (单调栈、单调队列)/02 - 单调边界、矩形与贡献计算/01 - Histogram 与最大矩形/01 - LC-0084 - Largest Rectangle in Histogram",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+    "neetcode": "https://neetcode.io/problems/largest-rectangle-in-histogram/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-10-01",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-10-17",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

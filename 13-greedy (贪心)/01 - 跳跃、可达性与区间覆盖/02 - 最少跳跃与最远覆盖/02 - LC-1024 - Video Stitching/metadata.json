@@ -1,0 +1,10 @@
+{
+  "id": "LC-1024",
+  "path": "13-greedy (贪心)/01 - 跳跃、可达性与区间覆盖/02 - 最少跳跃与最远覆盖/02 - LC-1024 - Video Stitching",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/video-stitching/",
+    "neetcode": null
+  },
+  "practice": []
+}

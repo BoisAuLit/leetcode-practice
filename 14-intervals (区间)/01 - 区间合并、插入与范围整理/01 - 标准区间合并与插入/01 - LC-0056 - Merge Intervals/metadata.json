@@ -1,0 +1,10 @@
+{
+  "id": "LC-0056",
+  "path": "14-intervals (区间)/01 - 区间合并、插入与范围整理/01 - 标准区间合并与插入/01 - LC-0056 - Merge Intervals",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/merge-intervals/",
+    "neetcode": "https://neetcode.io/problems/merge-intervals/question?list=neetcode150"
+  },
+  "practice": []
+}

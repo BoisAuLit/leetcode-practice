@@ -1,0 +1,10 @@
+{
+  "id": "LC-1631",
+  "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra/02 - Dijkstra 非加法路径代价变体/01 - LC-1631 - Path With Minimum Effort",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/path-with-minimum-effort/",
+    "neetcode": null
+  },
+  "practice": []
+}

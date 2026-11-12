@@ -1,0 +1,10 @@
+{
+  "id": "LC-0997",
+  "path": "11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/degree (度：入度、出度)/LC-0997 - Find the Town Judge",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-the-town-judge/",
+    "neetcode": null
+  },
+  "practice": []
+}

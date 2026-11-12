@@ -1,0 +1,10 @@
+{
+  "id": "LC-0406",
+  "path": "13-greedy (贪心)/03 - 排序贪心、频率与资源分配/03 - 排序差额与最小成本分配/02 - LC-0406 - Queue Reconstruction by Height",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/queue-reconstruction-by-height/",
+    "neetcode": null
+  },
+  "practice": []
+}

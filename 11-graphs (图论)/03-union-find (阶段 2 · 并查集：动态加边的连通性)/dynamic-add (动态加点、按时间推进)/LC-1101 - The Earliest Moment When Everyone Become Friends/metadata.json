@@ -1,0 +1,10 @@
+{
+  "id": "LC-1101",
+  "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/dynamic-add (动态加点、按时间推进)/LC-1101 - The Earliest Moment When Everyone Become Friends",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/the-earliest-moment-when-everyone-become-friends/",
+    "neetcode": null
+  },
+  "practice": []
+}

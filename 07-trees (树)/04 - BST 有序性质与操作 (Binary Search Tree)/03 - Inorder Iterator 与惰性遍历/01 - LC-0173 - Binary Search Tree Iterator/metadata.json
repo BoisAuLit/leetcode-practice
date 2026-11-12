@@ -1,0 +1,10 @@
+{
+  "id": "LC-0173",
+  "path": "07-trees (树)/04 - BST 有序性质与操作 (Binary Search Tree)/03 - Inorder Iterator 与惰性遍历/01 - LC-0173 - Binary Search Tree Iterator",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/binary-search-tree-iterator/",
+    "neetcode": null
+  },
+  "practice": []
+}

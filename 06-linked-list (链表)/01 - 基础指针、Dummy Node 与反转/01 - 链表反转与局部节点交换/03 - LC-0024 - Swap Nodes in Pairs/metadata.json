@@ -1,0 +1,10 @@
+{
+  "id": "LC-0024",
+  "path": "06-linked-list (链表)/01 - 基础指针、Dummy Node 与反转/01 - 链表反转与局部节点交换/03 - LC-0024 - Swap Nodes in Pairs",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/swap-nodes-in-pairs/",
+    "neetcode": null
+  },
+  "practice": []
+}

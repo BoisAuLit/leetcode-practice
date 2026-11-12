@@ -1,0 +1,16 @@
+{
+  "id": "LC-0678",
+  "path": "13-greedy (贪心)/05 - 字符串、字典序与栈贪心/02 - 括号可行性区间/01 - LC-0678 - Valid Parenthesis String",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/valid-parenthesis-string/",
+    "neetcode": "https://neetcode.io/problems/valid-parenthesis-string/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-10-30",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

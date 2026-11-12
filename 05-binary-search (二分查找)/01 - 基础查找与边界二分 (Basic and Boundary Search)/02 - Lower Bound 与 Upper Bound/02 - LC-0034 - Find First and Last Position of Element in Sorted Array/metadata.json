@@ -1,0 +1,26 @@
+{
+  "id": "LC-0034",
+  "path": "05-binary-search (二分查找)/01 - 基础查找与边界二分 (Basic and Boundary Search)/02 - Lower Bound 与 Upper Bound/02 - LC-0034 - Find First and Last Position of Element in Sorted Array",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-09-30",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-10-03",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-10-04",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

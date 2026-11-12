@@ -1,0 +1,10 @@
+{
+  "id": "LC-0946",
+  "path": "04-stack-queue (栈、队列)/01 - 基础栈、括号与消除 (Stack Fundamentals)/02 - 栈模拟、消除与状态恢复/03 - LC-0946 - Validate Stack Sequences",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/validate-stack-sequences/",
+    "neetcode": null
+  },
+  "practice": []
+}

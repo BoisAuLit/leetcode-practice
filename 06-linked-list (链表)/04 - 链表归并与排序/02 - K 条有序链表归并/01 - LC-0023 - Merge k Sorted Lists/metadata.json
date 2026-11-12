@@ -1,0 +1,10 @@
+{
+  "id": "LC-0023",
+  "path": "06-linked-list (链表)/04 - 链表归并与排序/02 - K 条有序链表归并/01 - LC-0023 - Merge k Sorted Lists",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/merge-k-sorted-lists/",
+    "neetcode": null
+  },
+  "practice": []
+}

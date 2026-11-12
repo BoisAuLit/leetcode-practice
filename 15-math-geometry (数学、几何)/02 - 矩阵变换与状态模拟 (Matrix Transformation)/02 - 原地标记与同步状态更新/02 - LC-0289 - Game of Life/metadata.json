@@ -1,0 +1,10 @@
+{
+  "id": "LC-0289",
+  "path": "15-math-geometry (数学、几何)/02 - 矩阵变换与状态模拟 (Matrix Transformation)/02 - 原地标记与同步状态更新/02 - LC-0289 - Game of Life",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/game-of-life/",
+    "neetcode": null
+  },
+  "practice": []
+}

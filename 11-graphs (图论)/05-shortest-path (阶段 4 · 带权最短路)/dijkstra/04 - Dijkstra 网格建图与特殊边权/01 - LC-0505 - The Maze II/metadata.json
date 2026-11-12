@@ -1,0 +1,10 @@
+{
+  "id": "LC-0505",
+  "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra/04 - Dijkstra 网格建图与特殊边权/01 - LC-0505 - The Maze II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/the-maze-ii/",
+    "neetcode": null
+  },
+  "practice": []
+}

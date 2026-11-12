@@ -1,0 +1,10 @@
+{
+  "id": "LC-0228",
+  "path": "14-intervals (区间)/01 - 区间合并、插入与范围整理/03 - 连续整数区间与缺失范围/01 - LC-0228 - Summary Ranges",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/summary-ranges/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "LC-1207",
+  "path": "01-arrays-hashing (数组、哈希表)/06 - 低优先级与跨专题题目/06 - LC-1207 - Unique Number of Occurrences",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/unique-number-of-occurrences/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-10-16",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

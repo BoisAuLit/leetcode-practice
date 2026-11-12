@@ -1,0 +1,10 @@
+{
+  "id": "LC-1358",
+  "path": "03-sliding-window (滑动窗口)/04 - 子数组与子串计数 (Counting Windows)/03 - 满足全部字符约束的计数/01 - LC-1358 - Number of Substrings Containing All Three Characters",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-1229",
+  "path": "14-intervals (区间)/02 - 双指针区间交集与多路合并/01 - 两个有序区间序列求交集/02 - LC-1229 - Meeting Scheduler",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/meeting-scheduler/",
+    "neetcode": null
+  },
+  "practice": []
+}

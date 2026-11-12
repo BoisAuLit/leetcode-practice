@@ -1,0 +1,10 @@
+{
+  "id": "LC-0380",
+  "path": "01-arrays-hashing (数组、哈希表)/01 - Hash Set 与 Hash Map 基础/08 - LC-0380 - Insert Delete GetRandom O(1)",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
+    "neetcode": null
+  },
+  "practice": []
+}

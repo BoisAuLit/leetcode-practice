@@ -1,0 +1,10 @@
+{
+  "id": "LC-1109",
+  "path": "14-intervals (区间)/04 - 重叠计数、扫描线与资源分配/02 - 差分事件与容量约束/03 - LC-1109 - Corporate Flight Bookings",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/corporate-flight-bookings/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-2976",
+  "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/floyd (Floyd：所有点对，点 ≤ 100)/LC-2976 - Minimum Cost to Convert String I",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-cost-to-convert-string-i/",
+    "neetcode": null
+  },
+  "practice": []
+}

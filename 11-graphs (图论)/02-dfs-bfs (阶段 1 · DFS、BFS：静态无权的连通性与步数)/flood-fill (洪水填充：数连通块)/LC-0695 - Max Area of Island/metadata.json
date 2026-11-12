@@ -1,0 +1,16 @@
+{
+  "id": "LC-0695",
+  "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/flood-fill (洪水填充：数连通块)/LC-0695 - Max Area of Island",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/max-area-of-island/",
+    "neetcode": "https://neetcode.io/problems/max-area-of-island/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-09-28",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

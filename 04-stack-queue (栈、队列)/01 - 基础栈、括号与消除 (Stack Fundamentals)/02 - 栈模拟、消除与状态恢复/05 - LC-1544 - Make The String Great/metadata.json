@@ -1,0 +1,10 @@
+{
+  "id": "LC-1544",
+  "path": "04-stack-queue (栈、队列)/01 - 基础栈、括号与消除 (Stack Fundamentals)/02 - 栈模拟、消除与状态恢复/05 - LC-1544 - Make The String Great",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/make-the-string-great/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0295",
+  "path": "09-heap (堆)/03 - Two Heaps 与动态中位数/01 - 动态中位数与双堆平衡/01 - LC-0295 - Find Median from Data Stream",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-median-from-data-stream/",
+    "neetcode": null
+  },
+  "practice": []
+}

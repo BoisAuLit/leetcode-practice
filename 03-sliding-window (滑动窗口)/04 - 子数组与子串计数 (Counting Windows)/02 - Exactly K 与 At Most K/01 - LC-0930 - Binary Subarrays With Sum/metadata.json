@@ -1,0 +1,10 @@
+{
+  "id": "LC-0930",
+  "path": "03-sliding-window (滑动窗口)/04 - 子数组与子串计数 (Counting Windows)/02 - Exactly K 与 At Most K/01 - LC-0930 - Binary Subarrays With Sum",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/binary-subarrays-with-sum/",
+    "neetcode": null
+  },
+  "practice": []
+}

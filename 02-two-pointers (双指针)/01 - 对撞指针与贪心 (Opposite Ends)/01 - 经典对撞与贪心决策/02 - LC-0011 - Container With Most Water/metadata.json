@@ -1,0 +1,10 @@
+{
+  "id": "LC-0011",
+  "path": "02-two-pointers (双指针)/01 - 对撞指针与贪心 (Opposite Ends)/01 - 经典对撞与贪心决策/02 - LC-0011 - Container With Most Water",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/container-with-most-water/",
+    "neetcode": "https://neetcode.io/problems/max-water-container/question?list=neetcode150"
+  },
+  "practice": []
+}

@@ -1,0 +1,128 @@
+{
+  "topic": "15-math-geometry (数学、几何)",
+  "executed": "2026-11-11",
+  "deletions": [],
+  "overwritten_files": [],
+  "modified_files": [
+    {
+      "path": "01 - 矩阵遍历与方向模拟 (Matrix Traversal)/01 - 螺旋遍历、生成与填充/03 - LC-2326 - Spiral Matrix IV/solution.py",
+      "change": "纯新增：给文件自带的 ListNode 类补一个 from_list staticmethod",
+      "reason": "文件底部的 driver 调用 ListNode.from_list(...)，但类里没有这个方法 ⟹ 运行时 AttributeError（迁移前就已失效）",
+      "user_code_removed": false
+    }
+  ],
+  "moved": [
+    {
+      "from": "matrix (矩阵)/LC-0054 - Spiral Matrix",
+      "to": "01 - 矩阵遍历与方向模拟 (Matrix Traversal)/01 - 螺旋遍历、生成与填充/01 - LC-0054 - Spiral Matrix",
+      "note": "原样迁移；note.md 保留"
+    },
+    {
+      "from": "matrix (矩阵)/LC-0059 - Spiral Matrix II",
+      "to": "01 - 矩阵遍历与方向模拟 (Matrix Traversal)/01 - 螺旋遍历、生成与填充/02 - LC-0059 - Spiral Matrix II",
+      "note": "原样迁移"
+    },
+    {
+      "from": "matrix (矩阵)/LC-2326 - Spiral Matrix IV",
+      "to": "01 - 矩阵遍历与方向模拟 (Matrix Traversal)/01 - 螺旋遍历、生成与填充/03 - LC-2326 - Spiral Matrix IV",
+      "note": "迁移 + 修复：本地 ListNode 类缺 from_list（底部 driver 调用它），纯新增一个 staticmethod"
+    },
+    {
+      "from": "matrix (矩阵)/LC-0498 - Diagonal Traverse",
+      "to": "01 - 矩阵遍历与方向模拟 (Matrix Traversal)/02 - 对角线与动态方向遍历/01 - LC-0498 - Diagonal Traverse",
+      "note": "原样迁移；asset-0498 - Diagonal Traverse.drawio 保留"
+    },
+    {
+      "from": "matrix (矩阵)/LC-0885 - Spiral Matrix III",
+      "to": "01 - 矩阵遍历与方向模拟 (Matrix Traversal)/02 - 对角线与动态方向遍历/02 - LC-0885 - Spiral Matrix III",
+      "note": "原样迁移"
+    },
+    {
+      "from": "matrix (矩阵)/LC-0867 - Transpose Matrix",
+      "to": "02 - 矩阵变换与状态模拟 (Matrix Transformation)/01 - 转置与矩阵旋转/01 - LC-0867 - Transpose Matrix",
+      "note": "原样迁移"
+    },
+    {
+      "from": "matrix (矩阵)/LC-0048 - Rotate Image",
+      "to": "02 - 矩阵变换与状态模拟 (Matrix Transformation)/01 - 转置与矩阵旋转/02 - LC-0048 - Rotate Image",
+      "note": "原样迁移；note.md 保留"
+    },
+    {
+      "from": "matrix (矩阵)/LC-0723 - Candy Crush",
+      "to": "02 - 矩阵变换与状态模拟 (Matrix Transformation)/03 - 多轮矩阵消除与重力模拟/01 - LC-0723 - Candy Crush",
+      "note": "原样迁移"
+    },
+    {
+      "from": "arithmetic (算术与模拟)/LC-0066 - Plus One",
+      "to": "03 - 整数运算与数位处理 (Arithmetic)/01 - 数位进位与整数反转/01 - LC-0066 - Plus One",
+      "note": "原样迁移；note.md 保留"
+    },
+    {
+      "from": "arithmetic (算术与模拟)/LC-0008 - String to Integer (atoi)",
+      "to": "03 - 整数运算与数位处理 (Arithmetic)/02 - 字符串解析与大整数乘法/01 - LC-0008 - String to Integer (atoi)",
+      "note": "原样迁移"
+    },
+    {
+      "from": "arithmetic (算术与模拟)/LC-0043 - Multiply Strings",
+      "to": "03 - 整数运算与数位处理 (Arithmetic)/02 - 字符串解析与大整数乘法/02 - LC-0043 - Multiply Strings",
+      "note": "原样迁移"
+    },
+    {
+      "from": "matrix (矩阵)/LC-3195 - Find the Minimum Area to Cover All Ones I",
+      "to": "04 - 坐标几何与空间计数 (Geometry)/01 - Bounding Box 与矩形交集/01 - LC-3195 - Find the Minimum Area to Cover All Ones I",
+      "note": "原样迁移"
+    },
+    {
+      "from": "geometry (几何)/NC - Detect Squares",
+      "to": "04 - 坐标几何与空间计数 (Geometry)/02 - 坐标 Hash Map 与正方形计数/01 - LC-2013 - Detect Squares",
+      "note": "NC 原地升格为 LC-2013；note.md + 原始 problem.pdf/problem_dark.pdf 全部保留且未被覆盖"
+    }
+  ],
+  "created": [
+    {
+      "path": "02 - 矩阵变换与状态模拟 (Matrix Transformation)/02 - 原地标记与同步状态更新/02 - LC-0289 - Game of Life",
+      "note": "第一轮新增"
+    },
+    {
+      "path": "03 - 整数运算与数位处理 (Arithmetic)/01 - 数位进位与整数反转/02 - LC-0007 - Reverse Integer",
+      "note": "第一轮新增"
+    },
+    {
+      "path": "04 - 坐标几何与空间计数 (Geometry)/01 - Bounding Box 与矩形交集/02 - LC-0223 - Rectangle Area",
+      "note": "第一轮新增"
+    },
+    {
+      "path": "04 - 坐标几何与空间计数 (Geometry)/03 - 斜率归一化与共线计数/01 - LC-0149 - Max Points on a Line",
+      "note": "第二轮新增"
+    },
+    {
+      "path": "02 - 矩阵变换与状态模拟 (Matrix Transformation)/03 - 多轮矩阵消除与重力模拟/02 - LC-1861 - Rotating the Box",
+      "note": "第二轮新增"
+    },
+    {
+      "path": "03 - 整数运算与数位处理 (Arithmetic)/04 - 筛法与素数计数/01 - LC-0204 - Count Primes",
+      "note": "第二轮新增"
+    }
+  ],
+  "cross_topic_index_only": [
+    {
+      "path": "02 - 矩阵变换与状态模拟 (Matrix Transformation)/02 - 原地标记与同步状态更新/01 - LC-0073 - Set Matrix Zeroes (学习索引 · 实体在 01-arrays-hashing)",
+      "entity": "01-arrays-hashing (数组、哈希表)/04 - Array Index Mapping 与 In-place Marking/05 - LC-0073 - Set Matrix Zeroes",
+      "note": "仓库已有且带 note.md ⟹ 按指令第七节规则 2 只建引用"
+    },
+    {
+      "path": "03 - 整数运算与数位处理 (Arithmetic)/03 - Fast Exponentiation 平方快速幂/01 - LC-0050 - Pow(x, n) (学习索引 · 实体在 99-advanced)",
+      "entity": "99-advanced (进阶专题)/divide-and-conquer (分治)/LC-0050 - Pow(x, n)",
+      "note": "仓库已有，且带 note.md 和 5 条 practice 复习记录 ⟹ 实体留原处"
+    }
+  ],
+  "emptied_and_removed_dirs": [
+    "matrix (矩阵)",
+    "arithmetic (算术与模拟)",
+    "geometry (几何)"
+  ],
+  "untouched": [
+    "utils/ListNode.py（无 import 依赖，按指令保持原位置）",
+    "instructions.md"
+  ]
+}

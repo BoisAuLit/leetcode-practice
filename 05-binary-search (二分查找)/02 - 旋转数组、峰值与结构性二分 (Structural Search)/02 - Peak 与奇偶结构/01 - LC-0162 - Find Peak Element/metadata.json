@@ -1,0 +1,10 @@
+{
+  "id": "LC-0162",
+  "path": "05-binary-search (二分查找)/02 - 旋转数组、峰值与结构性二分 (Structural Search)/02 - Peak 与奇偶结构/01 - LC-0162 - Find Peak Element",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-peak-element/",
+    "neetcode": null
+  },
+  "practice": []
+}

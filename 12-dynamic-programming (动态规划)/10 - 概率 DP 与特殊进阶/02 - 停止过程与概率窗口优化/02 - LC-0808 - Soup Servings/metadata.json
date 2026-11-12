@@ -1,0 +1,10 @@
+{
+  "id": "LC-0808",
+  "path": "12-dynamic-programming (动态规划)/10 - 概率 DP 与特殊进阶/02 - 停止过程与概率窗口优化/02 - LC-0808 - Soup Servings",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/soup-servings/",
+    "neetcode": null
+  },
+  "practice": []
+}

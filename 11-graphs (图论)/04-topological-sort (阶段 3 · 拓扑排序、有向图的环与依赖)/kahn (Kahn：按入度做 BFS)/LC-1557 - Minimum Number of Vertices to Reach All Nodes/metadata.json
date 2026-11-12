@@ -1,0 +1,10 @@
+{
+  "id": "LC-1557",
+  "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/kahn (Kahn：按入度做 BFS)/LC-1557 - Minimum Number of Vertices to Reach All Nodes",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-number-of-vertices-to-reach-all-nodes/",
+    "neetcode": null
+  },
+  "practice": []
+}

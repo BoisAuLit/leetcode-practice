@@ -1,0 +1,21 @@
+{
+  "id": "LC-1481",
+  "path": "13-greedy (贪心)/03 - 排序贪心、频率与资源分配/01 - 按收益与成本优先级选择/02 - LC-1481 - Least Number of Unique Integers after K Removals",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-10-03",
+      "sticking_point": "",
+      "result": "🟡"
+    },
+    {
+      "date": "2026-11-03",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

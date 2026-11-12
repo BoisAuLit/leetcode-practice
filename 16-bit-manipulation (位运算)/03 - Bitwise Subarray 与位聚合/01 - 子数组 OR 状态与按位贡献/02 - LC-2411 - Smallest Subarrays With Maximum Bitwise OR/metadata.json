@@ -1,0 +1,10 @@
+{
+  "id": "LC-2411",
+  "path": "16-bit-manipulation (位运算)/03 - Bitwise Subarray 与位聚合/01 - 子数组 OR 状态与按位贡献/02 - LC-2411 - Smallest Subarrays With Maximum Bitwise OR",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/smallest-subarrays-with-maximum-bitwise-or/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "LC-0032",
+  "path": "04-stack-queue (栈、队列)/01 - 基础栈、括号与消除 (Stack Fundamentals)/01 - 括号匹配、修复与有效区间/03 - LC-0032 - Longest Valid Parentheses",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/longest-valid-parentheses/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-11-04",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0143",
+  "path": "06-linked-list (链表)/02 - 双指针、固定间距与链表中点/03 - 中点、反转与双端重组/02 - LC-0143 - Reorder List",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/reorder-list/",
+    "neetcode": null
+  },
+  "practice": []
+}

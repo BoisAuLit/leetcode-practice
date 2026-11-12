@@ -1,0 +1,16 @@
+{
+  "id": "LC-0328",
+  "path": "06-linked-list (链表)/05 - 链表分区、重排与分段操作/01 - 稳定分区与交错重排/02 - LC-0328 - Odd Even Linked List",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/odd-even-linked-list/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-10-04",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

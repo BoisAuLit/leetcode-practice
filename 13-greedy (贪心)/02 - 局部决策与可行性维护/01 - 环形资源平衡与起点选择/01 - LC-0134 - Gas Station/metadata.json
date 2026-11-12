@@ -1,0 +1,21 @@
+{
+  "id": "LC-0134",
+  "path": "13-greedy (贪心)/02 - 局部决策与可行性维护/01 - 环形资源平衡与起点选择/01 - LC-0134 - Gas Station",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/gas-station/",
+    "neetcode": "https://neetcode.io/problems/gas-station/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-09-28",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-10-02",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-3439",
+  "path": "03-sliding-window (滑动窗口)/06 - 高阶窗口组合与问题转化 (Advanced Windows)/03 - 连续空隙的定长窗口/01 - LC-3439 - Reschedule Meetings for Maximum Free Time I",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/reschedule-meetings-for-maximum-free-time-i/",
+    "neetcode": null
+  },
+  "practice": []
+}

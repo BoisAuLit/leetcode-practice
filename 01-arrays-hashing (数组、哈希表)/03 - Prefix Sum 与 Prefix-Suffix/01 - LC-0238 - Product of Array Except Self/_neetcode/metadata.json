@@ -1,0 +1,10 @@
+{
+  "id": "NC-products-of-array-discluding-self",
+  "path": "01-arrays-hashing (数组、哈希表)/prefix-sum (前缀和)/NC - Products of Array Except Self",
+  "difficulty": "M",
+  "link": {
+    "leetcode": null,
+    "neetcode": "https://neetcode.io/problems/products-of-array-discluding-self/question?list=neetcode150"
+  },
+  "practice": []
+}

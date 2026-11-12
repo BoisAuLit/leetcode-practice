@@ -1,0 +1,10 @@
+{
+  "id": "LC-0149",
+  "path": "15-math-geometry (数学、几何)/04 - 坐标几何与空间计数 (Geometry)/03 - 斜率归一化与共线计数/01 - LC-0149 - Max Points on a Line",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/max-points-on-a-line/",
+    "neetcode": null
+  },
+  "practice": []
+}

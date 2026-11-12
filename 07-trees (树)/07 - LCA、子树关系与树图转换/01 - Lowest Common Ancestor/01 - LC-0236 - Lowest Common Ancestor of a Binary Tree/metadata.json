@@ -1,0 +1,10 @@
+{
+  "id": "LC-0236",
+  "path": "07-trees (树)/07 - LCA、子树关系与树图转换/01 - Lowest Common Ancestor/01 - LC-0236 - Lowest Common Ancestor of a Binary Tree",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+    "neetcode": null
+  },
+  "practice": []
+}

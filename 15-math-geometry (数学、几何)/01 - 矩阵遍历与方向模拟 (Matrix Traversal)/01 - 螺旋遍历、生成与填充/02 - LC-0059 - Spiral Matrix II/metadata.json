@@ -1,0 +1,10 @@
+{
+  "id": "LC-0059",
+  "path": "15-math-geometry (数学、几何)/01 - 矩阵遍历与方向模拟 (Matrix Traversal)/01 - 螺旋遍历、生成与填充/02 - LC-0059 - Spiral Matrix II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/spiral-matrix-ii/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0187",
+  "path": "03-sliding-window (滑动窗口)/01 - 定长窗口与频率匹配 (Fixed Window)/03 - 固定窗口字符串去重/01 - LC-0187 - Repeated DNA Sequences",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/repeated-dna-sequences/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": "LC-0250",
+  "path": "07-trees (树)/08 - 低优先级与特殊题型存档/01 - 特殊子树性质与叶节点统计/01 - LC-0250 - Count Univalue Subtrees",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/count-univalue-subtrees/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-09-27",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-29",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

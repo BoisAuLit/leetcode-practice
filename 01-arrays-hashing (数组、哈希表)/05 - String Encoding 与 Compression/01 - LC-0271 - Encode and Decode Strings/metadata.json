@@ -1,0 +1,10 @@
+{
+  "id": "LC-0271",
+  "path": "01-arrays-hashing (数组、哈希表)/05 - String Encoding 与 Compression/01 - LC-0271 - Encode and Decode Strings",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/encode-and-decode-strings/",
+    "neetcode": "https://neetcode.io/problems/string-encode-and-decode/question?list=neetcode150"
+  },
+  "practice": []
+}

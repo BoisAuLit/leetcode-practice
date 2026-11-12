@@ -1,0 +1,10 @@
+{
+  "id": "LC-2290",
+  "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/zero-one-bfs (0-1 BFS：双端队列，0 放队头 1 放队尾)/LC-2290 - Minimum Obstacle Removal to Reach Corner",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/",
+    "neetcode": null
+  },
+  "practice": []
+}

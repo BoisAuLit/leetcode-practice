@@ -1,0 +1,10 @@
+{
+  "id": "LC-0725",
+  "path": "06-linked-list (链表)/05 - 链表分区、重排与分段操作/03 - 链表旋转与分段拆分/02 - LC-0725 - Split Linked List in Parts",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/split-linked-list-in-parts/",
+    "neetcode": null
+  },
+  "practice": []
+}

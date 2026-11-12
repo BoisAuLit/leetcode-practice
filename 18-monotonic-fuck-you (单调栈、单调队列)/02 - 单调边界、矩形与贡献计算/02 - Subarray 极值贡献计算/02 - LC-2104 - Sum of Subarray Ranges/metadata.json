@@ -1,0 +1,10 @@
+{
+  "id": "LC-2104",
+  "path": "18-monotonic-fuck-you (单调栈、单调队列)/02 - 单调边界、矩形与贡献计算/02 - Subarray 极值贡献计算/02 - LC-2104 - Sum of Subarray Ranges",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/sum-of-subarray-ranges/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,6074 @@
+[
+  {
+    "id": "NC-max-water-container",
+    "path": "02-two-pointers (双指针)/opposite-ends (对撞指针)/NC - Container With Most Water",
+    "title": "Container With Most Water",
+    "info": {
+      "signal": "两线围最大面积",
+      "mode": "相向双指针，移动较短的一侧（短板决定高度）",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0011",
+    "path": "02-two-pointers (双指针)/opposite-ends (对撞指针)/LC-0011 - Container With Most Water",
+    "title": "Container With Most Water",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-09-13"
+    }
+  },
+  {
+    "id": "LC-1163",
+    "path": "02-two-pointers (双指针)/general/LC-1163 - Last Substring in Lexicographical Order",
+    "title": "Last Substring in Lexicographical Order",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-17"
+    }
+  },
+  {
+    "id": "LC-3403",
+    "path": "02-two-pointers (双指针)/general/LC-3403 - Find the Lexicographically Largest String From the Box I",
+    "title": "Find the Lexicographically Largest String From the Box I",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-17"
+    }
+  },
+  {
+    "id": "LC-1695",
+    "path": "02-two-pointers (双指针)/general/LC-1695 - Maximum Erasure Value",
+    "title": "Maximum Erasure Value",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-22"
+    }
+  },
+  {
+    "id": "LC-0392",
+    "path": "02-two-pointers (双指针)/string-two-pointers (字符串双指针)/LC-0392 - Is Subsequence",
+    "title": "Is Subsequence",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-28"
+    }
+  },
+  {
+    "id": "LC-1768",
+    "path": "02-two-pointers (双指针)/string-two-pointers (字符串双指针)/LC-1768 - Merge Strings Alternately",
+    "title": "Merge Strings Alternately",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-23"
+    }
+  },
+  {
+    "id": "LC-0917",
+    "path": "02-two-pointers (双指针)/string-two-pointers (字符串双指针)/LC-0917 - Reverse Only Letters",
+    "title": "Reverse Only Letters",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-12"
+    }
+  },
+  {
+    "id": "LC-0345",
+    "path": "02-two-pointers (双指针)/string-two-pointers (字符串双指针)/LC-0345 - Reverse Vowels of a String",
+    "title": "Reverse Vowels of a String",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-27"
+    }
+  },
+  {
+    "id": "LC-0031",
+    "path": "02-two-pointers (双指针)/in-place-array (原地数组操作)/LC-0031 - Next Permutation",
+    "title": "Next Permutation",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-09-29"
+    }
+  },
+  {
+    "id": "LC-0026",
+    "path": "02-two-pointers (双指针)/in-place-array (原地数组操作)/LC-0026 - Remove Duplicates from Sorted Array",
+    "title": "Remove Duplicates from Sorted Array",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-21"
+    }
+  },
+  {
+    "id": "LC-0027",
+    "path": "02-two-pointers (双指针)/in-place-array (原地数组操作)/LC-0027 - Remove Element",
+    "title": "Remove Element",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-10"
+    }
+  },
+  {
+    "id": "LC-0977",
+    "path": "02-two-pointers (双指针)/in-place-array (原地数组操作)/LC-0977 - Squares of a Sorted Array",
+    "title": "Squares of a Sorted Array",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-18"
+    }
+  },
+  {
+    "id": "LC-0088",
+    "path": "02-two-pointers (双指针)/in-place-array (原地数组操作)/LC-0088 - Merge Sorted Array",
+    "title": "Merge Sorted Array",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-17"
+    }
+  },
+  {
+    "id": "LC-0075",
+    "path": "02-two-pointers (双指针)/in-place-array (原地数组操作)/LC-0075 - Sort Colors",
+    "title": "Sort Colors",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-06-16"
+    }
+  },
+  {
+    "id": "LC-0189",
+    "path": "02-two-pointers (双指针)/in-place-array (原地数组操作)/LC-0189 - Rotate Array",
+    "title": "Rotate Array",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-02"
+    }
+  },
+  {
+    "id": "LC-0283",
+    "path": "02-two-pointers (双指针)/in-place-array (原地数组操作)/LC-0283 - Move Zeroes",
+    "title": "Move Zeroes",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-30"
+    }
+  },
+  {
+    "id": "LC-0680",
+    "path": "02-two-pointers (双指针)/palindrome (回文)/LC-0680 - Valid Palindrome II",
+    "title": "Valid Palindrome II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-05"
+    }
+  },
+  {
+    "id": "NC-is-palindrome",
+    "path": "02-two-pointers (双指针)/palindrome (回文)/NC - Valid Palindrome",
+    "title": "Valid Palindrome",
+    "info": {
+      "signal": "回文判定忽略非字母数字",
+      "mode": "首尾相向双指针 + isalnum 跳过",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0125",
+    "path": "02-two-pointers (双指针)/palindrome (回文)/LC-0125 - Valid Palindrome",
+    "title": "Valid Palindrome",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-08"
+    }
+  },
+  {
+    "id": "LC-0016",
+    "path": "02-two-pointers (双指针)/k-sum (K 数之和)/three-sum (三数之和)/LC-0016 - 3Sum Closest",
+    "title": "3Sum Closest",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-11"
+    }
+  },
+  {
+    "id": "NC-three-integer-sum",
+    "path": "02-two-pointers (双指针)/k-sum (K 数之和)/three-sum (三数之和)/NC - 3Sum",
+    "title": "3Sum",
+    "info": {
+      "signal": "三数之和去重",
+      "mode": "排序 + 固定一个 + 相向双指针，跳过重复值",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0259",
+    "path": "02-two-pointers (双指针)/k-sum (K 数之和)/three-sum (三数之和)/LC-0259 - 3Sum Smaller",
+    "title": "3Sum Smaller",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-12"
+    }
+  },
+  {
+    "id": "LC-0015",
+    "path": "02-two-pointers (双指针)/k-sum (K 数之和)/three-sum (三数之和)/LC-0015 - 3Sum",
+    "title": "3Sum",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-07-07"
+    }
+  },
+  {
+    "id": "NC-two-integer-sum-ii",
+    "path": "02-two-pointers (双指针)/k-sum (K 数之和)/two-sum (两数之和)/NC - Two Integer Sum II",
+    "title": "Two Integer Sum II",
+    "info": {
+      "signal": "有序数组两数之和",
+      "mode": "首尾相向双指针：和大移右、和小移左",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0167",
+    "path": "02-two-pointers (双指针)/k-sum (K 数之和)/two-sum (两数之和)/LC-0167 - Two Sum II - Input Array Is Sorted",
+    "title": "Two Sum II - Input Array Is Sorted",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-03"
+    }
+  },
+  {
+    "id": "LC-0001",
+    "path": "02-two-pointers (双指针)/k-sum (K 数之和)/two-sum (两数之和)/LC-0001 - Two Sum",
+    "title": "Two Sum",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-03"
+    }
+  },
+  {
+    "id": "LC-0170",
+    "path": "02-two-pointers (双指针)/k-sum (K 数之和)/two-sum (两数之和)/LC-0170 - Two Sum III - Data structure design",
+    "title": "Two Sum III - Data structure design",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-19"
+    }
+  },
+  {
+    "id": "LC-0018",
+    "path": "02-two-pointers (双指针)/k-sum (K 数之和)/four-sum (四数之和)/LC-0018 - 4Sum",
+    "title": "4Sum",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-15"
+    }
+  },
+  {
+    "id": "LC-1047",
+    "path": "04-stack-queue (栈、队列)/stack (栈)/LC-1047 - Remove All Adjacent Duplicates In String",
+    "title": "Remove All Adjacent Duplicates In String",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-06"
+    }
+  },
+  {
+    "id": "LC-1249",
+    "path": "04-stack-queue (栈、队列)/stack (栈)/LC-1249 - Minimum Remove to Make Valid Parentheses",
+    "title": "Minimum Remove to Make Valid Parentheses",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-06-15"
+    }
+  },
+  {
+    "id": "LC-0227",
+    "path": "04-stack-queue (栈、队列)/stack (栈)/LC-0227 - Basic Calculator II",
+    "title": "Basic Calculator II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-06-15"
+    }
+  },
+  {
+    "id": "LC-0071",
+    "path": "04-stack-queue (栈、队列)/stack (栈)/LC-0071 - Simplify Path",
+    "title": "Simplify Path",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-06-15"
+    }
+  },
+  {
+    "id": "LC-0032",
+    "path": "04-stack-queue (栈、队列)/stack (栈)/LC-0032 - Longest Valid Parentheses",
+    "title": "Longest Valid Parentheses",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-07-11"
+    }
+  },
+  {
+    "id": "LC-1717",
+    "path": "04-stack-queue (栈、队列)/stack (栈)/LC-1717 - Maximum Score From Removing Substrings",
+    "title": "Maximum Score From Removing Substrings",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-07-11"
+    }
+  },
+  {
+    "id": "LC-0736",
+    "path": "04-stack-queue (栈、队列)/stack (栈)/LC-0736 - Parse Lisp Expression",
+    "title": "Parse Lisp Expression",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0225",
+    "path": "04-stack-queue (栈、队列)/stack (栈)/LC-0225 - Implement Stack using Queues",
+    "title": "Implement Stack using Queues",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-19"
+    }
+  },
+  {
+    "id": "LC-0341",
+    "path": "04-stack-queue (栈、队列)/stack (栈)/LC-0341 - Flatten Nested List Iterator",
+    "title": "Flatten Nested List Iterator",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0155",
+    "path": "04-stack-queue (栈、队列)/stack (栈)/LC-0155 - Min Stack",
+    "title": "Min Stack",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-06"
+    }
+  },
+  {
+    "id": "LC-0394",
+    "path": "04-stack-queue (栈、队列)/stack (栈)/LC-0394 - Decode String",
+    "title": "Decode String",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-06"
+    }
+  },
+  {
+    "id": "LC-0150",
+    "path": "04-stack-queue (栈、队列)/stack (栈)/LC-0150 - Evaluate Reverse Polish Notation",
+    "title": "Evaluate Reverse Polish Notation",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-06"
+    }
+  },
+  {
+    "id": "NC-evaluate-reverse-polish-notation",
+    "path": "04-stack-queue (栈、队列)/stack (栈)/NC - Evaluate Reverse Polish Notation",
+    "title": "Evaluate Reverse Polish Notation",
+    "info": {
+      "signal": "后缀表达式求值",
+      "mode": "栈：数字压栈，运算符弹两个算完压回",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-1021",
+    "path": "04-stack-queue (栈、队列)/stack (栈)/LC-1021 - Remove Outermost Parentheses",
+    "title": "Remove Outermost Parentheses",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-25"
+    }
+  },
+  {
+    "id": "NC-minimum-stack",
+    "path": "04-stack-queue (栈、队列)/stack (栈)/NC - Min Stack",
+    "title": "Min Stack",
+    "info": {
+      "signal": "O(1) getMin",
+      "mode": "双栈：主栈 + 同步的\"当前最小\"栈",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0224",
+    "path": "04-stack-queue (栈、队列)/stack (栈)/LC-0224 - Basic Calculator",
+    "title": "Basic Calculator",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0020",
+    "path": "04-stack-queue (栈、队列)/stack (栈)/LC-0020 - Valid Parentheses",
+    "title": "Valid Parentheses",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-06"
+    }
+  },
+  {
+    "id": "LC-2327",
+    "path": "04-stack-queue (栈、队列)/deque (双端队列)/LC-2327 - Number of People Aware of a Secret",
+    "title": "Number of People Aware of a Secret",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-07-11"
+    }
+  },
+  {
+    "id": "LC-0279",
+    "path": "04-stack-queue (栈、队列)/queue-bfs (队列与 BFS)/LC-0279 - Perfect Squares",
+    "title": "Perfect Squares",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-06"
+    }
+  },
+  {
+    "id": "LC-0286",
+    "path": "04-stack-queue (栈、队列)/queue-bfs (队列与 BFS)/LC-0286 - Walls and Gates",
+    "title": "Walls and Gates",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-06"
+    }
+  },
+  {
+    "id": "LC-0733",
+    "path": "04-stack-queue (栈、队列)/queue-bfs (队列与 BFS)/LC-0733 - Flood Fill",
+    "title": "Flood Fill",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-06"
+    }
+  },
+  {
+    "id": "LC-0346",
+    "path": "04-stack-queue (栈、队列)/queue (队列)/LC-0346 - Moving Average from Data Stream",
+    "title": "Moving Average from Data Stream",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-06"
+    }
+  },
+  {
+    "id": "LC-0622",
+    "path": "04-stack-queue (栈、队列)/queue (队列)/LC-0622 - Design Circular Queue",
+    "title": "Design Circular Queue",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-06"
+    }
+  },
+  {
+    "id": "LC-0362",
+    "path": "17-design (设计)/rate-and-counter (计数与限流)/LC-0362 - Design Hit Counter",
+    "title": "Design Hit Counter",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-03-02"
+    }
+  },
+  {
+    "id": "LC-0933",
+    "path": "17-design (设计)/rate-and-counter (计数与限流)/LC-0933 - Number of Recent Calls",
+    "title": "Number of Recent Calls",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-27"
+    }
+  },
+  {
+    "id": "LC-0359",
+    "path": "17-design (设计)/rate-and-counter (计数与限流)/LC-0359 - Logger Rate Limiter",
+    "title": "Logger Rate Limiter",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-02"
+    }
+  },
+  {
+    "id": "LC-0146",
+    "path": "17-design (设计)/cache (缓存)/LC-0146 - LRU Cache",
+    "title": "LRU Cache",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-01-26"
+    }
+  },
+  {
+    "id": "LC-0580",
+    "path": "17-design (设计)/randomized (随机化)/LC-0580 - Count Student Number in Departments",
+    "title": "Count Student Number in Departments",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-02-19"
+    }
+  },
+  {
+    "id": "LC-0348",
+    "path": "17-design (设计)/general/LC-0348 - Design Tic-Tac-Toe",
+    "title": "Design Tic-Tac-Toe",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-01-28"
+    }
+  },
+  {
+    "id": "LC-0157",
+    "path": "17-design (设计)/general/LC-0157 - Read N Characters Given Read4",
+    "title": "Read N Characters Given Read4",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-19"
+    }
+  },
+  {
+    "id": "LC-0705",
+    "path": "17-design (设计)/hash-structures (哈希结构设计)/LC-0705 - Design HashSet",
+    "title": "Design HashSet",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-06"
+    }
+  },
+  {
+    "id": "LC-0380",
+    "path": "17-design (设计)/hash-structures (哈希结构设计)/LC-0380 - Insert Delete GetRandom O(1)",
+    "title": "Insert Delete GetRandom O(1)",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-02-18"
+    }
+  },
+  {
+    "id": "LC-0706",
+    "path": "17-design (设计)/hash-structures (哈希结构设计)/LC-0706 - Design HashMap",
+    "title": "Design HashMap",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-06"
+    }
+  },
+  {
+    "id": "LC-1570",
+    "path": "17-design (设计)/hash-structures (哈希结构设计)/LC-1570 - Dot Product of Two Sparse Vectors",
+    "title": "Dot Product of Two Sparse Vectors",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-02-20"
+    }
+  },
+  {
+    "id": "NC-products-of-array-discluding-self",
+    "path": "01-arrays-hashing (数组、哈希表)/prefix-sum (前缀和)/NC - Products of Array Except Self",
+    "title": "Products of Array Except Self",
+    "info": {
+      "signal": "每个位置排除自己的乘积、禁用除法",
+      "mode": "前缀积 × 后缀积（两趟）",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0724",
+    "path": "01-arrays-hashing (数组、哈希表)/prefix-sum (前缀和)/LC-0724 - Find Pivot Index",
+    "title": "Find Pivot Index",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-24"
+    }
+  },
+  {
+    "id": "LC-3440",
+    "path": "01-arrays-hashing (数组、哈希表)/prefix-sum (前缀和)/LC-3440 - Reschedule Meetings for Maximum Free Time II",
+    "title": "Reschedule Meetings for Maximum Free Time II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-29"
+    }
+  },
+  {
+    "id": "LC-0238",
+    "path": "01-arrays-hashing (数组、哈希表)/prefix-sum (前缀和)/LC-0238 - Product of Array Except Self",
+    "title": "Product of Array Except Self",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-04-01"
+    }
+  },
+  {
+    "id": "LC-0560",
+    "path": "01-arrays-hashing (数组、哈希表)/prefix-sum (前缀和)/LC-0560 - Subarray Sum Equals K",
+    "title": "Subarray Sum Equals K",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-05"
+    }
+  },
+  {
+    "id": "LC-0443",
+    "path": "01-arrays-hashing (数组、哈希表)/general/LC-0443 - String Compression",
+    "title": "String Compression",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-08"
+    }
+  },
+  {
+    "id": "LC-2048",
+    "path": "01-arrays-hashing (数组、哈希表)/general/LC-2048 - Next Greater Numerically Balanced Number",
+    "title": "Next Greater Numerically Balanced Number",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-01-08"
+    }
+  },
+  {
+    "id": "LC-0287",
+    "path": "01-arrays-hashing (数组、哈希表)/general/LC-0287 - Find the Duplicate Number",
+    "title": "Find the Duplicate Number",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-09-06"
+    }
+  },
+  {
+    "id": "NC-string-encode-and-decode",
+    "path": "01-arrays-hashing (数组、哈希表)/general/NC - Encode and Decode Strings",
+    "title": "Encode and Decode Strings",
+    "info": {
+      "signal": "字符串列表编成一个串且可无歧义还原",
+      "mode": "长度前缀 + 分隔符（len#str）",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0169",
+    "path": "01-arrays-hashing (数组、哈希表)/general/LC-0169 - Majority Element",
+    "title": "Majority Element",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-17"
+    }
+  },
+  {
+    "id": "LC-3234",
+    "path": "01-arrays-hashing (数组、哈希表)/general/LC-3234 - Count the Number of Substrings With Dominant Ones",
+    "title": "Count the Number of Substrings With Dominant Ones",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-28"
+    }
+  },
+  {
+    "id": "LC-0242",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0242 - Valid Anagram",
+    "title": "Valid Anagram",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-05"
+    }
+  },
+  {
+    "id": "LC-0217",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0217 - Contains Duplicate",
+    "title": "Contains Duplicate",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-25"
+    }
+  },
+  {
+    "id": "LC-1207",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-1207 - Unique Number of Occurrences",
+    "title": "Unique Number of Occurrences",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-25"
+    }
+  },
+  {
+    "id": "LC-0383",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0383 - Ransom Note",
+    "title": "Ransom Note",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-11"
+    }
+  },
+  {
+    "id": "LC-0128",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0128 - Longest Consecutive Sequence",
+    "title": "Longest Consecutive Sequence",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-09"
+    }
+  },
+  {
+    "id": "NC-top-k-elements-in-list",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/NC - Top K Frequent Elements",
+    "title": "Top K Frequent Elements",
+    "info": {
+      "signal": "前 K 个高频",
+      "mode": "计数 + 大小为 K 的小根堆；或按频率装桶 O(n)",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-longest-consecutive-sequence",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/NC - Longest Consecutive Sequence",
+    "title": "Longest Consecutive Sequence",
+    "info": {
+      "signal": "无序数组最长连续整数段 O(n)",
+      "mode": "哈希集合，只从\"段起点\"（x-1 不在集合）向右数",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0243",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0243 - Shortest Word Distance",
+    "title": "Shortest Word Distance",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-19"
+    }
+  },
+  {
+    "id": "LC-0645",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0645 - Set Mismatch",
+    "title": "Set Mismatch",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-02-07"
+    }
+  },
+  {
+    "id": "LC-0389",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0389 - Find the Difference",
+    "title": "Find the Difference",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-28"
+    }
+  },
+  {
+    "id": "LC-0350",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0350 - Intersection of Two Arrays II",
+    "title": "Intersection of Two Arrays II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-27"
+    }
+  },
+  {
+    "id": "LC-0697",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0697 - Degree of an Array",
+    "title": "Degree of an Array",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-08"
+    }
+  },
+  {
+    "id": "LC-0409",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0409 - Longest Palindrome",
+    "title": "Longest Palindrome",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-28"
+    }
+  },
+  {
+    "id": "LC-0953",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0953 - Verifying an Alien Dictionary",
+    "title": "Verifying an Alien Dictionary",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-30"
+    }
+  },
+  {
+    "id": "LC-0266",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0266 - Palindrome Permutation",
+    "title": "Palindrome Permutation",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-24"
+    }
+  },
+  {
+    "id": "LC-0442",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0442 - Find All Duplicates in an Array",
+    "title": "Find All Duplicates in an Array",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-09-05"
+    }
+  },
+  {
+    "id": "LC-0448",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0448 - Find All Numbers Disappeared in an Array",
+    "title": "Find All Numbers Disappeared in an Array",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-09-05"
+    }
+  },
+  {
+    "id": "LC-0036",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0036 - Valid Sudoku",
+    "title": "Valid Sudoku",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-24"
+    }
+  },
+  {
+    "id": "LC-0349",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0349 - Intersection of Two Arrays",
+    "title": "Intersection of Two Arrays",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-17"
+    }
+  },
+  {
+    "id": "LC-2768",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-2768 - Number of Black Blocks",
+    "title": "Number of Black Blocks",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-28"
+    }
+  },
+  {
+    "id": "LC-0049",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0049 - Group Anagrams",
+    "title": "Group Anagrams",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-01"
+    }
+  },
+  {
+    "id": "LC-0219",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0219 - Contains Duplicate II",
+    "title": "Contains Duplicate II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-11"
+    }
+  },
+  {
+    "id": "NC-valid-sudoku",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/NC - Valid Sudoku",
+    "title": "Valid Sudoku",
+    "info": {
+      "signal": "行/列/3×3 宫无重复",
+      "mode": "三组哈希集合一次遍历，宫索引 (r//3, c//3)",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0290",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0290 - Word Pattern",
+    "title": "Word Pattern",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-25"
+    }
+  },
+  {
+    "id": "LC-0387",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0387 - First Unique Character in a String",
+    "title": "First Unique Character in a String",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-08"
+    }
+  },
+  {
+    "id": "NC-anagram-groups",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/NC - Group Anagrams",
+    "title": "Group Anagrams",
+    "info": {
+      "signal": "按\"内容等价\"分组",
+      "mode": "规范化成哈希键（排序串 / 26 位计数元组）当字典 key",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0205",
+    "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/LC-0205 - Isomorphic Strings",
+    "title": "Isomorphic Strings",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-05"
+    }
+  },
+  {
+    "id": "NC-gas-station",
+    "path": "18-monotonic-fuck-you (单调栈、单调队列)/general/NC - Gas Station",
+    "title": "Gas Station",
+    "info": {
+      "signal": "环路可完成的起点",
+      "mode": "total ≥ 0 必有解；tank 变负则起点跳到失败点下一站",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0316",
+    "path": "18-monotonic-fuck-you (单调栈、单调队列)/monotonic-stack (单调栈)/LC-0316 - Remove Duplicate Letters",
+    "title": "Remove Duplicate Letters",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-09-07"
+    }
+  },
+  {
+    "id": "NC-largest-rectangle-in-histogram",
+    "path": "18-monotonic-fuck-you (单调栈、单调队列)/monotonic-stack (单调栈)/NC - Largest Rectangle In Histogram",
+    "title": "Largest Rectangle In Histogram",
+    "info": {
+      "signal": "直方图最大矩形",
+      "mode": "单调递增栈，弹出时以弹出高度结算宽度",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-06-15"
+    }
+  },
+  {
+    "id": "NC-car-fleet",
+    "path": "18-monotonic-fuck-you (单调栈、单调队列)/monotonic-stack (单调栈)/NC - Car Fleet",
+    "title": "Car Fleet",
+    "info": {
+      "signal": "车队合并数",
+      "mode": "按起点降序，算到达时间，后车更快则并入前车（单调栈）",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-2104",
+    "path": "18-monotonic-fuck-you (单调栈、单调队列)/monotonic-stack (单调栈)/LC-2104 - Sum of Subarray Ranges",
+    "title": "Sum of Subarray Ranges",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-01-31"
+    }
+  },
+  {
+    "id": "LC-0496",
+    "path": "18-monotonic-fuck-you (单调栈、单调队列)/monotonic-stack (单调栈)/LC-0496 - Next Greater Element I",
+    "title": "Next Greater Element I",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-12"
+    }
+  },
+  {
+    "id": "LC-0739",
+    "path": "18-monotonic-fuck-you (单调栈、单调队列)/monotonic-stack (单调栈)/LC-0739 - Daily Temperatures",
+    "title": "Daily Temperatures",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-06"
+    }
+  },
+  {
+    "id": "LC-0042",
+    "path": "18-monotonic-fuck-you (单调栈、单调队列)/monotonic-stack (单调栈)/LC-0042 - Trapping Rain Water",
+    "title": "Trapping Rain Water",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-07-11"
+    }
+  },
+  {
+    "id": "LC-0402",
+    "path": "18-monotonic-fuck-you (单调栈、单调队列)/monotonic-stack (单调栈)/LC-0402 - Remove K Digits",
+    "title": "Remove K Digits",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-09-09"
+    }
+  },
+  {
+    "id": "LC-1762",
+    "path": "18-monotonic-fuck-you (单调栈、单调队列)/monotonic-stack (单调栈)/LC-1762 - Buildings With an Ocean View",
+    "title": "Buildings With an Ocean View",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-06-15"
+    }
+  },
+  {
+    "id": "LC-0239",
+    "path": "18-monotonic-fuck-you (单调栈、单调队列)/monotonic-queue (单调队列)/LC-0239 - Sliding Window Maximum",
+    "title": "Sliding Window Maximum",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-10-27"
+    }
+  },
+  {
+    "id": "LC-0270",
+    "path": "05-binary-search (二分查找)/peak-and-closest (峰值与最近元素)/LC-0270 - Closest Binary Search Tree Value",
+    "title": "Closest Binary Search Tree Value",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-10-02"
+    }
+  },
+  {
+    "id": "LC-0162",
+    "path": "05-binary-search (二分查找)/peak-and-closest (峰值与最近元素)/LC-0162 - Find Peak Element",
+    "title": "Find Peak Element",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-03-04"
+    }
+  },
+  {
+    "id": "LC-0033",
+    "path": "05-binary-search (二分查找)/rotated-array (旋转数组)/LC-0033 - Search in Rotated Sorted Array",
+    "title": "Search in Rotated Sorted Array",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-18"
+    }
+  },
+  {
+    "id": "NC-find-target-in-rotated-sorted-array",
+    "path": "05-binary-search (二分查找)/rotated-array (旋转数组)/NC - Search in Rotated Sorted Array",
+    "title": "Search in Rotated Sorted Array",
+    "info": {
+      "signal": "旋转有序数组查目标",
+      "mode": "二分，先判 mid 在哪个有序段再收缩",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-find-minimum-in-rotated-sorted-array",
+    "path": "05-binary-search (二分查找)/rotated-array (旋转数组)/NC - Find Minimum in Rotated Sorted Array",
+    "title": "Find Minimum in Rotated Sorted Array",
+    "info": {
+      "signal": "旋转有序数组最小值",
+      "mode": "二分，比较 mid 与 right 判断落在哪段",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0153",
+    "path": "05-binary-search (二分查找)/rotated-array (旋转数组)/LC-0153 - Find Minimum in Rotated Sorted Array",
+    "title": "Find Minimum in Rotated Sorted Array",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-27"
+    }
+  },
+  {
+    "id": "NC-median-of-two-sorted-arrays",
+    "path": "05-binary-search (二分查找)/two-arrays (双数组)/NC - Median of Two Sorted Arrays",
+    "title": "Median of Two Sorted Arrays",
+    "info": {
+      "signal": "两有序数组中位数 O(log)",
+      "mode": "对较短数组二分切分点，左半最大 ≤ 右半最小",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-3346",
+    "path": "05-binary-search (二分查找)/answer-space (二分答案)/LC-3346 - Maximum Frequency of an Element After Performing Operations I",
+    "title": "Maximum Frequency of an Element After Performing Operations I",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-01-04"
+    }
+  },
+  {
+    "id": "LC-2616",
+    "path": "05-binary-search (二分查找)/answer-space (二分答案)/LC-2616 - Minimize the Maximum Difference of Pairs",
+    "title": "Minimize the Maximum Difference of Pairs",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-18"
+    }
+  },
+  {
+    "id": "NC-eating-bananas",
+    "path": "05-binary-search (二分查找)/answer-space (二分答案)/NC - Koko Eating Bananas",
+    "title": "Koko Eating Bananas",
+    "info": {
+      "signal": "满足时限的最小速度",
+      "mode": "答案二分（可行性单调）",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-1539",
+    "path": "05-binary-search (二分查找)/answer-space (二分答案)/LC-1539 - Kth Missing Positive Number",
+    "title": "Kth Missing Positive Number",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-18"
+    }
+  },
+  {
+    "id": "LC-0611",
+    "path": "05-binary-search (二分查找)/answer-space (二分答案)/LC-0611 - Valid Triangle Number",
+    "title": "Valid Triangle Number",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-13"
+    }
+  },
+  {
+    "id": "LC-1802",
+    "path": "05-binary-search (二分查找)/answer-space (二分答案)/LC-1802 - Maximum Value at a Given Index in a Bounded Array",
+    "title": "Maximum Value at a Given Index in a Bounded Array",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-17"
+    }
+  },
+  {
+    "id": "LC-0875",
+    "path": "05-binary-search (二分查找)/answer-space (二分答案)/LC-0875 - Koko Eating Bananas",
+    "title": "Koko Eating Bananas",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-02-27"
+    }
+  },
+  {
+    "id": "LC-3733",
+    "path": "05-binary-search (二分查找)/answer-space (二分答案)/LC-3733 - Minimum Time to Complete All Deliveries",
+    "title": "Minimum Time to Complete All Deliveries",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-01-04"
+    }
+  },
+  {
+    "id": "LC-0069",
+    "path": "05-binary-search (二分查找)/basic-search (基础查找)/LC-0069 - Sqrt(x)",
+    "title": "Sqrt(x)",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-14"
+    }
+  },
+  {
+    "id": "LC-0278",
+    "path": "05-binary-search (二分查找)/basic-search (基础查找)/LC-0278 - First Bad Version",
+    "title": "First Bad Version",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-30"
+    }
+  },
+  {
+    "id": "LC-0034",
+    "path": "05-binary-search (二分查找)/basic-search (基础查找)/LC-0034 - Find First and Last Position of Element in Sorted Array",
+    "title": "Find First and Last Position of Element in Sorted Array",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-23"
+    }
+  },
+  {
+    "id": "LC-0367",
+    "path": "05-binary-search (二分查找)/basic-search (基础查找)/LC-0367 - Valid Perfect Square",
+    "title": "Valid Perfect Square",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-10-04"
+    }
+  },
+  {
+    "id": "LC-0374",
+    "path": "05-binary-search (二分查找)/basic-search (基础查找)/LC-0374 - Guess Number Higher or Lower",
+    "title": "Guess Number Higher or Lower",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-27"
+    }
+  },
+  {
+    "id": "LC-0540",
+    "path": "05-binary-search (二分查找)/basic-search (基础查找)/LC-0540 - Single Element in a Sorted Array",
+    "title": "Single Element in a Sorted Array",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-10-04"
+    }
+  },
+  {
+    "id": "LC-0702",
+    "path": "05-binary-search (二分查找)/basic-search (基础查找)/LC-0702 - Search in a Sorted Array of Unknown Size",
+    "title": "Search in a Sorted Array of Unknown Size",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-10-03"
+    }
+  },
+  {
+    "id": "LC-0035",
+    "path": "05-binary-search (二分查找)/basic-search (基础查找)/LC-0035 - Search Insert Position",
+    "title": "Search Insert Position",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-13"
+    }
+  },
+  {
+    "id": "LC-0704",
+    "path": "05-binary-search (二分查找)/basic-search (基础查找)/LC-0704 - Binary Search",
+    "title": "Binary Search",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-20"
+    }
+  },
+  {
+    "id": "LC-0981",
+    "path": "05-binary-search (二分查找)/design (二分查找设计)/LC-0981 - Time Based Key-Value Store",
+    "title": "Time Based Key-Value Store",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-20"
+    }
+  },
+  {
+    "id": "NC-time-based-key-value-store",
+    "path": "05-binary-search (二分查找)/design (二分查找设计)/NC - Time Based Key-Value Store",
+    "title": "Time Based Key-Value Store",
+    "info": {
+      "signal": "按时间戳取 ≤t 的最新值",
+      "mode": "每 key 时间有序列表，bisect_right − 1",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-3494",
+    "path": "99-advanced (进阶专题)/simulation (模拟)/LC-3494 - Find the Minimum Amount of Time to Brew Potions",
+    "title": "Find the Minimum Amount of Time to Brew Potions",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-02-01"
+    }
+  },
+  {
+    "id": "LC-1701",
+    "path": "99-advanced (进阶专题)/simulation (模拟)/LC-1701 - Average Waiting Time",
+    "title": "Average Waiting Time",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-01-02"
+    }
+  },
+  {
+    "id": "LC-1041",
+    "path": "99-advanced (进阶专题)/simulation (模拟)/LC-1041 - Robot Bounded In Circle",
+    "title": "Robot Bounded In Circle",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-02-24"
+    }
+  },
+  {
+    "id": "LC-0050",
+    "path": "99-advanced (进阶专题)/divide-and-conquer (分治)/LC-0050 - Pow(x, n)",
+    "title": "Pow(x, n)",
+    "info": {
+      "signal": "指数级重复操作（幂/斐波那契矩阵/重复拼接）",
+      "mode": "折半：f(n) 由 f(n//2) 平方拼出，奇数补零头，O(n) 变 O(log n)",
+      "guard": "(2, -3) -> 0.125（负指数）；(2, 0) -> 1（零指数）；(0, 5) -> 0（零底数）；(1.0000001, 2147483647) -> 应瞬间返回（专杀 O(n) 裸循环超时）",
+      "sticking_point": null,
+      "first_date": "2024-02-25"
+    }
+  },
+  {
+    "id": "LC-0014",
+    "path": "99-advanced (进阶专题)/divide-and-conquer (分治)/LC-0014 - Longest Common Prefix",
+    "title": "Longest Common Prefix",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-15"
+    }
+  },
+  {
+    "id": "LC-3479",
+    "path": "99-advanced (进阶专题)/segment-tree (线段树)/LC-3479 - Fruits Into Baskets III",
+    "title": "Fruits Into Baskets III",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-14"
+    }
+  },
+  {
+    "id": "LC-0459",
+    "path": "99-advanced (进阶专题)/rolling-hash (滚动哈希)/LC-0459 - Repeated Substring Pattern",
+    "title": "Repeated Substring Pattern",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-09-02"
+    }
+  },
+  {
+    "id": "LC-0028",
+    "path": "99-advanced (进阶专题)/rolling-hash (滚动哈希)/LC-0028 - Find the Index of the First Occurrence in a String",
+    "title": "Find the Index of the First Occurrence in a String",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-11"
+    }
+  },
+  {
+    "id": "LC-0796",
+    "path": "99-advanced (进阶专题)/rolling-hash (滚动哈希)/LC-0796 - Rotate String",
+    "title": "Rotate String",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-07"
+    }
+  },
+  {
+    "id": "LC-0207",
+    "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/kahn (Kahn：按入度做 BFS)/LC-0207 - Course Schedule - ★ 签名题",
+    "title": "Course Schedule",
+    "info": {
+      "signal": "课程能否修完 = 有向图无环",
+      "mode": "DFS 三色标记（VISITING 再遇即环）",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0210",
+    "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/kahn (Kahn：按入度做 BFS)/LC-0210 - Course Schedule II",
+    "title": "Course Schedule II",
+    "info": {
+      "signal": "课程顺序",
+      "mode": "DFS 后序反转 = 拓扑序；三色判环",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-1557",
+    "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/kahn (Kahn：按入度做 BFS)/LC-1557 - Minimum Number of Vertices to Reach All Nodes",
+    "title": "Minimum Number of Vertices to Reach All Nodes",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0269",
+    "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/kahn (Kahn：按入度做 BFS)/LC-0269 - Alien Dictionary",
+    "title": "Alien Dictionary",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0444",
+    "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/kahn (Kahn：按入度做 BFS)/LC-0444 - Sequence Reconstruction",
+    "title": "Sequence Reconstruction",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-2115",
+    "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/kahn (Kahn：按入度做 BFS)/LC-2115 - Find All Possible Recipes from Given Supplies",
+    "title": "Find All Possible Recipes from Given Supplies",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1462",
+    "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/dag-dp (DAG 上的 DP：拓扑序 + 状态转移)/LC-1462 - Course Schedule IV",
+    "title": "Course Schedule IV",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1857",
+    "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/dag-dp (DAG 上的 DP：拓扑序 + 状态转移)/LC-1857 - Largest Color Value in a Directed Graph",
+    "title": "Largest Color Value in a Directed Graph",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-2050",
+    "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/dag-dp (DAG 上的 DP：拓扑序 + 状态转移)/LC-2050 - Parallel Courses III",
+    "title": "Parallel Courses III",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "NC-longest-increasing-path-in-matrix",
+    "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/dag-dp (DAG 上的 DP：拓扑序 + 状态转移)/NC - Longest Increasing Path in Matrix",
+    "title": "Longest Increasing Path in Matrix",
+    "info": {
+      "signal": "矩阵最长递增路径",
+      "mode": "严格递增保证 DAG，记忆化 DFS；迭代版按值降序填表",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-05"
+    }
+  },
+  {
+    "id": "LC-1203",
+    "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/dag-dp (DAG 上的 DP：拓扑序 + 状态转移)/LC-1203 - Sort Items by Groups Respecting Dependencies",
+    "title": "Sort Items by Groups Respecting Dependencies",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0310",
+    "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/peel-leaves (剥叶子：无向图上的 Kahn)/LC-0310 - Minimum Height Trees",
+    "title": "Minimum Height Trees",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-07"
+    }
+  },
+  {
+    "id": "LC-1136",
+    "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/layered (按层：轮数 = 学期数)/LC-1136 - Parallel Courses",
+    "title": "Parallel Courses",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-07"
+    }
+  },
+  {
+    "id": "LC-0802",
+    "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/three-color-dfs (三色 DFS：遇到灰色点 = 有环)/LC-0802 - Find Eventual Safe States - ★ 签名题",
+    "title": "Find Eventual Safe States",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1059",
+    "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/three-color-dfs (三色 DFS：遇到灰色点 = 有环)/LC-1059 - All Paths from Source Lead to Destination",
+    "title": "All Paths from Source Lead to Destination",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-11"
+    }
+  },
+  {
+    "id": "LC-1627",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/modeling (建模：把别的东西当点)/LC-1627 - Graph Connectivity With Threshold",
+    "title": "Graph Connectivity With Threshold",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0827",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/modeling (建模：把别的东西当点)/LC-0827 - Making A Large Island",
+    "title": "Making A Large Island",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0952",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/modeling (建模：把别的东西当点)/LC-0952 - Largest Component Size by Common Factor",
+    "title": "Largest Component Size by Common Factor",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0947",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/modeling (建模：把别的东西当点)/LC-0947 - Most Stones Removed with Same Row or Column",
+    "title": "Most Stones Removed with Same Row or Column",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0721",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/grouping (分组：并查集分派后按组输出)/LC-0721 - Accounts Merge",
+    "title": "Accounts Merge",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1202",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/grouping (分组：并查集分派后按组输出)/LC-1202 - Smallest String With Swaps",
+    "title": "Smallest String With Swaps",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-18"
+    }
+  },
+  {
+    "id": "LC-1061",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/grouping (分组：并查集分派后按组输出)/LC-1061 - Lexicographically Smallest Equivalent String",
+    "title": "Lexicographically Smallest Equivalent String",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0990",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/grouping (分组：并查集分派后按组输出)/LC-0990 - Satisfiability of Equality Equations",
+    "title": "Satisfiability of Equality Equations",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-2316",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/count-components (计数：块数 = n − 成功合并次数)/LC-2316 - Count Unreachable Pairs of Nodes in an Undirected Graph",
+    "title": "Count Unreachable Pairs of Nodes in an Undirected Graph",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1319",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/count-components (计数：块数 = n − 成功合并次数)/LC-1319 - Number of Operations to Make Network Connected",
+    "title": "Number of Operations to Make Network Connected",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0323",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/count-components (计数：块数 = n − 成功合并次数)/LC-0323 - Number of Connected Components in an Undirected Graph - ★ 签名题",
+    "title": "Number of Connected Components in an Undirected Graph",
+    "info": {
+      "signal": "无向图连通分量数",
+      "mode": "从每个未访问点 DFS 一次，计数",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0261",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/count-components (计数：块数 = n − 成功合并次数)/LC-0261 - Graph Valid Tree",
+    "title": "Graph Valid Tree",
+    "info": {
+      "signal": "边集是否构成树",
+      "mode": "边数 = n−1 且连通；DFS 带 parent 判环",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-1559",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/cycle-by-union (成环：union 返回 False)/LC-1559 - Detect Cycles in 2D Grid",
+    "title": "Detect Cycles in 2D Grid",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0684",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/cycle-by-union (成环：union 返回 False)/LC-0684 - Redundant Connection - ★ 签名题",
+    "title": "Redundant Connection",
+    "info": {
+      "signal": "找使无向图成环的那条边",
+      "mode": "逐条加边，加前先判两端是否已连通（DFS / 并查集）",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0685",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/cycle-by-union (成环：union 返回 False)/LC-0685 - Redundant Connection II",
+    "title": "Redundant Connection II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-29"
+    }
+  },
+  {
+    "id": "LC-2092",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/dynamic-add (动态加点、按时间推进)/LC-2092 - Find All People With Secret",
+    "title": "Find All People With Secret",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1101",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/dynamic-add (动态加点、按时间推进)/LC-1101 - The Earliest Moment When Everyone Become Friends",
+    "title": "The Earliest Moment When Everyone Become Friends",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-18"
+    }
+  },
+  {
+    "id": "LC-0305",
+    "path": "11-graphs (图论)/03-union-find (阶段 2 · 并查集：动态加边的连通性)/dynamic-add (动态加点、按时间推进)/LC-0305 - Number of Islands II - ★ 签名题",
+    "title": "Number of Islands II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0332",
+    "path": "11-graphs (图论)/07-special-structures (阶段 6 · 特殊结构)/eulerian-path (欧拉路径 Hierholzer)/LC-0332 - Reconstruct Itinerary",
+    "title": "Reconstruct Itinerary",
+    "info": {
+      "signal": "用完所有票的字典序最小行程",
+      "mode": "欧拉路径 Hierholzer：后序 append 再反转",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-06"
+    }
+  },
+  {
+    "id": "LC-2097",
+    "path": "11-graphs (图论)/07-special-structures (阶段 6 · 特殊结构)/eulerian-path (欧拉路径 Hierholzer)/LC-2097 - Valid Arrangement of Pairs",
+    "title": "Valid Arrangement of Pairs",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0886",
+    "path": "11-graphs (图论)/07-special-structures (阶段 6 · 特殊结构)/bipartite (二分图染色)/LC-0886 - Possible Bipartition",
+    "title": "Possible Bipartition",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0785",
+    "path": "11-graphs (图论)/07-special-structures (阶段 6 · 特殊结构)/bipartite (二分图染色)/LC-0785 - Is Graph Bipartite - ★ 签名题",
+    "title": "Is Graph Bipartite?",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1192",
+    "path": "11-graphs (图论)/07-special-structures (阶段 6 · 特殊结构)/tarjan-bridges (Tarjan 求桥、割点)/LC-1192 - Critical Connections in a Network - ★ 签名题",
+    "title": "Critical Connections in a Network",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1568",
+    "path": "11-graphs (图论)/07-special-structures (阶段 6 · 特殊结构)/tarjan-bridges (Tarjan 求桥、割点)/LC-1568 - Minimum Number of Days to Disconnect Island",
+    "title": "Minimum Number of Days to Disconnect Island",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1245",
+    "path": "11-graphs (图论)/07-special-structures (阶段 6 · 特殊结构)/tree-problems (树上问题：直径、换根 DP)/LC-1245 - Tree Diameter",
+    "title": "Tree Diameter",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0834",
+    "path": "11-graphs (图论)/07-special-structures (阶段 6 · 特殊结构)/tree-problems (树上问题：直径、换根 DP)/LC-0834 - Sum of Distances in Tree",
+    "title": "Sum of Distances in Tree",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1926",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/bfs-steps (BFS 层数 = 步数)/LC-1926 - Nearest Exit from Entrance in Maze",
+    "title": "Nearest Exit from Entrance in Maze",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1197",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/bfs-steps (BFS 层数 = 步数)/LC-1197 - Minimum Knight Moves",
+    "title": "Minimum Knight Moves",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1091",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/bfs-steps (BFS 层数 = 步数)/LC-1091 - Shortest Path in Binary Matrix",
+    "title": "Shortest Path in Binary Matrix",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-24"
+    }
+  },
+  {
+    "id": "LC-2101",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/weighted-dfs (带权图上的 DFS：累乘、带权深度，不求最短路)/LC-2101 - Detonate the Maximum Bombs",
+    "title": "Detonate the Maximum Bombs",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0399",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/weighted-dfs (带权图上的 DFS：累乘、带权深度，不求最短路)/LC-0399 - Evaluate Division",
+    "title": "Evaluate Division",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-06"
+    }
+  },
+  {
+    "id": "LC-1376",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/weighted-dfs (带权图上的 DFS：累乘、带权深度，不求最短路)/LC-1376 - Time Needed to Inform All Employees",
+    "title": "Time Needed to Inform All Employees",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-2360",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/functional-graph (函数图：每个点只有一条出边)/LC-2360 - Longest Cycle in a Graph",
+    "title": "Longest Cycle in a Graph",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-2359",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/functional-graph (函数图：每个点只有一条出边)/LC-2359 - Find Closest Node to Given Two Nodes",
+    "title": "Find Closest Node to Given Two Nodes",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0339",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/nested-dfs (嵌套结构上的 DFS)/LC-0339 - Nested List Weight Sum",
+    "title": "Nested List Weight Sum",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-02-13"
+    }
+  },
+  {
+    "id": "LC-0364",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/nested-dfs (嵌套结构上的 DFS)/LC-0364 - Nested List Weight Sum II",
+    "title": "Nested List Weight Sum II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-08"
+    }
+  },
+  {
+    "id": "LC-0317",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/multi-source-bfs (多源 BFS：所有起点一起入队)/LC-0317 - Shortest Distance from All Buildings",
+    "title": "Shortest Distance from All Buildings",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-27"
+    }
+  },
+  {
+    "id": "LC-0542",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/multi-source-bfs (多源 BFS：所有起点一起入队)/LC-0542 - 01 Matrix",
+    "title": "01 Matrix",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-06"
+    }
+  },
+  {
+    "id": "LC-0286",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/multi-source-bfs (多源 BFS：所有起点一起入队)/LC-0286 - Walls and Gates",
+    "title": "Walls and Gates",
+    "info": {
+      "signal": "每格到最近门的距离",
+      "mode": "多源 BFS，所有门同时入队",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-1162",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/multi-source-bfs (多源 BFS：所有起点一起入队)/LC-1162 - As Far from Land as Possible",
+    "title": "As Far from Land as Possible",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0934",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/multi-source-bfs (多源 BFS：所有起点一起入队)/LC-0934 - Shortest Bridge",
+    "title": "Shortest Bridge",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-07"
+    }
+  },
+  {
+    "id": "LC-0994",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/multi-source-bfs (多源 BFS：所有起点一起入队)/LC-0994 - Rotting Oranges - ★ 签名题",
+    "title": "Rotting Oranges",
+    "info": {
+      "signal": "腐烂扩散的最短时间",
+      "mode": "多源分层 BFS，层数即分钟",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0547",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/flood-fill (洪水填充：数连通块)/LC-0547 - Number of Provinces",
+    "title": "Number of Provinces",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-18"
+    }
+  },
+  {
+    "id": "LC-0200",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/flood-fill (洪水填充：数连通块)/LC-0200 - Number of Islands - ★ 签名题",
+    "title": "Number of Islands",
+    "info": {
+      "signal": "连通块计数",
+      "mode": "遍历每格，遇 1 则 DFS/BFS 淹没整块，计数 +1",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0695",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/flood-fill (洪水填充：数连通块)/LC-0695 - Max Area of Island",
+    "title": "Max Area of Island",
+    "info": {
+      "signal": "最大连通块面积",
+      "mode": "DFS/BFS 返回面积取 max",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-1020",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/boundary-first (边界优先：从边界反向 DFS)/LC-1020 - Number of Enclaves",
+    "title": "Number of Enclaves",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1254",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/boundary-first (边界优先：从边界反向 DFS)/LC-1254 - Number of Closed Islands",
+    "title": "Number of Closed Islands",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0130",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/boundary-first (边界优先：从边界反向 DFS)/LC-0130 - Surrounded Regions",
+    "title": "Surrounded Regions",
+    "info": {
+      "signal": "被包围的 O 翻转",
+      "mode": "反向思维：从边界 O 出发 BFS/DFS 标记\"不翻\"，其余全翻",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0417",
+    "path": "11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/boundary-first (边界优先：从边界反向 DFS)/LC-0417 - Pacific Atlantic Water Flow - ★ 签名题",
+    "title": "Pacific Atlantic Water Flow",
+    "info": {
+      "signal": "水能流到两洋的格子",
+      "mode": "反向从两个海洋边界各 BFS/DFS 一遍，取交集",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-1579",
+    "path": "11-graphs (图论)/06-mst (阶段 5 · 最小生成树与 Kruskal 过程)/第 2 层: 追问 MST 结构 (只能用 Kruskal 做)/LC-1579 - Remove Max Number of Edges to Keep Graph Fully Traversable",
+    "title": "Remove Max Number of Edges to Keep Graph Fully Traversable",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1489",
+    "path": "11-graphs (图论)/06-mst (阶段 5 · 最小生成树与 Kruskal 过程)/第 2 层: 追问 MST 结构 (只能用 Kruskal 做)/LC-1489 - Critical & Pseudo Critical Edges in MST",
+    "title": "Find Critical and Pseudo-Critical Edges in Minimum Spanning Tree",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1697",
+    "path": "11-graphs (图论)/06-mst (阶段 5 · 最小生成树与 Kruskal 过程)/第 3 层: 瓶颈路径与阈值连通 (用 Kruskal 的过程, 不要树)/LC-1697 - Checking Existence of Edge Length Limited Paths - ★ 签名题",
+    "title": "Checking Existence of Edge Length Limited Paths",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1970",
+    "path": "11-graphs (图论)/06-mst (阶段 5 · 最小生成树与 Kruskal 过程)/第 3 层: 瓶颈路径与阈值连通 (用 Kruskal 的过程, 不要树)/LC-1970 - Last Day Where You Can Still Cross",
+    "title": "Last Day Where You Can Still Cross",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-2421",
+    "path": "11-graphs (图论)/06-mst (阶段 5 · 最小生成树与 Kruskal 过程)/第 3 层: 瓶颈路径与阈值连通 (用 Kruskal 的过程, 不要树)/LC-2421 - Number of Good Paths",
+    "title": "Number of Good Paths",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1724",
+    "path": "11-graphs (图论)/06-mst (阶段 5 · 最小生成树与 Kruskal 过程)/第 3 层: 瓶颈路径与阈值连通 (用 Kruskal 的过程, 不要树)/LC-1724 - Checking Existence of Edge Length Limited Paths II",
+    "title": "Checking Existence of Edge Length Limited Paths II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1135",
+    "path": "11-graphs (图论)/06-mst (阶段 5 · 最小生成树与 Kruskal 过程)/第 1 层: 伪装成别的故事的 MST(建模题)/LC-1135 - Connecting Cities With Min Cost - 稀疏图",
+    "title": "Connecting Cities With Minimum Cost",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1584",
+    "path": "11-graphs (图论)/06-mst (阶段 5 · 最小生成树与 Kruskal 过程)/第 1 层: 伪装成别的故事的 MST(建模题)/LC-1584 - Min Cost to Connect All Points - 纯粹的 MST - 稠密图 - ★ 签名题",
+    "title": "Min Cost to Connect All Points",
+    "info": {
+      "signal": "连通所有点最小总边权",
+      "mode": "MST；Kruskal：边按权排序 + 并查集判环，取 n−1 条",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-28"
+    }
+  },
+  {
+    "id": "LC-1168",
+    "path": "11-graphs (图论)/06-mst (阶段 5 · 最小生成树与 Kruskal 过程)/第 1 层: 伪装成别的故事的 MST(建模题)/LC-1168 - Optimize Water Distribution in a Village - 虚拟源点 - 稀疏图",
+    "title": "Optimize Water Distribution in a Village",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-09"
+    }
+  },
+  {
+    "id": "LC-0841",
+    "path": "11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/adjacency-list (显式建图：边列表 → 邻接表)/LC-0841 - Keys and Rooms",
+    "title": "Keys and Rooms",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-06"
+    }
+  },
+  {
+    "id": "LC-0133",
+    "path": "11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/adjacency-list (显式建图：边列表 → 邻接表)/LC-0133 - Clone Graph - ★ 签名题",
+    "title": "Clone Graph",
+    "info": {
+      "signal": "克隆图",
+      "mode": "哈希 原→新 + DFS/BFS，先建节点再连边",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0797",
+    "path": "11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/adjacency-list (显式建图：边列表 → 邻接表)/LC-0797 - All Paths From Source to Target",
+    "title": "All Paths From Source to Target",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-13"
+    }
+  },
+  {
+    "id": "LC-1971",
+    "path": "11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/adjacency-list (显式建图：边列表 → 邻接表)/LC-1971 - Find if Path Exists in Graph - ★ 签名题",
+    "title": "Find if Path Exists in Graph",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-09"
+    }
+  },
+  {
+    "id": "LC-1466",
+    "path": "11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/adjacency-list (显式建图：边列表 → 邻接表)/LC-1466 - Reorder Routes to Make All Paths Lead to the City Zero",
+    "title": "Reorder Routes to Make All Paths Lead to the City Zero",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0277",
+    "path": "11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/degree (度：入度、出度)/LC-0277 - Find the Celebrity",
+    "title": "Find the Celebrity",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-24"
+    }
+  },
+  {
+    "id": "LC-0997",
+    "path": "11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/degree (度：入度、出度)/LC-0997 - Find the Town Judge",
+    "title": "Find the Town Judge",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-01"
+    }
+  },
+  {
+    "id": "LC-0752",
+    "path": "11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/state-graph-bfs (状态图 BFS：一个状态就是一个点)/LC-0752 - Open the Lock - ★ 签名题",
+    "title": "Open the Lock",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-06"
+    }
+  },
+  {
+    "id": "LC-0773",
+    "path": "11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/state-graph-bfs (状态图 BFS：一个状态就是一个点)/LC-0773 - Sliding Puzzle",
+    "title": "Sliding Puzzle",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0127",
+    "path": "11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/state-graph-bfs (状态图 BFS：一个状态就是一个点)/LC-0127 - Word Ladder",
+    "title": "Word Ladder",
+    "info": {
+      "signal": "单词最少变换步数",
+      "mode": "隐式图 BFS，通配模式 *ord 建邻接",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0909",
+    "path": "11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/state-graph-bfs (状态图 BFS：一个状态就是一个点)/LC-0909 - Snakes and Ladders",
+    "title": "Snakes and Ladders",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-0433",
+    "path": "11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/state-graph-bfs (状态图 BFS：一个状态就是一个点)/LC-0433 - Minimum Genetic Mutation",
+    "title": "Minimum Genetic Mutation",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-2203",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra-state (Dijkstra + 状态扩展)/LC-2203 - Minimum Weighted Subgraph With the Required Paths",
+    "title": "Minimum Weighted Subgraph With the Required Paths",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-2812",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra-state (Dijkstra + 状态扩展)/LC-2812 - Find the Safest Path in a Grid",
+    "title": "Find the Safest Path in a Grid",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-2577",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra-state (Dijkstra + 状态扩展)/LC-2577 - Minimum Time to Visit a Cell In a Grid",
+    "title": "Minimum Time to Visit a Cell In a Grid",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1928",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra-state (Dijkstra + 状态扩展)/LC-1928 - Minimum Cost to Reach Destination in Time",
+    "title": "Minimum Cost to Reach Destination in Time",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1334",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/floyd (Floyd：所有点对，点 ≤ 100)/LC-1334 - Find the City With the Smallest Number of Neighbors at a Threshold Distance - ★ 签名题",
+    "title": "Find the City With the Smallest Number of Neighbors at a Threshold Distance",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-2976",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/floyd (Floyd：所有点对，点 ≤ 100)/LC-2976 - Minimum Cost to Convert String I",
+    "title": "Minimum Cost to Convert String I",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1102",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/bottleneck-path (瓶颈路径：relax 改 max 或 min)/LC-1102 - Path With Maximum Minimum Value",
+    "title": "Path With Maximum Minimum Value",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1631",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/bottleneck-path (瓶颈路径：relax 改 max 或 min)/LC-1631 - Path With Minimum Effort",
+    "title": "Path With Minimum Effort",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-04"
+    }
+  },
+  {
+    "id": "NC-swim-in-rising-water",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/bottleneck-path (瓶颈路径：relax 改 max 或 min)/NC - Swim in Rising Water",
+    "title": "Swim in Rising Water",
+    "info": {
+      "signal": "水位上涨能否抵达",
+      "mode": "瓶颈路径：Dijkstra 把 + 换成 max；或二分答案 + BFS",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0743",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra (Dijkstra 堆版：relax 写 d + w)/LC-0743 - Network Delay Time - ★ 签名题",
+    "title": "Network Delay Time",
+    "info": {
+      "signal": "信号传遍所有节点的时间",
+      "mode": "Dijkstra 单源最短路，答案取 dist 最大值",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-06"
+    }
+  },
+  {
+    "id": "LC-0505",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra (Dijkstra 堆版：relax 写 d + w)/LC-0505 - The Maze II",
+    "title": "The Maze II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-2642",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra (Dijkstra 堆版：relax 写 d + w)/LC-2642 - Design Graph With Shortest Path Calculator",
+    "title": "Design Graph With Shortest Path Calculator",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1514",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra (Dijkstra 堆版：relax 写 d + w)/LC-1514 - Path with Maximum Probability",
+    "title": "Path with Maximum Probability",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1976",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra (Dijkstra 堆版：relax 写 d + w)/LC-1976 - Number of Ways to Arrive at Destination",
+    "title": "Number of Ways to Arrive at Destination",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-2290",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/zero-one-bfs (0-1 BFS：双端队列，0 放队头 1 放队尾)/LC-2290 - Minimum Obstacle Removal to Reach Corner",
+    "title": "Minimum Obstacle Removal to Reach Corner",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-1368",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/zero-one-bfs (0-1 BFS：双端队列，0 放队头 1 放队尾)/LC-1368 - Minimum Cost to Make at Least One Valid Path in a Grid",
+    "title": "Minimum Cost to Make at Least One Valid Path in a Grid",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-10-12"
+    }
+  },
+  {
+    "id": "LC-3552",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/zero-one-bfs (0-1 BFS：双端队列，0 放队头 1 放队尾)/LC-3552 - Grid Teleportation Traversal",
+    "title": "Grid Teleportation Traversal",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-01-04"
+    }
+  },
+  {
+    "id": "LC-0787",
+    "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/bellman-ford (Bellman-Ford：限制 k 条边，每轮用快照)/LC-0787 - Cheapest Flights Within K Stops - ★ 签名题",
+    "title": "Cheapest Flights Within K Stops",
+    "info": {
+      "signal": "最多 k 站的最便宜航班",
+      "mode": "按边数分层：k+1 轮松弛（Bellman-Ford，用上一轮快照）",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0050",
+    "path": "$$-垃圾-可忽略/LC-0050 - Pow(x, n) (dup from 05-binary-search-general)",
+    "title": "Pow(x, n)",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-10-03"
+    }
+  },
+  {
+    "id": "LC-0179",
+    "path": "13-greedy (贪心)/sorting-greedy (排序贪心)/LC-0179 - Largest Number",
+    "title": "Largest Number",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-25"
+    }
+  },
+  {
+    "id": "NC-merge-triplets-to-form-target",
+    "path": "13-greedy (贪心)/sorting-greedy (排序贪心)/NC - Merge Triplets to Form Target",
+    "title": "Merge Triplets to Form Target",
+    "info": {
+      "signal": "max 合并能否凑出 target",
+      "mode": "过滤任一位超标的 triplet，剩余检查三位各能命中",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-1353",
+    "path": "13-greedy (贪心)/sorting-greedy (排序贪心)/LC-1353 - Maximum Number of Events That Can Be Attended",
+    "title": "Maximum Number of Events That Can Be Attended",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-08"
+    }
+  },
+  {
+    "id": "LC-1481",
+    "path": "13-greedy (贪心)/sorting-greedy (排序贪心)/LC-1481 - Least Number of Unique Integers after K Removals",
+    "title": "Least Number of Unique Integers after K Removals",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-09-05"
+    }
+  },
+  {
+    "id": "LC-1710",
+    "path": "13-greedy (贪心)/sorting-greedy (排序贪心)/LC-1710 - Maximum Units on a Truck",
+    "title": "Maximum Units on a Truck",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-01-27"
+    }
+  },
+  {
+    "id": "LC-2651",
+    "path": "13-greedy (贪心)/sorting-greedy (排序贪心)/LC-2651 - Calculate Delayed Arrival Time",
+    "title": "Calculate Delayed Arrival Time",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-04"
+    }
+  },
+  {
+    "id": "NC-hand-of-straights",
+    "path": "13-greedy (贪心)/sorting-greedy (排序贪心)/NC - Hand of Straights",
+    "title": "Hand of Straights",
+    "info": {
+      "signal": "分成 k 张连续的顺子",
+      "mode": "计数 + 从最小牌批量扣除 k 张连续",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0605",
+    "path": "13-greedy (贪心)/general/LC-0605 - Can Place Flowers",
+    "title": "Can Place Flowers",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-14"
+    }
+  },
+  {
+    "id": "LC-2598",
+    "path": "13-greedy (贪心)/general/LC-2598 - Smallest Missing Non-negative Integer After Operations",
+    "title": "Smallest Missing Non-negative Integer After Operations",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-01-18"
+    }
+  },
+  {
+    "id": "LC-1488",
+    "path": "13-greedy (贪心)/general/LC-1488 - Avoid Flood in The City",
+    "title": "Avoid Flood in The City",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-15"
+    }
+  },
+  {
+    "id": "LC-0670",
+    "path": "13-greedy (贪心)/string-greedy (字符串贪心)/LC-0670 - Maximum Swap",
+    "title": "Maximum Swap",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-06-16"
+    }
+  },
+  {
+    "id": "NC-partition-labels",
+    "path": "13-greedy (贪心)/string-greedy (字符串贪心)/NC - Partition Labels",
+    "title": "Partition Labels",
+    "info": {
+      "signal": "字母不跨段的最多分段",
+      "mode": "记每字母最后出现位置，扫到当前段最远边界即切",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-valid-parenthesis-string",
+    "path": "13-greedy (贪心)/string-greedy (字符串贪心)/NC - Valid Parenthesis String",
+    "title": "Valid Parenthesis String",
+    "info": {
+      "signal": "含 * 的括号合法性",
+      "mode": "维护未匹配左括号区间 [lo, hi]，hi < 0 失败，lo 钳 0",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-2434",
+    "path": "13-greedy (贪心)/string-greedy (字符串贪心)/LC-2434 - Using a Robot to Print the Lexicographically Smallest String",
+    "title": "Using a Robot to Print the Lexicographically Smallest String",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-23"
+    }
+  },
+  {
+    "id": "LC-3170",
+    "path": "13-greedy (贪心)/string-greedy (字符串贪心)/LC-3170 - Lexicographically Minimum String After Removing Stars",
+    "title": "Lexicographically Minimum String After Removing Stars",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-16"
+    }
+  },
+  {
+    "id": "LC-0761",
+    "path": "13-greedy (贪心)/string-greedy (字符串贪心)/LC-0761 - Special Binary String",
+    "title": "Special Binary String",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-26"
+    }
+  },
+  {
+    "id": "NC-jump-game",
+    "path": "13-greedy (贪心)/jump-game (跳跃游戏)/NC - Jump Game",
+    "title": "Jump Game",
+    "info": {
+      "signal": "能否跳到末尾",
+      "mode": "贪心维护可达最远位置",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0045",
+    "path": "13-greedy (贪心)/jump-game (跳跃游戏)/LC-0045 - Jump Game II",
+    "title": "Jump Game II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-03-15"
+    }
+  },
+  {
+    "id": "LC-0055",
+    "path": "13-greedy (贪心)/jump-game (跳跃游戏)/LC-0055 - Jump Game",
+    "title": "Jump Game",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-01-20"
+    }
+  },
+  {
+    "id": "LC-1306",
+    "path": "13-greedy (贪心)/jump-game (跳跃游戏)/LC-1306 - Jump Game III",
+    "title": "Jump Game III",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-01-21"
+    }
+  },
+  {
+    "id": "LC-3291",
+    "path": "13-greedy (贪心)/jump-game (跳跃游戏)/Jump Game II - Cluster/LC-3291 - Min Number Valid Str Form Target I",
+    "title": "Minimum Number of Valid Strings to Form Target I",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-26"
+    }
+  },
+  {
+    "id": "LC-3292",
+    "path": "13-greedy (贪心)/jump-game (跳跃游戏)/Jump Game II - Cluster/LC-3292 - Min Number Valid Str Form Target II",
+    "title": "Minimum Number of Valid Strings to Form Target II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-26"
+    }
+  },
+  {
+    "id": "NC-jump-game-ii",
+    "path": "13-greedy (贪心)/jump-game (跳跃游戏)/Jump Game II - Cluster/LC-0045 - Jump Game II",
+    "title": "Jump Game II",
+    "info": {
+      "signal": "最少跳数",
+      "mode": "分层 BFS 思想：当前层边界耗尽时跳数 +1，新边界 = 层内最远",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0309",
+    "path": "12-dynamic-programming (动态规划)/stock-series (股票系列)/LC-0309 - Best Time to Buy and Sell Stock with Cooldown",
+    "title": "Best Time to Buy and Sell Stock with Cooldown",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-02"
+    }
+  },
+  {
+    "id": "LC-0121",
+    "path": "12-dynamic-programming (动态规划)/stock-series (股票系列)/LC-0121 - Best Time to Buy and Sell Stock",
+    "title": "Best Time to Buy and Sell Stock",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-25"
+    }
+  },
+  {
+    "id": "LC-0714",
+    "path": "12-dynamic-programming (动态规划)/stock-series (股票系列)/LC-0714 - Best Time to Buy and Sell Stock with Transaction Fee",
+    "title": "Best Time to Buy and Sell Stock with Transaction Fee",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-06"
+    }
+  },
+  {
+    "id": "NC-buy-and-sell-crypto-with-cooldown",
+    "path": "12-dynamic-programming (动态规划)/stock-series (股票系列)/NC - Best Time to Buy and Sell Stock with Cooldown",
+    "title": "Best Time to Buy and Sell Stock with Cooldown",
+    "info": {
+      "signal": "含冷却的多次买卖",
+      "mode": "状态机 hold / sold / free，买入只能从 free 来",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0188",
+    "path": "12-dynamic-programming (动态规划)/stock-series (股票系列)/LC-0188 - Best Time to Buy and Sell Stock IV",
+    "title": "Best Time to Buy and Sell Stock IV",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-07-29"
+    }
+  },
+  {
+    "id": "LC-0983",
+    "path": "12-dynamic-programming (动态规划)/linear-1d (一维线性 DP)/LC-0983 - Minimum Cost For Tickets",
+    "title": "Minimum Cost For Tickets",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-11"
+    }
+  },
+  {
+    "id": "LC-0343",
+    "path": "12-dynamic-programming (动态规划)/linear-1d (一维线性 DP)/LC-0343 - Integer Break",
+    "title": "Integer Break",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-02-20"
+    }
+  },
+  {
+    "id": "NC-house-robber",
+    "path": "12-dynamic-programming (动态规划)/linear-1d (一维线性 DP)/NC - House Robber",
+    "title": "House Robber",
+    "info": {
+      "signal": "不能抢相邻的最大值",
+      "mode": "dp[i] = max(dp[i−1], dp[i−2] + nums[i])",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-climbing-stairs",
+    "path": "12-dynamic-programming (动态规划)/linear-1d (一维线性 DP)/NC - Climbing Stairs",
+    "title": "Climbing Stairs",
+    "info": {
+      "signal": "每次 1 或 2 步的方法数",
+      "mode": "f(n) = f(n−1) + f(n−2)，斐波那契滚动",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0509",
+    "path": "12-dynamic-programming (动态规划)/linear-1d (一维线性 DP)/LC-0509 - Fibonacci Number",
+    "title": "Fibonacci Number",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-01"
+    }
+  },
+  {
+    "id": "NC-min-cost-climbing-stairs",
+    "path": "12-dynamic-programming (动态规划)/linear-1d (一维线性 DP)/NC - Min Cost Climbing Stairs",
+    "title": "Min Cost Climbing Stairs",
+    "info": {
+      "signal": "到顶最小花费",
+      "mode": "dp[i] = cost[i] + min(dp[i−1], dp[i−2])",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-house-robber-ii",
+    "path": "12-dynamic-programming (动态规划)/linear-1d (一维线性 DP)/NC - House Robber II",
+    "title": "House Robber II",
+    "info": {
+      "signal": "环形版",
+      "mode": "拆成两次线性：去头 / 去尾，取 max",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0740",
+    "path": "12-dynamic-programming (动态规划)/linear-1d (一维线性 DP)/LC-0740 - Delete and Earn",
+    "title": "Delete and Earn",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-07-17"
+    }
+  },
+  {
+    "id": "NC-maximum-product-subarray",
+    "path": "12-dynamic-programming (动态规划)/kadane (最大子数组)/NC - Maximum Product Subarray",
+    "title": "Maximum Product Subarray",
+    "info": {
+      "signal": "最大乘积子数组",
+      "mode": "Kadane 变体同时维护 curMax / curMin（负数翻转）",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-3434",
+    "path": "12-dynamic-programming (动态规划)/kadane (最大子数组)/LC-3434 - Maximum Frequency After Subarray Operation",
+    "title": "Maximum Frequency After Subarray Operation",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-10"
+    }
+  },
+  {
+    "id": "LC-0918",
+    "path": "12-dynamic-programming (动态规划)/kadane (最大子数组)/LC-0918 - Maximum Sum Circular Subarray",
+    "title": "Maximum Sum Circular Subarray",
+    "info": {
+      "signal": "环形最大子数组和",
+      "mode": "max(普通 Kadane, total − 最小子数组和)，全负特判",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-04"
+    }
+  },
+  {
+    "id": "LC-0053",
+    "path": "12-dynamic-programming (动态规划)/kadane (最大子数组)/LC-0053 - Maximum Subarray",
+    "title": "Maximum Subarray",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-09"
+    }
+  },
+  {
+    "id": "LC-1567",
+    "path": "12-dynamic-programming (动态规划)/kadane (最大子数组)/LC-1567 - Maximum Length of Subarray With Positive Product",
+    "title": "Maximum Length of Subarray With Positive Product",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-01-27"
+    }
+  },
+  {
+    "id": "NC-interleaving-string",
+    "path": "12-dynamic-programming (动态规划)/two-sequence (双序列 DP)/NC - Interleaving String",
+    "title": "Interleaving String",
+    "info": {
+      "signal": "s3 是否为 s1/s2 交错",
+      "mode": "双序列 DP (i, j)，s3 下标 = i+j，下一字符由谁供给",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-05"
+    }
+  },
+  {
+    "id": "NC-longest-common-subsequence",
+    "path": "12-dynamic-programming (动态规划)/two-sequence (双序列 DP)/NC - Longest Common Subsequence",
+    "title": "Longest Common Subsequence",
+    "info": {
+      "signal": "两串最长公共子序列",
+      "mode": "双序列 DP：尾字符相同左上 + 1，不同 max(上, 左)",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-08-29"
+    }
+  },
+  {
+    "id": "LC-0010",
+    "path": "12-dynamic-programming (动态规划)/two-sequence (双序列 DP)/LC-0010 - Regular Expression Matching",
+    "title": "Regular Expression Matching",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-28"
+    }
+  },
+  {
+    "id": "LC-0097",
+    "path": "12-dynamic-programming (动态规划)/two-sequence (双序列 DP)/LC-0097 - Interleaving String",
+    "title": "Interleaving String",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-13"
+    }
+  },
+  {
+    "id": "NC-count-subsequences",
+    "path": "12-dynamic-programming (动态规划)/two-sequence (双序列 DP)/NC - Distinct Subsequences",
+    "title": "Distinct Subsequences",
+    "info": {
+      "signal": "s 的子序列等于 t 的个数",
+      "mode": "双序列 DP：相等 take + skip，不等 skip；j == n → 1",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-05"
+    }
+  },
+  {
+    "id": "LC-0718",
+    "path": "12-dynamic-programming (动态规划)/two-sequence (双序列 DP)/LC-0718 - Maximum Length of Repeated Subarray",
+    "title": "Maximum Length of Repeated Subarray",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-10"
+    }
+  },
+  {
+    "id": "NC-edit-distance",
+    "path": "12-dynamic-programming (动态规划)/two-sequence (双序列 DP)/NC - Edit Distance",
+    "title": "Edit Distance",
+    "info": {
+      "signal": "把 word1 改成 word2 的最少操作数（插/删/换）",
+      "mode": "双序列 DP：三操作 = 前线两指针的三种走法",
+      "guard": "(\"\",\"abc\")->3, (\"abc\",\"\")->3, (\"horse\",\"ros\")->3",
+      "sticking_point": "8 种想象操作凭什么砍成 3 种（对偶等价 + 前线规范顺序）",
+      "first_date": "2026-09-06"
+    }
+  },
+  {
+    "id": "NC-regular-expression-matching",
+    "path": "12-dynamic-programming (动态规划)/two-sequence (双序列 DP)/NC - Regular Expression Matching",
+    "title": "Regular Expression Matching",
+    "info": {
+      "signal": "带 . 和 * 的模式匹配",
+      "mode": "双序列 DP：星号 = 前线二选一（不吃跳 j+2 / 吃一个 i+1 且 j 原地踏步）",
+      "guard": "(\"a\",\"abc\")->False, (\"aab\",\"c*a*b\")->True",
+      "sticking_point": "M1 第三次复发——普通字符分支漏 i<m 守卫，j==n-1 特判只挡住一条边（M9 影子）",
+      "first_date": "2026-09-06"
+    }
+  },
+  {
+    "id": "LC-0790",
+    "path": "12-dynamic-programming (动态规划)/counting-dp (计数型 DP)/LC-0790 - Domino and Tromino Tiling",
+    "title": "Domino and Tromino Tiling",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-10"
+    }
+  },
+  {
+    "id": "LC-0935",
+    "path": "12-dynamic-programming (动态规划)/counting-dp (计数型 DP)/LC-0935 - Knight Dialer",
+    "title": "Knight Dialer",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-02-26"
+    }
+  },
+  {
+    "id": "LC-0276",
+    "path": "12-dynamic-programming (动态规划)/counting-dp (计数型 DP)/LC-0276 - Paint Fence",
+    "title": "Paint Fence",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-03"
+    }
+  },
+  {
+    "id": "LC-2787",
+    "path": "12-dynamic-programming (动态规划)/counting-dp (计数型 DP)/LC-2787 - Ways to Express an Integer as Sum of Powers",
+    "title": "Ways to Express an Integer as Sum of Powers",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-16"
+    }
+  },
+  {
+    "id": "LC-1220",
+    "path": "12-dynamic-programming (动态规划)/counting-dp (计数型 DP)/LC-1220 - Count Vowels Permutation",
+    "title": "Count Vowels Permutation",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-09"
+    }
+  },
+  {
+    "id": "LC-1155",
+    "path": "12-dynamic-programming (动态规划)/counting-dp (计数型 DP)/LC-1155 - Number of Dice Rolls With Target Sum",
+    "title": "Number of Dice Rolls With Target Sum",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-10"
+    }
+  },
+  {
+    "id": "LC-0322",
+    "path": "12-dynamic-programming (动态规划)/knapsack (背包)/unbounded (完全背包)/LC-0322 - Coin Change",
+    "title": "Coin Change",
+    "info": {
+      "signal": "最少硬币数",
+      "mode": "完全背包 min 版；递归 dp(i, remain) 选（i 不动）/ 跳",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0518",
+    "path": "12-dynamic-programming (动态规划)/knapsack (背包)/unbounded (完全背包)/LC-0518 - Coin Change II",
+    "title": "Coin Change II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-03"
+    }
+  },
+  {
+    "id": "NC-coin-change-ii",
+    "path": "12-dynamic-programming (动态规划)/knapsack (背包)/unbounded (完全背包)/NC - Coin Change II",
+    "title": "Coin Change II",
+    "info": {
+      "signal": "凑 amount 的组合数",
+      "mode": "完全背包计数，状态带 i 避免数成排列",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0377",
+    "path": "12-dynamic-programming (动态规划)/knapsack (背包)/unbounded (完全背包)/LC-0377 - Combination Sum IV",
+    "title": "Combination Sum IV",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-28"
+    }
+  },
+  {
+    "id": "NC-coin-change",
+    "path": "12-dynamic-programming (动态规划)/knapsack (背包)/unbounded (完全背包)/NC - Coin Change",
+    "title": "Coin Change",
+    "info": {
+      "signal": "最少硬币数",
+      "mode": "完全背包 min 版：dp[a] = min(dp[a−c]) + 1，inf 表不可达",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0494",
+    "path": "12-dynamic-programming (动态规划)/knapsack (背包)/zero-one (0-1 背包)/LC-0494 - Target Sum",
+    "title": "Target Sum",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-08"
+    }
+  },
+  {
+    "id": "NC-partition-equal-subset-sum",
+    "path": "12-dynamic-programming (动态规划)/knapsack (背包)/zero-one (0-1 背包)/NC - Partition Equal Subset Sum",
+    "title": "Partition Equal Subset Sum",
+    "info": {
+      "signal": "能否分成和相等两半",
+      "mode": "0/1 背包可行性，目标 S/2，一维倒序",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-target-sum",
+    "path": "12-dynamic-programming (动态规划)/knapsack (背包)/zero-one (0-1 背包)/NC - Target Sum",
+    "title": "Target Sum",
+    "info": {
+      "signal": "加减号凑 target 的方案数",
+      "mode": "转子集和 P = (S+target)/2，0/1 背包计数",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-02"
+    }
+  },
+  {
+    "id": "LC-0265",
+    "path": "12-dynamic-programming (动态规划)/multi-dimensional (多维状态 DP)/LC-0265 - Paint House II",
+    "title": "Paint House II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-07"
+    }
+  },
+  {
+    "id": "LC-1473",
+    "path": "12-dynamic-programming (动态规划)/multi-dimensional (多维状态 DP)/LC-1473 - Paint House III",
+    "title": "Paint House III",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-07"
+    }
+  },
+  {
+    "id": "LC-1770",
+    "path": "12-dynamic-programming (动态规划)/multi-dimensional (多维状态 DP)/LC-1770 - Maximum Score from Performing Multiplication Operations",
+    "title": "Maximum Score from Performing Multiplication Operations",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-07-18"
+    }
+  },
+  {
+    "id": "LC-0256",
+    "path": "12-dynamic-programming (动态规划)/multi-dimensional (多维状态 DP)/LC-0256 - Paint House",
+    "title": "Paint House",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-07"
+    }
+  },
+  {
+    "id": "LC-1335",
+    "path": "12-dynamic-programming (动态规划)/multi-dimensional (多维状态 DP)/LC-1335 - Minimum Difficulty of a Job Schedule",
+    "title": "Minimum Difficulty of a Job Schedule",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-07-26"
+    }
+  },
+  {
+    "id": "NC-burst-balloons",
+    "path": "12-dynamic-programming (动态规划)/interval-dp (区间 DP)/NC - Burst Balloons",
+    "title": "Burst Balloons",
+    "info": {
+      "signal": "消除元素且得分依赖左右邻居",
+      "mode": "区间 DP：枚举\"最后被扎的\" k，让它当墙劈开区间",
+      "guard": "[5]->5, [3,1,5,8]->167, [4,2,3,7]->143",
+      "sticking_point": "正着想会粘邻居、子问题耦合；必须倒过来问\"谁最后死\"",
+      "first_date": "2026-09-06"
+    }
+  },
+  {
+    "id": "LC-0486",
+    "path": "12-dynamic-programming (动态规划)/interval-dp (区间 DP)/LC-0486 - Predict the Winner",
+    "title": "Predict the Winner",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-09-16"
+    }
+  },
+  {
+    "id": "LC-0799",
+    "path": "12-dynamic-programming (动态规划)/probability-dp (概率与期望 DP)/LC-0799 - Champagne Tower",
+    "title": "Champagne Tower",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-02-28"
+    }
+  },
+  {
+    "id": "LC-0808",
+    "path": "12-dynamic-programming (动态规划)/probability-dp (概率与期望 DP)/LC-0808 - Soup Servings",
+    "title": "Soup Servings",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-14"
+    }
+  },
+  {
+    "id": "LC-0688",
+    "path": "12-dynamic-programming (动态规划)/probability-dp (概率与期望 DP)/LC-0688 - Knight Probability in Chessboard",
+    "title": "Knight Probability in Chessboard",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-01-24"
+    }
+  },
+  {
+    "id": "LC-0837",
+    "path": "12-dynamic-programming (动态规划)/probability-dp (概率与期望 DP)/LC-0837 - New 21 Game",
+    "title": "New 21 Game",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-02"
+    }
+  },
+  {
+    "id": "LC-0063",
+    "path": "12-dynamic-programming (动态规划)/paths-in-matrix (矩阵路径)/LC-0063 - Unique Paths II",
+    "title": "Unique Paths II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-05"
+    }
+  },
+  {
+    "id": "LC-0931",
+    "path": "12-dynamic-programming (动态规划)/paths-in-matrix (矩阵路径)/LC-0931 - Minimum Falling Path Sum",
+    "title": "Minimum Falling Path Sum",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-06"
+    }
+  },
+  {
+    "id": "LC-0062",
+    "path": "12-dynamic-programming (动态规划)/paths-in-matrix (矩阵路径)/LC-0062 - Unique Paths",
+    "title": "Unique Paths",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-05"
+    }
+  },
+  {
+    "id": "LC-0064",
+    "path": "12-dynamic-programming (动态规划)/paths-in-matrix (矩阵路径)/LC-0064 - Minimum Path Sum",
+    "title": "Minimum Path Sum",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-06"
+    }
+  },
+  {
+    "id": "LC-0221",
+    "path": "12-dynamic-programming (动态规划)/paths-in-matrix (矩阵路径)/LC-0221 - Maximal Square",
+    "title": "Maximal Square",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-01-25"
+    }
+  },
+  {
+    "id": "NC-count-paths",
+    "path": "12-dynamic-programming (动态规划)/paths-in-matrix (矩阵路径)/NC - Unique Paths",
+    "title": "Unique Paths",
+    "info": {
+      "signal": "只能右/下的路径数",
+      "mode": "dp[i][j] = dp[i−1][j] + dp[i][j−1]，可压一维",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-3202",
+    "path": "12-dynamic-programming (动态规划)/subsequence-dp (子序列 DP)/LC-3202 - Find the Maximum Length of Valid Subsequence II",
+    "title": "Find the Maximum Length of Valid Subsequence II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-21"
+    }
+  },
+  {
+    "id": "LC-3201",
+    "path": "12-dynamic-programming (动态规划)/subsequence-dp (子序列 DP)/LC-3201 - Find the Maximum Length of Valid Subsequence I",
+    "title": "Find the Maximum Length of Valid Subsequence I",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-21"
+    }
+  },
+  {
+    "id": "NC-longest-increasing-subsequence",
+    "path": "12-dynamic-programming (动态规划)/subsequence-dp (子序列 DP)/NC - Longest Increasing Subsequence",
+    "title": "Longest Increasing Subsequence",
+    "info": {
+      "signal": "最长递增子序列",
+      "mode": "O(n²) dp[i] = max(dp[j]) + 1；或 patience sorting + bisect O(n log n)",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-03"
+    }
+  },
+  {
+    "id": "LC-0368",
+    "path": "12-dynamic-programming (动态规划)/subsequence-dp (子序列 DP)/LC-0368 - Largest Divisible Subset",
+    "title": "Largest Divisible Subset",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-03-05"
+    }
+  },
+  {
+    "id": "NC-word-break",
+    "path": "12-dynamic-programming (动态规划)/string-dp (字符串 DP)/NC - Word Break",
+    "title": "Word Break",
+    "info": {
+      "signal": "能否切成字典词",
+      "mode": "dp[i] = any(dp[j] and s[j:i] in dict)",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0032",
+    "path": "12-dynamic-programming (动态规划)/string-dp (字符串 DP)/LC-0032 - Longest Valid Parentheses",
+    "title": "Longest Valid Parentheses",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-08"
+    }
+  },
+  {
+    "id": "NC-palindromic-substrings",
+    "path": "12-dynamic-programming (动态规划)/string-dp (字符串 DP)/NC - Palindromic Substrings",
+    "title": "Palindromic Substrings",
+    "info": {
+      "signal": "回文子串计数",
+      "mode": "每个中心扩展计数（奇偶）",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-decode-ways",
+    "path": "12-dynamic-programming (动态规划)/string-dp (字符串 DP)/NC - Decode Ways",
+    "title": "Decode Ways",
+    "info": {
+      "signal": "数字串解码方法数",
+      "mode": "dp[i] = (单位合法) dp[i−1] + (双位 10..26) dp[i−2]，\"0\" 特殊",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-1048",
+    "path": "12-dynamic-programming (动态规划)/string-dp (字符串 DP)/LC-1048 - Longest String Chain",
+    "title": "Longest String Chain",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-03-02"
+    }
+  },
+  {
+    "id": "LC-3291",
+    "path": "12-dynamic-programming (动态规划)/string-dp (字符串 DP)/LC-3291 - Minimum Number of Valid Strings to Form Target I",
+    "title": "Minimum Number of Valid Strings to Form Target I",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-15"
+    }
+  },
+  {
+    "id": "LC-3333",
+    "path": "12-dynamic-programming (动态规划)/string-dp (字符串 DP)/LC-3333 - Find the Original Typed String II",
+    "title": "Find the Original Typed String II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-02"
+    }
+  },
+  {
+    "id": "LC-0139",
+    "path": "12-dynamic-programming (动态规划)/string-dp (字符串 DP)/LC-0139 - Word Break",
+    "title": "Word Break",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-07-27"
+    }
+  },
+  {
+    "id": "NC-longest-palindromic-substring",
+    "path": "12-dynamic-programming (动态规划)/string-dp (字符串 DP)/NC - Longest Palindromic Substring",
+    "title": "Longest Palindromic Substring",
+    "info": {
+      "signal": "最长回文子串",
+      "mode": "中心扩展（奇偶两种中心）；或区间 DP",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-design-word-search-data-structure",
+    "path": "08-tries (字典树、前缀树)/trie-basics (基础字典树)/NC - Design Add and Search Word Data Structure",
+    "title": "Design Add and Search Word Data Structure",
+    "info": {
+      "signal": "带通配符 \".\" 的搜索",
+      "mode": "Trie + 遇 \".\" 对所有子节点分支递归",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-1268",
+    "path": "08-tries (字典树、前缀树)/trie-basics (基础字典树)/LC-1268 - Search Suggestions System",
+    "title": "Search Suggestions System",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-03-04"
+    }
+  },
+  {
+    "id": "LC-0014",
+    "path": "08-tries (字典树、前缀树)/trie-basics (基础字典树)/LC-0014 - Longest Common Prefix",
+    "title": "Longest Common Prefix",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-15"
+    }
+  },
+  {
+    "id": "NC-implement-prefix-tree",
+    "path": "08-tries (字典树、前缀树)/trie-basics (基础字典树)/NC - Implement Trie (Prefix Tree)",
+    "title": "Implement Trie (Prefix Tree)",
+    "info": {
+      "signal": "前缀树 insert/search/startsWith",
+      "mode": "节点 children 字典 + end 标记",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-3043",
+    "path": "08-tries (字典树、前缀树)/trie-basics (基础字典树)/LC-3043 - Find the Length of the Longest Common Prefix",
+    "title": "Find the Length of the Longest Common Prefix",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-29"
+    }
+  },
+  {
+    "id": "NC-search-for-word-ii",
+    "path": "08-tries (字典树、前缀树)/trie-with-search (字典树与搜索)/NC - Word Search II",
+    "title": "Word Search II",
+    "info": {
+      "signal": "网格找多个单词",
+      "mode": "词表建 Trie + 网格 DFS 沿 Trie 走，命中即收并剪枝",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0616",
+    "path": "08-tries (字典树、前缀树)/trie-with-search (字典树与搜索)/LC-0616 - Add Bold Tag in String",
+    "title": "Add Bold Tag in String",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-25"
+    }
+  },
+  {
+    "id": "LC-1233",
+    "path": "08-tries (字典树、前缀树)/trie-with-search (字典树与搜索)/LC-1233 - Remove Sub-Folders from the Filesystem",
+    "title": "Remove Sub-Folders from the Filesystem",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-23"
+    }
+  },
+  {
+    "id": "LC-3291",
+    "path": "08-tries (字典树、前缀树)/trie-with-search (字典树与搜索)/LC-3291 - Minimum Number of Valid Strings to Form Target I",
+    "title": "Minimum Number of Valid Strings to Form Target I",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-15"
+    }
+  },
+  {
+    "id": "LC-0331",
+    "path": "07-trees (树)/general/LC-0331 - Verify Preorder Serialization of a Binary Tree",
+    "title": "Verify Preorder Serialization of a Binary Tree",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-07-30"
+    }
+  },
+  {
+    "id": "LC-0116",
+    "path": "07-trees (树)/traversal (遍历)/LC-0116 - Populating Next Right Pointers in Each Node",
+    "title": "Populating Next Right Pointers in Each Node",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-14"
+    }
+  },
+  {
+    "id": "LC-0145",
+    "path": "07-trees (树)/traversal (遍历)/LC-0145 - Binary Tree Postorder Traversal",
+    "title": "Binary Tree Postorder Traversal",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-18"
+    }
+  },
+  {
+    "id": "NC-binary-tree-right-side-view",
+    "path": "07-trees (树)/traversal (遍历)/NC - Binary Tree Right Side View",
+    "title": "Binary Tree Right Side View",
+    "info": {
+      "signal": "右视图",
+      "mode": "BFS 每层最后一个；或 DFS 先右后左按深度首次记录",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0429",
+    "path": "07-trees (树)/traversal (遍历)/LC-0429 - N-ary Tree Level Order Traversal",
+    "title": "N-ary Tree Level Order Traversal",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-02-15"
+    }
+  },
+  {
+    "id": "LC-0314",
+    "path": "07-trees (树)/traversal (遍历)/LC-0314 - Binary Tree Vertical Order Traversal",
+    "title": "Binary Tree Vertical Order Traversal",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-02-10"
+    }
+  },
+  {
+    "id": "NC-level-order-traversal-of-binary-tree",
+    "path": "07-trees (树)/traversal (遍历)/NC - Binary Tree Level Order Traversal",
+    "title": "Binary Tree Level Order Traversal",
+    "info": {
+      "signal": "层序遍历",
+      "mode": "BFS 队列，按当前队列长度切层",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0144",
+    "path": "07-trees (树)/traversal (遍历)/LC-0144 - Binary Tree Preorder Traversal",
+    "title": "Binary Tree Preorder Traversal",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-18"
+    }
+  },
+  {
+    "id": "LC-0257",
+    "path": "07-trees (树)/traversal (遍历)/LC-0257 - Binary Tree Paths",
+    "title": "Binary Tree Paths",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-06-30"
+    }
+  },
+  {
+    "id": "LC-0094",
+    "path": "07-trees (树)/traversal (遍历)/LC-0094 - Binary Tree Inorder Traversal",
+    "title": "Binary Tree Inorder Traversal",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-10-05"
+    }
+  },
+  {
+    "id": "LC-0102",
+    "path": "07-trees (树)/traversal (遍历)/LC-0102 - Binary Tree Level Order Traversal",
+    "title": "Binary Tree Level Order Traversal",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-10-06"
+    }
+  },
+  {
+    "id": "NC-count-good-nodes-in-binary-tree",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/NC - Count Good Nodes in Binary Tree",
+    "title": "Count Good Nodes in Binary Tree",
+    "info": {
+      "signal": "路径上无更大祖先的节点数",
+      "mode": "DFS 携带路径最大值",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0100",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/LC-0100 - Same Tree",
+    "title": "Same Tree",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-18"
+    }
+  },
+  {
+    "id": "LC-0104",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/LC-0104 - Maximum Depth of Binary Tree",
+    "title": "Maximum Depth of Binary Tree",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-22"
+    }
+  },
+  {
+    "id": "LC-0226",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/LC-0226 - Invert Binary Tree",
+    "title": "Invert Binary Tree",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-19"
+    }
+  },
+  {
+    "id": "NC-balanced-binary-tree",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/NC - Balanced Binary Tree",
+    "title": "Balanced Binary Tree",
+    "info": {
+      "signal": "平衡判定",
+      "mode": "后序递归返回高度，不平衡返回 −1 短路",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0863",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/LC-0863 - All Nodes Distance K in Binary Tree",
+    "title": "All Nodes Distance K in Binary Tree",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-01-26"
+    }
+  },
+  {
+    "id": "LC-0404",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/LC-0404 - Sum of Left Leaves",
+    "title": "Sum of Left Leaves",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-28"
+    }
+  },
+  {
+    "id": "LC-0222",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/LC-0222 - Count Complete Tree Nodes",
+    "title": "Count Complete Tree Nodes",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-19"
+    }
+  },
+  {
+    "id": "NC-subtree-of-a-binary-tree",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/NC - Subtree of Another Tree",
+    "title": "Subtree of Another Tree",
+    "info": {
+      "signal": "s 是否含 t 为子树",
+      "mode": "对 s 每个节点做 sameTree 检查",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0250",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/LC-0250 - Count Univalue Subtrees",
+    "title": "Count Univalue Subtrees",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-10-11"
+    }
+  },
+  {
+    "id": "NC-depth-of-binary-tree",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/NC - Maximum Depth of Binary Tree",
+    "title": "Maximum Depth of Binary Tree",
+    "info": {
+      "signal": "最大深度",
+      "mode": "后序递归 1 + max(左, 右)；或 BFS 数层",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-binary-tree-diameter",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/NC - Diameter of Binary Tree",
+    "title": "Diameter of Binary Tree",
+    "info": {
+      "signal": "直径 = 某节点左深 + 右深的最大值",
+      "mode": "后序递归返回深度，沿途更新全局最大",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-invert-a-binary-tree",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/NC - Invert Binary Tree",
+    "title": "Invert Binary Tree",
+    "info": {
+      "signal": "镜像翻转",
+      "mode": "递归交换左右子树；或 BFS 逐层交换",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0110",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/LC-0110 - Balanced Binary Tree",
+    "title": "Balanced Binary Tree",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-24"
+    }
+  },
+  {
+    "id": "NC-same-binary-tree",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/NC - Same Binary Tree",
+    "title": "Same Binary Tree",
+    "info": {
+      "signal": "两树相同",
+      "mode": "同步递归比较结构与值",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-binary-tree-maximum-path-sum",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/NC - Binary Tree Maximum Path Sum",
+    "title": "Binary Tree Maximum Path Sum",
+    "info": {
+      "signal": "任意路径最大和",
+      "mode": "后序返回\"单边最大贡献\"（负则取 0），沿途更新 左+右+根",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0111",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/LC-0111 - Minimum Depth of Binary Tree",
+    "title": "Minimum Depth of Binary Tree",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-24"
+    }
+  },
+  {
+    "id": "LC-0112",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/LC-0112 - Path Sum",
+    "title": "Path Sum",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-18"
+    }
+  },
+  {
+    "id": "LC-0101",
+    "path": "07-trees (树)/dfs-recursion (递归 DFS)/LC-0101 - Symmetric Tree",
+    "title": "Symmetric Tree",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-20"
+    }
+  },
+  {
+    "id": "NC-valid-binary-search-tree",
+    "path": "07-trees (树)/bst (二叉搜索树)/NC - Valid Binary Search Tree",
+    "title": "Valid Binary Search Tree",
+    "info": {
+      "signal": "BST 判定",
+      "mode": "DFS 携带 (low, high) 开区间；或中序遍历严格递增",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0108",
+    "path": "07-trees (树)/bst (二叉搜索树)/LC-0108 - Convert Sorted Array to Binary Search Tree",
+    "title": "Convert Sorted Array to Binary Search Tree",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-22"
+    }
+  },
+  {
+    "id": "NC-kth-smallest-integer-in-bst",
+    "path": "07-trees (树)/bst (二叉搜索树)/NC - Kth Smallest Integer in BST",
+    "title": "Kth Smallest Integer in BST",
+    "info": {
+      "signal": "BST 第 k 小",
+      "mode": "中序遍历第 k 个（迭代栈可提前停）",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-lowest-common-ancestor-in-binary-search-tree",
+    "path": "07-trees (树)/lowest-common-ancestor (最近公共祖先)/NC - Lowest Common Ancestor in Binary Search Tree",
+    "title": "Lowest Common Ancestor in Binary Search Tree",
+    "info": {
+      "signal": "BST 最近公共祖先",
+      "mode": "利用有序性：都小往左、都大往右、分叉即答案",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-1650",
+    "path": "07-trees (树)/lowest-common-ancestor (最近公共祖先)/LC-1650 - Lowest Common Ancestor of a Binary Tree III",
+    "title": "Lowest Common Ancestor of a Binary Tree III",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-02-24"
+    }
+  },
+  {
+    "id": "LC-0236",
+    "path": "07-trees (树)/lowest-common-ancestor (最近公共祖先)/LC-0236 - Lowest Common Ancestor of a Binary Tree",
+    "title": "Lowest Common Ancestor of a Binary Tree",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-04-02"
+    }
+  },
+  {
+    "id": "NC-serialize-and-deserialize-binary-tree",
+    "path": "07-trees (树)/construction (构造与序列化)/NC - Serialize and Deserialize Binary Tree",
+    "title": "Serialize and Deserialize Binary Tree",
+    "info": {
+      "signal": "树 ↔ 字符串",
+      "mode": "前序 + 空标记 N，反序列化用迭代器递归重建",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-binary-tree-from-preorder-and-inorder-traversal",
+    "path": "07-trees (树)/construction (构造与序列化)/NC - Construct Binary Tree from Preorder and Inorder Traversal",
+    "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+    "info": {
+      "signal": "前序 + 中序建树",
+      "mode": "前序首元为根，中序切左右，哈希定位 O(1)",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-1008",
+    "path": "07-trees (树)/construction (构造与序列化)/LC-1008 - Construct Binary Search Tree from Preorder Traversal",
+    "title": "Construct Binary Search Tree from Preorder Traversal",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-07-30"
+    }
+  },
+  {
+    "id": "LC-0106",
+    "path": "07-trees (树)/construction (构造与序列化)/LC-0106 - Construct Binary Tree from Inorder and Postorder Traversal",
+    "title": "Construct Binary Tree from Inorder and Postorder Traversal",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-07-30"
+    }
+  },
+  {
+    "id": "NC-design-twitter-feed",
+    "path": "09-heap (堆)/design (堆设计)/NC - Design Twitter",
+    "title": "Design Twitter",
+    "info": {
+      "signal": "关注者最近 10 条推文",
+      "mode": "每用户推文列表 + 堆做 k 路合并（全局时间戳）",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-3408",
+    "path": "09-heap (堆)/design (堆设计)/LC-3408 - Design Task Manager",
+    "title": "Design Task Manager",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-01-04"
+    }
+  },
+  {
+    "id": "LC-2817",
+    "path": "09-heap (堆)/general/LC-2817 - Minimum Absolute Difference Between Elements With Constraint",
+    "title": "Minimum Absolute Difference Between Elements With Constraint",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-01-07"
+    }
+  },
+  {
+    "id": "LC-1792",
+    "path": "09-heap (堆)/greedy-with-heap (堆与贪心)/LC-1792 - Maximum Average Pass Ratio",
+    "title": "Maximum Average Pass Ratio",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-08"
+    }
+  },
+  {
+    "id": "LC-1642",
+    "path": "09-heap (堆)/greedy-with-heap (堆与贪心)/LC-1642 - Furthest Building You Can Reach",
+    "title": "Furthest Building You Can Reach",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-17"
+    }
+  },
+  {
+    "id": "LC-0767",
+    "path": "09-heap (堆)/greedy-with-heap (堆与贪心)/LC-0767 - Reorganize String",
+    "title": "Reorganize String",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-09-30"
+    }
+  },
+  {
+    "id": "NC-last-stone-weight",
+    "path": "09-heap (堆)/greedy-with-heap (堆与贪心)/NC - Last Stone Weight",
+    "title": "Last Stone Weight",
+    "info": {
+      "signal": "反复取两最大相碰",
+      "mode": "大根堆（取负）模拟",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-task-scheduling",
+    "path": "09-heap (堆)/greedy-with-heap (堆与贪心)/NC - Task Scheduler",
+    "title": "Task Scheduler",
+    "info": {
+      "signal": "相同任务间隔 n 的最短总时间",
+      "mode": "大根堆按剩余次数 + 冷却队列；或公式 (max−1)(n+1)+cnt",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-1167",
+    "path": "09-heap (堆)/greedy-with-heap (堆与贪心)/LC-1167 - Minimum Cost to Connect Sticks",
+    "title": "Minimum Cost to Connect Sticks",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-17"
+    }
+  },
+  {
+    "id": "NC-find-median-in-a-data-stream",
+    "path": "09-heap (堆)/two-heaps (双堆)/NC - Find Median From Data Stream",
+    "title": "Find Median From Data Stream",
+    "info": {
+      "signal": "动态中位数",
+      "mode": "大根堆（小半）+ 小根堆（大半），保持大小平衡",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0295",
+    "path": "09-heap (堆)/two-heaps (双堆)/LC-0295 - Find Median from Data Stream",
+    "title": "Find Median from Data Stream",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-17"
+    }
+  },
+  {
+    "id": "LC-1337",
+    "path": "09-heap (堆)/top-k (Top K)/LC-1337 - The K Weakest Rows in a Matrix",
+    "title": "The K Weakest Rows in a Matrix",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-17"
+    }
+  },
+  {
+    "id": "LC-0378",
+    "path": "09-heap (堆)/top-k (Top K)/LC-0378 - Kth Smallest Element in a Sorted Matrix",
+    "title": "Kth Smallest Element in a Sorted Matrix",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-17"
+    }
+  },
+  {
+    "id": "NC-kth-largest-element-in-an-array",
+    "path": "09-heap (堆)/top-k (Top K)/NC - Kth Largest Element in an Array",
+    "title": "Kth Largest Element in an Array",
+    "info": {
+      "signal": "数组第 k 大",
+      "mode": "小根堆 size k；或 quickselect 平均 O(n)",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0347",
+    "path": "09-heap (堆)/top-k (Top K)/LC-0347 - Top K Frequent Elements",
+    "title": "Top K Frequent Elements",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-16"
+    }
+  },
+  {
+    "id": "NC-k-closest-points-to-origin",
+    "path": "09-heap (堆)/top-k (Top K)/NC - K Closest Points to Origin",
+    "title": "K Closest Points to Origin",
+    "info": {
+      "signal": "前 k 近的点",
+      "mode": "大小为 k 的大根堆按距离淘汰；或快速选择",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-kth-largest-integer-in-a-stream",
+    "path": "09-heap (堆)/top-k (Top K)/NC - Kth Largest Element in a Stream",
+    "title": "Kth Largest Element in a Stream",
+    "info": {
+      "signal": "流中第 k 大",
+      "mode": "大小为 k 的小根堆，堆顶即答案",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-08-18"
+    }
+  },
+  {
+    "id": "LC-0052",
+    "path": "10-backtracking (回溯)/grid-and-board (网格与棋盘)/LC-0052 - N-Queens II",
+    "title": "N-Queens II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-09-27"
+    }
+  },
+  {
+    "id": "NC-n-queens",
+    "path": "10-backtracking (回溯)/grid-and-board (网格与棋盘)/NC - N-Queens",
+    "title": "N-Queens",
+    "info": {
+      "signal": "N 皇后",
+      "mode": "逐行放置，用列 / 两条对角线集合判冲突",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0037",
+    "path": "10-backtracking (回溯)/grid-and-board (网格与棋盘)/LC-0037 - Sudoku Solver",
+    "title": "Sudoku Solver",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-28"
+    }
+  },
+  {
+    "id": "NC-search-for-word",
+    "path": "10-backtracking (回溯)/grid-and-board (网格与棋盘)/NC - Word Search",
+    "title": "Word Search",
+    "info": {
+      "signal": "网格找单词",
+      "mode": "DFS 回溯，原地标记访问再恢复",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-permutations",
+    "path": "10-backtracking (回溯)/permutations (排列)/NC - Permutations",
+    "title": "Permutations",
+    "info": {
+      "signal": "全排列",
+      "mode": "回溯 + used 标记；或交换法",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0047",
+    "path": "10-backtracking (回溯)/permutations (排列)/LC-0047 - Permutations II",
+    "title": "Permutations II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-01-04"
+    }
+  },
+  {
+    "id": "NC-combinations-of-a-phone-number",
+    "path": "10-backtracking (回溯)/string-construction (字符串构造)/NC - Letter Combinations of a Phone Number",
+    "title": "Letter Combinations of a Phone Number",
+    "info": {
+      "signal": "按键字母组合",
+      "mode": "回溯逐位展开映射",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-generate-parentheses",
+    "path": "10-backtracking (回溯)/string-construction (字符串构造)/NC - Generate Parentheses",
+    "title": "Generate Parentheses",
+    "info": {
+      "signal": "n 对合法括号",
+      "mode": "回溯：左数 < n 可加左，右数 < 左数可加右",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-palindrome-partitioning",
+    "path": "10-backtracking (回溯)/string-construction (字符串构造)/NC - Palindrome Partitioning",
+    "title": "Palindrome Partitioning",
+    "info": {
+      "signal": "切成回文子串的所有方案",
+      "mode": "回溯枚举切点，前缀是回文才递归",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-combination-target-sum-ii",
+    "path": "10-backtracking (回溯)/subsets-and-combinations (子集与组合)/NC - Combination Sum II",
+    "title": "Combination Sum II",
+    "info": {
+      "signal": "每数限用一次且有重复值",
+      "mode": "排序 + 回溯，同层跳过相同值",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0216",
+    "path": "10-backtracking (回溯)/subsets-and-combinations (子集与组合)/LC-0216 - Combination Sum III",
+    "title": "Combination Sum III",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-27"
+    }
+  },
+  {
+    "id": "LC-0077",
+    "path": "10-backtracking (回溯)/subsets-and-combinations (子集与组合)/LC-0077 - Combinations",
+    "title": "Combinations",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-27"
+    }
+  },
+  {
+    "id": "NC-combination-target-sum",
+    "path": "10-backtracking (回溯)/subsets-and-combinations (子集与组合)/NC - Combination Sum",
+    "title": "Combination Sum",
+    "info": {
+      "signal": "可重复选凑 target 的组合",
+      "mode": "回溯，起点 i 不前进以避免重复组合",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-subsets-ii",
+    "path": "10-backtracking (回溯)/subsets-and-combinations (子集与组合)/NC - Subsets II",
+    "title": "Subsets II",
+    "info": {
+      "signal": "有重复值的子集",
+      "mode": "排序 + 同层跳过相同值",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-subsets",
+    "path": "10-backtracking (回溯)/subsets-and-combinations (子集与组合)/NC - Subsets",
+    "title": "Subsets",
+    "info": {
+      "signal": "所有子集",
+      "mode": "回溯每个元素选/不选；或逐个加入扩展",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-count-squares",
+    "path": "15-math-geometry (数学、几何)/geometry (几何)/NC - Detect Squares",
+    "title": "Detect Squares",
+    "info": {
+      "signal": "流式加点 + 查询能组成多少个某几何形状",
+      "mode": "哈希计数字典 + 只枚举剩余自由度（定一个对角，其余角被推出），重复点用乘法原理 a×b×c",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-11"
+    }
+  },
+  {
+    "id": "LC-0867",
+    "path": "15-math-geometry (数学、几何)/matrix (矩阵)/LC-0867 - Transpose Matrix",
+    "title": "Transpose Matrix",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-13"
+    }
+  },
+  {
+    "id": "NC-set-zeroes-in-matrix",
+    "path": "15-math-geometry (数学、几何)/matrix (矩阵)/NC - Set Matrix Zeroes",
+    "title": "Set Matrix Zeroes",
+    "info": {
+      "signal": "就地修改矩阵，且修改的触发条件依赖矩阵自身内容",
+      "mode": "读写分离两阶段（先侦察记录，后统一动手），防止自己写的值污染判断",
+      "guard": "[[1,2,3],[4,0,5],[6,7,8]] -> [[1,0,3],[0,0,0],[6,0,8]]（中心 0，验证无连锁反应）；[[0,1],[1,1]] -> [[0,0],[0,0]]（0 在记事本区，专杀 O(1) 版的顺序错误）",
+      "sticking_point": null,
+      "first_date": "2026-09-10"
+    }
+  },
+  {
+    "id": "LC-0048",
+    "path": "15-math-geometry (数学、几何)/matrix (矩阵)/LC-0048 - Rotate Image",
+    "title": "Rotate Image",
+    "info": {
+      "signal": "n×n 矩阵原地顺时针转 90°",
+      "mode": "转置（只换上三角）+ 每行反转",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-01"
+    }
+  },
+  {
+    "id": "LC-2326",
+    "path": "15-math-geometry (数学、几何)/matrix (矩阵)/LC-2326 - Spiral Matrix IV",
+    "title": "Spiral Matrix IV",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-09-13"
+    }
+  },
+  {
+    "id": "LC-3195",
+    "path": "15-math-geometry (数学、几何)/matrix (矩阵)/LC-3195 - Find the Minimum Area to Cover All Ones I",
+    "title": "Find the Minimum Area to Cover All Ones I",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-02-04"
+    }
+  },
+  {
+    "id": "LC-0054",
+    "path": "15-math-geometry (数学、几何)/matrix (矩阵)/LC-0054 - Spiral Matrix",
+    "title": "Spiral Matrix",
+    "info": {
+      "signal": "按螺旋顺序遍历矩阵",
+      "mode": "方向数组 + visited，走满 m*n 步，撞墙/撞已访问就右转一次",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-09-11"
+    }
+  },
+  {
+    "id": "LC-0498",
+    "path": "15-math-geometry (数学、几何)/matrix (矩阵)/LC-0498 - Diagonal Traverse",
+    "title": "Diagonal Traverse",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-18"
+    }
+  },
+  {
+    "id": "LC-0723",
+    "path": "15-math-geometry (数学、几何)/matrix (矩阵)/LC-0723 - Candy Crush",
+    "title": "Candy Crush",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-10"
+    }
+  },
+  {
+    "id": "LC-0885",
+    "path": "15-math-geometry (数学、几何)/matrix (矩阵)/LC-0885 - Spiral Matrix III",
+    "title": "Spiral Matrix III",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-09-12"
+    }
+  },
+  {
+    "id": "LC-0059",
+    "path": "15-math-geometry (数学、几何)/matrix (矩阵)/LC-0059 - Spiral Matrix II",
+    "title": "Spiral Matrix II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-09-12"
+    }
+  },
+  {
+    "id": "LC-0043",
+    "path": "15-math-geometry (数学、几何)/arithmetic (算术与模拟)/LC-0043 - Multiply Strings",
+    "title": "Multiply Strings",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2024-02-14"
+    }
+  },
+  {
+    "id": "LC-0202",
+    "path": "15-math-geometry (数学、几何)/arithmetic (算术与模拟)/LC-0202 - Happy Number",
+    "title": "Happy Number",
+    "info": {
+      "signal": "一个值由固定规则生成下一个值，反复迭代，问是否终止/循环",
+      "mode": "隐式链表，判环用快慢指针（Floyd），或用 set 记录已见",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-01"
+    }
+  },
+  {
+    "id": "LC-0008",
+    "path": "15-math-geometry (数学、几何)/arithmetic (算术与模拟)/LC-0008 - String to Integer (atoi)",
+    "title": "String to Integer (atoi)",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-10-13"
+    }
+  },
+  {
+    "id": "LC-0066",
+    "path": "15-math-geometry (数学、几何)/arithmetic (算术与模拟)/LC-0066 - Plus One",
+    "title": "Plus One",
+    "info": {
+      "signal": "数组表示的大数加一",
+      "mode": "把 +1 当成初始进位 carry=1，从低位到高位 divmod 逐位传进位，最后 carry 剩 1 就前面补 1",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-13"
+    }
+  },
+  {
+    "id": "LC-2419",
+    "path": "16-bit-manipulation (位运算)/bitwise-subarrays (子数组位运算)/LC-2419 - Longest Subarray With Maximum Bitwise AND",
+    "title": "Longest Subarray With Maximum Bitwise AND",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-01-04"
+    }
+  },
+  {
+    "id": "LC-0898",
+    "path": "16-bit-manipulation (位运算)/bitwise-subarrays (子数组位运算)/LC-0898 - Bitwise ORs of Subarrays",
+    "title": "Bitwise ORs of Subarrays",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-25"
+    }
+  },
+  {
+    "id": "LC-2438",
+    "path": "16-bit-manipulation (位运算)/bitwise-subarrays (子数组位运算)/LC-2438 - Range Product Queries of Powers",
+    "title": "Range Product Queries of Powers",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-22"
+    }
+  },
+  {
+    "id": "LC-2411",
+    "path": "16-bit-manipulation (位运算)/bitwise-subarrays (子数组位运算)/LC-2411 - Smallest Subarrays With Maximum Bitwise OR",
+    "title": "Smallest Subarrays With Maximum Bitwise OR",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-01-16"
+    }
+  },
+  {
+    "id": "LC-1356",
+    "path": "16-bit-manipulation (位运算)/bit-basics (基础位操作)/LC-1356 - Sort Integers by The Number of 1 Bits",
+    "title": "Sort Integers by The Number of 1 Bits",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-06-30"
+    }
+  },
+  {
+    "id": "LC-0190",
+    "path": "16-bit-manipulation (位运算)/bit-basics (基础位操作)/LC-0190 - Reverse Bits",
+    "title": "Reverse Bits",
+    "info": {
+      "signal": "32 位整数按位翻转",
+      "mode": "从 n 右边逐位取 bit，result 左移一位再 OR 进去，固定 32 轮",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-16"
+    }
+  },
+  {
+    "id": "LC-2571",
+    "path": "16-bit-manipulation (位运算)/bit-basics (基础位操作)/LC-2571 - Minimum Operations to Reduce an Integer to 0",
+    "title": "Minimum Operations to Reduce an Integer to 0",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-22"
+    }
+  },
+  {
+    "id": "LC-0338",
+    "path": "16-bit-manipulation (位运算)/bit-basics (基础位操作)/LC-0338 - Counting Bits",
+    "title": "Counting Bits",
+    "info": {
+      "signal": "0..n 每个数的 1 的个数",
+      "mode": "dp[i] = dp[i >> 1] + (i & 1)（右移一位少一个低位，低位是否为 1 补回来）",
+      "guard": null,
+      "sticking_point": "推不出来，靠死记 dp[i] = dp[i >> 1] + (i & 1)",
+      "first_date": "2023-08-26"
+    }
+  },
+  {
+    "id": "LC-0194",
+    "path": "16-bit-manipulation (位运算)/bit-basics (基础位操作)/LC-0194 - Transpose File",
+    "title": "Transpose File",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-19"
+    }
+  },
+  {
+    "id": "LC-0136",
+    "path": "16-bit-manipulation (位运算)/bit-basics (基础位操作)/LC-0136 - Single Number",
+    "title": "Single Number",
+    "info": {
+      "signal": "其余元素都恰好出现两次，只有一个出现一次",
+      "mode": "全员异或，成对抵消",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-22"
+    }
+  },
+  {
+    "id": "LC-0268",
+    "path": "16-bit-manipulation (位运算)/bit-basics (基础位操作)/LC-0268 - Missing Number",
+    "title": "Missing Number",
+    "info": {
+      "signal": "0..n 缺一个数",
+      "mode": "0..n 与 nums 全员异或，a^a=0 成对抵消，剩下即缺失",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-06"
+    }
+  },
+  {
+    "id": "LC-0231",
+    "path": "16-bit-manipulation (位运算)/bit-basics (基础位操作)/LC-0231 - Power of Two",
+    "title": "Power of Two",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-17"
+    }
+  },
+  {
+    "id": "NC-number-of-one-bits",
+    "path": "16-bit-manipulation (位运算)/bit-basics (基础位操作)/NC - Number of 1 Bits",
+    "title": "Number of 1 Bits",
+    "info": {
+      "signal": "统计二进制里 1 的个数",
+      "mode": "n &= n-1 每次消掉最低位的 1，循环次数即答案",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-09"
+    }
+  },
+  {
+    "id": "LC-1920",
+    "path": "16-bit-manipulation (位运算)/encoding-tricks (位编码技巧)/LC-1920 - Build Array from Permutation",
+    "title": "Build Array from Permutation",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-19"
+    }
+  },
+  {
+    "id": "LC-1470",
+    "path": "16-bit-manipulation (位运算)/encoding-tricks (位编码技巧)/LC-1470 - Shuffle the Array",
+    "title": "Shuffle the Array",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-07-02"
+    }
+  },
+  {
+    "id": "LC-0030",
+    "path": "03-sliding-window (滑动窗口)/fixed-window (定长窗口)/LC-0030 - Substring with Concatenation of All Words",
+    "title": "Substring with Concatenation of All Words",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-10-19"
+    }
+  },
+  {
+    "id": "NC-permutation-string",
+    "path": "03-sliding-window (滑动窗口)/fixed-window (定长窗口)/NC - Permutation in String",
+    "title": "Permutation in String",
+    "info": {
+      "signal": "s2 是否含 s1 的排列",
+      "mode": "定长滑窗 + 26 计数数组比对",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-3499",
+    "path": "03-sliding-window (滑动窗口)/fixed-window (定长窗口)/LC-3499 - Maximize Active Section with Trade I",
+    "title": "Maximize Active Section with Trade I",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-04"
+    }
+  },
+  {
+    "id": "LC-0187",
+    "path": "03-sliding-window (滑动窗口)/fixed-window (定长窗口)/LC-0187 - Repeated DNA Sequences",
+    "title": "Repeated DNA Sequences",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-10-28"
+    }
+  },
+  {
+    "id": "LC-3439",
+    "path": "03-sliding-window (滑动窗口)/fixed-window (定长窗口)/LC-3439 - Reschedule Meetings for Maximum Free Time I",
+    "title": "Reschedule Meetings for Maximum Free Time I",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-14"
+    }
+  },
+  {
+    "id": "LC-0076",
+    "path": "03-sliding-window (滑动窗口)/variable-window (变长窗口)/LC-0076 - Minimum Window Substring",
+    "title": "Minimum Window Substring",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-10-24"
+    }
+  },
+  {
+    "id": "NC-minimum-window-with-characters",
+    "path": "03-sliding-window (滑动窗口)/variable-window (变长窗口)/NC - Minimum Window Substring",
+    "title": "Minimum Window Substring",
+    "info": {
+      "signal": "覆盖 t 所有字符的最短窗口",
+      "mode": "变长滑窗 need/have 计数，满足即收缩",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-longest-substring-without-duplicates",
+    "path": "03-sliding-window (滑动窗口)/variable-window (变长窗口)/NC - Longest Substring Without Repeating Characters",
+    "title": "Longest Substring Without Repeating Characters",
+    "info": {
+      "signal": "最长无重复子串",
+      "mode": "变长滑窗 + 集合/last-index，右扩左收",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0424",
+    "path": "03-sliding-window (滑动窗口)/variable-window (变长窗口)/LC-0424 - Longest Repeating Character Replacement",
+    "title": "Longest Repeating Character Replacement",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-03"
+    }
+  },
+  {
+    "id": "NC-buy-and-sell-crypto",
+    "path": "03-sliding-window (滑动窗口)/variable-window (变长窗口)/NC - Best Time to Buy and Sell Stock",
+    "title": "Best Time to Buy and Sell Stock",
+    "info": {
+      "signal": "一次买卖最大利润",
+      "mode": "一趟维护历史最低价，当前价 − 最低价取 max",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0003",
+    "path": "03-sliding-window (滑动窗口)/variable-window (变长窗口)/LC-0003 - Longest Substring Without Repeating Characters",
+    "title": "Longest Substring Without Repeating Characters",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-17"
+    }
+  },
+  {
+    "id": "LC-1838",
+    "path": "03-sliding-window (滑动窗口)/variable-window (变长窗口)/LC-1838 - Frequency of the Most Frequent Element",
+    "title": "Frequency of the Most Frequent Element",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-10-29"
+    }
+  },
+  {
+    "id": "LC-1004",
+    "path": "03-sliding-window (滑动窗口)/variable-window (变长窗口)/LC-1004 - Max Consecutive Ones III",
+    "title": "Max Consecutive Ones III",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-11-03"
+    }
+  },
+  {
+    "id": "LC-0159",
+    "path": "03-sliding-window (滑动窗口)/variable-window (变长窗口)/LC-0159 - Longest Substring with At Most Two Distinct Characters",
+    "title": "Longest Substring with At Most Two Distinct Characters",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-10-28"
+    }
+  },
+  {
+    "id": "NC-reverse-a-linked-list",
+    "path": "06-linked-list (链表)/pointer-manipulation (指针操作)/NC - Reverse Linked List",
+    "title": "Reverse Linked List",
+    "info": {
+      "signal": "反转链表",
+      "mode": "prev/curr 迭代翻转 next；或递归",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0138",
+    "path": "06-linked-list (链表)/pointer-manipulation (指针操作)/LC-0138 - Copy List with Random Pointer",
+    "title": "Copy List with Random Pointer",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-18"
+    }
+  },
+  {
+    "id": "LC-0019",
+    "path": "06-linked-list (链表)/pointer-manipulation (指针操作)/LC-0019 - Remove Nth Node From End of List",
+    "title": "Remove Nth Node From End of List",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-12"
+    }
+  },
+  {
+    "id": "NC-reorder-linked-list",
+    "path": "06-linked-list (链表)/pointer-manipulation (指针操作)/NC - Reorder Linked List",
+    "title": "Reorder Linked List",
+    "info": {
+      "signal": "L0",
+      "mode": "Ln→L1→Ln-1 → 快慢找中点 + 反转后半 + 交替合并",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-reverse-nodes-in-k-group",
+    "path": "06-linked-list (链表)/pointer-manipulation (指针操作)/NC - Reverse Nodes in K-Group",
+    "title": "Reverse Nodes in K-Group",
+    "info": {
+      "signal": "每 k 个一组反转",
+      "mode": "先数够 k 个再反转该段并接回前驱，不足 k 保持",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0002",
+    "path": "06-linked-list (链表)/pointer-manipulation (指针操作)/LC-0002 - Add Two Numbers",
+    "title": "Add Two Numbers",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-14"
+    }
+  },
+  {
+    "id": "NC-copy-linked-list-with-random-pointer",
+    "path": "06-linked-list (链表)/pointer-manipulation (指针操作)/NC - Copy Linked List with Random Pointer",
+    "title": "Copy Linked List with Random Pointer",
+    "info": {
+      "signal": "带随机指针的深拷贝",
+      "mode": "哈希 旧→新 两趟；或交织节点法 O(1) 空间",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-remove-node-from-end-of-linked-list",
+    "path": "06-linked-list (链表)/pointer-manipulation (指针操作)/NC - Remove Nth Node From End of List",
+    "title": "Remove Nth Node From End of List",
+    "info": {
+      "signal": "删倒数第 n 个",
+      "mode": "双指针先走 n 步再同步，dummy 处理删头",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0206",
+    "path": "06-linked-list (链表)/pointer-manipulation (指针操作)/LC-0206 - Reverse Linked List",
+    "title": "Reverse Linked List",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-13"
+    }
+  },
+  {
+    "id": "LC-0061",
+    "path": "06-linked-list (链表)/pointer-manipulation (指针操作)/LC-0061 - Rotate List",
+    "title": "Rotate List",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-20"
+    }
+  },
+  {
+    "id": "LC-0708",
+    "path": "06-linked-list (链表)/pointer-manipulation (指针操作)/LC-0708 - Insert into a Sorted Circular Linked List",
+    "title": "Insert into a Sorted Circular Linked List",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-17"
+    }
+  },
+  {
+    "id": "LC-0328",
+    "path": "06-linked-list (链表)/pointer-manipulation (指针操作)/LC-0328 - Odd Even Linked List",
+    "title": "Odd Even Linked List",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-13"
+    }
+  },
+  {
+    "id": "LC-0025",
+    "path": "06-linked-list (链表)/pointer-manipulation (指针操作)/LC-0025 - Reverse Nodes in k-Group",
+    "title": "Reverse Nodes in k-Group",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-10-16"
+    }
+  },
+  {
+    "id": "LC-0021",
+    "path": "06-linked-list (链表)/pointer-manipulation (指针操作)/LC-0021 - Merge Two Sorted Lists",
+    "title": "Merge Two Sorted Lists",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-14"
+    }
+  },
+  {
+    "id": "NC-add-two-numbers",
+    "path": "06-linked-list (链表)/pointer-manipulation (指针操作)/NC - Add Two Numbers",
+    "title": "Add Two Numbers",
+    "info": {
+      "signal": "逆序链表加法",
+      "mode": "逐位相加带进位，dummy 头，末尾处理剩余进位",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-merge-two-sorted-linked-lists",
+    "path": "06-linked-list (链表)/pointer-manipulation (指针操作)/NC - Merge Two Sorted Linked Lists",
+    "title": "Merge Two Sorted Linked Lists",
+    "info": {
+      "signal": "合并两有序链表",
+      "mode": "dummy 头 + 双指针逐个接较小者",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0203",
+    "path": "06-linked-list (链表)/pointer-manipulation (指针操作)/LC-0203 - Remove Linked List Elements",
+    "title": "Remove Linked List Elements",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-13"
+    }
+  },
+  {
+    "id": "NC-merge-k-sorted-linked-lists",
+    "path": "06-linked-list (链表)/merge-k (多路合并)/NC - Merge K Sorted Linked Lists",
+    "title": "Merge K Sorted Linked Lists",
+    "info": {
+      "signal": "合并 k 个有序链表",
+      "mode": "小根堆放 (val, idx, node)；或分治两两合并",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0023",
+    "path": "06-linked-list (链表)/merge-k (多路合并)/LC-0023 - Merge k Sorted Lists",
+    "title": "Merge k Sorted Lists",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-10-16"
+    }
+  },
+  {
+    "id": "LC-0234",
+    "path": "06-linked-list (链表)/fast-slow-pointers (快慢指针)/LC-0234 - Palindrome Linked List",
+    "title": "Palindrome Linked List",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-13"
+    }
+  },
+  {
+    "id": "LC-0142",
+    "path": "06-linked-list (链表)/fast-slow-pointers (快慢指针)/LC-0142 - Linked List Cycle II",
+    "title": "Linked List Cycle II",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-10"
+    }
+  },
+  {
+    "id": "LC-0160",
+    "path": "06-linked-list (链表)/fast-slow-pointers (快慢指针)/LC-0160 - Intersection of Two Linked Lists",
+    "title": "Intersection of Two Linked Lists",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-11"
+    }
+  },
+  {
+    "id": "NC-linked-list-cycle-detection",
+    "path": "06-linked-list (链表)/fast-slow-pointers (快慢指针)/NC - Linked List Cycle Detection",
+    "title": "Linked List Cycle Detection",
+    "info": {
+      "signal": "链表是否有环",
+      "mode": "Floyd 快慢指针相遇",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0141",
+    "path": "06-linked-list (链表)/fast-slow-pointers (快慢指针)/LC-0141 - Linked List Cycle",
+    "title": "Linked List Cycle",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-07"
+    }
+  },
+  {
+    "id": "NC-find-duplicate-integer",
+    "path": "06-linked-list (链表)/fast-slow-pointers (快慢指针)/NC - Find the Duplicate Number",
+    "title": "Find the Duplicate Number",
+    "info": {
+      "signal": "数组当链表（i",
+      "mode": "nums[i]）找重复 → Floyd 找环入口",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-lru-cache",
+    "path": "06-linked-list (链表)/design (链表设计)/NC - LRU Cache",
+    "title": "LRU Cache",
+    "info": {
+      "signal": "O(1) get/put 淘汰最久未用",
+      "mode": "哈希 + 双向链表（或 OrderedDict）",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0353",
+    "path": "06-linked-list (链表)/design (链表设计)/LC-0353 - Design Snake Game",
+    "title": "Design Snake Game",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-30"
+    }
+  },
+  {
+    "id": "LC-0707",
+    "path": "06-linked-list (链表)/design (链表设计)/LC-0707 - Design Linked List",
+    "title": "Design Linked List",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-09-09"
+    }
+  },
+  {
+    "id": "NC-non-overlapping-intervals",
+    "path": "14-intervals (区间)/scheduling (调度)/NC - Non-overlapping Intervals",
+    "title": "Non-overlapping Intervals",
+    "info": {
+      "signal": "最少删除使不重叠",
+      "mode": "按结束时间排序，贪心保留最早结束",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-meeting-schedule",
+    "path": "14-intervals (区间)/scheduling (调度)/NC - Meeting Rooms",
+    "title": "Meeting Rooms",
+    "info": {
+      "signal": "能否全部参加",
+      "mode": "按起点排序，相邻检查重叠",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-minimum-interval-including-query",
+    "path": "14-intervals (区间)/scheduling (调度)/NC - Minimum Interval to Include Each Query",
+    "title": "Minimum Interval to Include Each Query",
+    "info": {
+      "signal": "每个查询点覆盖它的最短区间",
+      "mode": "查询排序 + 区间按起点排序 + 小根堆 (长度, 终点) 懒删除",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "NC-meeting-schedule-ii",
+    "path": "14-intervals (区间)/scheduling (调度)/NC - Meeting Rooms II",
+    "title": "Meeting Rooms II",
+    "info": {
+      "signal": "最少会议室",
+      "mode": "起点/终点分别排序双指针；或小根堆存结束时间",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-2021",
+    "path": "14-intervals (区间)/sweep-line (扫描线)/LC-2021 - Brightest Position on Street",
+    "title": "Brightest Position on Street",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2025-12-10"
+    }
+  },
+  {
+    "id": "LC-0163",
+    "path": "14-intervals (区间)/merge-and-insert (合并与插入)/LC-0163 - Missing Ranges",
+    "title": "Missing Ranges",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-19"
+    }
+  },
+  {
+    "id": "NC-insert-new-interval",
+    "path": "14-intervals (区间)/merge-and-insert (合并与插入)/NC - Insert Interval",
+    "title": "Insert Interval",
+    "info": {
+      "signal": "插入并合并",
+      "mode": "三段：左侧不重叠原样、重叠合并、右侧原样",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  },
+  {
+    "id": "LC-0228",
+    "path": "14-intervals (区间)/merge-and-insert (合并与插入)/LC-0228 - Summary Ranges",
+    "title": "Summary Ranges",
+    "info": {
+      "signal": null,
+      "mode": null,
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2023-08-09"
+    }
+  },
+  {
+    "id": "NC-merge-intervals",
+    "path": "14-intervals (区间)/merge-and-insert (合并与插入)/NC - Merge Intervals",
+    "title": "Merge Intervals",
+    "info": {
+      "signal": "合并重叠区间",
+      "mode": "按起点排序，与结果末尾比较合并",
+      "guard": null,
+      "sticking_point": null,
+      "first_date": "2026-09-04"
+    }
+  }
+]

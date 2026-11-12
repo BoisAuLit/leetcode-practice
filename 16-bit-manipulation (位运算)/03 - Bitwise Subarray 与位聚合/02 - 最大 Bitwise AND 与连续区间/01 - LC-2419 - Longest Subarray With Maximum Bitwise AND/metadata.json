@@ -1,0 +1,10 @@
+{
+  "id": "LC-2419",
+  "path": "16-bit-manipulation (位运算)/03 - Bitwise Subarray 与位聚合/02 - 最大 Bitwise AND 与连续区间/01 - LC-2419 - Longest Subarray With Maximum Bitwise AND",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/longest-subarray-with-maximum-bitwise-and/",
+    "neetcode": null
+  },
+  "practice": []
+}

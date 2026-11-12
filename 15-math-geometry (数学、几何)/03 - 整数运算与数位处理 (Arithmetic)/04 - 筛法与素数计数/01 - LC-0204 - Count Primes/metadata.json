@@ -1,0 +1,10 @@
+{
+  "id": "LC-0204",
+  "path": "15-math-geometry (数学、几何)/03 - 整数运算与数位处理 (Arithmetic)/04 - 筛法与素数计数/01 - LC-0204 - Count Primes",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/count-primes/",
+    "neetcode": null
+  },
+  "practice": []
+}

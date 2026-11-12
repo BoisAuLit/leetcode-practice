@@ -1,0 +1,10 @@
+{
+  "id": "LC-0085",
+  "path": "18-monotonic-fuck-you (单调栈、单调队列)/02 - 单调边界、矩形与贡献计算/01 - Histogram 与最大矩形/02 - LC-0085 - Maximal Rectangle",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximal-rectangle/",
+    "neetcode": null
+  },
+  "practice": []
+}

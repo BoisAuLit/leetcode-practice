@@ -1,0 +1,10 @@
+{
+  "id": "LC-0049",
+  "path": "01-arrays-hashing (数组、哈希表)/01 - Hash Set 与 Hash Map 基础/04 - LC-0049 - Group Anagrams",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/group-anagrams/",
+    "neetcode": "https://neetcode.io/problems/anagram-groups/question?list=neetcode150"
+  },
+  "practice": []
+}

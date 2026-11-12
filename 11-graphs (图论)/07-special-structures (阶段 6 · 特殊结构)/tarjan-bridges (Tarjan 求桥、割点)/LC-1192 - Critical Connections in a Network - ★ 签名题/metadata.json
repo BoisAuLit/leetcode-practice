@@ -1,0 +1,10 @@
+{
+  "id": "LC-1192",
+  "path": "11-graphs (图论)/07-special-structures (阶段 6 · 特殊结构)/tarjan-bridges (Tarjan 求桥、割点)/LC-1192 - Critical Connections in a Network - ★ 签名题",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/critical-connections-in-a-network/",
+    "neetcode": null
+  },
+  "practice": []
+}

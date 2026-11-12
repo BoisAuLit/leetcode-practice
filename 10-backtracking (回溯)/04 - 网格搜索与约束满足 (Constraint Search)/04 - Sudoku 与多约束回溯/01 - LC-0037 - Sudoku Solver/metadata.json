@@ -1,0 +1,31 @@
+{
+  "id": "LC-0037",
+  "path": "10-backtracking (回溯)/04 - 网格搜索与约束满足 (Constraint Search)/04 - Sudoku 与多约束回溯/01 - LC-0037 - Sudoku Solver",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/sudoku-solver/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-09-19",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-22",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-26",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-27",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

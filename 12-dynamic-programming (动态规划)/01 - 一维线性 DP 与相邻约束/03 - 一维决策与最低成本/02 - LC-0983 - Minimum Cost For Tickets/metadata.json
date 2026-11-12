@@ -1,0 +1,10 @@
+{
+  "id": "LC-0983",
+  "path": "12-dynamic-programming (动态规划)/01 - 一维线性 DP 与相邻约束/03 - 一维决策与最低成本/02 - LC-0983 - Minimum Cost For Tickets",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-cost-for-tickets/",
+    "neetcode": null
+  },
+  "practice": []
+}

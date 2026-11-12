@@ -1,0 +1,10 @@
+{
+  "id": "LC-0572",
+  "path": "07-trees (树)/07 - LCA、子树关系与树图转换/02 - 子树结构匹配/01 - LC-0572 - Subtree of Another Tree",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/subtree-of-another-tree/",
+    "neetcode": "https://neetcode.io/problems/subtree-of-a-binary-tree/question?list=neetcode150"
+  },
+  "practice": []
+}

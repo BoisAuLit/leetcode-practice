@@ -1,0 +1,10 @@
+{
+  "id": "LC-1568",
+  "path": "11-graphs (图论)/07-special-structures (阶段 6 · 特殊结构)/tarjan-bridges (Tarjan 求桥、割点)/LC-1568 - Minimum Number of Days to Disconnect Island",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/",
+    "neetcode": null
+  },
+  "practice": []
+}

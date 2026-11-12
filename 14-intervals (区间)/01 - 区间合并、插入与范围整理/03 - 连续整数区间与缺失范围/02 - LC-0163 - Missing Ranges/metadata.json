@@ -1,0 +1,10 @@
+{
+  "id": "LC-0163",
+  "path": "14-intervals (区间)/01 - 区间合并、插入与范围整理/03 - 连续整数区间与缺失范围/02 - LC-0163 - Missing Ranges",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/missing-ranges/",
+    "neetcode": null
+  },
+  "practice": []
+}

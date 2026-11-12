@@ -1,0 +1,21 @@
+{
+  "id": "LC-0243",
+  "path": "01-arrays-hashing (数组、哈希表)/06 - 低优先级与跨专题题目/08 - LC-0243 - Shortest Word Distance",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/shortest-word-distance/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-09-28",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-30",
+      "sticking_point": "",
+      "result": "🟡"
+    }
+  ]
+}

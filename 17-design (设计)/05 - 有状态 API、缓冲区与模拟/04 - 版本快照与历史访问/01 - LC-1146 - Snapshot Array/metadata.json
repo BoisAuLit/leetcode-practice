@@ -1,0 +1,10 @@
+{
+  "id": "LC-1146",
+  "path": "17-design (设计)/05 - 有状态 API、缓冲区与模拟/04 - 版本快照与历史访问/01 - LC-1146 - Snapshot Array",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/snapshot-array/",
+    "neetcode": null
+  },
+  "practice": []
+}

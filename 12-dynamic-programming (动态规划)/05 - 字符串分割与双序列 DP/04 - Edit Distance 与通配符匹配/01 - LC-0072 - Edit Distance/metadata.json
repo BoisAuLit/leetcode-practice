@@ -1,0 +1,16 @@
+{
+  "id": "LC-0072",
+  "path": "12-dynamic-programming (动态规划)/05 - 字符串分割与双序列 DP/04 - Edit Distance 与通配符匹配/01 - LC-0072 - Edit Distance",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/edit-distance/",
+    "neetcode": "https://neetcode.io/problems/edit-distance/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-10-26",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

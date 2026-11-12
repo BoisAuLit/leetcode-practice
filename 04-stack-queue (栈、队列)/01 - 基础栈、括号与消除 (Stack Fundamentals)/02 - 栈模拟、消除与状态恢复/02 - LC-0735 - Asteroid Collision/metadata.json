@@ -1,0 +1,10 @@
+{
+  "id": "LC-0735",
+  "path": "04-stack-queue (栈、队列)/01 - 基础栈、括号与消除 (Stack Fundamentals)/02 - 栈模拟、消除与状态恢复/02 - LC-0735 - Asteroid Collision",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/asteroid-collision/",
+    "neetcode": null
+  },
+  "practice": []
+}

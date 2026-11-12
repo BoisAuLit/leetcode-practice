@@ -1,0 +1,26 @@
+{
+  "id": "LC-1004",
+  "path": "03-sliding-window (滑动窗口)/02 - 变长窗口之最长合法区间 (Longest Valid Window)/02 - 允许修改 K 个元素/01 - LC-1004 - Max Consecutive Ones III",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/max-consecutive-ones-iii/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-09-22",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-30",
+      "sticking_point": "",
+      "result": "🟡"
+    },
+    {
+      "date": "2026-10-13",
+      "sticking_point": "",
+      "result": "🟡"
+    }
+  ]
+}

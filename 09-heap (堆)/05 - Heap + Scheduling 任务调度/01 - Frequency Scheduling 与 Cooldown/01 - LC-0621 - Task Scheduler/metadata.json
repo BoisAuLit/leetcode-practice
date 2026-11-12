@@ -1,0 +1,10 @@
+{
+  "id": "LC-0621",
+  "path": "09-heap (堆)/05 - Heap + Scheduling 任务调度/01 - Frequency Scheduling 与 Cooldown/01 - LC-0621 - Task Scheduler",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/task-scheduler/",
+    "neetcode": "https://neetcode.io/problems/task-scheduling/question?list=neetcode150"
+  },
+  "practice": []
+}

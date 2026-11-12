@@ -1,0 +1,10 @@
+{
+  "id": "LC-0125",
+  "path": "02-two-pointers (双指针)/04 - 回文与字符串双指针 (Palindrome)/01 - 回文验证与容错/01 - LC-0125 - Valid Palindrome",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/valid-palindrome/",
+    "neetcode": "https://neetcode.io/problems/is-palindrome/question?list=neetcode150"
+  },
+  "practice": []
+}

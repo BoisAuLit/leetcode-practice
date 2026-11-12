@@ -1,0 +1,10 @@
+{
+  "id": "LC-0151",
+  "path": "02-two-pointers (双指针)/05 - 多序列同步扫描 (Two Sequences)/04 - 单词扫描与字符串重组/01 - LC-0151 - Reverse Words in a String",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/reverse-words-in-a-string/",
+    "neetcode": null
+  },
+  "practice": []
+}

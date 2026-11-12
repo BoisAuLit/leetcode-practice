@@ -1,0 +1,10 @@
+{
+  "id": "LC-1046",
+  "path": "09-heap (堆)/01 - Heap 基础与 Top K/01 - 基础 Heap 与反复取极值/01 - LC-1046 - Last Stone Weight",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/last-stone-weight/",
+    "neetcode": "https://neetcode.io/problems/last-stone-weight/question?list=neetcode150"
+  },
+  "practice": []
+}

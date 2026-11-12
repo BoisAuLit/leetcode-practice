@@ -1,0 +1,31 @@
+{
+  "id": "LC-0202",
+  "path": "06-linked-list (链表)/03 - Floyd 环检测与隐式函数图/02 - 隐式函数图与环检测/01 - LC-0202 - Happy Number",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/happy-number/",
+    "neetcode": "https://neetcode.io/problems/non-cyclical-number/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-09-10",
+      "sticking_point": "隐式链表判环：Floyd 快慢指针，slow/fast 起点要错开一步",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-14",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-22",
+      "sticking_point": "",
+      "result": "🟢"
+    },
+    {
+      "date": "2026-10-03",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

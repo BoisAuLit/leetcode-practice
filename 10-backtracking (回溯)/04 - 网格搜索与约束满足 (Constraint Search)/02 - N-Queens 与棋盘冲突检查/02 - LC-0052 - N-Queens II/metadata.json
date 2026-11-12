@@ -1,0 +1,10 @@
+{
+  "id": "LC-0052",
+  "path": "10-backtracking (回溯)/04 - 网格搜索与约束满足 (Constraint Search)/02 - N-Queens 与棋盘冲突检查/02 - LC-0052 - N-Queens II",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/n-queens-ii/",
+    "neetcode": null
+  },
+  "practice": []
+}

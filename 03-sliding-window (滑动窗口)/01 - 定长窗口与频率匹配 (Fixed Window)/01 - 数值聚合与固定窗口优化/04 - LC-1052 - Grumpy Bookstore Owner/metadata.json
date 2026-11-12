@@ -1,0 +1,10 @@
+{
+  "id": "LC-1052",
+  "path": "03-sliding-window (滑动窗口)/01 - 定长窗口与频率匹配 (Fixed Window)/01 - 数值聚合与固定窗口优化/04 - LC-1052 - Grumpy Bookstore Owner",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/grumpy-bookstore-owner/",
+    "neetcode": null
+  },
+  "practice": []
+}

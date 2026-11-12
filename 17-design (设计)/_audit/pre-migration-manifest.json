@@ -1,0 +1,177 @@
+{
+  "topic": "17-design (设计)",
+  "captured": "2026-11-11",
+  "note": "重构开始前对专题内全部普通文件记录的 SHA-256 清单。未发现符号链接。",
+  "file_count": 42,
+  "symlinks": [],
+  "files": [
+    {
+      "sha256": "f9152744b2f8f64f3120aaaefc527a9aa422860985ec63f53fbec81a4ac8c593",
+      "path": "cache (缓存)/LC-0146 - LRU Cache/metadata.json"
+    },
+    {
+      "sha256": "c6df768af4f06605ef36d703f6dc04125a2eb2acba04519c76b6b3bd62ba0f0d",
+      "path": "cache (缓存)/LC-0146 - LRU Cache/problem.pdf"
+    },
+    {
+      "sha256": "0326a91f6e352e498d055be434545f0953600e18a23ac145f004795b9af5499a",
+      "path": "cache (缓存)/LC-0146 - LRU Cache/problem_dark.pdf"
+    },
+    {
+      "sha256": "676c6332f91636ecaa3feecaa8a797359b669ddae57c965a995cf4f908d1fd54",
+      "path": "cache (缓存)/LC-0146 - LRU Cache/solution.py"
+    },
+    {
+      "sha256": "dd13aba50ddda1842bf16fe08e757e72c9276c0e1b47a6d2b1aa1a5bbba71a76",
+      "path": "general/LC-0157 - Read N Characters Given Read4/metadata.json"
+    },
+    {
+      "sha256": "1117a06ff5f7f30eb54fe0f9340111f4ab5816726db6dd049031dfe9dfc5cc73",
+      "path": "general/LC-0157 - Read N Characters Given Read4/problem.pdf"
+    },
+    {
+      "sha256": "915329f30b86d89f22aa76282b88dda9bc4a8b0d9954ffa0cf6c9b5fd42a883d",
+      "path": "general/LC-0157 - Read N Characters Given Read4/problem_dark.pdf"
+    },
+    {
+      "sha256": "8772dd340531dbe1b1f5ad881169b55605f241f47e1f334366d369fb5a28b575",
+      "path": "general/LC-0157 - Read N Characters Given Read4/solution.py"
+    },
+    {
+      "sha256": "cb9fa85fe410c5110ffbde94b35ab42aefc7784044b0b1c3484660a407bef282",
+      "path": "general/LC-0348 - Design Tic-Tac-Toe/metadata.json"
+    },
+    {
+      "sha256": "734c79b6317642807ea0b5e52f06c620affd1e0d1fc3f6c6d7b8a55bd7a1b945",
+      "path": "general/LC-0348 - Design Tic-Tac-Toe/problem.pdf"
+    },
+    {
+      "sha256": "f7e38909f8c53e7af1a9145069f453bba43c82e9d1a8dd927422a1e85166a46c",
+      "path": "general/LC-0348 - Design Tic-Tac-Toe/problem_dark.pdf"
+    },
+    {
+      "sha256": "9a81131badff8f45037b3b66975fe6d463a0eace7615a4941789ad1864b45945",
+      "path": "general/LC-0348 - Design Tic-Tac-Toe/solution.py"
+    },
+    {
+      "sha256": "c6d5c9956649bb0b770b7e628f02859a0b0d2f94c044fea5dc9be2a0437f4b7b",
+      "path": "hash-structures (哈希结构设计)/LC-0705 - Design HashSet/metadata.json"
+    },
+    {
+      "sha256": "e7a392ccefa3f3b29259ffd9ee94605a14fbd4539d1af22a09ceb9e79d72d452",
+      "path": "hash-structures (哈希结构设计)/LC-0705 - Design HashSet/problem.pdf"
+    },
+    {
+      "sha256": "81e983e611911ead40e3eadb7f1462c898b5c8ea8432576c5d74f40a75605da4",
+      "path": "hash-structures (哈希结构设计)/LC-0705 - Design HashSet/problem_dark.pdf"
+    },
+    {
+      "sha256": "da939b621c17a3ca74a8559c0861a64dc30556231c78a46b23ac4aecb4f21ef5",
+      "path": "hash-structures (哈希结构设计)/LC-0705 - Design HashSet/solution.py"
+    },
+    {
+      "sha256": "dee4442dd7b7c0198768449e5688f42fd9e18f329e194d0da873aadad07fc719",
+      "path": "hash-structures (哈希结构设计)/LC-0706 - Design HashMap/metadata.json"
+    },
+    {
+      "sha256": "5049b95c918245f13c472bad1bd8da00936e759615bf582ab5df2e9c64bbf3c5",
+      "path": "hash-structures (哈希结构设计)/LC-0706 - Design HashMap/note.md"
+    },
+    {
+      "sha256": "7128a814a525ef09508716717d5893db210b67f7079425f06c28143be9ba17c3",
+      "path": "hash-structures (哈希结构设计)/LC-0706 - Design HashMap/problem.pdf"
+    },
+    {
+      "sha256": "9aa9ab50b5dfbcfd99abb08e7f34a68256ed229d019b370f96e00dd1cb119ab9",
+      "path": "hash-structures (哈希结构设计)/LC-0706 - Design HashMap/problem_dark.pdf"
+    },
+    {
+      "sha256": "9c413ca5e87d8982772a615d005735c6921dc3c51cf6941afa2db8575577fa6a",
+      "path": "hash-structures (哈希结构设计)/LC-0706 - Design HashMap/solution.py"
+    },
+    {
+      "sha256": "db5820a2b4b934d7500a155c65db6f9526546bc6f6c0951bfdbd0e3fe037d8b3",
+      "path": "hash-structures (哈希结构设计)/LC-1570 - Dot Product of Two Sparse Vectors/metadata.json"
+    },
+    {
+      "sha256": "e8ba1f490d6e251acd3f7096d5333c496244a7474a9177ad74d6bf56a3d5dbfb",
+      "path": "hash-structures (哈希结构设计)/LC-1570 - Dot Product of Two Sparse Vectors/problem.pdf"
+    },
+    {
+      "sha256": "940a0cb61bb562b9b47f225d09df46040fd12ee6aeec90076da7f3a1f6d78dfb",
+      "path": "hash-structures (哈希结构设计)/LC-1570 - Dot Product of Two Sparse Vectors/problem_dark.pdf"
+    },
+    {
+      "sha256": "66032a0c5e32802dc31aa33eb0908678cd13ac012f218b8e2b4596e2fa0a0443",
+      "path": "hash-structures (哈希结构设计)/LC-1570 - Dot Product of Two Sparse Vectors/solution.py"
+    },
+    {
+      "sha256": "2d1264a89f7ce13d3568aba2512adbfb196c9390feebabc1018c7148665f7b9f",
+      "path": "instructions.md"
+    },
+    {
+      "sha256": "be26d52714a36bd81cd0ca1149b5eab324658e618976650bfea919ebb88ad90b",
+      "path": "randomized (随机化)/LC-0580 - Count Student Number in Departments/metadata.json"
+    },
+    {
+      "sha256": "b2afde007a8494fe13420126f9bed55841192972c5bd137b17b32de81bb1eead",
+      "path": "randomized (随机化)/LC-0580 - Count Student Number in Departments/problem.pdf"
+    },
+    {
+      "sha256": "ac52d9ca25c41fb41712013f324fcb8365da019aa4593098080d6d536b13f857",
+      "path": "randomized (随机化)/LC-0580 - Count Student Number in Departments/problem_dark.pdf"
+    },
+    {
+      "sha256": "83b645c84be17ff93d66f716f6d9cfe2c1aa95caf35fc296bceef39dad4361e1",
+      "path": "randomized (随机化)/LC-0580 - Count Student Number in Departments/solution.py"
+    },
+    {
+      "sha256": "d881a510b1c36c3197fe108114d1722c3ccbcd978eb51f6c33792d16d474c52c",
+      "path": "rate-and-counter (计数与限流)/LC-0359 - Logger Rate Limiter/metadata.json"
+    },
+    {
+      "sha256": "fb038f810fccdf0b88a8bdfe47736a3fefc8c1cd251066c312acb1a237450141",
+      "path": "rate-and-counter (计数与限流)/LC-0359 - Logger Rate Limiter/problem.pdf"
+    },
+    {
+      "sha256": "48d0112cc4b0afa521fa1fcbf6c6018b63316753023ef6652fcf087850739ca1",
+      "path": "rate-and-counter (计数与限流)/LC-0359 - Logger Rate Limiter/problem_dark.pdf"
+    },
+    {
+      "sha256": "2042f697ea7d8143026470ec53dee30e450c30fd09aa453d885463e8f3ef6d7a",
+      "path": "rate-and-counter (计数与限流)/LC-0359 - Logger Rate Limiter/solution.py"
+    },
+    {
+      "sha256": "f9fcc12c46c9c962c47dabafc4be413d21d913318e0acd883649ff6851e6d473",
+      "path": "rate-and-counter (计数与限流)/LC-0362 - Design Hit Counter/metadata.json"
+    },
+    {
+      "sha256": "85372e976e6aad6002c8637e2130078328fe23526571a32c7e927818097c1a4b",
+      "path": "rate-and-counter (计数与限流)/LC-0362 - Design Hit Counter/problem.pdf"
+    },
+    {
+      "sha256": "61cd3d3933cf9d37b93ccc28f38e5492cd4bf23e2e76bf7b0db8600b5b4e76f0",
+      "path": "rate-and-counter (计数与限流)/LC-0362 - Design Hit Counter/problem_dark.pdf"
+    },
+    {
+      "sha256": "8964f78f03af44248b1a9f599b7b8fa330e3dd212aa5109af67235f1b8661baf",
+      "path": "rate-and-counter (计数与限流)/LC-0362 - Design Hit Counter/solution.py"
+    },
+    {
+      "sha256": "5085d74cf42950496be466e8f5b3ffef3a1aa7a8a479f2642906fb2f3288c212",
+      "path": "rate-and-counter (计数与限流)/LC-0933 - Number of Recent Calls/metadata.json"
+    },
+    {
+      "sha256": "6788d37e371c2a0352559ac477d6c44a838c83658b7e3297808e1f8c2eaa8794",
+      "path": "rate-and-counter (计数与限流)/LC-0933 - Number of Recent Calls/problem.pdf"
+    },
+    {
+      "sha256": "06edb292f9e1b425d6d9a52061c379c0ff5812b94e8f90fde3c63b1d003c2526",
+      "path": "rate-and-counter (计数与限流)/LC-0933 - Number of Recent Calls/problem_dark.pdf"
+    },
+    {
+      "sha256": "bc4b839caeb14ec5a24e82889fb72111928b74ddabfb40325865590f2f986b4b",
+      "path": "rate-and-counter (计数与限流)/LC-0933 - Number of Recent Calls/solution.py"
+    }
+  ]
+}

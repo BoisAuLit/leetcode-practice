@@ -1,0 +1,10 @@
+{
+  "id": "LC-0438",
+  "path": "03-sliding-window (滑动窗口)/01 - 定长窗口与频率匹配 (Fixed Window)/02 - 固定窗口字符频率匹配/02 - LC-0438 - Find All Anagrams in a String",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-all-anagrams-in-a-string/",
+    "neetcode": null
+  },
+  "practice": []
+}

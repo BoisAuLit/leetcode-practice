@@ -1,0 +1,10 @@
+{
+  "id": "LC-0157",
+  "path": "17-design (设计)/05 - 有状态 API、缓冲区与模拟/01 - Buffered Reader 与跨调用状态/01 - LC-0157 - Read N Characters Given Read4",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/read-n-characters-given-read4/",
+    "neetcode": null
+  },
+  "practice": []
+}

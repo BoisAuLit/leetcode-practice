@@ -1,0 +1,10 @@
+{
+  "id": "LC-0898",
+  "path": "16-bit-manipulation (位运算)/03 - Bitwise Subarray 与位聚合/01 - 子数组 OR 状态与按位贡献/01 - LC-0898 - Bitwise ORs of Subarrays",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/bitwise-ors-of-subarrays/",
+    "neetcode": null
+  },
+  "practice": []
+}

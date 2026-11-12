@@ -1,0 +1,10 @@
+{
+  "id": "LC-1710",
+  "path": "13-greedy (贪心)/03 - 排序贪心、频率与资源分配/01 - 按收益与成本优先级选择/01 - LC-1710 - Maximum Units on a Truck",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-units-on-a-truck/",
+    "neetcode": null
+  },
+  "practice": []
+}

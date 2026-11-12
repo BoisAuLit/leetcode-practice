@@ -1,0 +1,10 @@
+{
+  "id": "LC-0632",
+  "path": "09-heap (堆)/02 - K-way Merge 与候选扩展/03 - 多路指针与覆盖区间/01 - LC-0632 - Smallest Range Covering Elements from K Lists",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/smallest-range-covering-elements-from-k-lists/",
+    "neetcode": null
+  },
+  "practice": []
+}

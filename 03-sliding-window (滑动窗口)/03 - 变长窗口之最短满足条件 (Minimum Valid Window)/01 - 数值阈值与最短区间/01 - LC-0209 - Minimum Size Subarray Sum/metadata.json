@@ -1,0 +1,10 @@
+{
+  "id": "LC-0209",
+  "path": "03-sliding-window (滑动窗口)/03 - 变长窗口之最短满足条件 (Minimum Valid Window)/01 - 数值阈值与最短区间/01 - LC-0209 - Minimum Size Subarray Sum",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-size-subarray-sum/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": "LC-0239",
+  "path": "18-monotonic-fuck-you (单调栈、单调队列)/04 - 单调队列与滑动窗口/01 - 固定窗口最大值/01 - LC-0239 - Sliding Window Maximum",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/sliding-window-maximum/",
+    "neetcode": "https://neetcode.io/problems/sliding-window-maximum/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-09-17",
+      "sticking_point": "",
+      "result": "🟡"
+    },
+    {
+      "date": "2026-09-21",
+      "sticking_point": "",
+      "result": "🟢"
+    },
+    {
+      "date": "2026-09-27",
+      "sticking_point": "",
+      "result": "🟡"
+    },
+    {
+      "date": "2026-10-04",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-10-15",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

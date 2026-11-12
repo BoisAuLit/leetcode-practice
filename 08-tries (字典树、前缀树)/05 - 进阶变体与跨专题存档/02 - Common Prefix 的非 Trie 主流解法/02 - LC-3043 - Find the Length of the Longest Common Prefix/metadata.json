@@ -1,0 +1,21 @@
+{
+  "id": "LC-3043",
+  "path": "08-tries (字典树、前缀树)/05 - 进阶变体与跨专题存档/02 - Common Prefix 的非 Trie 主流解法/02 - LC-3043 - Find the Length of the Longest Common Prefix",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-09-30",
+      "sticking_point": "",
+      "result": "🟡"
+    },
+    {
+      "date": "2026-11-04",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

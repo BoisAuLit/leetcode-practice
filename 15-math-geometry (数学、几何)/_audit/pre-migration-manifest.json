@@ -1,0 +1,245 @@
+{
+  "topic": "15-math-geometry (数学、几何)",
+  "captured": "2026-11-11",
+  "note": "重构开始前对专题内全部普通文件记录的 SHA-256 清单。未发现符号链接。",
+  "file_count": 59,
+  "symlinks": [],
+  "files": [
+    {
+      "sha256": "bd0d3811733be6e53380382a4c3557c50645c8d34a252bc197c3737a393522fa",
+      "path": "arithmetic (算术与模拟)/LC-0008 - String to Integer (atoi)/metadata.json"
+    },
+    {
+      "sha256": "86013961a5bcfc05fcfbc7a8d5e0aa7fd90f558dbed98f4f34941b76d1c2c9bd",
+      "path": "arithmetic (算术与模拟)/LC-0008 - String to Integer (atoi)/problem.pdf"
+    },
+    {
+      "sha256": "9dc5f9ca9da2cdf0c37ddf610a39300e739a7fab7a262ebf483e2a286664857e",
+      "path": "arithmetic (算术与模拟)/LC-0008 - String to Integer (atoi)/problem_dark.pdf"
+    },
+    {
+      "sha256": "91de1c9123005ca9d262385df3b7b6bb22305c2510f343734cb12b1d5e00f486",
+      "path": "arithmetic (算术与模拟)/LC-0008 - String to Integer (atoi)/solution.py"
+    },
+    {
+      "sha256": "a62aa0a22815a89e4537e9cc4e0e50bd91a5d353d87b5b1710e3f8ff0bd66ea7",
+      "path": "arithmetic (算术与模拟)/LC-0043 - Multiply Strings/metadata.json"
+    },
+    {
+      "sha256": "9d8007edb577bf4d6b8dcb728a12aa1c90f2d8b86175b891f35b0907cd559fb8",
+      "path": "arithmetic (算术与模拟)/LC-0043 - Multiply Strings/problem.pdf"
+    },
+    {
+      "sha256": "838b773201de2432baf5f24c61cac8b7bc52a8792b3e4ca41eb298c174404991",
+      "path": "arithmetic (算术与模拟)/LC-0043 - Multiply Strings/problem_dark.pdf"
+    },
+    {
+      "sha256": "8676a8646cbc02f4df799cfc478888f046845ed1938b0da869be7d664e5dcb97",
+      "path": "arithmetic (算术与模拟)/LC-0043 - Multiply Strings/solution.py"
+    },
+    {
+      "sha256": "d5b9644579c5d84843a0dbb154b4e24740c0a3010abb23eb183b5befbf63786f",
+      "path": "arithmetic (算术与模拟)/LC-0066 - Plus One/metadata.json"
+    },
+    {
+      "sha256": "81cf94bb807bc4594225d17ef8aea795d7704aa196303978bb20f8d48418343a",
+      "path": "arithmetic (算术与模拟)/LC-0066 - Plus One/note.md"
+    },
+    {
+      "sha256": "475881f128740178bbb2d65528a9f5f28512230cae8aaef7646aa9b60483cb01",
+      "path": "arithmetic (算术与模拟)/LC-0066 - Plus One/problem.pdf"
+    },
+    {
+      "sha256": "eaf9b44b1ebdd18621eb3fdc500884e1c1a548ca6eb22a45303c043d1672a8d2",
+      "path": "arithmetic (算术与模拟)/LC-0066 - Plus One/problem_dark.pdf"
+    },
+    {
+      "sha256": "07bdfa35bd2a8a893c27214904107d98b88a92d90f707e69aa697939a52601ac",
+      "path": "arithmetic (算术与模拟)/LC-0066 - Plus One/solution.py"
+    },
+    {
+      "sha256": "06f92c479486ed762158f9eddd0ff730a0b1e6f2378d492fa6ae390d90122538",
+      "path": "geometry (几何)/NC - Detect Squares/metadata.json"
+    },
+    {
+      "sha256": "78b38b26a8658343e492cbf6d852e276446a794f816d5e588318b39a00622fea",
+      "path": "geometry (几何)/NC - Detect Squares/note.md"
+    },
+    {
+      "sha256": "bb1f9f395b95f92da63a6eaf3db12a15bc39bf2b2da490abeea1a31c5ffdbf61",
+      "path": "geometry (几何)/NC - Detect Squares/problem.pdf"
+    },
+    {
+      "sha256": "fbe1bc505df85af38b243854790134e9a14c1c40673efa60dbabe17397d7936a",
+      "path": "geometry (几何)/NC - Detect Squares/problem_dark.pdf"
+    },
+    {
+      "sha256": "450367612a46dae584fa6587bcf262445e4f2f6bccb997012e0494f77690de3e",
+      "path": "geometry (几何)/NC - Detect Squares/solution.py"
+    },
+    {
+      "sha256": "921a239fe48f5e1b19c3ffbfe3b69d6965cb72bde79b5b84a1faf23d8e6e9db7",
+      "path": "instructions.md"
+    },
+    {
+      "sha256": "750aeb0895a050bf6f67851160be136575e78388982a4561c3f68e1267d19ef7",
+      "path": "matrix (矩阵)/LC-0048 - Rotate Image/metadata.json"
+    },
+    {
+      "sha256": "c7203b45cf044606e5b20732f9db62a6a46aa672d77fc3665e98f400cf3b7a57",
+      "path": "matrix (矩阵)/LC-0048 - Rotate Image/note.md"
+    },
+    {
+      "sha256": "bf4a37e83bd2174a58e79b0a7114428209477ebe41ccbf5a99f4a35df46f91fa",
+      "path": "matrix (矩阵)/LC-0048 - Rotate Image/problem.pdf"
+    },
+    {
+      "sha256": "372ffeb78d32fc8c12245ac43654364c9eca86d45d48df452a273e1cbb377288",
+      "path": "matrix (矩阵)/LC-0048 - Rotate Image/problem_dark.pdf"
+    },
+    {
+      "sha256": "2e433207ee1c061ff3a5ecee700541858698cfdc5ddaca48d66d41af5eb20909",
+      "path": "matrix (矩阵)/LC-0048 - Rotate Image/solution.py"
+    },
+    {
+      "sha256": "7e9aa02bab547103707c319346722adef3d3b081d38955d07059c1b73bfb1afd",
+      "path": "matrix (矩阵)/LC-0054 - Spiral Matrix/metadata.json"
+    },
+    {
+      "sha256": "3ef0477421f0071031a71abac393f7e54859b7b81f0cee827e69f4eba5e0a2d6",
+      "path": "matrix (矩阵)/LC-0054 - Spiral Matrix/note.md"
+    },
+    {
+      "sha256": "e77c4d0ff884305f46dfc68b0d5b7cad90d9e24e6110283586a92ee9df37cadc",
+      "path": "matrix (矩阵)/LC-0054 - Spiral Matrix/problem.pdf"
+    },
+    {
+      "sha256": "30a58eb8d0bfef295afac6cd6b44add9f7176c3f3ccb91baace9dcba18bef059",
+      "path": "matrix (矩阵)/LC-0054 - Spiral Matrix/problem_dark.pdf"
+    },
+    {
+      "sha256": "2441160864bd5b4f915a14e1edb78efa59b7772d97983934b67070394bed1de6",
+      "path": "matrix (矩阵)/LC-0054 - Spiral Matrix/solution.py"
+    },
+    {
+      "sha256": "837b8e1cef214a167c07c581ca5309d4b42790aebe403712da059e9b9bd85c85",
+      "path": "matrix (矩阵)/LC-0059 - Spiral Matrix II/metadata.json"
+    },
+    {
+      "sha256": "7a33c261ee1a45d895ca58f8d6b04f2cf921be63af0ce5952a21a38f58ad6297",
+      "path": "matrix (矩阵)/LC-0059 - Spiral Matrix II/problem.pdf"
+    },
+    {
+      "sha256": "ecf56d210039bcd39378cf14333c1c943056512486ecc61d2db7b67ac5924751",
+      "path": "matrix (矩阵)/LC-0059 - Spiral Matrix II/problem_dark.pdf"
+    },
+    {
+      "sha256": "84b94624937acb3a0036349b51df31bdf858b4bdf6152c8a9d35222439c43c42",
+      "path": "matrix (矩阵)/LC-0059 - Spiral Matrix II/solution.py"
+    },
+    {
+      "sha256": "1aec27b08345d7a152950031077451afe0d864b300abe14e5dfdec6499451bce",
+      "path": "matrix (矩阵)/LC-0498 - Diagonal Traverse/asset-0498 - Diagonal Traverse.drawio"
+    },
+    {
+      "sha256": "962833e678634800355044e4d88fae4daefc961aafe61b804fb6372ba307830d",
+      "path": "matrix (矩阵)/LC-0498 - Diagonal Traverse/metadata.json"
+    },
+    {
+      "sha256": "0b639c4266e2b1dcff9b2b925fdd9cb073233b898ffaf6e673e8e8f1d39c53f1",
+      "path": "matrix (矩阵)/LC-0498 - Diagonal Traverse/problem.pdf"
+    },
+    {
+      "sha256": "0209ac8325accfe537b79e6d673377da30164d9e6ac42550d02fa005f35e0845",
+      "path": "matrix (矩阵)/LC-0498 - Diagonal Traverse/problem_dark.pdf"
+    },
+    {
+      "sha256": "c03bc3f449b1065070ec1cf495bcfb2455516b4e35eba5fc54f4ca9d113325b4",
+      "path": "matrix (矩阵)/LC-0498 - Diagonal Traverse/solution.py"
+    },
+    {
+      "sha256": "f651764b7f144757d53749c85b8f4c5087ff141006db1423fef5b0fd56b8ac49",
+      "path": "matrix (矩阵)/LC-0723 - Candy Crush/metadata.json"
+    },
+    {
+      "sha256": "e3f3b3be02aeaebabc31a19a9e156a337112e29b4da2c316f2f17f77c215460c",
+      "path": "matrix (矩阵)/LC-0723 - Candy Crush/problem.pdf"
+    },
+    {
+      "sha256": "aed0b0927f8f7f19195ed4a3ed77aace4d930572f9c4c617e6aa8fda51483680",
+      "path": "matrix (矩阵)/LC-0723 - Candy Crush/problem_dark.pdf"
+    },
+    {
+      "sha256": "c6a2f53011a35efdc885a4b5034a1e3844303d2cc6ca911a4741b125344305ce",
+      "path": "matrix (矩阵)/LC-0723 - Candy Crush/solution.py"
+    },
+    {
+      "sha256": "8de6ed72cd11a4fc04842058a1962f2838f26b774fbb7dc0ec9173a0d0d3705c",
+      "path": "matrix (矩阵)/LC-0867 - Transpose Matrix/metadata.json"
+    },
+    {
+      "sha256": "e174dabeff4cb3c239d6fa73acaa11b2a112ee176255d9ff7496dd15f7cc757b",
+      "path": "matrix (矩阵)/LC-0867 - Transpose Matrix/problem.pdf"
+    },
+    {
+      "sha256": "c19432135db9c8e1406acd1cd0756f2d32397b949c57d380478a1f01d8da0e3a",
+      "path": "matrix (矩阵)/LC-0867 - Transpose Matrix/problem_dark.pdf"
+    },
+    {
+      "sha256": "0822b544e6b38da6f989ee7664d8915980b1aa8f71a71f91ebbfa37ce3e0fe82",
+      "path": "matrix (矩阵)/LC-0867 - Transpose Matrix/solution.py"
+    },
+    {
+      "sha256": "377f58519ad37a9f567e39f548a3d28b6a614290121870fbda8023f2f5067fd6",
+      "path": "matrix (矩阵)/LC-0885 - Spiral Matrix III/metadata.json"
+    },
+    {
+      "sha256": "f64da8413e89910eacb0937c885dd3cdb55457eb3622eb18e99a5a4b4bd9111e",
+      "path": "matrix (矩阵)/LC-0885 - Spiral Matrix III/problem.pdf"
+    },
+    {
+      "sha256": "17ec77d7a4d1af84b4447fa29c172165876e1f8ec7bef2c887a04e7031b83820",
+      "path": "matrix (矩阵)/LC-0885 - Spiral Matrix III/problem_dark.pdf"
+    },
+    {
+      "sha256": "0a21dfb8304aa23cb6c809797127a5b442ae4ddc6bfd40e9100792e16d3ad729",
+      "path": "matrix (矩阵)/LC-0885 - Spiral Matrix III/solution.py"
+    },
+    {
+      "sha256": "7ecc4f39d797d3281a049f8484be54f1b442c54162bde79561d43cbe17462884",
+      "path": "matrix (矩阵)/LC-2326 - Spiral Matrix IV/metadata.json"
+    },
+    {
+      "sha256": "9949e483caecf79883638395decf4dae4490500b4fed0ec631530e8a40a4a25d",
+      "path": "matrix (矩阵)/LC-2326 - Spiral Matrix IV/problem.pdf"
+    },
+    {
+      "sha256": "3f1b828501c8ecbc1e800c4d0143cf9f61300f1947033e9574d948c4d54ad108",
+      "path": "matrix (矩阵)/LC-2326 - Spiral Matrix IV/problem_dark.pdf"
+    },
+    {
+      "sha256": "1f8aa5e523d4dc32d4e8671a8f7c16184b428415642e81e46f881a695f4c7869",
+      "path": "matrix (矩阵)/LC-2326 - Spiral Matrix IV/solution.py"
+    },
+    {
+      "sha256": "9426740bfa881151cbee8524c6704d96ffcac478f38ca970a509569e812406dc",
+      "path": "matrix (矩阵)/LC-3195 - Find the Minimum Area to Cover All Ones I/metadata.json"
+    },
+    {
+      "sha256": "110726bd1be5f4eb150476b1beadb4e7de9e006814294f5c46018610c2bc52ef",
+      "path": "matrix (矩阵)/LC-3195 - Find the Minimum Area to Cover All Ones I/problem.pdf"
+    },
+    {
+      "sha256": "96729004f80d1fe759611c08701c9410a3a19fc40bd67bf249fa41927bb136d2",
+      "path": "matrix (矩阵)/LC-3195 - Find the Minimum Area to Cover All Ones I/problem_dark.pdf"
+    },
+    {
+      "sha256": "243cfb33f2e9c1e3955c934752465709d28475c154d1a520d78af127ad66fe5f",
+      "path": "matrix (矩阵)/LC-3195 - Find the Minimum Area to Cover All Ones I/solution.py"
+    },
+    {
+      "sha256": "28cc1ec49dbbdb976593d8d245179f2d0850dd8d07739d942110829ea4dd3458",
+      "path": "utils/ListNode.py"
+    }
+  ]
+}

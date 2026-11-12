@@ -1,0 +1,10 @@
+{
+  "id": "LC-0225",
+  "path": "04-stack-queue (栈、队列)/04 - Stack 与 Queue 数据结构设计 (Design)/03 - Stack 与 Queue 相互实现/02 - LC-0225 - Implement Stack using Queues",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/implement-stack-using-queues/",
+    "neetcode": null
+  },
+  "practice": []
+}

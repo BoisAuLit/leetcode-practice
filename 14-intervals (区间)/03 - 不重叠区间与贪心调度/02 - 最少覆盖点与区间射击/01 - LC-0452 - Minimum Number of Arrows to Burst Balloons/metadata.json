@@ -1,0 +1,10 @@
+{
+  "id": "LC-0452",
+  "path": "14-intervals (区间)/03 - 不重叠区间与贪心调度/02 - 最少覆盖点与区间射击/01 - LC-0452 - Minimum Number of Arrows to Burst Balloons",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/",
+    "neetcode": null
+  },
+  "practice": []
+}

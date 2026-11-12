@@ -1,0 +1,10 @@
+{
+  "id": "LC-0153",
+  "path": "05-binary-search (二分查找)/02 - 旋转数组、峰值与结构性二分 (Structural Search)/01 - Rotated Sorted Array/01 - LC-0153 - Find Minimum in Rotated Sorted Array",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+    "neetcode": "https://neetcode.io/problems/find-minimum-in-rotated-sorted-array/question?list=neetcode150"
+  },
+  "practice": []
+}

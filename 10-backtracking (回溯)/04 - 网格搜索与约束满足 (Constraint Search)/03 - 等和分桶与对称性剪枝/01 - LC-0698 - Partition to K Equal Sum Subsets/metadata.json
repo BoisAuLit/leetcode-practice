@@ -1,0 +1,10 @@
+{
+  "id": "LC-0698",
+  "path": "10-backtracking (回溯)/04 - 网格搜索与约束满足 (Constraint Search)/03 - 等和分桶与对称性剪枝/01 - LC-0698 - Partition to K Equal Sum Subsets",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/partition-to-k-equal-sum-subsets/",
+    "neetcode": null
+  },
+  "practice": []
+}

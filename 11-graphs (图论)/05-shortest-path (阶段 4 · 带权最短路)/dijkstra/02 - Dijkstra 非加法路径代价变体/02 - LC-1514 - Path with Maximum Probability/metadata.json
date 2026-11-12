@@ -1,0 +1,10 @@
+{
+  "id": "LC-1514",
+  "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra/02 - Dijkstra 非加法路径代价变体/02 - LC-1514 - Path with Maximum Probability",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/path-with-maximum-probability/",
+    "neetcode": null
+  },
+  "practice": []
+}

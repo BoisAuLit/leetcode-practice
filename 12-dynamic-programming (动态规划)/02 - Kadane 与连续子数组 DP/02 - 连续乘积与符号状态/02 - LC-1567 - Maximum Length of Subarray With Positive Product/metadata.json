@@ -1,0 +1,10 @@
+{
+  "id": "LC-1567",
+  "path": "12-dynamic-programming (动态规划)/02 - Kadane 与连续子数组 DP/02 - 连续乘积与符号状态/02 - LC-1567 - Maximum Length of Subarray With Positive Product",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-length-of-subarray-with-positive-product/",
+    "neetcode": null
+  },
+  "practice": []
+}

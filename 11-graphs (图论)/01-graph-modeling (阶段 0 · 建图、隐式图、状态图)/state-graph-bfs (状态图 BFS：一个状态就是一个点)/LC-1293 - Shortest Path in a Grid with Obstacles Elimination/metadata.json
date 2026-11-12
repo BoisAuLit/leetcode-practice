@@ -1,0 +1,10 @@
+{
+  "id": "LC-1293",
+  "path": "11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/state-graph-bfs (状态图 BFS：一个状态就是一个点)/LC-1293 - Shortest Path in a Grid with Obstacles Elimination",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/",
+    "neetcode": null
+  },
+  "practice": []
+}

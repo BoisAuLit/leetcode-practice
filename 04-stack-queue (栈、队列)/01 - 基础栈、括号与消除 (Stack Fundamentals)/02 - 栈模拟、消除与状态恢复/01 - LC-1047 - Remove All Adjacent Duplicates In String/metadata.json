@@ -1,0 +1,10 @@
+{
+  "id": "LC-1047",
+  "path": "04-stack-queue (栈、队列)/01 - 基础栈、括号与消除 (Stack Fundamentals)/02 - 栈模拟、消除与状态恢复/01 - LC-1047 - Remove All Adjacent Duplicates In String",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/",
+    "neetcode": null
+  },
+  "practice": []
+}

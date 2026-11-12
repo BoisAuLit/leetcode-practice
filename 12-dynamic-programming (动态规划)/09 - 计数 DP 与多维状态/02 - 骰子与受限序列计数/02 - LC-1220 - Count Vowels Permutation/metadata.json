@@ -1,0 +1,10 @@
+{
+  "id": "LC-1220",
+  "path": "12-dynamic-programming (动态规划)/09 - 计数 DP 与多维状态/02 - 骰子与受限序列计数/02 - LC-1220 - Count Vowels Permutation",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/count-vowels-permutation/",
+    "neetcode": null
+  },
+  "practice": []
+}

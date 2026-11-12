@@ -1,0 +1,10 @@
+{
+  "id": "LC-0844",
+  "path": "02-two-pointers (双指针)/05 - 多序列同步扫描 (Two Sequences)/02 - 从末尾扫描与跳过/01 - LC-0844 - Backspace String Compare",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/backspace-string-compare/",
+    "neetcode": null
+  },
+  "practice": []
+}

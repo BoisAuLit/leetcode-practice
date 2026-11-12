@@ -1,0 +1,10 @@
+{
+  "id": "LC-0104",
+  "path": "07-trees (树)/01 - 二叉树基础遍历与递归 (Tree Fundamentals)/02 - 基础递归、结构比较与树高度/01 - LC-0104 - Maximum Depth of Binary Tree",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+    "neetcode": "https://neetcode.io/problems/depth-of-binary-tree/question?list=neetcode150"
+  },
+  "practice": []
+}

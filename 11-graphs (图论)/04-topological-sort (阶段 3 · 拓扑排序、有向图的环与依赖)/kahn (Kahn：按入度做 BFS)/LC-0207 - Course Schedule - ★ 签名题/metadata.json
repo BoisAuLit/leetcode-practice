@@ -1,0 +1,10 @@
+{
+  "id": "LC-0207",
+  "path": "11-graphs (图论)/04-topological-sort (阶段 3 · 拓扑排序、有向图的环与依赖)/kahn (Kahn：按入度做 BFS)/LC-0207 - Course Schedule - ★ 签名题",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/course-schedule/",
+    "neetcode": "https://neetcode.io/problems/course-schedule/question?list=neetcode150"
+  },
+  "practice": []
+}

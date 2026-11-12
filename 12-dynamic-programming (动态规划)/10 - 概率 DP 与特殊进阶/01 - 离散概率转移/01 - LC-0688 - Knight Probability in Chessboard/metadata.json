@@ -1,0 +1,10 @@
+{
+  "id": "LC-0688",
+  "path": "12-dynamic-programming (动态规划)/10 - 概率 DP 与特殊进阶/01 - 离散概率转移/01 - LC-0688 - Knight Probability in Chessboard",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/knight-probability-in-chessboard/",
+    "neetcode": null
+  },
+  "practice": []
+}

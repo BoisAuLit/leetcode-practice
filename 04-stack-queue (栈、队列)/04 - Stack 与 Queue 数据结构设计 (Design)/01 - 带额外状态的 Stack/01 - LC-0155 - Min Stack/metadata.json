@@ -1,0 +1,10 @@
+{
+  "id": "LC-0155",
+  "path": "04-stack-queue (栈、队列)/04 - Stack 与 Queue 数据结构设计 (Design)/01 - 带额外状态的 Stack/01 - LC-0155 - Min Stack",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/min-stack/",
+    "neetcode": "https://neetcode.io/problems/minimum-stack/question?list=neetcode150"
+  },
+  "practice": []
+}

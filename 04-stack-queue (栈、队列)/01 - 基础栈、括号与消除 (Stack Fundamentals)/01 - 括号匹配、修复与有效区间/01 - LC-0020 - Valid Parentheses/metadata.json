@@ -1,0 +1,10 @@
+{
+  "id": "LC-0020",
+  "path": "04-stack-queue (栈、队列)/01 - 基础栈、括号与消除 (Stack Fundamentals)/01 - 括号匹配、修复与有效区间/01 - LC-0020 - Valid Parentheses",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/valid-parentheses/",
+    "neetcode": "https://neetcode.io/problems/validate-parentheses/question?list=neetcode150"
+  },
+  "practice": []
+}

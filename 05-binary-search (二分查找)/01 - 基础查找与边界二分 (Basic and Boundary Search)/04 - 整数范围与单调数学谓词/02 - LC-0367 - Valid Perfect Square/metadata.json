@@ -1,0 +1,10 @@
+{
+  "id": "LC-0367",
+  "path": "05-binary-search (二分查找)/01 - 基础查找与边界二分 (Basic and Boundary Search)/04 - 整数范围与单调数学谓词/02 - LC-0367 - Valid Perfect Square",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/valid-perfect-square/",
+    "neetcode": null
+  },
+  "practice": []
+}

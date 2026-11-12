@@ -1,0 +1,26 @@
+{
+  "id": "LC-0136",
+  "path": "16-bit-manipulation (位运算)/02 - XOR 不变量与二进制算术/01 - XOR 抵消与缺失元素/01 - LC-0136 - Single Number",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/single-number/",
+    "neetcode": "https://neetcode.io/problems/single-number/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-09-08",
+      "sticking_point": "",
+      "result": "🟢"
+    },
+    {
+      "date": "2026-09-26",
+      "sticking_point": "",
+      "result": "🟡"
+    },
+    {
+      "date": "2026-10-02",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

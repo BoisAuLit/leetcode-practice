@@ -1,0 +1,10 @@
+{
+  "id": "LC-0785",
+  "path": "11-graphs (图论)/07-special-structures (阶段 6 · 特殊结构)/bipartite (二分图染色)/LC-0785 - Is Graph Bipartite - ★ 签名题",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/is-graph-bipartite/",
+    "neetcode": null
+  },
+  "practice": []
+}

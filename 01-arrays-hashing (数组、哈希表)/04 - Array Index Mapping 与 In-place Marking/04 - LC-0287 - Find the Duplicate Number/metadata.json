@@ -1,0 +1,10 @@
+{
+  "id": "LC-0287",
+  "path": "01-arrays-hashing (数组、哈希表)/04 - Array Index Mapping 与 In-place Marking/04 - LC-0287 - Find the Duplicate Number",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-the-duplicate-number/",
+    "neetcode": "https://neetcode.io/problems/find-duplicate-integer/question?list=neetcode150"
+  },
+  "practice": []
+}

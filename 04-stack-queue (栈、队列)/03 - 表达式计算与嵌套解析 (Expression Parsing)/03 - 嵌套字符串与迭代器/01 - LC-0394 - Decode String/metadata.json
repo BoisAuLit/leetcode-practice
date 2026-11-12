@@ -1,0 +1,16 @@
+{
+  "id": "LC-0394",
+  "path": "04-stack-queue (栈、队列)/03 - 表达式计算与嵌套解析 (Expression Parsing)/03 - 嵌套字符串与迭代器/01 - LC-0394 - Decode String",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/decode-string/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-10-02",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

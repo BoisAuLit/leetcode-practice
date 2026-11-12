@@ -1,0 +1,10 @@
+{
+  "id": "LC-0297",
+  "path": "07-trees (树)/05 - 树构造、序列化与结构修改/02 - 序列化、反序列化与有效性验证/01 - LC-0297 - Serialize and Deserialize Binary Tree",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/",
+    "neetcode": "https://neetcode.io/problems/serialize-and-deserialize-binary-tree/question?list=neetcode150"
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0430",
+  "path": "06-linked-list (链表)/06 - 复杂指针与链表数据结构设计/04 - 多级双向链表展开/01 - LC-0430 - Flatten a Multilevel Doubly Linked List",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/flatten-a-multilevel-doubly-linked-list/",
+    "neetcode": null
+  },
+  "practice": []
+}

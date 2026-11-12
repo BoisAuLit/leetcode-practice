@@ -1,0 +1,10 @@
+{
+  "id": "LC-0421",
+  "path": "08-tries (字典树、前缀树)/05 - 进阶变体与跨专题存档/01 - Bitwise Trie 与最大 XOR/01 - LC-0421 - Maximum XOR of Two Numbers in an Array",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-xor-of-two-numbers-in-an-array/",
+    "neetcode": null
+  },
+  "practice": []
+}

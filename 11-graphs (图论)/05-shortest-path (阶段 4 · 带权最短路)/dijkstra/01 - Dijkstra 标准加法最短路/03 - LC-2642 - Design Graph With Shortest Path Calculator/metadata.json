@@ -1,0 +1,10 @@
+{
+  "id": "LC-2642",
+  "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra/01 - Dijkstra 标准加法最短路/03 - LC-2642 - Design Graph With Shortest Path Calculator",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/design-graph-with-shortest-path-calculator/",
+    "neetcode": null
+  },
+  "practice": []
+}

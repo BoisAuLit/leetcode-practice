@@ -1,0 +1,36 @@
+{
+  "id": "LC-0048",
+  "path": "15-math-geometry (数学、几何)/02 - 矩阵变换与状态模拟 (Matrix Transformation)/01 - 转置与矩阵旋转/02 - LC-0048 - Rotate Image",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/rotate-image/",
+    "neetcode": "https://neetcode.io/problems/rotate-matrix/question?list=neetcode150"
+  },
+  "practice": [
+    {
+      "date": "2026-09-09",
+      "sticking_point": "顺时针旋转 90° = transpose（转置） + reverse each row（每行反转）",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-09-13",
+      "sticking_point": "transpose 的时候只需要针对左下角的三角形即可, 甚至左上角到右下角的对角线都不需要碰",
+      "result": "🟡"
+    },
+    {
+      "date": "2026-09-22",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-10-04",
+      "sticking_point": "",
+      "result": "🔴"
+    },
+    {
+      "date": "2026-10-17",
+      "sticking_point": "",
+      "result": "🟢"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "NC-jump-game-ii",
+  "path": "13-greedy (贪心)/jump-game (跳跃游戏)/Jump Game II - Cluster/LC-0045 - Jump Game II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/jump-game-ii/",
+    "neetcode": "https://neetcode.io/problems/jump-game-ii/question?list=neetcode150"
+  },
+  "practice": []
+}

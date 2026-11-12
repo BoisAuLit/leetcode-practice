@@ -1,0 +1,10 @@
+{
+  "id": "LC-2097",
+  "path": "11-graphs (图论)/07-special-structures (阶段 6 · 特殊结构)/eulerian-path (欧拉路径 Hierholzer)/LC-2097 - Valid Arrangement of Pairs",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/valid-arrangement-of-pairs/",
+    "neetcode": null
+  },
+  "practice": []
+}

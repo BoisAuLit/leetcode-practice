@@ -1,0 +1,16 @@
+{
+  "id": "LC-3552",
+  "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/zero-one-bfs (0-1 BFS：双端队列，0 放队头 1 放队尾)/LC-3552 - Grid Teleportation Traversal",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/grid-teleportation-traversal/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-11-03",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

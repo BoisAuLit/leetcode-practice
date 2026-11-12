@@ -1,0 +1,16 @@
+{
+  "id": "LC-2021",
+  "path": "14-intervals (区间)/04 - 重叠计数、扫描线与资源分配/02 - 差分事件与容量约束/02 - LC-2021 - Brightest Position on Street",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/brightest-position-on-street/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-10-27",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

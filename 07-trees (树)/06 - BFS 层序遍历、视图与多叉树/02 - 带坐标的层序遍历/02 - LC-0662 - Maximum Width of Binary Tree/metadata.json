@@ -1,0 +1,10 @@
+{
+  "id": "LC-0662",
+  "path": "07-trees (树)/06 - BFS 层序遍历、视图与多叉树/02 - 带坐标的层序遍历/02 - LC-0662 - Maximum Width of Binary Tree",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-width-of-binary-tree/",
+    "neetcode": null
+  },
+  "practice": []
+}

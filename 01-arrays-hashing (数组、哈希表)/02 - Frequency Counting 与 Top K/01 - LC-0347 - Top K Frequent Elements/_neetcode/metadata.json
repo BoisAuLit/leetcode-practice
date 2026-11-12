@@ -1,0 +1,10 @@
+{
+  "id": "NC-top-k-elements-in-list",
+  "path": "01-arrays-hashing (数组、哈希表)/hash-map (哈希表)/NC - Top K Frequent Elements",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/top-k-frequent-elements/",
+    "neetcode": "https://neetcode.io/problems/top-k-elements-in-list/question?list=neetcode150"
+  },
+  "practice": []
+}

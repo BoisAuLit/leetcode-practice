@@ -1,0 +1,10 @@
+{
+  "id": "LC-0304",
+  "path": "01-arrays-hashing (数组、哈希表)/03 - Prefix Sum 与 Prefix-Suffix/06 - LC-0304 - Range Sum Query 2D - Immutable",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/range-sum-query-2d-immutable/",
+    "neetcode": null
+  },
+  "practice": []
+}

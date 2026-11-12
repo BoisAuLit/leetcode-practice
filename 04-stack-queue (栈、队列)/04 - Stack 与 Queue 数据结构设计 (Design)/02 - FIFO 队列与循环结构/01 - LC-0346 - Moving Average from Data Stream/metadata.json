@@ -1,0 +1,10 @@
+{
+  "id": "LC-0346",
+  "path": "04-stack-queue (栈、队列)/04 - Stack 与 Queue 数据结构设计 (Design)/02 - FIFO 队列与循环结构/01 - LC-0346 - Moving Average from Data Stream",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/moving-average-from-data-stream/",
+    "neetcode": null
+  },
+  "practice": []
+}

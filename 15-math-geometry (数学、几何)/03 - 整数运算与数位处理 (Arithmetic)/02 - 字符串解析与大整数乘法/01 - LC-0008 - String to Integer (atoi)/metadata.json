@@ -1,0 +1,10 @@
+{
+  "id": "LC-0008",
+  "path": "15-math-geometry (数学、几何)/03 - 整数运算与数位处理 (Arithmetic)/02 - 字符串解析与大整数乘法/01 - LC-0008 - String to Integer (atoi)",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/string-to-integer-atoi/",
+    "neetcode": null
+  },
+  "practice": []
+}

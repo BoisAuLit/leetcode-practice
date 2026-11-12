@@ -1,0 +1,10 @@
+{
+  "id": "LC-0208",
+  "path": "08-tries (字典树、前缀树)/01 - Trie 基础结构与前缀匹配/01 - Trie 基础操作与最短前缀/01 - LC-0208 - Implement Trie (Prefix Tree)",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/implement-trie-prefix-tree/",
+    "neetcode": "https://neetcode.io/problems/implement-prefix-tree/question?list=neetcode150"
+  },
+  "practice": []
+}

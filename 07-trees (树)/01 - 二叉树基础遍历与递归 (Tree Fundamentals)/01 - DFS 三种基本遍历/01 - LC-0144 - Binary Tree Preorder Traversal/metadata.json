@@ -1,0 +1,10 @@
+{
+  "id": "LC-0144",
+  "path": "07-trees (树)/01 - 二叉树基础遍历与递归 (Tree Fundamentals)/01 - DFS 三种基本遍历/01 - LC-0144 - Binary Tree Preorder Traversal",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/binary-tree-preorder-traversal/",
+    "neetcode": null
+  },
+  "practice": []
+}

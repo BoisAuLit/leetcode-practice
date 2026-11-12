@@ -1,0 +1,16 @@
+{
+  "id": "LC-2812",
+  "path": "11-graphs (图论)/05-shortest-path (阶段 4 · 带权最短路)/dijkstra/02 - Dijkstra 非加法路径代价变体/04 - LC-2812 - Find the Safest Path in a Grid",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-the-safest-path-in-a-grid/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-11-09",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0647",
+  "path": "02-two-pointers (双指针)/04 - 回文与字符串双指针 (Palindrome)/02 - 中心扩展 (Expand Around Center)/02 - LC-0647 - Palindromic Substrings",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/palindromic-substrings/",
+    "neetcode": "https://neetcode.io/problems/palindromic-substrings/question?list=neetcode150"
+  },
+  "practice": []
+}

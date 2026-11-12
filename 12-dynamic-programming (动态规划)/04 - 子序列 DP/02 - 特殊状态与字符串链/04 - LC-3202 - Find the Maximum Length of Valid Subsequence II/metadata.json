@@ -1,0 +1,16 @@
+{
+  "id": "LC-3202",
+  "path": "12-dynamic-programming (动态规划)/04 - 子序列 DP/02 - 特殊状态与字符串链/04 - LC-3202 - Find the Maximum Length of Valid Subsequence II",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/find-the-maximum-length-of-valid-subsequence-ii/",
+    "neetcode": null
+  },
+  "practice": [
+    {
+      "date": "2026-10-15",
+      "sticking_point": "",
+      "result": "🔴"
+    }
+  ]
+}

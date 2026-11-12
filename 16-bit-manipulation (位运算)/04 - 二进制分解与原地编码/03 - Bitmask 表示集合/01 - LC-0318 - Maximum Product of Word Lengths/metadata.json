@@ -1,0 +1,10 @@
+{
+  "id": "LC-0318",
+  "path": "16-bit-manipulation (位运算)/04 - 二进制分解与原地编码/03 - Bitmask 表示集合/01 - LC-0318 - Maximum Product of Word Lengths",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-product-of-word-lengths/",
+    "neetcode": null
+  },
+  "practice": []
+}

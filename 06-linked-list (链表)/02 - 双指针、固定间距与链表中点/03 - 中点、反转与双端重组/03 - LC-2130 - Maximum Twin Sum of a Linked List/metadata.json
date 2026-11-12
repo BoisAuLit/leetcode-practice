@@ -1,0 +1,10 @@
+{
+  "id": "LC-2130",
+  "path": "06-linked-list (链表)/02 - 双指针、固定间距与链表中点/03 - 中点、反转与双端重组/03 - LC-2130 - Maximum Twin Sum of a Linked List",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/",
+    "neetcode": null
+  },
+  "practice": []
+}

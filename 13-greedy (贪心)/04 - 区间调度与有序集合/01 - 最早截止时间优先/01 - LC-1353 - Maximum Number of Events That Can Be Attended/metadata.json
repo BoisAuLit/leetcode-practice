@@ -1,0 +1,10 @@
+{
+  "id": "LC-1353",
+  "path": "13-greedy (贪心)/04 - 区间调度与有序集合/01 - 最早截止时间优先/01 - LC-1353 - Maximum Number of Events That Can Be Attended",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0030",
+  "path": "03-sliding-window (滑动窗口)/06 - 高阶窗口组合与问题转化 (Advanced Windows)/01 - 按单词长度分组的窗口/01 - LC-0030 - Substring with Concatenation of All Words",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
+    "neetcode": null
+  },
+  "practice": []
+}

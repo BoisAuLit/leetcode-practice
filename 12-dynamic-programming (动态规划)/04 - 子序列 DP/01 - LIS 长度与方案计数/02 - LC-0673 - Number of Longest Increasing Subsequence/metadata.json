@@ -1,0 +1,10 @@
+{
+  "id": "LC-0673",
+  "path": "12-dynamic-programming (动态规划)/04 - 子序列 DP/01 - LIS 长度与方案计数/02 - LC-0673 - Number of Longest Increasing Subsequence",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/number-of-longest-increasing-subsequence/",
+    "neetcode": null
+  },
+  "practice": []
+}

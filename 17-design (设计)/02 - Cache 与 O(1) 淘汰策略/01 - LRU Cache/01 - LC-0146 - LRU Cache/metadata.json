@@ -1,0 +1,10 @@
+{
+  "id": "LC-0146",
+  "path": "17-design (设计)/02 - Cache 与 O(1) 淘汰策略/01 - LRU Cache/01 - LC-0146 - LRU Cache",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/lru-cache/",
+    "neetcode": "https://neetcode.io/problems/lru-cache/question?list=neetcode150"
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-1488",
+  "path": "13-greedy (贪心)/04 - 区间调度与有序集合/02 - 带时间约束的资源分配/01 - LC-1488 - Avoid Flood in The City",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/avoid-flood-in-the-city/",
+    "neetcode": null
+  },
+  "practice": []
+}

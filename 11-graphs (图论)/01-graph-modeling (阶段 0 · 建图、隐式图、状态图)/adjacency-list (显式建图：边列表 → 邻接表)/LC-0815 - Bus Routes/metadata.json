@@ -1,0 +1,10 @@
+{
+  "id": "LC-0815",
+  "path": "11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/adjacency-list (显式建图：边列表 → 邻接表)/LC-0815 - Bus Routes",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/bus-routes/",
+    "neetcode": null
+  },
+  "practice": []
+}

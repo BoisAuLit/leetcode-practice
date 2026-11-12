@@ -1,0 +1,10 @@
+{
+  "id": "LC-0224",
+  "path": "04-stack-queue (栈、队列)/03 - 表达式计算与嵌套解析 (Expression Parsing)/02 - 中缀表达式与运算符优先级/02 - LC-0224 - Basic Calculator",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/basic-calculator/",
+    "neetcode": null
+  },
+  "practice": []
+}

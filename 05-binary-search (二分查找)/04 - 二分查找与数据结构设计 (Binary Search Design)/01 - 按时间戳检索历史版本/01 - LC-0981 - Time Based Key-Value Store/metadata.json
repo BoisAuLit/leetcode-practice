@@ -1,0 +1,10 @@
+{
+  "id": "LC-0981",
+  "path": "05-binary-search (二分查找)/04 - 二分查找与数据结构设计 (Binary Search Design)/01 - 按时间戳检索历史版本/01 - LC-0981 - Time Based Key-Value Store",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/time-based-key-value-store/",
+    "neetcode": "https://neetcode.io/problems/time-based-key-value-store/question?list=neetcode150"
+  },
+  "practice": []
+}
