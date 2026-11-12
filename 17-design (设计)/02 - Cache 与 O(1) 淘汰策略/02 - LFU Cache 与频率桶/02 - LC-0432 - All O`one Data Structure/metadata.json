@@ -1,0 +1,10 @@
+{
+  "id": "LC-0432",
+  "path": "17-design (设计)/02 - Cache 与 O(1) 淘汰策略/02 - LFU Cache 与频率桶/02 - LC-0432 - All O`one Data Structure",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/all-oone-data-structure/",
+    "neetcode": null
+  },
+  "practice": []
+}

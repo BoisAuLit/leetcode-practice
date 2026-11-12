@@ -118,3 +118,15 @@ diff[i] = (same[i-1] + diff[i-1]) * (k - 1)
 ## 复习时的 Pattern Recognition
 > 「有多少种方案」 → 计数 DP：`dp[0] = 1`，转移用 `+=`，记得取模。
 > 「状态说不清 / 转移写不出来」 → **多开一维**（上一个是什么颜色？边界什么形状？用了几次？）
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-1531 String Compression II](<./04 - 多维决策与任务划分/03 - LC-1531 - String Compression II>) | `09 - 计数 DP 与多维状态/04 - 多维决策与任务划分` | dp[i][k]：删 s[i] 或「s[i] 开一段并向后吞掉相同字符」；enc_len 单独写成函数 | O(n²k) Hard |
+| [LC-1986 Minimum Number of Work Sessions to Finish the Tasks](<./05 - 特殊输入压缩与计数 DP/02 - LC-1986 - Minimum Number of Work Sessions to Finish the Tasks>) | `09 - 计数 DP 与多维状态/05 - 特殊输入压缩与计数 DP` | 状压 dp[mask] = (session 数, 最后一个 session 已用)；元组比较即「先少 session 再少 used」 | 装箱问题 n ≤ 14 |
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

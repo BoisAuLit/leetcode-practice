@@ -95,3 +95,15 @@ for right, x in enumerate(nums):
 - 0424 以为 maxFreq 要在收缩时同步减小（不需要，但要能解释为什么）。
 - 1838 忘记排序，或者用 `max(window)` 现算（退化成 O(n²)）。
 - 2401 吐元素时该用 `^=`（位不重叠，XOR 精确撤销）。
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-2958 Length of Longest Subarray With at Most K Frequency](<./01 - 无重复与 Distinct 限制/05 - LC-2958 - Length of Longest Subarray With at Most K Frequency>) | `02 - 变长窗口之最长合法区间 (Longest Valid Window)/01 - 无重复与 Distinct 限制` | LC-0003 的「> 1」改成「> k」；只有刚进来的元素可能超标 | 最长合法窗口模板 |
+| [LC-1493 Longest Subarray of 1's After Deleting One Element](<./02 - 允许修改 K 个元素/03 - LC-1493 - Longest Subarray of 1's After Deleting One Element>) | `02 - 变长窗口之最长合法区间 (Longest Valid Window)/02 - 允许修改 K 个元素` | LC-1004 模板 K=1，答案 = 最大窗口长 − 1（自动覆盖「必须删一个」） | prev/cur 两段计数是 O(1) 简化 |
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

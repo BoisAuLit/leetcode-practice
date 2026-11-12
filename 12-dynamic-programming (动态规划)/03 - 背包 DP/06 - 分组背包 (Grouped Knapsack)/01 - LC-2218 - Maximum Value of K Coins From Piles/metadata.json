@@ -1,0 +1,10 @@
+{
+  "id": "LC-2218",
+  "path": "12-dynamic-programming (动态规划)/03 - 背包 DP/06 - 分组背包 (Grouped Knapsack)/01 - LC-2218 - Maximum Value of K Coins From Piles",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-value-of-k-coins-from-piles/",
+    "neetcode": null
+  },
+  "practice": []
+}

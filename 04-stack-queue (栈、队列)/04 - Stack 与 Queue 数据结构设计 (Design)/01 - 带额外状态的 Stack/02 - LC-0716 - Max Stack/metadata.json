@@ -1,0 +1,10 @@
+{
+  "id": "LC-0716",
+  "path": "04-stack-queue (栈、队列)/04 - Stack 与 Queue 数据结构设计 (Design)/01 - 带额外状态的 Stack/02 - LC-0716 - Max Stack",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/max-stack/",
+    "neetcode": null
+  },
+  "practice": []
+}

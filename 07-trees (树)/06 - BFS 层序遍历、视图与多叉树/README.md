@@ -99,3 +99,14 @@ while cur:
 ## 复习时的 Pattern Recognition
 > 「按层输出」「每层第一个/最后一个」「层宽」「同层连指针」
 > → 分层 BFS。**骨架永远一样，只改收集方式。**
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-0987 Vertical Order Traversal of a Binary Tree](<./02 - 带坐标的层序遍历/03 - LC-0987 - Vertical Order Traversal of a Binary Tree>) | `06 - BFS 层序遍历、视图与多叉树/02 - 带坐标的层序遍历` | 和 LC-0314 唯一区别：同行同列按值排 ⟹ 桶内 sorted((row,val)) | 带坐标 BFS |
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

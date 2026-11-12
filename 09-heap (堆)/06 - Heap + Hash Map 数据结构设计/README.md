@@ -93,3 +93,14 @@ LRU Cache（Hash Map + 双向链表）在 [17-design](<../../17-design (设计)/
 - LC-3408 试图在堆里「修改」已有条目（堆做不到）。
 - LC-3408 弹出时不做有效性验证，返回了已被修改/删除的任务。
 - 把 Lazy Deletion 的单次复杂度说成 O(log n)（应说**摊还**）。
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-1244 Design A Leaderboard](<./02 - 动态优先级与 Lazy Deletion/02 - LC-1244 - Design A Leaderboard>) | `06 - Heap + Hash Map 数据结构设计/02 - 动态优先级与 Lazy Deletion` | top(K) 用大小为 K 的最小堆 O(n log K)；三种实现对应「谁来付钱」 | 暖场设计题，考复杂度取舍；**Premium 题，当前账号抓不到 PDF**；题面摘要在 solution.py 顶部的 docstring 里；续费后 `python3 tools/intake.py "<文件夹>"` 可补抓 |
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

@@ -1,0 +1,10 @@
+{
+  "id": "LC-0273",
+  "path": "15-math-geometry (数学、几何)/03 - 整数运算与数位处理 (Arithmetic)/02 - 字符串解析与大整数乘法/03 - LC-0273 - Integer to English Words",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/integer-to-english-words/",
+    "neetcode": null
+  },
+  "practice": []
+}

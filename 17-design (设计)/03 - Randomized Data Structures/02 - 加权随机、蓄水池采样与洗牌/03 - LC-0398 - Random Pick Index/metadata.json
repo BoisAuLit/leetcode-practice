@@ -1,0 +1,10 @@
+{
+  "id": "LC-0398",
+  "path": "17-design (设计)/03 - Randomized Data Structures/02 - 加权随机、蓄水池采样与洗牌/03 - LC-0398 - Random Pick Index",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/random-pick-index/",
+    "neetcode": null
+  },
+  "practice": []
+}

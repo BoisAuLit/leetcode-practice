@@ -80,3 +80,14 @@ Lazy 写法下，**`hasNext()` 必须有副作用**：把栈顶的嵌套列表�
 ## 复习时的 Pattern Recognition
 > 「后缀表达式求值」「带优先级的四则运算」「任意层括号」「k[encoded] 解码」
 > 「嵌套列表迭代器」 → 栈保存上下文。
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-0772 Basic Calculator III](<./02 - 中缀表达式与运算符优先级/03 - LC-0772 - Basic Calculator III>) | `03 - 表达式计算与嵌套解析 (Expression Parsing)/02 - 中缀表达式与运算符优先级` | 0227 的「上一个运算符 + 栈」法，括号递归求值当成一个数；除法 int(a/b) 向零截断 | calculator 系列终态；**Premium 题，当前账号抓不到 PDF**；题面摘要在 solution.py 顶部的 docstring 里；续费后 `python3 tools/intake.py "<文件夹>"` 可补抓 |
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

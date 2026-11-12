@@ -1,0 +1,10 @@
+{
+  "id": "LC-0987",
+  "path": "07-trees (树)/06 - BFS 层序遍历、视图与多叉树/02 - 带坐标的层序遍历/03 - LC-0987 - Vertical Order Traversal of a Binary Tree",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/",
+    "neetcode": null
+  },
+  "practice": []
+}

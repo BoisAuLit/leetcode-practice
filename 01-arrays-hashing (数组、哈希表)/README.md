@@ -10,7 +10,7 @@
 
 ## 一句话抓住这一类
 
-这 43 道题不是 43 个算法，只有**四个核心观察**：
+这 47 道题不是 47 个算法，只有**四个核心观察**：
 
 1. **查找要快就换空间** —— Set 问存在、Map 问「对应的那个东西」。（Level 01）
 2. **数量比数值重要** —— 计数表是一种压缩；桶排序和投票法都是在计数之上再省一层。（Level 02）
@@ -156,3 +156,17 @@ Level 04 的五道题全靠「能不能改 nums」分家：
 - `_resources/unclassified/asset-001 - 3197 - ALL - Find the Minimum Area to Cover All Ones II.pdf`
   —— 原来错放在 LC-2768 文件夹里，内容实际是 **LC-3197** 的官方题解（本仓库目前只有 LC-3195，在 `15-math-geometry/matrix/`）。没有删除，挪到这里等你决定去处。
 
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-0249 Group Shifted Strings](<./01 - Hash Set 与 Hash Map 基础/10 - LC-0249 - Group Shifted Strings>) | `01 - Hash Set 与 Hash Map 基础` | 规范化键 = 相邻字母差 mod 26（az 与 ba 必须同组）；和 LC-0049 同套路 | 环绕是全部考点；**Premium 题，当前账号抓不到 PDF**；题面摘要在 solution.py 顶部的 docstring 里；续费后 `python3 tools/intake.py "<文件夹>"` 可补抓 |
+| [LC-0791 Custom Sort String](<./02 - Frequency Counting 与 Top K/08 - LC-0791 - Custom Sort String>) | `02 - Frequency Counting 与 Top K` | 计数 + 按 order 输出 = 26 桶的桶排序；不在 order 里的字母也要输出 | LC-0049 式「规范化输出」 |
+| [LC-0523 Continuous Subarray Sum](<./03 - Prefix Sum 与 Prefix-Suffix/07 - LC-0523 - Continuous Subarray Sum>) | `03 - Prefix Sum 与 Prefix-Suffix` | P[j] ≡ P[i] (mod k)；只记余数首次位置 + 哨兵 {0:-1}，长度 j-i>=2 | LC-0560 / LC-0974 之间的一环 |
+| [LC-0937 Reorder Data in Log Files](<./06 - 低优先级与跨专题题目/15 - LC-0937 - Reorder Data in Log Files>) | `06 - 低优先级与跨专题题目` | 单一排序键 (0,content,id) / (1,)，数字日志靠**稳定排序**保序；要说出依赖稳定性 | Amazon 热身 |
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

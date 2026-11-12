@@ -1,0 +1,10 @@
+{
+  "id": "LC-0523",
+  "path": "01-arrays-hashing (数组、哈希表)/03 - Prefix Sum 与 Prefix-Suffix/07 - LC-0523 - Continuous Subarray Sum",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/continuous-subarray-sum/",
+    "neetcode": null
+  },
+  "practice": []
+}

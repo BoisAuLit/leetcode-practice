@@ -1,0 +1,10 @@
+{
+  "id": "LC-2958",
+  "path": "03-sliding-window (滑动窗口)/02 - 变长窗口之最长合法区间 (Longest Valid Window)/01 - 无重复与 Distinct 限制/05 - LC-2958 - Length of Longest Subarray With at Most K Frequency",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/",
+    "neetcode": null
+  },
+  "practice": []
+}

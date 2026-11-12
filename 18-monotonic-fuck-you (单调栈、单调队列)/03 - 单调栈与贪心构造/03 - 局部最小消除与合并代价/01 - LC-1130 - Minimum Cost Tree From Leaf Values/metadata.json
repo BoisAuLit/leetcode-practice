@@ -1,0 +1,10 @@
+{
+  "id": "LC-1130",
+  "path": "18-monotonic-fuck-you (单调栈、单调队列)/03 - 单调栈与贪心构造/03 - 局部最小消除与合并代价/01 - LC-1130 - Minimum Cost Tree From Leaf Values",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/",
+    "neetcode": null
+  },
+  "practice": []
+}

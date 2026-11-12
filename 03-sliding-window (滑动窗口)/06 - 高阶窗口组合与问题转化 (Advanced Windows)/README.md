@@ -74,3 +74,14 @@ for offset in range(L):                      # ! L 个起点分组
 - 2516：先判「某种字符总数 < k」⇒ -1；上限可能为 0。
 - 3439：gap 数组别漏掉第一个会议前和最后一个会议后的空隙。
 - 看到「从两端操作」就该条件反射想到补集；真去模拟两端选择是指数级的。
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-1234 Replace the Substring for Balanced String](<./02 - Complement Window 问题转化/03 - LC-1234 - Replace the Substring for Balanced String>) | `06 - 高阶窗口组合与问题转化 (Advanced Windows)/02 - Complement Window 问题转化` | 看窗口外面：outside[c] <= n/4 全部成立 ⟹ 合法；最短窗口模板「合法就收缩」 | LC-1658 式补集窗口 |
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

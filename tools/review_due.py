@@ -41,7 +41,7 @@ metadata.json 里和复习有关的字段：
                                                       --dry-run 只看会动什么，不真删。
     python3 tools/review_due.py done <子串> <g|y|r> [--note "卡点"]   按题目名记录今天的复习结果
     python3 tools/review_due.py stats                 总量、到期/排期/未排期/毕业、按大类进度、最近🔴
-    python3 tools/review_due.py list [due|unscheduled|scheduled|graduated|all]
+    python3 tools/review_due.py list [due|unscheduled|scheduled|graduated|all|core]
 <子串> 匹配题目文件夹的相对路径（不区分大小写），匹配到多个时会列出候选。
 """
 from __future__ import annotations
@@ -67,6 +67,22 @@ CANARY_URL = "http://127.0.0.1:9222/json/version"
 # 所有和单调栈 / 单调队列沾边的题一律归到这个大类（shuffle 和 intake 都会强制执行）
 MONO_CAT = "18-monotonic-fuck-you (单调栈、单调队列)"
 MONO_RE = re.compile(r"monotonic|单调(栈|队列|递增栈|递减栈|双端)", re.I)
+CORE_FILE = ROOT / "tools" / "nc150.txt"   # 核心层（NeetCode 150）：每行一个 LC-xxxx，# 后面是注释
+
+
+def load_core() -> set[str]:
+    """读 tools/nc150.txt 里的题号集合；文件不存在就返回空集（所有题平等）。"""
+    if not CORE_FILE.exists():
+        return set()
+    out = set()
+    for line in CORE_FILE.read_text(encoding="utf-8").splitlines():
+        tok = line.split("#", 1)[0].strip()
+        if tok:
+            out.add(tok)
+    return out
+
+
+CORE_IDS = load_core()
 
 
 # ---------------------------------------------------------------- model
@@ -91,6 +107,11 @@ class Problem:
     def title(self) -> str:
         """文件夹名去掉 'LC-0155 - ' / 'NC - ' 前缀；挂在标题后面的信号/备注一起带着。"""
         return PROBLEM_DIR_RE.sub("", self.path.name, count=1)
+
+    @property
+    def core(self) -> bool:
+        """是否属于核心层（NeetCode 150）：shuffle 先清它们，stats 单独统计。"""
+        return self.id in CORE_IDS
 
     @property
     def practice(self) -> list[dict]:
@@ -214,11 +235,15 @@ AUTO_SHUFFLE_N = 5                 # finish 掉 Today/ 里最后一题之后，�
 
 
 def pick_new(problems: list[Problem], k: int) -> list[Problem]:
-    """从未复习过的题里按大类轮转随机抽 k 题（从进入循环最少的大类开始，交错练习）。"""
+    """从未复习过的题里按大类轮转随机抽 k 题（从进入循环最少的大类开始，交错练习）。
+    核心层（tools/nc150.txt）优先：只要还有核心题没进入循环，候选池就只从核心题里抽；核心层清空后才轮到其他题。"""
+    pool = [p for p in problems if p.unscheduled]
+    core_pool = [p for p in pool if p.core]
+    if core_pool:
+        pool = core_pool
     by_cat: dict[str, list[Problem]] = {}
-    for p in problems:
-        if p.unscheduled:
-            by_cat.setdefault(p.category, []).append(p)
+    for p in pool:
+        by_cat.setdefault(p.category, []).append(p)
     for cat in by_cat:
         random.shuffle(by_cat[cat])
     progress = {c: sum(1 for p in problems if p.category == c and not p.unscheduled) for c in by_cat}
@@ -247,12 +272,13 @@ def pick_today(problems: list[Problem], n: int, today: date) -> tuple[list[Probl
 
 
 def tag_of(p: Problem, today: date) -> str:
+    star = "★ " if p.core else ""
     if p.unscheduled:
-        return "首次进入循环"
+        return star + "首次进入循环"
     over = (today - p.next_date).days
     last = p.history[-1][1]
     t = f"逾期 {over} 天" if over > 0 else ("今天到期" if over == 0 else f"{-over} 天后到期")
-    return f"{t} · 上次{last}"
+    return f"{star}{t} · 上次{last}"
 
 
 def print_selection(chosen: list[Problem], today: date, n_due: int, n_fill: int, total_due: int) -> None:
@@ -686,6 +712,13 @@ def cmd_stats() -> None:
     unsch = [p for p in problems if p.unscheduled]
     grad = [p for p in problems if p.graduated]
     print(f"题目总数 {len(problems)} ｜ 到期 {len(due)} ｜ 已排期未到 {len(sched)} ｜ 未排期 {len(unsch)} ｜ 毕业 {len(grad)}")
+    core = [p for p in problems if p.core]
+    if core:
+        c_in = [p for p in core if not p.unscheduled]
+        c_green = [p for p in c_in if p.history[-1][1] == "🟢"]
+        c_grad = [p for p in core if p.graduated]
+        print(f"★ 核心层 NC150：在库 {len(core)} ｜ 已进入循环 {len(c_in)} ｜ 上次🟢 {len(c_green)} ｜ 毕业 {len(c_grad)}"
+              f" ｜ 还没碰过 {len(core) - len(c_in)}   （tools/nc150.txt；shuffle 会先清它们）")
     print("\n按大类：      总数  到期  排期  未排期  毕业")
     cats = sorted({p.category for p in problems})
     for c in cats:
@@ -711,9 +744,10 @@ def cmd_list(which: str) -> None:
         "scheduled": lambda p: p.next_date is not None and not p.is_due(today),
         "graduated": lambda p: p.graduated,
         "all": lambda p: True,
+        "core": lambda p: p.core,
     }.get(which)
     if not sel:
-        sys.exit("list 后面只能是 due | unscheduled | scheduled | graduated | all")
+        sys.exit("list 后面只能是 due | unscheduled | scheduled | graduated | all | core")
     rows = [p for p in problems if sel(p)]
     for p in rows:
         if p.graduated:
@@ -723,7 +757,7 @@ def cmd_list(which: str) -> None:
         else:
             state = "未排期"
         hist = " ".join(h[1] for h in p.history) or "-"
-        print(f"{state:14s} {hist:8s} {p.rel}")
+        print(f"{state:14s} {hist:8s} {'★' if p.core else ' '} {p.rel}")
     print(f"\n共 {len(rows)} 题")
 
 

@@ -1,0 +1,10 @@
+{
+  "id": "LC-1343",
+  "path": "03-sliding-window (滑动窗口)/01 - 定长窗口与频率匹配 (Fixed Window)/01 - 数值聚合与固定窗口优化/05 - LC-1343 - Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold/",
+    "neetcode": null
+  },
+  "practice": []
+}

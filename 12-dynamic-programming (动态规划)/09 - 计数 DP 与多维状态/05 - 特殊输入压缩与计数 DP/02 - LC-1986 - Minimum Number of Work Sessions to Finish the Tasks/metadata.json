@@ -1,0 +1,10 @@
+{
+  "id": "LC-1986",
+  "path": "12-dynamic-programming (动态规划)/09 - 计数 DP 与多维状态/05 - 特殊输入压缩与计数 DP/02 - LC-1986 - Minimum Number of Work Sessions to Finish the Tasks",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/minimum-number-of-work-sessions-to-finish-the-tasks/",
+    "neetcode": null
+  },
+  "practice": []
+}

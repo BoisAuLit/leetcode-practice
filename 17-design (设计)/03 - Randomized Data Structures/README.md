@@ -259,3 +259,22 @@ class RandomizedCollection:          # LC-0381（允许重复）
 
 - [设计题通用清单](<../_resources/design-checklist.md>) — swap-with-last + Stateful API 怎么测
 - [Pattern Recognition Guide](<../_resources/pattern-recognition-guide.md>) — Q4
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-0528 Random Pick with Weight](<./02 - 加权随机、蓄水池采样与洗牌/01 - LC-0528 - Random Pick with Weight>) | `03 - Randomized Data Structures/02 - 加权随机、蓄水池采样与洗牌` | 前缀和 + 二分：权重铺在数轴上，随机数落在哪段就选哪个；randint(1,total) 配 bisect_left | 随机 / 采样族的入口 |
+| [LC-0382 Linked List Random Node](<./02 - 加权随机、蓄水池采样与洗牌/02 - LC-0382 - Linked List Random Node>) | `03 - Randomized Data Structures/02 - 加权随机、蓄水池采样与洗牌` | 蓄水池采样 k=1：第 i 个以 1/i 概率替换，P=1/n 的约分证明要能口述 | 流式 / 长度未知 |
+| [LC-0398 Random Pick Index](<./02 - 加权随机、蓄水池采样与洗牌/03 - LC-0398 - Random Pick Index>) | `03 - Randomized Data Structures/02 - 加权随机、蓄水池采样与洗牌` | 对「等于 target 的下标」这条子流做蓄水池采样；哈希表版 O(1) pick 是空间换时间 | LC-0382 同算法 |
+| [LC-0384 Shuffle an Array](<./02 - 加权随机、蓄水池采样与洗牌/04 - LC-0384 - Shuffle an Array>) | `03 - Randomized Data Structures/02 - 加权随机、蓄水池采样与洗牌` | Fisher–Yates：j ∈ [0, i] 而不是 [0, n-1]；文件里用 χ² 把错误写法的 4/27 vs 5/27 偏差量化出来 | n! 条等概率路径 |
+| [LC-0470 Implement Rand10() Using Rand7()](<./02 - 加权随机、蓄水池采样与洗牌/05 - LC-0470 - Implement Rand10() Using Rand7()>) | `03 - Randomized Data Structures/02 - 加权随机、蓄水池采样与洗牌` | 拒绝采样：7×7=49 格留 40，期望 2.45 次；回收 41..49 当 rand9 可降到 2.19 | 均匀性只能来自乘法组合 + 拒绝 |
+
+### 本次新开的 Level 2
+
+- **02 - 加权随机、蓄水池采样与洗牌** — 原来这一层只有「O(1) 插入删除 + 均匀随机」一个 Level 2；加权随机、蓄水池采样、Fisher–Yates、拒绝采样是大厂（Meta / Google）常年考的另一半，之前全库 0 道，所以新开一层把五道放在一起：它们共用「怎样证明分布是均匀的」这一个问题。
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

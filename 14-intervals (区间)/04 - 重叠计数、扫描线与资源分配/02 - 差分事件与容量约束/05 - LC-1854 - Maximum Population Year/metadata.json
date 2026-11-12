@@ -1,0 +1,10 @@
+{
+  "id": "LC-1854",
+  "path": "14-intervals (区间)/04 - 重叠计数、扫描线与资源分配/02 - 差分事件与容量约束/05 - LC-1854 - Maximum Population Year",
+  "difficulty": "E",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-population-year/",
+    "neetcode": null
+  },
+  "practice": []
+}

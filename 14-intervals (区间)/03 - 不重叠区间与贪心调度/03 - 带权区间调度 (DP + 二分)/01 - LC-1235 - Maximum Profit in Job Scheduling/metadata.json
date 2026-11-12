@@ -1,0 +1,10 @@
+{
+  "id": "LC-1235",
+  "path": "14-intervals (区间)/03 - 不重叠区间与贪心调度/03 - 带权区间调度 (DP + 二分)/01 - LC-1235 - Maximum Profit in Job Scheduling",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-profit-in-job-scheduling/",
+    "neetcode": null
+  },
+  "practice": []
+}

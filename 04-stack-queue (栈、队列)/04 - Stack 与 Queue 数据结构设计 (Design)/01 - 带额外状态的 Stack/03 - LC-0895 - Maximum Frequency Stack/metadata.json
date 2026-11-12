@@ -1,0 +1,10 @@
+{
+  "id": "LC-0895",
+  "path": "04-stack-queue (栈、队列)/04 - Stack 与 Queue 数据结构设计 (Design)/01 - 带额外状态的 Stack/03 - LC-0895 - Maximum Frequency Stack",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/maximum-frequency-stack/",
+    "neetcode": null
+  },
+  "practice": []
+}

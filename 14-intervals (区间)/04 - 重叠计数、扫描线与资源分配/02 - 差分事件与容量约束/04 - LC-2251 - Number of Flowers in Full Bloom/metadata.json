@@ -1,0 +1,10 @@
+{
+  "id": "LC-2251",
+  "path": "14-intervals (区间)/04 - 重叠计数、扫描线与资源分配/02 - 差分事件与容量约束/04 - LC-2251 - Number of Flowers in Full Bloom",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/number-of-flowers-in-full-bloom/",
+    "neetcode": null
+  },
+  "practice": []
+}

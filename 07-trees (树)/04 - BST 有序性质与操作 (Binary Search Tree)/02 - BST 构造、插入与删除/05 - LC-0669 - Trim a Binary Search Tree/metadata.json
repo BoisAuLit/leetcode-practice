@@ -1,0 +1,10 @@
+{
+  "id": "LC-0669",
+  "path": "07-trees (树)/04 - BST 有序性质与操作 (Binary Search Tree)/02 - BST 构造、插入与删除/05 - LC-0669 - Trim a Binary Search Tree",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/trim-a-binary-search-tree/",
+    "neetcode": null
+  },
+  "practice": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "LC-1493",
+  "path": "03-sliding-window (滑动窗口)/02 - 变长窗口之最长合法区间 (Longest Valid Window)/02 - 允许修改 K 个元素/03 - LC-1493 - Longest Subarray of 1's After Deleting One Element",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/",
+    "neetcode": null
+  },
+  "practice": []
+}

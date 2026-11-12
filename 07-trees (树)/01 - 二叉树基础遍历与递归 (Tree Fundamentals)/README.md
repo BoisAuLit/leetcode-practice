@@ -86,3 +86,14 @@ def mirror(a, b):
 ## 复习时的 Pattern Recognition
 > 「遍历输出」「两棵树是否相同 / 对称」「树有多高 / 多浅」「翻转」
 > → 本章。先问：**我需要孩子的结果吗？** 需要就写后序。
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-0545 Boundary of Binary Tree](<./01 - DFS 三种基本遍历/04 - LC-0545 - Boundary of Binary Tree>) | `01 - 二叉树基础遍历与递归 (Tree Fundamentals)/01 - DFS 三种基本遍历` | 逆时针边界 = 根 + 左边界(不含叶) + 叶子 + 右边界倒序；四个坑写在注释里 | 读题题，不是算法题；**Premium 题，当前账号抓不到 PDF**；题面摘要在 solution.py 顶部的 docstring 里；续费后 `python3 tools/intake.py "<文件夹>"` 可补抓 |
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

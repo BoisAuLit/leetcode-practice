@@ -1,0 +1,10 @@
+{
+  "id": "LC-1244",
+  "path": "09-heap (堆)/06 - Heap + Hash Map 数据结构设计/02 - 动态优先级与 Lazy Deletion/02 - LC-1244 - Design A Leaderboard",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/design-a-leaderboard/",
+    "neetcode": null
+  },
+  "practice": []
+}

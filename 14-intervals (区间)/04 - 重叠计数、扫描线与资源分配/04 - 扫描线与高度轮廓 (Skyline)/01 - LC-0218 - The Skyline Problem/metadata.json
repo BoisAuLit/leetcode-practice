@@ -1,0 +1,10 @@
+{
+  "id": "LC-0218",
+  "path": "14-intervals (区间)/04 - 重叠计数、扫描线与资源分配/04 - 扫描线与高度轮廓 (Skyline)/01 - LC-0218 - The Skyline Problem",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/the-skyline-problem/",
+    "neetcode": null
+  },
+  "practice": []
+}

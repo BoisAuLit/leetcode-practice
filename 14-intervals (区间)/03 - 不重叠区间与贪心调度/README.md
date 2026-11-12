@@ -252,3 +252,18 @@ Python 整数无限精度，不受影响，但面试写 C++/Java 时这是个真
 - [Endpoint Semantics Cheat Sheet](<../_resources/endpoint-semantics-cheat-sheet.md>)
 - [Interval Algorithm Comparison Table](<../_resources/interval-algorithm-comparison.md>) — 模板 4
 - [P0 / P1 / P2 Roadmap](<../_resources/p0-p1-p2-roadmap.md>)
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-1235 Maximum Profit in Job Scheduling](<./03 - 带权区间调度 (DP + 二分)/01 - LC-1235 - Maximum Profit in Job Scheduling>) | `03 - 不重叠区间与贪心调度/03 - 带权区间调度 (DP + 二分)` | 带权区间调度：按 end 排，dp[i] = max(不选, p + dp[bisect_right(ends, start)])；贪心失效的原因要能说 | LC-0435 的带权版 |
+
+### 本次新开的 Level 2
+
+- **03 - 带权区间调度 (DP + 二分)** — Level 1·03 之前全是「数量」目标（最多选几个 / 最少删几个），按 end 贪心就够；LC-1235 给区间加了权重，贪心失效、必须 DP + 二分找前驱 —— 它是这一层「贪心为什么够 / 什么时候不够」的边界案例，所以单开一个 Level 2。
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

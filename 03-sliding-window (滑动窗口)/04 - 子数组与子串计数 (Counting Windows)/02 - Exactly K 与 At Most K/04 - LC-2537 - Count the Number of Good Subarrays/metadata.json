@@ -1,0 +1,10 @@
+{
+  "id": "LC-2537",
+  "path": "03-sliding-window (滑动窗口)/04 - 子数组与子串计数 (Counting Windows)/02 - Exactly K 与 At Most K/04 - LC-2537 - Count the Number of Good Subarrays",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/count-the-number-of-good-subarrays/",
+    "neetcode": null
+  },
+  "practice": []
+}

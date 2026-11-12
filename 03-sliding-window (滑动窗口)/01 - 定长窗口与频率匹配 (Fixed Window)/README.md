@@ -69,3 +69,14 @@ for right, x in enumerate(nums):
 **变长窗口**的 left 由「约束是否满足」驱动，可能一次吐好几个、也可能一个都不吐；
 定长窗口的 left 完全由 right 决定。看到「长度恰好为 k」就用本家族，
 看到「最长 / 最短 / 有多少个」就去 Level 02 / 03 / 04。
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-1343 Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold](<./01 - 数值聚合与固定窗口优化/05 - LC-1343 - Number of Sub-arrays of Size K and Average Greater than or Equal to Threshold>) | `01 - 定长窗口与频率匹配 (Fixed Window)/01 - 数值聚合与固定窗口优化` | sum >= threshold*k 避免除法；定长窗口「进 / 出 / 判定」三步顺序 | 定长模板最简实例 |
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

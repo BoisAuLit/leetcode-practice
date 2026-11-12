@@ -90,3 +90,14 @@ LC-0437 的树上前缀和是 O(n)，朴素双层 DFS 是 O(n²)。
 ## 复习时的 Pattern Recognition
 > 「根到叶的路径满足…」「沿路累积一个值」「从任意祖先往下的路径计数」
 > → Top-down。先确定**传什么状态**，再确定**要不要回溯**。
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-1457 Pseudo-Palindromic Paths in a Binary Tree](<./01 - 根到叶路径与路径状态/05 - LC-1457 - Pseudo-Palindromic Paths in a Binary Tree>) | `03 - 路径 DFS、状态传递与 Prefix Sum/01 - 根到叶路径与路径状态` | 奇偶计数压成 9 位 bitmask；叶子处 mask & (mask-1) == 0 | LC-0112 骨架 + 位运算 |
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

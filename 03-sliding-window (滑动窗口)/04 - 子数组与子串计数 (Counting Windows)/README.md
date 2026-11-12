@@ -63,3 +63,16 @@ exactly_k = at_most(k) - at_most(k - 1)
 
 计数窗口的骨架和 Level 02 完全一样（不合法就收缩），
 **只有最后一行不同**。看到「有多少个子数组 / 子串」就把 max 换成累加。
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-1248 Count Number of Nice Subarrays](<./02 - Exactly K 与 At Most K/03 - LC-1248 - Count Number of Nice Subarrays>) | `04 - 子数组与子串计数 (Counting Windows)/02 - Exactly K 与 At Most K` | 奇数→1 偶数→0 后就是 LC-0930；exactly(k) = atMost(k) − atMost(k−1) | 三种标准解法全可用 |
+| [LC-2537 Count the Number of Good Subarrays](<./02 - Exactly K 与 At Most K/04 - LC-2537 - Count the Number of Good Subarrays>) | `04 - 子数组与子串计数 (Counting Windows)/02 - Exactly K 与 At Most K` | 「至少 k」模板：while pairs >= k: res += n − r；数对数增量 += cnt[x] | 与 atMost 模板镜像 |
+| [LC-2962 Count Subarrays Where Max Element Appears at Least K Times](<./02 - Exactly K 与 At Most K/05 - LC-2962 - Count Subarrays Where Max Element Appears at Least K Times>) | `04 - 子数组与子串计数 (Counting Windows)/02 - Exactly K 与 At Most K` | 先读对题：全局最大值 M ⟹ 0/1 数组「1 的个数 ≥ k」；贡献 = pos[c−k] + 1 | LC-2537 同模板 |
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

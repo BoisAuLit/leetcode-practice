@@ -1,0 +1,10 @@
+{
+  "id": "LC-0426",
+  "path": "07-trees (树)/05 - 树构造、序列化与结构修改/03 - 原地展开与树指针重连/02 - LC-0426 - Convert Binary Search Tree to Sorted Doubly Linked List",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/convert-binary-search-tree-to-sorted-doubly-linked-list/",
+    "neetcode": null
+  },
+  "practice": []
+}

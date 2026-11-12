@@ -324,3 +324,15 @@ LC-0066 有用户自己的 `note.md`，已原地保留。
 - [Pattern Recognition Guide](<../_resources/pattern-recognition-guide.md>) — Q7 / Q8 / Q9 / Q14
 - [整数溢出与数值陷阱](<../_resources/overflow-and-numeric-pitfalls.md>) — **本层的配套文档**，必读
 - [矩阵坐标与边界速查表](<../_resources/matrix-index-cheat-sheet.md>)
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-0415 Add Strings](<./01 - 数位进位与整数反转/03 - LC-0415 - Add Strings>) | `03 - 整数运算与数位处理 (Arithmetic)/01 - 数位进位与整数反转` | 竖式模板 while i>=0 or j>=0 or carry；和 LC-0002 / LC-0067 / LC-0043 共用 | 三道题一个模板 |
+| [LC-0273 Integer to English Words](<./02 - 字符串解析与大整数乘法/03 - LC-0273 - Integer to English Words>) | `03 - 整数运算与数位处理 (Arithmetic)/02 - 字符串解析与大整数乘法` | 每 3 位一组 + 单位词；组内 0 不输出、组值 0 单位词也不输出、10..19 查表 | Meta 高频，纯边角 |
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

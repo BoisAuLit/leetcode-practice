@@ -100,3 +100,15 @@ def isSubtree(s, t):
 > 「两个节点的最近公共祖先」→ 有 BST 性质用值域，有 parent 用换头，否则后序回溯。
 > 「一棵树是不是另一棵的子树」→ Same Tree + 外层遍历。
 > 「距离某节点 K 步的所有节点」「需要向上走」→ **把树转成图**。
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-1644 Lowest Common Ancestor of a Binary Tree II](<./01 - Lowest Common Ancestor/03 - LC-1644 - Lowest Common Ancestor of a Binary Tree II>) | `07 - LCA、子树关系与树图转换/01 - Lowest Common Ancestor` | p/q 可能不在树里：0236 不能提前 return，要走完全树 + 计数 found==2 | 0236 的隐含假设被拿掉；**Premium 题，当前账号抓不到 PDF**；题面摘要在 solution.py 顶部的 docstring 里；续费后 `python3 tools/intake.py "<文件夹>"` 可补抓 |
+| [LC-1676 Lowest Common Ancestor of a Binary Tree IV](<./01 - Lowest Common Ancestor/04 - LC-1676 - Lowest Common Ancestor of a Binary Tree IV>) | `07 - LCA、子树关系与树图转换/01 - Lowest Common Ancestor` | 0236 的「is p or is q」换成「in 集合」，其余一字不改；LCA 满足结合律 | k 个节点的 LCA；**Premium 题，当前账号抓不到 PDF**；题面摘要在 solution.py 顶部的 docstring 里；续费后 `python3 tools/intake.py "<文件夹>"` 可补抓 |
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

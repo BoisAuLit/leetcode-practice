@@ -306,3 +306,14 @@ def move(self, row, col, player):
 
 - [设计题通用清单](<../_resources/design-checklist.md>) — 开场五步 + 六个套路
 - [Pattern Recognition Guide](<../_resources/pattern-recognition-guide.md>) — Q7 / Q9 / Q10 / Q11 / Q12
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-1603 Design Parking System](<./03 - 多对象状态与增量平均值/02 - LC-1603 - Design Parking System>) | `05 - 有状态 API、缓冲区与模拟/03 - 多对象状态与增量平均值` | slots[carType] 直接当下标，用查表替代三个 if 分支 | Easy 暖场题 |
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

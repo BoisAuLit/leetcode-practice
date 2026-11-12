@@ -334,3 +334,20 @@ Level 05 的 Heap 存「区间长度」用来**回答查询**，而且需要**�
 - [Endpoint Semantics Cheat Sheet](<../_resources/endpoint-semantics-cheat-sheet.md>) — 差分撤销位置 + tie-break
 - [Interval Algorithm Comparison Table](<../_resources/interval-algorithm-comparison.md>) — 模板 5 / 6 / 7
 - [P0 / P1 / P2 Roadmap](<../_resources/p0-p1-p2-roadmap.md>)
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-2251 Number of Flowers in Full Bloom](<./02 - 差分事件与容量约束/04 - LC-2251 - Number of Flowers in Full Bloom>) | `04 - 重叠计数、扫描线与资源分配/02 - 差分事件与容量约束` | answer(t) = #{start<=t} − #{end<t}，两个排序数组各一次二分；闭区间 ⟹ end 用 bisect_left | 值域 1e9 不能差分 |
+| [LC-1854 Maximum Population Year](<./02 - 差分事件与容量约束/05 - LC-1854 - Maximum Population Year>) | `04 - 重叠计数、扫描线与资源分配/02 - 差分事件与容量约束` | 差分数组最干净的教学题：diff[birth]+=1, diff[death]-=1，取最早的 argmax | 值域只有 101 |
+| [LC-0218 The Skyline Problem](<./04 - 扫描线与高度轮廓 (Skyline)/01 - LC-0218 - The Skyline Problem>) | `04 - 重叠计数、扫描线与资源分配/04 - 扫描线与高度轮廓 (Skyline)` | 扫描线 + 最大堆 + 懒删除；同 x 先开始再结束（事件编码 (x,-h,r) 自动排序） | LC-0253 的计数换成最高 |
+
+### 本次新开的 Level 2
+
+- **04 - 扫描线与高度轮廓 (Skyline)** — 本层前三个 Level 2 都是「数有几个区间覆盖」；Skyline 把「计数」换成「最高」—— 扫描线 + 最大堆 + 懒删除，是扫描线模板的集大成，和差分事件不是一回事，所以单开。
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

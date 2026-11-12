@@ -1,0 +1,10 @@
+{
+  "id": "LC-1248",
+  "path": "03-sliding-window (滑动窗口)/04 - 子数组与子串计数 (Counting Windows)/02 - Exactly K 与 At Most K/03 - LC-1248 - Count Number of Nice Subarrays",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/count-number-of-nice-subarrays/",
+    "neetcode": null
+  },
+  "practice": []
+}

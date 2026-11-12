@@ -1,0 +1,10 @@
+{
+  "id": "LC-1416",
+  "path": "12-dynamic-programming (动态规划)/05 - 字符串分割与双序列 DP/01 - 单字符串分割与解码/03 - LC-1416 - Restore The Array",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/restore-the-array/",
+    "neetcode": null
+  },
+  "practice": []
+}

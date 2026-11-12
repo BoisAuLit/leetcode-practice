@@ -1,0 +1,10 @@
+{
+  "id": "LC-1092",
+  "path": "12-dynamic-programming (动态规划)/05 - 字符串分割与双序列 DP/02 - LCS 与连续公共片段/03 - LC-1092 - Shortest Common Supersequence",
+  "difficulty": "H",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/shortest-common-supersequence/",
+    "neetcode": null
+  },
+  "practice": []
+}

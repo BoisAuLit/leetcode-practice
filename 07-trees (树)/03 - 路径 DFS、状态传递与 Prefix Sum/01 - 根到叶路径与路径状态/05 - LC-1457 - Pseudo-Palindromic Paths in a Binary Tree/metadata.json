@@ -1,0 +1,10 @@
+{
+  "id": "LC-1457",
+  "path": "07-trees (树)/03 - 路径 DFS、状态传递与 Prefix Sum/01 - 根到叶路径与路径状态/05 - LC-1457 - Pseudo-Palindromic Paths in a Binary Tree",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/",
+    "neetcode": null
+  },
+  "practice": []
+}

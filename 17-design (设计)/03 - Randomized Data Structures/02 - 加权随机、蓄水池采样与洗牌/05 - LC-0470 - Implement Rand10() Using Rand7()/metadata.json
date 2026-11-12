@@ -1,0 +1,10 @@
+{
+  "id": "LC-0470",
+  "path": "17-design (设计)/03 - Randomized Data Structures/02 - 加权随机、蓄水池采样与洗牌/05 - LC-0470 - Implement Rand10() Using Rand7()",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/implement-rand10-using-rand7/",
+    "neetcode": null
+  },
+  "practice": []
+}

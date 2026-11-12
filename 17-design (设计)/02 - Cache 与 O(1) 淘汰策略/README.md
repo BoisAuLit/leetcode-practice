@@ -283,3 +283,14 @@ LC-0146 的实体在本专题（曾与 `06-linked-list` 的副本冲突，已去
 
 - [设计题通用清单](<../_resources/design-checklist.md>) — 两结构组合 + 通用边界清单
 - [Pattern Recognition Guide](<../_resources/pattern-recognition-guide.md>) — Q2 / Q3
+
+
+---
+
+## 2026-11-11 新增题目（对照大厂高频题单补的缺口）
+
+| 题 | 位置 | 信号 → 模式 | 备注 |
+|---|---|---|---|
+| [LC-0432 All O`one Data Structure](<./02 - LFU Cache 与频率桶/02 - LC-0432 - All O`one Data Structure>) | `02 - Cache 与 O(1) 淘汰策略/02 - LFU Cache 与频率桶` | 频率桶双向链表：inc/dec 只碰相邻桶；哈希表 + maxc/minc 的版本 dec 最坏 O(n) | LC-0460 LFU 的桶链表单独考 |
+
+每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。
