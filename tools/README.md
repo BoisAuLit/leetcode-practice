@@ -15,7 +15,7 @@
 ## 每天的固定流程（约 15–45 分钟）
 
 ```bash
-shuffle              # ① 从 20 题候选池（到期题 + 从未复习的题）随机抽 5 题，软链接放进 Today/；shuffle 3 改数量
+shuffle              # ① 到期题优先（🔴 > 🟡 > 🟢，同色按逾期）取 7 题，不够才补新题（核心层优先），软链接放进 Today/；shuffle 3 改数量
                      #    每题文件夹里生成 solution_retry.py（solution.py 的副本：class 方法体全换成 pass、删掉因此用不到的 import、开头加题目链接，其余原样）
 # ② 对 Today/ 里的每一题：盖住 solution.py，只看文件夹名（标题 + 挂在后面的信号）先口头回答 → 在 solution_retry.py 里闭卷重写 → 对照原解
 finish 1 g           # ③ 记结果：g=🟢 闭卷流畅  y=🟡 有印象但慢  r=🔴 卡壳；默认 g。会追加 practice[]、把 retry 里带注释的 class 存进 note.md、删 retry、移除软链接
@@ -38,7 +38,8 @@ git add -A && git commit -m "review $(date +%F)"    # ④ 每天一提交
 ## 全部命令
 
 ```bash
-python3 tools/review_due.py today [-n 3]        # 只打印今天该复习什么（从候选池随机抽 n 题）
+python3 tools/review_due.py today [-n 7]        # 只打印今天该复习什么，不动 Today/
+python3 tools/review_due.py mono [--apply]      # 列出疑似单调题却不在 18 专区的；--apply 才搬进 18-monotonic/general
 python3 tools/review_due.py shuffle [-n 3] [--reset]      # 同上，并重建 Today/ 里的软链接 + 每题生成 solution_retry.py；--reset 才去网站重置旧代码
 python3 tools/review_due.py reset [序号]         # 按需：对 Today/ 里的题做网站代码重置（LeetCode / NeetCode，走 tuto_etsy 的 puppeteer 脚本）
 python3 tools/review_due.py finish <序号|题目文件夹路径> [g|y|r]                 # 按 Today/ 序号（或路径）记结果、删 solution_retry.py、移除软链接
@@ -57,13 +58,13 @@ python3 tools/intake.py "<.../LC-3291 - xxx/solution.py>"        # 题已经自�
 
 ## 单调栈 / 单调队列专区
 
-`18-monotonic-fuck-you (单调栈、单调队列)` 收所有沾边的题（关键词 `monotonic` / `单调栈` / `单调队列`，看文件夹名、solution.py、metadata.json、note.md）。`intake.py` 检测到就强制改 target 到 `.../general`；`review_due.py shuffle` 选题前会把别处的单调题搬到 `.../general`。
+`18-monotonic-fuck-you (单调栈、单调队列)` 收所有沾边的题（关键词 `monotonic` / `单调栈` / `单调队列`，看文件夹名、solution.py、metadata.json、note.md）。`intake.py` 检测到就强制改 target 到 `.../general`；`review_due.py shuffle` 选题前只**提醒**散落在外的单调题，不搬（关键词是纯文字匹配，会误伤）；确认要搬用 `review_due.py mono --apply`。
 
 ## 调度规则
 
-- 间隔阶梯 1 → 3 → 7 → 14 → 30 天；🟢 升一级，🟡 不变，🔴 重置到 1 天；30 天这一级再拿 🟢 = 毕业，不再叫号。
+- 间隔阶梯 1 → 3 → 7 → 14 → 30 → 60 天；🟢 升一级（逾期很久仍 🟢 则直接跳到第一个比实际间隔更长的档），🟡 不变，🔴 重置到 1 天；60 天这一级再拿 🟢 = 毕业，不再叫号。
 - "下次复习日期"和"是否毕业"不存文件，每次从 `practice[]` 现算 —— 所以永远不会和记录不一致。
-- 先凑 20 题候选池，再随机抽 n 题：池 A = **今天到期/逾期**的题按 逾期天数 + 上次🔴ｘ7 / 🟡ｘ3 取前 `POOL_DUE`(10)，池 B = 从未复习过的题按大类轮转随机抽，补足到 20。没到期的题不进池。
+- 到期题优先：**今天到期/逾期**的题先按上次颜色（🔴 > 🟡 > 🟢）再按逾期天数排序取前 n；不够 n 才用从未复习过的题补（核心层 nc150.txt 优先，按大类轮转）。没到期的题绝不出现。累计 🔴 ≥ 3 的题标 🩸。
 - 选定后再随机打乱一次顺序才编号；`shuffle` 先把上一轮的 `solution_retry.py` 和软链接全部清掉，再选题。
 
 ## progress.md（进度的唯一来源）

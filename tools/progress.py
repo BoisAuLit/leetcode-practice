@@ -109,7 +109,7 @@ def render(s: dict) -> str:
     L.append(f"> 自动生成，最后更新 {s['updated']}。只在 intake / finish / done 时刷新；手动刷新：`python3 tools/progress.py`。\n")
     L.append(f"## 总进度：{s['progress_pct']}%\n")
     L.append(f"`{bar(s['progress_pct'])}`  {s['graduated']['count']} / {s['total']} 题毕业\n")
-    L.append("毕业 = 间隔 1 → 3 → 7 → 14 → 30 天连续 5 个 🟢。\n")
+    L.append("毕业 = 在 60 天这一档拿到 🟢（梯子 1 → 3 → 7 → 14 → 30 → 60；逾期很久仍 🟢 会直接跳到更长的档）。\n")
 
     L.append("## 题库\n")
     L.append("| | 数量 | 占比 |\n|---|---:|---:|")

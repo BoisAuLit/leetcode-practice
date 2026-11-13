@@ -12,16 +12,16 @@ metadata.json 里和复习有关的字段：
 题目标题、信号→模式都不进 metadata：全在文件夹名里（LC-0155 - Min Stack - <信号/备注>），复习时看文件夹名就够了。
 
 "下次复习日期" 和 "是否毕业" 不落盘，每次从 practice[] 现算：
-    间隔阶梯 1 → 3 → 7 → 14 → 30 天；🟢 升一级，🟡 不变，🔴 重置为 1 天；
-    处在 30 天这一级又拿到 🟢 即毕业。
+    间隔阶梯 1 → 3 → 7 → 14 → 30 → 60 天；🟢 升一级，🟡 不变，🔴 重置为 1 天；
+    逾期很久才做、却拿到 🟢 的题，直接跳到第一个比实际间隔更长的档位（记忆既然撑过了 45 天，就不必再回头走 14 天）；
+    处在 60 天这一级又拿到 🟢 即毕业。
 
-叫号规则（shuffle / today）：先凑一个 20 题的候选池，再从里面随机抽 k 题（k = -n，shuffle 默认 7，today 默认 3）。
-    池 A（到期题，最多 10）：只收今天到期或逾期的题，按 逾期天数 + 上次🔴ｘ7 / 🟡ｘ3 取前 10，同分随机；
-    池 B（从未复习过）：按大类轮转随机抽，补足到 20；
+叫号规则（shuffle / today）：到期题优先。全部到期题先按上次颜色排（🔴 > 🟡 > 🟢），同色再按逾期天数（越久越前），同分随机，取前 k 题
+    （k = -n，shuffle / today 默认 7）；到期题不够 k 道才用从未复习过的题补足：核心层（tools/nc150.txt）优先，按大类轮转交错；
     没到期的题绝不出现（避免同一批题天天见）；抽完再随机打乱一次顺序，Today/ 里的编号不可预测。
 
 用法：
-    python3 tools/review_due.py today [-n 3]          今日清单（从 20 题候选池里随机抽 n 题）
+    python3 tools/review_due.py today [-n 7]          今日清单（只打印，不动 Today/）
     python3 tools/review_due.py shuffle [-n 7] [--reset]
                                                       同 today，并把选中的题以软链接放进 Today/（先清空），
                                                       每题文件夹里生成闭卷重写用的 solution_retry.py；
@@ -40,13 +40,16 @@ metadata.json 里和复习有关的字段：
                                                       --dry-run 只看会动什么，不真删。
     python3 tools/review_due.py done <子串> <g|y|r> [--note "卡点"]   按题目名记录今天的复习结果
     python3 tools/review_due.py stats                 总量、到期/排期/未排期/毕业、按大类进度、最近🔴
+    python3 tools/review_due.py mono [--apply]        列出疑似单调栈/单调队列、却不在 18 专区的题（关键词命中：文件夹名 / solution.py / metadata.json / note.md）；
+                                                      只是提醒，--apply 才真的搬进 18-monotonic/general（shuffle 本身不再搬任何文件）
     python3 tools/review_due.py list [due|unscheduled|scheduled|graduated|all|core]
 <子串> 匹配题目文件夹的相对路径（不区分大小写），匹配到多个时会列出候选。
 """
 from __future__ import annotations
 import json, os, random, re, shutil, subprocess, sys, urllib.parse
 from dataclasses import dataclass, field
-from datetime import date, datetime
+from collections import Counter
+from datetime import date, datetime, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -56,14 +59,14 @@ NOTE_NAME = "note.md"        # 每题的笔记，和 solution.py 同级；soluti
 
 ROOT = Path(__file__).resolve().parent.parent
 TODAY_DIR = ROOT / "Today"
-INTERVALS = [1, 3, 7, 14, 30]
+INTERVALS = [1, 3, 7, 14, 30, 60]
 STATUS_MAP = {"g": "🟢", "y": "🟡", "r": "🔴", "🟢": "🟢", "🟡": "🟡", "🔴": "🔴"}
 EXCLUDE_PARTS = {"__pycache__", "tools", ".git", ".vscode", "New", "Today"}
 PROBLEM_DIR_RE = re.compile(r"^(?:\d{1,2} *- *)?(LC-\d{4}|NC) - ")   # 可选的数字优先级前缀，两种写法都认：01-LC-0876 - Title / 01 - LC-0743 - Title
 ETSY = Path("/Users/bohaoli/Desktop/tuto/tuto_etsy")                 # puppeteer 脚本所在项目（和抓 PDF 共用）
 RESET_SCRIPT = "VV-utils/11-reset-code.ts"                           # 清空 LeetCode / NeetCode 在线编辑器里的旧代码
 CANARY_URL = "http://127.0.0.1:9222/json/version"
-# 所有和单调栈 / 单调队列沾边的题一律归到这个大类（shuffle 和 intake 都会强制执行）
+# 所有和单调栈 / 单调队列沾边的题一律归到这个大类（intake 强制执行；shuffle 只提醒，`mono --apply` 才搬）
 MONO_CAT = "18-monotonic-fuck-you (单调栈、单调队列)"
 MONO_RE = re.compile(r"monotonic|单调(栈|队列|递增栈|递减栈|双端)", re.I)
 CORE_FILE = ROOT / "tools" / "nc150.txt"   # 核心层（NeetCode 150）：每行一个 LC-xxxx，# 后面是注释
@@ -127,15 +130,23 @@ class Problem:
         return sorted(out)
 
     def level(self) -> tuple[int, bool]:
-        """根据历史推算当前间隔等级，以及是否已达毕业条件。"""
+        """根据历史推算当前间隔等级，以及是否已达毕业条件。
+        🟢：升一级；如果这次距上次复习已经隔了很久（逾期才做），直接跳到第一个比实际间隔更长的档位 ——
+            记忆既然撑过了那么多天，低档位已经被证明，不必再走一遍（SM-2 的思路）。
+        🟡：原地不动。🔴：重置到第 0 档（1 天）。处在最高档又拿到 🟢 即毕业。"""
         level, graduated = 0, False
-        for _, st in self.history:
+        prev: date | None = None
+        top = len(INTERVALS) - 1
+        for d, st in self.history:
             if st == "🟢":
-                if level == len(INTERVALS) - 1:
+                if level == top:
                     graduated = True
-                level = min(level + 1, len(INTERVALS) - 1)
+                elapsed = (d - prev).days if prev else 0
+                proven = next((i for i, iv in enumerate(INTERVALS) if iv > elapsed), top)
+                level = min(max(level + 1, proven), top)
             elif st == "🔴":
                 level = 0
+            prev = d
         return level, graduated
 
     @property
@@ -149,7 +160,6 @@ class Problem:
             return None
         last = h[-1][0]
         lvl, _ = self.level()
-        from datetime import timedelta
         return last + timedelta(days=INTERVALS[lvl])
 
     @property
@@ -219,24 +229,24 @@ def resolve(target: str, problems: list[Problem]) -> Problem:
 
 
 # ---------------------------------------------------------------- selection
-RED_BONUS, YELLOW_BONUS = 7, 3     # 优先级分 = 逾期天数 + 上次结果加成；🔴 相当于多逾期 7 天
+COLOUR_RANK = {"🔴": 2, "🟡": 1, "🟢": 0}   # 到期题排序：先看上次颜色（卡壳的最先），同色再看逾期天数
 
 
-def priority(p: Problem, today: date) -> float:
-    """到期题的优先级分：逾期越久越高，上次 🔴 再加 7 分、🟡 加 3 分。同分随机。"""
+def priority(p: Problem, today: date) -> tuple[int, int]:
+    """到期题的优先级：(上次颜色等级, 逾期天数)，越大越先。同分随机（调用方先 shuffle 再 sort）。"""
     over = (today - p.next_date).days if p.next_date else 0
     last = p.history[-1][1] if p.history else ""
-    return over + (RED_BONUS if last == "🔴" else YELLOW_BONUS if last == "🟡" else 0)
+    return (COLOUR_RANK.get(last, 0), over)
 
 
-POOL_DUE, POOL_NEW = 10, 10        # 候选池：到期题最多 10 + 从未复习过的 10 = 20 题，再从里面随机抽 k 题
-SHUFFLE_N = 7                      # shuffle 不带 -n 时的默认题数
+SHUFFLE_N = 7                      # shuffle / today 不带 -n 时的默认题数
+LEECH_REDS = 3                     # 累计 🔴 达到这个数就标 🩸 顽固题：别再硬刷，去读解法 / 拆成更小的模板
 AUTO_SHUFFLE_N = SHUFFLE_N         # finish / remove 掉 Today/ 里最后一题之后，自动再 shuffle 这么多题
 
 
 def pick_new(problems: list[Problem], k: int) -> list[Problem]:
     """从未复习过的题里按大类轮转随机抽 k 题（从进入循环最少的大类开始，交错练习）。
-    核心层（tools/nc150.txt）优先：只要还有核心题没进入循环，候选池就只从核心题里抽；核心层清空后才轮到其他题。"""
+    核心层（tools/nc150.txt）优先：只要还有核心题没进入循环，新题就只从核心题里抽；核心层清空后才轮到其他题。"""
     pool = [p for p in problems if p.unscheduled]
     core_pool = [p for p in pool if p.core]
     if core_pool:
@@ -259,16 +269,14 @@ def pick_new(problems: list[Problem], k: int) -> list[Problem]:
 
 
 def pick_today(problems: list[Problem], n: int, today: date) -> tuple[list[Problem], list[Problem]]:
-    """候选池 = 池 A（今天到期/逾期的题，按优先级取前 POOL_DUE）+ 池 B（从未复习过的题，随机抽），合起来 20 题，
-    再从里面随机抽 n 题；返回 (抽中的到期题, 抽中的新题)。
-    池 A 不够 10 题时，缺口全部用新题补 —— 没到期的题绝不会出现，免得同一批题天天见。"""
+    """到期题优先：全部到期题按 priority 排序（同分随机）取前 n 题；不够 n 道才用从未复习过的题补足。
+    没到期的题绝不出现 —— 刚拿 🟢 的题要等它的日期到了才会再见。返回 (抽中的到期题, 抽中的新题)。"""
     due = [p for p in problems if p.is_due(today)]
     random.shuffle(due)
     due.sort(key=lambda p: priority(p, today), reverse=True)
-    pool_a = due[:POOL_DUE]
-    pool_b = pick_new(problems, POOL_DUE + POOL_NEW - len(pool_a))
-    chosen = random.sample(pool_a + pool_b, min(n, len(pool_a) + len(pool_b)))
-    return [p for p in chosen if not p.unscheduled], [p for p in chosen if p.unscheduled]
+    chosen_due = due[:n]
+    fill = pick_new(problems, n - len(chosen_due)) if len(chosen_due) < n else []
+    return chosen_due, fill
 
 
 def tag_of(p: Problem, today: date) -> str:
@@ -277,13 +285,15 @@ def tag_of(p: Problem, today: date) -> str:
         return star + "首次进入循环"
     over = (today - p.next_date).days
     last = p.history[-1][1]
+    reds = sum(1 for _, st in p.history if st == "🔴")
+    leech = f" 🩸🔴×{reds}" if reds >= LEECH_REDS else ""
     t = f"逾期 {over} 天" if over > 0 else ("今天到期" if over == 0 else f"{-over} 天后到期")
-    return f"{star}{t} · 上次{last}"
+    return f"{star}{t} · 上次{last}{leech}"
 
 
 def print_selection(chosen: list[Problem], today: date, n_due: int, n_fill: int, total_due: int) -> None:
-    print(f"📅 {today.isoformat()}  从 {POOL_DUE + POOL_NEW} 题候选池（到期 {min(total_due, POOL_DUE)} + 新题 {POOL_DUE + POOL_NEW - min(total_due, POOL_DUE)}）里随机抽了 {n_due + n_fill} 题："
-          f"到期 {n_due} 题 ＋ 首次进入循环 {n_fill} 题（今天到期共 {total_due} 题）")
+    print(f"📅 {today.isoformat()}  抽了 {n_due + n_fill} 题：到期 {n_due} ＋ 首次进入循环 {n_fill}"
+          f"（今天到期共 {total_due} 题；到期题优先，🔴 > 🟡 > 🟢，同色按逾期天数）")
     for k, p in enumerate(chosen, start=1):
         print(f"  {k:2d}. [{tag_of(p, today)}] {p.id}  {p.title}   ({p.category})")
     if not chosen:
@@ -353,37 +363,64 @@ def cmd_reset(idx: int | None) -> None:
     reset_online(targets)
 
 
-def is_monotonic(p: Problem) -> bool:
-    """题目文件夹名 / solution.py / metadata.json / note.md 里只要提到 monotonic / 单调栈 / 单调队列就算。"""
-    if MONO_RE.search(p.path.name):
-        return True
+def mono_reason(p: Problem) -> str | None:
+    """这题为什么被当成单调题：文件夹名 / solution.py / metadata.json / note.md 里第一处命中 MONO_RE 的位置。没命中返回 None。"""
+    m = MONO_RE.search(p.path.name)
+    if m:
+        return f"文件夹名含「{m.group(0)}」"
     for f in ("solution.py", "metadata.json", NOTE_NAME):
         fp = p.path / f
         try:
-            if fp.exists() and MONO_RE.search(fp.read_text(encoding="utf-8", errors="ignore")):
-                return True
+            if not fp.exists():
+                continue
+            for ln, line in enumerate(fp.read_text(encoding="utf-8", errors="ignore").splitlines(), 1):
+                m = MONO_RE.search(line)
+                if m:
+                    return f"{f}:{ln} 含「{m.group(0)}」"
         except OSError:
             pass
-    return False
+    return None
 
 
-def enforce_monotonic(problems: list[Problem]) -> list[Problem]:
-    """把所有单调栈/单调队列题强制搬进 MONO_CAT/general（已经在 MONO_CAT 下的不动）。返回搬完后的题目列表。"""
-    import shutil
-    moved = 0
+def is_monotonic(p: Problem) -> bool:
+    return mono_reason(p) is not None
+
+
+def monotonic_strays(problems: list[Problem]) -> list[tuple[Problem, str]]:
+    """不在 MONO_CAT、却命中单调关键词的题（纯文字匹配，注释里顺口提一句也算，所以只提醒不自动搬）。"""
+    out = []
     for p in problems:
-        if p.category == MONO_CAT or not is_monotonic(p):
+        if p.category == MONO_CAT:
             continue
-        dest_dir = ROOT / MONO_CAT / "general"
-        dest_dir.mkdir(parents=True, exist_ok=True)
+        why = mono_reason(p)
+        if why:
+            out.append((p, why))
+    return out
+
+
+def cmd_mono(apply: bool) -> None:
+    problems = load_all()
+    strays = monotonic_strays(problems)
+    if not strays:
+        print(f"✅ 没有散落在 {MONO_CAT} 之外的单调题")
+        return
+    for p, why in strays:
+        print(f"  {p.rel}\n     ← {why}")
+    if not apply:
+        print(f"\n以上 {len(strays)} 道只是关键词命中（可能误伤）。确认要搬：review mono --apply；不想再被提醒就改掉命中的那处文字。")
+        return
+    import shutil
+    dest_dir = ROOT / MONO_CAT / "general"
+    dest_dir.mkdir(parents=True, exist_ok=True)
+    for p, _ in strays:
         dest = dest_dir / p.path.name
         if dest.exists():
-            print(f"⚠️  {p.rel} 应归入 {MONO_CAT}，但那里已有同名文件夹，未动：{dest.relative_to(ROOT)}")
+            print(f"⚠️  {p.rel}：{dest.relative_to(ROOT)} 已存在，未动")
             continue
         shutil.move(str(p.path), str(dest))
-        print(f"📦 单调题强制归类：{p.rel}  →  {dest.relative_to(ROOT)}")
-        moved += 1
-    return load_all() if moved else problems
+        print(f"📦 {p.rel}  →  {dest.relative_to(ROOT)}")
+    load_all()                                   # 顺手修正 metadata.json 里的 path
+    print("提醒：README 里指向旧位置的链接要自己改；然后 python3 tools/progress.py")
 
 
 def cmd_shuffle(n: int, reset: bool = False) -> None:
@@ -402,8 +439,13 @@ def cmd_shuffle(n: int, reset: bool = False) -> None:
         print(f"⚠️  Today/ 里有非软链接的文件，未动: {kept}")
     if dropped:
         print(f"♻️  清掉上一轮未 finish 的 {len(dropped)} 题: " + "、".join(d.split(" - ", 1)[-1] for d in dropped))
-    # ② 选题：优先级最高的 n 题（同分随机）；选之前先把散落各处的单调题归到 MONO_CAT
-    problems = enforce_monotonic(load_all())
+    # ② 选题：到期题优先（🔴 > 🟡 > 🟢，再按逾期），不够才补新题。散落在外的单调题只提醒，不搬（要搬：review mono --apply）
+    problems = load_all()
+    strays = monotonic_strays(problems)
+    if strays:
+        print(f"⚠️  {len(strays)} 道题疑似单调栈/单调队列却不在 {MONO_CAT}（只提醒，不搬；要搬：review mono --apply）：")
+        for p, why in strays:
+            print(f"     {p.rel}   ← {why}")
     due, fill = pick_today(problems, n, today)
     # ③ 打乱顺序再编号，让 Today/ 里的顺序不可预测
     chosen = due + fill
@@ -731,6 +773,15 @@ def cmd_stats() -> None:
         print("\n最近的 🔴：")
         for d, p in reds:
             print(f"  {d}  {p.id}  {p.title}")
+    fc = Counter(p.next_date for p in problems if p.next_date and p.next_date > today)
+    row = " ｜ ".join(f"+{i}天 {fc.get(today + timedelta(days=i), 0)}" for i in range(1, 8))
+    print(f"\n到期预测（今天积压 {len(due)} 之外，接下来 7 天各新到期多少）：{row}")
+    leeches = [(sum(1 for _, st in p.history if st == "🔴"), p) for p in problems]
+    leeches = sorted(((k, p) for k, p in leeches if k >= LEECH_REDS), key=lambda x: -x[0])
+    if leeches:
+        print(f"\n🩸 顽固题（累计 🔴 ≥ {LEECH_REDS}）：别再硬刷，先把解法读懂、拆成更小的模板再回来")
+        for k, p in leeches[:10]:
+            print(f"  🔴×{k}  {p.id}  {p.title}")
     done_today = sum(1 for p in problems for h in p.history if h[0] == today)
     print(f"\n今日已完成复习 {done_today} 题")
 
@@ -778,13 +829,15 @@ def main(argv: list[str]) -> None:
         print(__doc__.strip()); return
     cmd, rest = argv[0], argv[1:]
     n_flag = _flag(rest, "-n")
-    n = int(n_flag) if n_flag else (SHUFFLE_N if cmd == "shuffle" else 3)
+    n = int(n_flag) if n_flag else SHUFFLE_N
     if cmd == "today":
         cmd_today(n)
     elif cmd == "shuffle":
         cmd_shuffle(n, reset="--reset" in rest)       # 默认不去网站重置代码；要重置就 --reset 或单独 `review reset`
     elif cmd == "reset":
         cmd_reset(int(rest[0]) if rest and rest[0].isdigit() else None)
+    elif cmd == "mono":
+        cmd_mono("--apply" in rest)
     elif cmd == "done":
         note = _flag(rest, "--note")
         if len(rest) != 2:
