@@ -66,10 +66,10 @@ python3 tools/intake.py "<用户给的路径>"            # 可以一次给多�
 
 ## 疑难笔记怎么入库
 
-- 一道题的所有文字笔记都在该题文件夹的 `note.md`（和 solution.py 同级）：intake 的笔记、`finish` 的评语（`### 💬 日期 - finish 🟢`）、`solution_retry.py` 里带注释的 class（`### 📝 日期 - retry N`，finish 时自动存）。新题入库时不需要有 note.md，第一条笔记产生时才建。
+- 一道题的所有文字笔记都在该题文件夹的 `note.md`（和 solution.py 同级）：intake 的笔记、`done --note` 的卡点、`solution_retry.py` 里带注释的 class（`### 📝 日期 - retry N`，finish 时自动存）。新题入库时不需要有 note.md，第一条笔记产生时才建。
 - 图片 / PDF / 手写扫描等非文字附件：和 `solution.py` 一起放进 `New/`，入库时自动搬到题目文件夹根目录并加 `asset-` 前缀；事后补的直接丢进该题文件夹并自己加 `asset-` 前缀，文件名里别用 emoji。`New/note.md` 会并进该题的 `note.md`。
 - 卡点（sticking point）：复习时用 `review_due.py done ... --note "..."` 追加到 `practice[]`；入库当天的卡点写进 `New/note.md` 一起入库。
-- 守卫反例（guard）：只记在 `MISTAKES.md` 对应错误模式的 **守卫反例** 下（由 finish-note 维护），不进 `metadata.json`。
+- 守卫反例（guard）：只记在 `MISTAKES.md` 对应错误模式的 **守卫反例** 下（手动维护），不进 `metadata.json`。
 
 ## 不要做的事
 

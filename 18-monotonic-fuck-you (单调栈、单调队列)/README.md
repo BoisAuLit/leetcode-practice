@@ -220,9 +220,9 @@ LC-0085、LC-1856、LC-1762、LC-0134
 | LC | Primary Pattern | Secondary | 实体目录 |
 |---|---|---|---|
 | LC-0239 | Monotonic Deque | Sliding Window | **本专题** `04/01/01`；滑动窗口专题在 README 里引用它 |
-| LC-1438 | Sliding Window | Two Monotonic Deques | [`03-sliding-window/05/02/01`](<../03-sliding-window (滑动窗口)/05 - 单调队列与窗口极值 (Monotonic Deque)/02 - 变长窗口最大最小值约束/01 - LC-1438 - Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit>) |
-| LC-0862 | Prefix Sum + Deque | Sliding Window | [`03-sliding-window/03/01/02`](<../03-sliding-window (滑动窗口)/03 - 变长窗口之最短满足条件 (Minimum Valid Window)/01 - 数值阈值与最短区间/02 - LC-0862 - Shortest Subarray with Sum at Least K>) |
-| LC-0042 | Two Pointers | Monotonic Stack | [`02-two-pointers/01/01/03`](<../02-two-pointers (双指针)/01 - 对撞指针与贪心 (Opposite Ends)/01 - 经典对撞与贪心决策/03 - LC-0042 - Trapping Rain Water>) |
+| LC-1438 | Sliding Window | Two Monotonic Deques | [`03-sliding-window/05/02/01`](<general/01 - LC-1438 - Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit>) |
+| LC-0862 | Prefix Sum + Deque | Sliding Window | [`03-sliding-window/03/01/02`](<general/02 - LC-0862 - Shortest Subarray with Sum at Least K>) |
+| LC-0042 | Two Pointers | Monotonic Stack | [`02-two-pointers/01/01/03`](<general/03 - LC-0042 - Trapping Rain Water>) |
 | LC-0134 | **Greedy** | Running Balance | **本专题存档** `05/03/01`（13-greedy 当前没有此题） |
 | LC-0084 / 0853 | Monotonic Stack / 排序+扫描 | — | 本专题（原 NC 来源已正式化为 LC 编号） |
 

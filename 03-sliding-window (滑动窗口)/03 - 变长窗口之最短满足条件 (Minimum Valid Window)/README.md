@@ -79,7 +79,7 @@ for right, ch in enumerate(s):
 | | 题 | 难度 | 这一题新增的东西 |
 |---|---|---|---|
 | **P0** | [LC-0209 - Minimum Size Subarray Sum](01%20-%20%E6%95%B0%E5%80%BC%E9%98%88%E5%80%BC%E4%B8%8E%E6%9C%80%E7%9F%AD%E5%8C%BA%E9%97%B4/01%20-%20LC-0209%20-%20Minimum%20Size%20Subarray%20Sum) | M | 最短窗口的签名题；**依赖全正数** |
-| **P1** | [LC-0862 - Shortest Subarray with Sum at Least K](01%20-%20%E6%95%B0%E5%80%BC%E9%98%88%E5%80%BC%E4%B8%8E%E6%9C%80%E7%9F%AD%E5%8C%BA%E9%97%B4/02%20-%20LC-0862%20-%20Shortest%20Subarray%20with%20Sum%20at%20Least%20K) | H | **有负数**：窗口单调性失效，改用前缀和 + 单调队列 |
+| **P1** | [LC-0862 - Shortest Subarray with Sum at Least K](../../18-monotonic-fuck-you%20%28%E5%8D%95%E8%B0%83%E6%A0%88%E3%80%81%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%29/general/02%20-%20LC-0862%20-%20Shortest%20Subarray%20with%20Sum%20at%20Least%20K) | H | **有负数**：窗口单调性失效，改用前缀和 + 单调队列 |
 | **P0** | [LC-0076 - Minimum Window Substring](02%20-%20%E5%AD%97%E7%AC%A6%E9%A2%91%E7%8E%87%E8%A6%86%E7%9B%96%E4%B8%8E%E6%9C%80%E5%B0%8F%E7%AA%97%E5%8F%A3/01%20-%20LC-0076%20-%20Minimum%20Window%20Substring) 📦 | H | Hard 里最重要的一道；need/have 计数 |
 
 ## 常见错误与边界

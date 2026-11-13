@@ -94,6 +94,6 @@ def mirror(a, b):
 
 | 题 | 位置 | 信号 → 模式 | 备注 |
 |---|---|---|---|
-| [LC-0545 Boundary of Binary Tree](<./01 - DFS 三种基本遍历/04 - LC-0545 - Boundary of Binary Tree>) | `01 - 二叉树基础遍历与递归 (Tree Fundamentals)/01 - DFS 三种基本遍历` | 逆时针边界 = 根 + 左边界(不含叶) + 叶子 + 右边界倒序；四个坑写在注释里 | 读题题，不是算法题；**Premium 题，当前账号抓不到 PDF**；题面摘要在 solution.py 顶部的 docstring 里；续费后 `python3 tools/intake.py "<文件夹>"` 可补抓 |
+| [LC-0545 Boundary of Binary Tree](<./01 - DFS 三种基本遍历/04 - LC-0545 - Boundary of Binary Tree>) | `01 - 二叉树基础遍历与递归 (Tree Fundamentals)/01 - DFS 三种基本遍历` | 逆时针边界 = 根 + 左边界(不含叶) + 叶子 + 右边界倒序；四个坑写在注释里 | 读题题，不是算法题；Premium 题 |
 
 每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

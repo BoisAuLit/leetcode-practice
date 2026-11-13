@@ -8,7 +8,7 @@
     problem.pdf      题面
     problem_dark.pdf 题面夜间版（颜色反转 + 深灰底 + 提亮文字，文字仍可选可搜；intake 自动生成）
     metadata.json    id、path、难度、链接、复习记录 practice[]（标题和信号→模式不在这里，看文件夹名）
-    note.md          这道题的全部文字笔记：intake 时的笔记、finish 的评语（### 💬）、solution_retry.py 里带注释的 class（### 📝 retry N）；第一条笔记产生时才建
+    note.md          这道题的全部文字笔记：intake 时的笔记、done --note 的卡点、solution_retry.py 里带注释的 class（### 📝 retry N）；第一条笔记产生时才建
     asset-*          图片 / PDF 等非文字附件，直接摊在这一层（asset-<原名>），有才存在
 ```
 
@@ -19,7 +19,7 @@ shuffle              # ① 从 20 题候选池（到期题 + 从未复习的题�
                      #    每题文件夹里生成 solution_retry.py（solution.py 的副本：class 方法体全换成 pass、删掉因此用不到的 import、开头加题目链接，其余原样）
 # ② 对 Today/ 里的每一题：盖住 solution.py，只看文件夹名（标题 + 挂在后面的信号）先口头回答 → 在 solution_retry.py 里闭卷重写 → 对照原解
 finish 1 g           # ③ 记结果：g=🟢 闭卷流畅  y=🟡 有印象但慢  r=🔴 卡壳；默认 g。会追加 practice[]、把 retry 里带注释的 class 存进 note.md、删 retry、移除软链接
-finish 1 r "卡点一句话"   #    带笔记 → 评语追加进 note.md，再用 claude -p 跑 .claude/skills/finish-note，把笔记归入 MISTAKES.md 的错误模式（复发 +1 或新建）
+finish 3 r           #    finish 只收序号和颜色，不收笔记
 git add -A && git commit -m "review $(date +%F)"    # ④ 每天一提交
 ```
 
@@ -41,7 +41,7 @@ git add -A && git commit -m "review $(date +%F)"    # ④ 每天一提交
 python3 tools/review_due.py today [-n 3]        # 只打印今天该复习什么（从候选池随机抽 n 题）
 python3 tools/review_due.py shuffle [-n 3] [--reset]      # 同上，并重建 Today/ 里的软链接 + 每题生成 solution_retry.py；--reset 才去网站重置旧代码
 python3 tools/review_due.py reset [序号]         # 按需：对 Today/ 里的题做网站代码重置（LeetCode / NeetCode，走 tuto_etsy 的 puppeteer 脚本）
-python3 tools/review_due.py finish <序号|题目文件夹路径> [g|y|r] [--note "卡点"]   # 按 Today/ 序号（或路径）记结果、删 solution_retry.py、移除软链接
+python3 tools/review_due.py finish <序号|题目文件夹路径> [g|y|r]                 # 按 Today/ 序号（或路径）记结果、删 solution_retry.py、移除软链接
 python3 tools/review_due.py done <子串> g|y|r [--note "卡点"]       # 按题目名记结果（不经 Today/）
 python3 tools/make_retry.py <题目文件夹或 solution.py>            # 手动生成 solution_retry.py
 python3 tools/progress.py                                        # 手动刷新根目录 progress.md（intake / finish / done 会自动刷；shuffle 不刷）

@@ -177,8 +177,8 @@ BFS 题（733、279）按 11-graphs 的优先级协调，这里只标 P1，不�
 |---|---|---|
 | LC-0739 / 0496 / 0503 / 0901 / 0084 / 0907 / 0853 / 0402 / 0316 | Level 1 `02` 的全部内容 | [18-monotonic](<../18-monotonic-fuck-you (单调栈、单调队列)/README.md>) |
 | LC-0239 | Level 1 `05` 的核心题 | [18-monotonic `04/01/01`](<../18-monotonic-fuck-you (单调栈、单调队列)/04 - 单调队列与滑动窗口/01 - 固定窗口最大值/01 - LC-0239 - Sliding Window Maximum>) |
-| LC-1438 | Level 1 `05` | [03-sliding-window](<../03-sliding-window (滑动窗口)/05 - 单调队列与窗口极值 (Monotonic Deque)/02 - 变长窗口最大最小值约束/01 - LC-1438 - Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit>) |
-| LC-0862 | Level 1 `05` | [03-sliding-window](<../03-sliding-window (滑动窗口)/03 - 变长窗口之最短满足条件 (Minimum Valid Window)/01 - 数值阈值与最短区间/02 - LC-0862 - Shortest Subarray with Sum at Least K>) |
+| LC-1438 | Level 1 `05` | [03-sliding-window](<../18-monotonic-fuck-you (单调栈、单调队列)/general/01 - LC-1438 - Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit>) |
+| LC-0862 | Level 1 `05` | [03-sliding-window](<../18-monotonic-fuck-you (单调栈、单调队列)/general/02 - LC-0862 - Shortest Subarray with Sum at Least K>) |
 | LC-0286 Walls and Gates | Level 1 `06` 的多源 BFS 代表 | [11-graphs 多源 BFS](<../11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/multi-source-bfs (多源 BFS：所有起点一起入队)/LC-0286 - Walls and Gates>) |
 | LC-0994 Rotting Oranges | Level 1 `06` | [11-graphs 多源 BFS](<../11-graphs (图论)/02-dfs-bfs (阶段 1 · DFS、BFS：静态无权的连通性与步数)/multi-source-bfs (多源 BFS：所有起点一起入队)/LC-0994 - Rotting Oranges - ★ 签名题>) |
 | LC-0752 Open the Lock | Level 1 `06` 的状态图 BFS | [11-graphs 状态图 BFS](<../11-graphs (图论)/01-graph-modeling (阶段 0 · 建图、隐式图、状态图)/state-graph-bfs (状态图 BFS：一个状态就是一个点)/LC-0752 - Open the Lock - ★ 签名题>) |

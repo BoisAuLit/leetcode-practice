@@ -97,7 +97,7 @@ return slots == 0                    # 必须恰好用完
 
 | 题 | 位置 | 信号 → 模式 | 备注 |
 |---|---|---|---|
-| [LC-0426 Convert Binary Search Tree to Sorted Doubly Linked List](<./03 - 原地展开与树指针重连/02 - LC-0426 - Convert Binary Search Tree to Sorted Doubly Linked List>) | `05 - 树构造、序列化与结构修改/03 - 原地展开与树指针重连` | 中序 + prev 指针原地改 left/right，最后闭环；和 LC-0114 同一招 | 原地指针重连；**Premium 题，当前账号抓不到 PDF**；题面摘要在 solution.py 顶部的 docstring 里；续费后 `python3 tools/intake.py "<文件夹>"` 可补抓 |
+| [LC-0426 Convert Binary Search Tree to Sorted Doubly Linked List](<./03 - 原地展开与树指针重连/02 - LC-0426 - Convert Binary Search Tree to Sorted Doubly Linked List>) | `05 - 树构造、序列化与结构修改/03 - 原地展开与树指针重连` | 中序 + prev 指针原地改 left/right，最后闭环；和 LC-0114 同一招 | 原地指针重连；Premium 题 |
 | [LC-1110 Delete Nodes And Return Forest](<./03 - 原地展开与树指针重连/03 - LC-1110 - Delete Nodes And Return Forest>) | `05 - 树构造、序列化与结构修改/03 - 原地展开与树指针重连` | 新根 ⟺ 自己活着且父亲被删；后序返回 None 自动断链 | 同 LC-0669 骨架 |
 
 每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

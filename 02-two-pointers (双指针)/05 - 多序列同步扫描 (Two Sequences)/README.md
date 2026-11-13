@@ -80,6 +80,6 @@ else:       j += 1
 
 | 题 | 位置 | 信号 → 模式 | 备注 |
 |---|---|---|---|
-| [LC-0408 Valid Word Abbreviation](<./06 - 分段解析与对齐比较/02 - LC-0408 - Valid Word Abbreviation>) | `05 - 多序列同步扫描 (Two Sequences)/06 - 分段解析与对齐比较` | 双指针逐段对齐：数字段开头是 '0' 直接 False；结束时两边必须同时走完 | Meta 电面热身；**Premium 题，当前账号抓不到 PDF**；题面摘要在 solution.py 顶部的 docstring 里；续费后 `python3 tools/intake.py "<文件夹>"` 可补抓 |
+| [LC-0408 Valid Word Abbreviation](<./06 - 分段解析与对齐比较/02 - LC-0408 - Valid Word Abbreviation>) | `05 - 多序列同步扫描 (Two Sequences)/06 - 分段解析与对齐比较` | 双指针逐段对齐：数字段开头是 '0' 直接 False；结束时两边必须同时走完 | Meta 电面热身；Premium 题 |
 
 每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

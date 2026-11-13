@@ -1,6 +1,6 @@
 # 复习进度
 
-> 自动生成，最后更新 2026-11-11 20:42。只在 intake / finish / done 时刷新；手动刷新：`python3 tools/progress.py`。
+> 自动生成，最后更新 2026-11-12 21:35。只在 intake / finish / done 时刷新；手动刷新：`python3 tools/progress.py`。
 
 ## 总进度：0.0%
 
@@ -39,15 +39,15 @@
 
 - 累计复习 122 次：🟢 38 · 🟡 20 · 🔴 64（🟢 率 31.1%）
 - 连续复习 0 天，最近一次 2026-11-09
-- 最近 7 天：11-05 0  11-06 1  11-07 0  11-08 0  11-09 2  11-10 0  11-11 0
+- 最近 7 天：11-06 1  11-07 0  11-08 0  11-09 2  11-10 0  11-11 0  11-12 0
 
 ## 按大类
 
 | 大类 | 总数 | 毕业 | 复习中 | 未开始 | 今天到期 | 毕业率 | 已进入复习 |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | 01-arrays-hashing (数组、哈希表) | 47 | 0 | 4 | 43 | 4 | 0.0% | 8.5% |
-| 02-two-pointers (双指针) | 37 | 0 | 3 | 34 | 3 | 0.0% | 8.1% |
-| 03-sliding-window (滑动窗口) | 35 | 0 | 2 | 33 | 2 | 0.0% | 5.7% |
+| 02-two-pointers (双指针) | 36 | 0 | 2 | 34 | 2 | 0.0% | 5.6% |
+| 03-sliding-window (滑动窗口) | 33 | 0 | 2 | 31 | 2 | 0.0% | 6.1% |
 | 04-stack-queue (栈、队列) | 29 | 0 | 3 | 26 | 3 | 0.0% | 10.3% |
 | 05-binary-search (二分查找) | 29 | 0 | 2 | 27 | 2 | 0.0% | 6.9% |
 | 06-linked-list (链表) | 35 | 0 | 3 | 32 | 3 | 0.0% | 8.6% |
@@ -62,13 +62,13 @@
 | 15-math-geometry (数学、几何) | 23 | 0 | 4 | 19 | 4 | 0.0% | 17.4% |
 | 16-bit-manipulation (位运算) | 19 | 0 | 4 | 15 | 4 | 0.0% | 21.1% |
 | 17-design (设计) | 24 | 0 | 2 | 22 | 1 | 0.0% | 8.3% |
-| 18-monotonic-fuck-you (单调栈、单调队列) | 17 | 0 | 2 | 15 | 2 | 0.0% | 11.8% |
+| 18-monotonic-fuck-you (单调栈、单调队列) | 20 | 0 | 3 | 17 | 3 | 0.0% | 15.0% |
 
 ## 机器可读（小组件读这一段）
 
 ```json
 {
-  "updated": "2026-11-11 20:42",
+  "updated": "2026-11-12 21:35",
   "total": 652,
   "by_difficulty": {
     "E": {
@@ -123,10 +123,6 @@
   },
   "week": [
     {
-      "date": "2026-11-05",
-      "count": 0
-    },
-    {
       "date": "2026-11-06",
       "count": 1
     },
@@ -149,6 +145,10 @@
     {
       "date": "2026-11-11",
       "count": 0
+    },
+    {
+      "date": "2026-11-12",
+      "count": 0
     }
   ],
   "streak_days": 0,
@@ -166,23 +166,23 @@
     },
     {
       "name": "02-two-pointers (双指针)",
-      "total": 37,
+      "total": 36,
       "graduated": 0,
-      "in_review": 3,
+      "in_review": 2,
       "unscheduled": 34,
-      "due": 3,
+      "due": 2,
       "pct": 0.0,
-      "started_pct": 8.1
+      "started_pct": 5.6
     },
     {
       "name": "03-sliding-window (滑动窗口)",
-      "total": 35,
+      "total": 33,
       "graduated": 0,
       "in_review": 2,
-      "unscheduled": 33,
+      "unscheduled": 31,
       "due": 2,
       "pct": 0.0,
-      "started_pct": 5.7
+      "started_pct": 6.1
     },
     {
       "name": "04-stack-queue (栈、队列)",
@@ -326,13 +326,13 @@
     },
     {
       "name": "18-monotonic-fuck-you (单调栈、单调队列)",
-      "total": 17,
+      "total": 20,
       "graduated": 0,
-      "in_review": 2,
-      "unscheduled": 15,
-      "due": 2,
+      "in_review": 3,
+      "unscheduled": 17,
+      "due": 3,
       "pct": 0.0,
-      "started_pct": 11.8
+      "started_pct": 15.0
     }
   ]
 }

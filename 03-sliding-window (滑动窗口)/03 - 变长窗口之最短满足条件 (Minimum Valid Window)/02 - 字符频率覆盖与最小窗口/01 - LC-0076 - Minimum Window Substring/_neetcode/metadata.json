@@ -1,6 +1,6 @@
 {
   "id": "NC-minimum-window-with-characters",
-  "path": "03-sliding-window (滑动窗口)/variable-window (变长窗口)/NC - Minimum Window Substring",
+  "path": "03-sliding-window (滑动窗口)/03 - 变长窗口之最短满足条件 (Minimum Valid Window)/02 - 字符频率覆盖与最小窗口/01 - LC-0076 - Minimum Window Substring/_neetcode",
   "difficulty": "H",
   "link": {
     "leetcode": "https://leetcode.com/problems/minimum-window-substring/",

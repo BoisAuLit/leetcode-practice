@@ -34,8 +34,8 @@ O(n) 时间 —— 每个下标最多入队一次、出队一次。**有嵌套 w
 | LC | 题 | Primary Pattern | 实体目录 |
 |---|---|---|---|
 | 0239 | Sliding Window Maximum | Monotonic Deque | [18 · 04/01/01](<../../18-monotonic-fuck-you (单调栈、单调队列)/04 - 单调队列与滑动窗口/01 - 固定窗口最大值/01 - LC-0239 - Sliding Window Maximum>) |
-| 1438 | Longest Continuous Subarray With Abs Diff ≤ Limit | Sliding Window | [03-sliding-window · 05/02/01](<../../03-sliding-window (滑动窗口)/05 - 单调队列与窗口极值 (Monotonic Deque)/02 - 变长窗口最大最小值约束/01 - LC-1438 - Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit>) |
-| 0862 | Shortest Subarray with Sum at Least K | Prefix Sum + Deque | [03-sliding-window · 03/01/02](<../../03-sliding-window (滑动窗口)/03 - 变长窗口之最短满足条件 (Minimum Valid Window)/01 - 数值阈值与最短区间/02 - LC-0862 - Shortest Subarray with Sum at Least K>) |
+| 1438 | Longest Continuous Subarray With Abs Diff ≤ Limit | Sliding Window | [03-sliding-window · 05/02/01](<../../18-monotonic-fuck-you (单调栈、单调队列)/general/01 - LC-1438 - Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit>) |
+| 0862 | Shortest Subarray with Sum at Least K | Prefix Sum + Deque | [03-sliding-window · 03/01/02](<../../18-monotonic-fuck-you (单调栈、单调队列)/general/02 - LC-0862 - Shortest Subarray with Sum at Least K>) |
 
 ## 三者的不变量对照
 

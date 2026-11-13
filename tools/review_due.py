@@ -15,24 +15,23 @@ metadata.json 里和复习有关的字段：
     间隔阶梯 1 → 3 → 7 → 14 → 30 天；🟢 升一级，🟡 不变，🔴 重置为 1 天；
     处在 30 天这一级又拿到 🟢 即毕业。
 
-叫号规则（shuffle / today）：先凑一个 20 题的候选池，再从里面随机抽 k 题（k = -n，shuffle 默认 5）。
+叫号规则（shuffle / today）：先凑一个 20 题的候选池，再从里面随机抽 k 题（k = -n，shuffle 默认 7，today 默认 3）。
     池 A（到期题，最多 10）：只收今天到期或逾期的题，按 逾期天数 + 上次🔴ｘ7 / 🟡ｘ3 取前 10，同分随机；
     池 B（从未复习过）：按大类轮转随机抽，补足到 20；
     没到期的题绝不出现（避免同一批题天天见）；抽完再随机打乱一次顺序，Today/ 里的编号不可预测。
 
 用法：
     python3 tools/review_due.py today [-n 3]          今日清单（从 20 题候选池里随机抽 n 题）
-    python3 tools/review_due.py shuffle [-n 3] [--reset]
+    python3 tools/review_due.py shuffle [-n 7] [--reset]
                                                       同 today，并把选中的题以软链接放进 Today/（先清空），
                                                       每题文件夹里生成闭卷重写用的 solution_retry.py；
                                                       --reset 才会顺便把 LeetCode / NeetCode 网站上的旧代码重置（默认不去网站）
     python3 tools/review_due.py reset [序号]          对 Today/ 里的题（或某一题）做网站代码重置（LeetCode / NeetCode）
-    python3 tools/review_due.py finish <序号|题目文件夹路径> [g|y|r] [--note "卡点"]
+    python3 tools/review_due.py finish <序号|题目文件夹路径> [g|y|r]
                                                       数字 = Today/ 里的序号；路径 = 任意题目文件夹（必须存在且有 solution_retry.py，否则报错）。
                                                       记结果（默认 g），Today/ 里有它的软链接就移除；
                                                       如果这是 Today/ 里最后一题，自动再 shuffle AUTO_SHUFFLE_N 题；
-                                                      solution_retry.py 里带 # 注释的 class 先存进该题 note.md（### 📝 日期 - retry N），再删文件；
-                                                      --note 的评语也追加进 note.md（### 💬 日期 - finish 🟢）
+                                                      solution_retry.py 里带 # 注释的 class 先存进该题 note.md（### 📝 日期 - retry N），再删文件
     python3 tools/review_due.py remove <序号|题目文件夹路径> [--dry-run]
                                                       把一道题彻底从题库里剔除（给"这题对我没用"的情况）。
                                                       数字 = Today/ 里的序号；路径 = 任意题目文件夹。
@@ -53,7 +52,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from make_retry import write_retry, RETRY_NAME  # noqa: E402
 
-NOTE_NAME = "note.md"        # 每题的笔记，和 solution.py 同级；finish 的评语 + solution_retry.py 里带注释的 class 都进这里
+NOTE_NAME = "note.md"        # 每题的笔记，和 solution.py 同级；solution_retry.py 里带注释的 class（finish 时）和 done --note 的卡点进这里
 
 ROOT = Path(__file__).resolve().parent.parent
 TODAY_DIR = ROOT / "Today"
@@ -231,7 +230,8 @@ def priority(p: Problem, today: date) -> float:
 
 
 POOL_DUE, POOL_NEW = 10, 10        # 候选池：到期题最多 10 + 从未复习过的 10 = 20 题，再从里面随机抽 k 题
-AUTO_SHUFFLE_N = 5                 # finish 掉 Today/ 里最后一题之后，自动再 shuffle 这么多题
+SHUFFLE_N = 7                      # shuffle 不带 -n 时的默认题数
+AUTO_SHUFFLE_N = SHUFFLE_N         # finish / remove 掉 Today/ 里最后一题之后，自动再 shuffle 这么多题
 
 
 def pick_new(problems: list[Problem], k: int) -> list[Problem]:
@@ -297,7 +297,7 @@ def cmd_today(n: int) -> None:
     due, fill = pick_today(problems, n, today)
     print_selection(due + fill, today, len(due), len(fill), sum(1 for p in problems if p.is_due(today)))
     left = sum(1 for p in problems if p.unscheduled) - len(fill)
-    print(f"\n未排期剩余 {left} 题 ｜ 把今天的题放进 Today/: shuffle {n}   做完一题: finish <序号> [g|y|r] [\"笔记\"]")
+    print(f"\n未排期剩余 {left} 题 ｜ 把今天的题放进 Today/: shuffle {n}   做完一题: finish <序号> [g|y|r]")
 
 
 def _canary_running() -> bool:
@@ -420,7 +420,7 @@ def cmd_shuffle(n: int, reset: bool = False) -> None:
     # ④ 可选：网站上的旧代码清空（--reset 才做，默认不做）
     if reset and chosen:
         reset_online(chosen)
-    print('   做完一题: finish <序号> [g|y|r] ["笔记"]')
+    print('   做完一题: finish <序号> [g|y|r]')
 
 
 # ---------------------------------------------------------------- note.md
@@ -512,7 +512,7 @@ def _record(p: Problem, status: str, note: str | None) -> None:
     update_progress()
 
 
-def cmd_finish(which: str, status: str, note: str | None) -> None:
+def cmd_finish(which: str, status: str) -> None:
     """which 是数字 → Today/ 里的序号（老用法）；否则当作题目文件夹路径（绝对或相对当前目录）：
     文件夹必须存在、里面必须有 solution_retry.py，否则报错；做的事和序号用法完全一样，
     Today/ 里如果有指向它的软链接也一并移除。"""
@@ -538,7 +538,7 @@ def cmd_finish(which: str, status: str, note: str | None) -> None:
     if not hits:
         sys.exit(f"这个文件夹不是题目（没有 metadata.json 或不在题库里）：{target}")
     archive_retry(hits[0], date.today())      # 先把 solution_retry.py 里的注释存进 note.md，再删它
-    _record(hits[0], status, note)
+    _record(hits[0], status, None)
     _remove_retry(target)
     if link is not None:
         link.unlink()
@@ -777,7 +777,8 @@ def main(argv: list[str]) -> None:
     if not argv or argv[0] in ("-h", "--help"):
         print(__doc__.strip()); return
     cmd, rest = argv[0], argv[1:]
-    n = int(_flag(rest, "-n") or 3)
+    n_flag = _flag(rest, "-n")
+    n = int(n_flag) if n_flag else (SHUFFLE_N if cmd == "shuffle" else 3)
     if cmd == "today":
         cmd_today(n)
     elif cmd == "shuffle":
@@ -790,10 +791,9 @@ def main(argv: list[str]) -> None:
             sys.exit('用法: done <子串> <g|y|r> [--note "卡点"]')
         cmd_done(rest[0], rest[1], note)
     elif cmd == "finish":
-        note = _flag(rest, "--note")
         if not rest or len(rest) > 2:
-            sys.exit('用法: finish <Today 里的序号 | 题目文件夹路径> [g|y|r] [--note "卡点"]')
-        cmd_finish(rest[0], rest[1] if len(rest) == 2 else "g", note)
+            sys.exit('用法: finish <Today 里的序号 | 题目文件夹路径> [g|y|r]')
+        cmd_finish(rest[0], rest[1] if len(rest) == 2 else "g")
     elif cmd == "remove":
         dry = "--dry-run" in rest
         rest = [x for x in rest if x != "--dry-run"]

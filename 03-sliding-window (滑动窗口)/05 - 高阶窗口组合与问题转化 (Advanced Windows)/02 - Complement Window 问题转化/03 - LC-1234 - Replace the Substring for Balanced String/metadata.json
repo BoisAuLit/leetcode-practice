@@ -1,0 +1,10 @@
+{
+  "id": "LC-1234",
+  "path": "03-sliding-window (滑动窗口)/05 - 高阶窗口组合与问题转化 (Advanced Windows)/02 - Complement Window 问题转化/03 - LC-1234 - Replace the Substring for Balanced String",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/replace-the-substring-for-balanced-string/",
+    "neetcode": null
+  },
+  "practice": []
+}

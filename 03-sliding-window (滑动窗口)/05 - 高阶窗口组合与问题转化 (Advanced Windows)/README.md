@@ -1,4 +1,4 @@
-# 06 - 高阶窗口组合与问题转化 (Advanced Windows)
+# 05 - 高阶窗口组合与问题转化 (Advanced Windows)
 
 ## 核心定义
 
@@ -82,6 +82,6 @@ for offset in range(L):                      # ! L 个起点分组
 
 | 题 | 位置 | 信号 → 模式 | 备注 |
 |---|---|---|---|
-| [LC-1234 Replace the Substring for Balanced String](<./02 - Complement Window 问题转化/03 - LC-1234 - Replace the Substring for Balanced String>) | `06 - 高阶窗口组合与问题转化 (Advanced Windows)/02 - Complement Window 问题转化` | 看窗口外面：outside[c] <= n/4 全部成立 ⟹ 合法；最短窗口模板「合法就收缩」 | LC-1658 式补集窗口 |
+| [LC-1234 Replace the Substring for Balanced String](<./02 - Complement Window 问题转化/03 - LC-1234 - Replace the Substring for Balanced String>) | `05 - 高阶窗口组合与问题转化 (Advanced Windows)/02 - Complement Window 问题转化` | 看窗口外面：outside[c] <= n/4 全部成立 ⟹ 合法；最短窗口模板「合法就收缩」 | LC-1658 式补集窗口 |
 
 每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

@@ -32,7 +32,6 @@ class Solution:
 ```python
 class Solution:
     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
-        # ! Use monotonic stack
         total = 0
         i = 0
         res = 0

@@ -1,6 +1,6 @@
 {
   "id": "LC-0042",
-  "path": "02-two-pointers (双指针)/01 - 对撞指针与贪心 (Opposite Ends)/01 - 经典对撞与贪心决策/03 - LC-0042 - Trapping Rain Water",
+  "path": "18-monotonic-fuck-you (单调栈、单调队列)/general/03 - LC-0042 - Trapping Rain Water",
   "difficulty": "H",
   "link": {
     "leetcode": "https://leetcode.com/problems/trapping-rain-water/",

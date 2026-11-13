@@ -18,7 +18,7 @@
 | **02 最长合法** | 变 | **不合法**时收缩 | 收缩后 `max(right-left+1)` | 0003 |
 | **03 最短满足** | 变 | **合法**时收缩 | 收缩**前** `min(right-left+1)` | 0209 |
 | **04 计数** | 变 | 同 02 | `ans += right-left+1`（至多）或 `+= left`（至少）| 0713 |
-| **05 单调队列** | 定长或变长 | 同上 | 额外维护一个**极值候选队列** | 0239 / 1438 |
+| **单调队列**（住在 18 专区） | 定长或变长 | 同上 | 额外维护一个**极值候选队列** | 0239 / 1438 |
 
 **02 和 03 的 while 条件正好相反**，这是本专题最容易写反的地方：
 
@@ -29,7 +29,7 @@ while not valid():                      while valid():
 best = max(best, right - left + 1)          shrink()
 ```
 
-第 06 层不是新模板，是**把题翻译成窗口**（补集转化、offset 分组、gap 数组）；第 07 层是存档。
+第 05 层不是新模板，是**把题翻译成窗口**（补集转化、offset 分组、gap 数组）；第 06 层是存档。
 
 ## 二、核心不变量与模板
 
@@ -118,7 +118,7 @@ for right, x in enumerate(nums):
 | | 题 | 难度 | |
 |---|---|---|---|
 | **P0** | [LC-0209 - Minimum Size Subarray Sum](03%20-%20%E5%8F%98%E9%95%BF%E7%AA%97%E5%8F%A3%E4%B9%8B%E6%9C%80%E7%9F%AD%E6%BB%A1%E8%B6%B3%E6%9D%A1%E4%BB%B6%20%28Minimum%20Valid%20Window%29/01%20-%20%E6%95%B0%E5%80%BC%E9%98%88%E5%80%BC%E4%B8%8E%E6%9C%80%E7%9F%AD%E5%8C%BA%E9%97%B4/01%20-%20LC-0209%20-%20Minimum%20Size%20Subarray%20Sum) | M | （🆕 新增） |
-| **P1** | [LC-0862 - Shortest Subarray with Sum at Least K](03%20-%20%E5%8F%98%E9%95%BF%E7%AA%97%E5%8F%A3%E4%B9%8B%E6%9C%80%E7%9F%AD%E6%BB%A1%E8%B6%B3%E6%9D%A1%E4%BB%B6%20%28Minimum%20Valid%20Window%29/01%20-%20%E6%95%B0%E5%80%BC%E9%98%88%E5%80%BC%E4%B8%8E%E6%9C%80%E7%9F%AD%E5%8C%BA%E9%97%B4/02%20-%20LC-0862%20-%20Shortest%20Subarray%20with%20Sum%20at%20Least%20K) | H | （🆕 我补充） |
+| **P1** | [LC-0862 - Shortest Subarray with Sum at Least K](../18-monotonic-fuck-you%20%28%E5%8D%95%E8%B0%83%E6%A0%88%E3%80%81%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%29/general/02%20-%20LC-0862%20-%20Shortest%20Subarray%20with%20Sum%20at%20Least%20K) | H | （🆕 我补充） |
 **02 - 字符频率覆盖与最小窗口**
 
 | | 题 | 难度 | |
@@ -144,44 +144,34 @@ for right, x in enumerate(nums):
 |---|---|---|---|
 | **P1** | [LC-1358 - Number of Substrings Containing All Three Characters](04%20-%20%E5%AD%90%E6%95%B0%E7%BB%84%E4%B8%8E%E5%AD%90%E4%B8%B2%E8%AE%A1%E6%95%B0%20%28Counting%20Windows%29/03%20-%20%E6%BB%A1%E8%B6%B3%E5%85%A8%E9%83%A8%E5%AD%97%E7%AC%A6%E7%BA%A6%E6%9D%9F%E7%9A%84%E8%AE%A1%E6%95%B0/01%20-%20LC-1358%20-%20Number%20of%20Substrings%20Containing%20All%20Three%20Characters) | M | （🆕 新增） |
 
-### [05 - 单调队列与窗口极值 (Monotonic Deque)](05%20-%20%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E4%B8%8E%E7%AA%97%E5%8F%A3%E6%9E%81%E5%80%BC%20%28Monotonic%20Deque%29/README.md)
-
-**02 - 变长窗口最大最小值约束**
-
-| | 题 | 难度 | |
-|---|---|---|---|
-| **P1** | [LC-1438 - Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit](05%20-%20%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E4%B8%8E%E7%AA%97%E5%8F%A3%E6%9E%81%E5%80%BC%20%28Monotonic%20Deque%29/02%20-%20%E5%8F%98%E9%95%BF%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E6%9C%80%E5%B0%8F%E5%80%BC%E7%BA%A6%E6%9D%9F/01%20-%20LC-1438%20-%20Longest%20Continuous%20Subarray%20With%20Absolute%20Diff%20Less%20Than%20or%20Equal%20to%20Limit) | M | （🆕 新增） |
-
-### [06 - 高阶窗口组合与问题转化 (Advanced Windows)](06%20-%20%E9%AB%98%E9%98%B6%E7%AA%97%E5%8F%A3%E7%BB%84%E5%90%88%E4%B8%8E%E9%97%AE%E9%A2%98%E8%BD%AC%E5%8C%96%20%28Advanced%20Windows%29/README.md)
+### [05 - 高阶窗口组合与问题转化 (Advanced Windows)](05%20-%20%E9%AB%98%E9%98%B6%E7%AA%97%E5%8F%A3%E7%BB%84%E5%90%88%E4%B8%8E%E9%97%AE%E9%A2%98%E8%BD%AC%E5%8C%96%20%28Advanced%20Windows%29/README.md)
 
 **01 - 按单词长度分组的窗口**
 
 | | 题 | 难度 | |
 |---|---|---|---|
-| **P1** | [LC-0030 - Substring with Concatenation of All Words](06%20-%20%E9%AB%98%E9%98%B6%E7%AA%97%E5%8F%A3%E7%BB%84%E5%90%88%E4%B8%8E%E9%97%AE%E9%A2%98%E8%BD%AC%E5%8C%96%20%28Advanced%20Windows%29/01%20-%20%E6%8C%89%E5%8D%95%E8%AF%8D%E9%95%BF%E5%BA%A6%E5%88%86%E7%BB%84%E7%9A%84%E7%AA%97%E5%8F%A3/01%20-%20LC-0030%20-%20Substring%20with%20Concatenation%20of%20All%20Words) | H |  |
+| **P1** | [LC-0030 - Substring with Concatenation of All Words](05%20-%20%E9%AB%98%E9%98%B6%E7%AA%97%E5%8F%A3%E7%BB%84%E5%90%88%E4%B8%8E%E9%97%AE%E9%A2%98%E8%BD%AC%E5%8C%96%20%28Advanced%20Windows%29/01%20-%20%E6%8C%89%E5%8D%95%E8%AF%8D%E9%95%BF%E5%BA%A6%E5%88%86%E7%BB%84%E7%9A%84%E7%AA%97%E5%8F%A3/01%20-%20LC-0030%20-%20Substring%20with%20Concatenation%20of%20All%20Words) | H |  |
 **02 - Complement Window 问题转化**
 
 | | 题 | 难度 | |
 |---|---|---|---|
-| **P1** | [LC-1658 - Minimum Operations to Reduce X to Zero](06%20-%20%E9%AB%98%E9%98%B6%E7%AA%97%E5%8F%A3%E7%BB%84%E5%90%88%E4%B8%8E%E9%97%AE%E9%A2%98%E8%BD%AC%E5%8C%96%20%28Advanced%20Windows%29/02%20-%20Complement%20Window%20%E9%97%AE%E9%A2%98%E8%BD%AC%E5%8C%96/01%20-%20LC-1658%20-%20Minimum%20Operations%20to%20Reduce%20X%20to%20Zero) | M | （🆕 新增） |
-| **P2** | [LC-2516 - Take K of Each Character From Left and Right](06%20-%20%E9%AB%98%E9%98%B6%E7%AA%97%E5%8F%A3%E7%BB%84%E5%90%88%E4%B8%8E%E9%97%AE%E9%A2%98%E8%BD%AC%E5%8C%96%20%28Advanced%20Windows%29/02%20-%20Complement%20Window%20%E9%97%AE%E9%A2%98%E8%BD%AC%E5%8C%96/02%20-%20LC-2516%20-%20Take%20K%20of%20Each%20Character%20From%20Left%20and%20Right) | M | （🆕 我补充） |
+| **P1** | [LC-1658 - Minimum Operations to Reduce X to Zero](05%20-%20%E9%AB%98%E9%98%B6%E7%AA%97%E5%8F%A3%E7%BB%84%E5%90%88%E4%B8%8E%E9%97%AE%E9%A2%98%E8%BD%AC%E5%8C%96%20%28Advanced%20Windows%29/02%20-%20Complement%20Window%20%E9%97%AE%E9%A2%98%E8%BD%AC%E5%8C%96/01%20-%20LC-1658%20-%20Minimum%20Operations%20to%20Reduce%20X%20to%20Zero) | M | （🆕 新增） |
+| **P2** | [LC-2516 - Take K of Each Character From Left and Right](05%20-%20%E9%AB%98%E9%98%B6%E7%AA%97%E5%8F%A3%E7%BB%84%E5%90%88%E4%B8%8E%E9%97%AE%E9%A2%98%E8%BD%AC%E5%8C%96%20%28Advanced%20Windows%29/02%20-%20Complement%20Window%20%E9%97%AE%E9%A2%98%E8%BD%AC%E5%8C%96/02%20-%20LC-2516%20-%20Take%20K%20of%20Each%20Character%20From%20Left%20and%20Right) | M | （🆕 我补充） |
 **03 - 连续空隙的定长窗口**
 
 | | 题 | 难度 | |
 |---|---|---|---|
-| **P2** | [LC-3439 - Reschedule Meetings for Maximum Free Time I](06%20-%20%E9%AB%98%E9%98%B6%E7%AA%97%E5%8F%A3%E7%BB%84%E5%90%88%E4%B8%8E%E9%97%AE%E9%A2%98%E8%BD%AC%E5%8C%96%20%28Advanced%20Windows%29/03%20-%20%E8%BF%9E%E7%BB%AD%E7%A9%BA%E9%9A%99%E7%9A%84%E5%AE%9A%E9%95%BF%E7%AA%97%E5%8F%A3/01%20-%20LC-3439%20-%20Reschedule%20Meetings%20for%20Maximum%20Free%20Time%20I) | M |  |
+| **P2** | [LC-3439 - Reschedule Meetings for Maximum Free Time I](05%20-%20%E9%AB%98%E9%98%B6%E7%AA%97%E5%8F%A3%E7%BB%84%E5%90%88%E4%B8%8E%E9%97%AE%E9%A2%98%E8%BD%AC%E5%8C%96%20%28Advanced%20Windows%29/03%20-%20%E8%BF%9E%E7%BB%AD%E7%A9%BA%E9%9A%99%E7%9A%84%E5%AE%9A%E9%95%BF%E7%AA%97%E5%8F%A3/01%20-%20LC-3439%20-%20Reschedule%20Meetings%20for%20Maximum%20Free%20Time%20I) | M |  |
 
-### [07 - 跨专题与低优先级存档 (Archive)](07%20-%20%E8%B7%A8%E4%B8%93%E9%A2%98%E4%B8%8E%E4%BD%8E%E4%BC%98%E5%85%88%E7%BA%A7%E5%AD%98%E6%A1%A3%20%28Archive%29/README.md)
+### [06 - 跨专题与低优先级存档 (Archive)](06%20-%20%E8%B7%A8%E4%B8%93%E9%A2%98%E4%B8%8E%E4%BD%8E%E4%BC%98%E5%85%88%E7%BA%A7%E5%AD%98%E6%A1%A3%20%28Archive%29/README.md)
 
 **01 - 连续字符段与贪心**
 
 | | 题 | 难度 | |
 |---|---|---|---|
-| **P2** | [LC-3499 - Maximize Active Section with Trade I](07%20-%20%E8%B7%A8%E4%B8%93%E9%A2%98%E4%B8%8E%E4%BD%8E%E4%BC%98%E5%85%88%E7%BA%A7%E5%AD%98%E6%A1%A3%20%28Archive%29/01%20-%20%E8%BF%9E%E7%BB%AD%E5%AD%97%E7%AC%A6%E6%AE%B5%E4%B8%8E%E8%B4%AA%E5%BF%83/01%20-%20LC-3499%20-%20Maximize%20Active%20Section%20with%20Trade%20I) | M |  |
+| **P2** | [LC-3499 - Maximize Active Section with Trade I](06%20-%20%E8%B7%A8%E4%B8%93%E9%A2%98%E4%B8%8E%E4%BD%8E%E4%BC%98%E5%85%88%E7%BA%A7%E5%AD%98%E6%A1%A3%20%28Archive%29/01%20-%20%E8%BF%9E%E7%BB%AD%E5%AD%97%E7%AC%A6%E6%AE%B5%E4%B8%8E%E8%B4%AA%E5%BF%83/01%20-%20LC-3499%20-%20Maximize%20Active%20Section%20with%20Trade%20I) | M |  |
 
 📦 = 文件夹里有 `_neetcode/`，保存 NeetCode 版本的原始题面和解法（同一道题，不单独占位置）。
-
-**唯一一处只有索引没有题目文件夹**：[05 - 单调队列 / 01 - 定长窗口最大值](05%20-%20%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%E4%B8%8E%E7%AA%97%E5%8F%A3%E6%9E%81%E5%80%BC%20%28Monotonic%20Deque%29/01%20-%20%E5%AE%9A%E9%95%BF%E7%AA%97%E5%8F%A3%E6%9C%80%E5%A4%A7%E5%80%BC/README.md) —— LC-0239（**P0**）按仓库铁律归在 `18-monotonic-fuck-you/monotonic-queue`，那里的 README 有完整模板和证明。
 
 ## 五、跨专题引用
 

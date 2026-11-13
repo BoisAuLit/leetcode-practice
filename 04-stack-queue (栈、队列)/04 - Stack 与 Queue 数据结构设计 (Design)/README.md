@@ -72,7 +72,7 @@ LC-0346 可能是 Premium 题，已有的题面资料原样保留。
 
 | 题 | 位置 | 信号 → 模式 | 备注 |
 |---|---|---|---|
-| [LC-0716 Max Stack](<./01 - 带额外状态的 Stack/02 - LC-0716 - Max Stack>) | `04 - Stack 与 Queue 数据结构设计 (Design)/01 - 带额外状态的 Stack` | popMax 要从栈中间删：堆 + 懒删除（栈/堆各存 (val,id)，removed 集合）；两栈 O(n) 版先写 | LC-0155 Min Stack 的 Hard 版；**Premium 题，当前账号抓不到 PDF**；题面摘要在 solution.py 顶部的 docstring 里；续费后 `python3 tools/intake.py "<文件夹>"` 可补抓 |
+| [LC-0716 Max Stack](<./01 - 带额外状态的 Stack/02 - LC-0716 - Max Stack>) | `04 - Stack 与 Queue 数据结构设计 (Design)/01 - 带额外状态的 Stack` | popMax 要从栈中间删：堆 + 懒删除（栈/堆各存 (val,id)，removed 集合）；两栈 O(n) 版先写 | LC-0155 Min Stack 的 Hard 版；Premium 题 |
 | [LC-0895 Maximum Frequency Stack](<./01 - 带额外状态的 Stack/03 - LC-0895 - Maximum Frequency Stack>) | `04 - Stack 与 Queue 数据结构设计 (Design)/01 - 带额外状态的 Stack` | 按频率分层：group[f] 是一个栈，pop 永远在 group[maxfreq]；maxfreq 只会降 1 | O(1) 不需要时间戳 |
 | [LC-2296 Design a Text Editor](<./01 - 带额外状态的 Stack/04 - LC-2296 - Design a Text Editor>) | `04 - Stack 与 Queue 数据结构设计 (Design)/01 - 带额外状态的 Stack` | 光标把文本切成两个栈（gap buffer），四个操作全是栈顶操作；str 拼接 O(n) 是反面教材 | LC-1472 同源 |
 

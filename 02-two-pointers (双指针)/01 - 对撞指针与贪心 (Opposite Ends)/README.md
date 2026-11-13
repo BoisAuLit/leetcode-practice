@@ -39,7 +39,7 @@ while l < r:                      # ! 要不要取等看题意：0881 需要 l <
 |---|---|---|---|
 | **P0** | [LC-0167 - Two Sum II - Input Array Is Sorted](01%20-%20%E7%BB%8F%E5%85%B8%E5%AF%B9%E6%92%9E%E4%B8%8E%E8%B4%AA%E5%BF%83%E5%86%B3%E7%AD%96/01%20-%20LC-0167%20-%20Two%20Sum%20II%20-%20Input%20Array%20Is%20Sorted) 📦 | M | 对撞指针的原型：两句话的移动规则 |
 | **P0** | [LC-0011 - Container With Most Water](01%20-%20%E7%BB%8F%E5%85%B8%E5%AF%B9%E6%92%9E%E4%B8%8E%E8%B4%AA%E5%BF%83%E5%86%B3%E7%AD%96/02%20-%20LC-0011%20-%20Container%20With%20Most%20Water) 📦 | M | 第一次需要**贪心排除证明**（为什么移短边） |
-| **P0** | [LC-0042 - Trapping Rain Water](01%20-%20%E7%BB%8F%E5%85%B8%E5%AF%B9%E6%92%9E%E4%B8%8E%E8%B4%AA%E5%BF%83%E5%86%B3%E7%AD%96/03%20-%20LC-0042%20-%20Trapping%20Rain%20Water) | H | 矮侧瓶颈已定 ⇒ **当场结算**；O(1) 空间版是面试答案 |
+| **P0** | [LC-0042 - Trapping Rain Water](../../18-monotonic-fuck-you%20%28%E5%8D%95%E8%B0%83%E6%A0%88%E3%80%81%E5%8D%95%E8%B0%83%E9%98%9F%E5%88%97%29/general/03%20-%20LC-0042%20-%20Trapping%20Rain%20Water) | H | 矮侧瓶颈已定 ⇒ **当场结算**；O(1) 空间版是面试答案 |
 | **P0** | [LC-0881 - Boats to Save People](01%20-%20%E7%BB%8F%E5%85%B8%E5%AF%B9%E6%92%9E%E4%B8%8E%E8%B4%AA%E5%BF%83%E5%86%B3%E7%AD%96/04%20-%20LC-0881%20-%20Boats%20to%20Save%20People) | M | 排序 + 配对贪心，交换论证；循环条件变成 `l <= r` |
 | **P2** | [LC-0633 - Sum of Square Numbers](01%20-%20%E7%BB%8F%E5%85%B8%E5%AF%B9%E6%92%9E%E4%B8%8E%E8%B4%AA%E5%BF%83%E5%86%B3%E7%AD%96/05%20-%20LC-0633%20-%20Sum%20of%20Square%20Numbers) | M | 候选空间是**虚拟的**（0..⌊√c⌋），不需要真实数组 |
 | **P1** | [LC-0977 - Squares of a Sorted Array](02%20-%20%E6%9C%89%E5%BA%8F%E8%AE%A1%E6%95%B0%E4%B8%8E%E5%8F%8C%E7%AB%AF%E6%9E%84%E9%80%A0/01%20-%20LC-0977%20-%20Squares%20of%20a%20Sorted%20Array) | E | 从两端取较大者**倒着填**结果数组 |

@@ -164,7 +164,7 @@ Level 04 的五道题全靠「能不能改 nums」分家：
 
 | 题 | 位置 | 信号 → 模式 | 备注 |
 |---|---|---|---|
-| [LC-0249 Group Shifted Strings](<./01 - Hash Set 与 Hash Map 基础/10 - LC-0249 - Group Shifted Strings>) | `01 - Hash Set 与 Hash Map 基础` | 规范化键 = 相邻字母差 mod 26（az 与 ba 必须同组）；和 LC-0049 同套路 | 环绕是全部考点；**Premium 题，当前账号抓不到 PDF**；题面摘要在 solution.py 顶部的 docstring 里；续费后 `python3 tools/intake.py "<文件夹>"` 可补抓 |
+| [LC-0249 Group Shifted Strings](<./01 - Hash Set 与 Hash Map 基础/10 - LC-0249 - Group Shifted Strings>) | `01 - Hash Set 与 Hash Map 基础` | 规范化键 = 相邻字母差 mod 26（az 与 ba 必须同组）；和 LC-0049 同套路 | 环绕是全部考点；Premium 题 |
 | [LC-0791 Custom Sort String](<./02 - Frequency Counting 与 Top K/08 - LC-0791 - Custom Sort String>) | `02 - Frequency Counting 与 Top K` | 计数 + 按 order 输出 = 26 桶的桶排序；不在 order 里的字母也要输出 | LC-0049 式「规范化输出」 |
 | [LC-0523 Continuous Subarray Sum](<./03 - Prefix Sum 与 Prefix-Suffix/07 - LC-0523 - Continuous Subarray Sum>) | `03 - Prefix Sum 与 Prefix-Suffix` | P[j] ≡ P[i] (mod k)；只记余数首次位置 + 哨兵 {0:-1}，长度 j-i>=2 | LC-0560 / LC-0974 之间的一环 |
 | [LC-0937 Reorder Data in Log Files](<./06 - 低优先级与跨专题题目/15 - LC-0937 - Reorder Data in Log Files>) | `06 - 低优先级与跨专题题目` | 单一排序键 (0,content,id) / (1,)，数字日志靠**稳定排序**保序；要说出依赖稳定性 | Amazon 热身 |

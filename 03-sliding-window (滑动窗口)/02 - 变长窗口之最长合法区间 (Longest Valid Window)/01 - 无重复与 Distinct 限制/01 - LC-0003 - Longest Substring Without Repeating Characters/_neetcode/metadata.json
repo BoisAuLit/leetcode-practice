@@ -1,6 +1,6 @@
 {
   "id": "NC-longest-substring-without-duplicates",
-  "path": "03-sliding-window (滑动窗口)/variable-window (变长窗口)/NC - Longest Substring Without Repeating Characters",
+  "path": "03-sliding-window (滑动窗口)/02 - 变长窗口之最长合法区间 (Longest Valid Window)/01 - 无重复与 Distinct 限制/01 - LC-0003 - Longest Substring Without Repeating Characters/_neetcode",
   "difficulty": "M",
   "link": {
     "leetcode": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",

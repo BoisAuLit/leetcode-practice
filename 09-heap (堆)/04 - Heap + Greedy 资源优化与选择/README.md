@@ -116,6 +116,6 @@ O(k log n)。
 | 题 | 位置 | 信号 → 模式 | 备注 |
 |---|---|---|---|
 | [LC-0630 Course Schedule III](<./02 - 有限资源的最优分配/02 - LC-0630 - Course Schedule III>) | `04 - Heap + Greedy 资源优化与选择/02 - 有限资源的最优分配` | 按截止日排序 + 最大堆反悔：超时就踢掉最长的那门 | LC-1642 同族反悔贪心 |
-| [LC-1057 Campus Bikes](<./04 - 排序与 Heap 的组合选择/03 - LC-1057 - Campus Bikes>) | `04 - Heap + Greedy 资源优化与选择/04 - 排序与 Heap 的组合选择` | 距离 ≤ 2000 ⟹ 桶排序 O(nm)；i 外 j 内生成则桶内天然 (worker, bike) 有序 | 题目钦定的顺序，考怎么排得快；**Premium 题，当前账号抓不到 PDF**；题面摘要在 solution.py 顶部的 docstring 里；续费后 `python3 tools/intake.py "<文件夹>"` 可补抓 |
+| [LC-1057 Campus Bikes](<./04 - 排序与 Heap 的组合选择/03 - LC-1057 - Campus Bikes>) | `04 - Heap + Greedy 资源优化与选择/04 - 排序与 Heap 的组合选择` | 距离 ≤ 2000 ⟹ 桶排序 O(nm)；i 外 j 内生成则桶内天然 (worker, bike) 有序 | 题目钦定的顺序，考怎么排得快；Premium 题 |
 
 每道题的 `solution.py` 都带：全部主流解法（各自的复杂度与适用场景）、一个 ⭐️ Preferred、和一段对独立真值基线的随机对拍。

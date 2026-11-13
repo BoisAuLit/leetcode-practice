@@ -1,0 +1,10 @@
+{
+  "id": "LC-1438",
+  "path": "18-monotonic-fuck-you (单调栈、单调队列)/general/01 - LC-1438 - Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+  "difficulty": "M",
+  "link": {
+    "leetcode": "https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/",
+    "neetcode": null
+  },
+  "practice": []
+}

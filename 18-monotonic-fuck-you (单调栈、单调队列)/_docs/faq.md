@@ -44,7 +44,7 @@ while dq[0] 不在窗口内: dq.popleft()
 ### Q：原笔记把 42（Trapping Rain Water）列为「推荐」，它在哪？
 
 42 的实体目录在 **02-two-pointers**
-（[链接](<../../02-two-pointers (双指针)/01 - 对撞指针与贪心 (Opposite Ends)/01 - 经典对撞与贪心决策/03 - LC-0042 - Trapping Rain Water>)），
+（[链接](<../general/03 - LC-0042 - Trapping Rain Water>)），
 那里的 solution.py 里**已经包含单调栈解法**。
 一道题在题库里只能有一个实体文件夹（否则复习队列会重复），
 所以这里只建跨专题索引。它的 Primary Pattern 是 Two Pointers，Secondary 是 Monotonic Stack。
